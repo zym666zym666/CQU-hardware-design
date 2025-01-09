@@ -1,0 +1,2037 @@
+#-----------------------------------------------------------
+# Vivado v2023.1 (64-bit)
+# SW Build 3865809 on Sun May  7 15:05:29 MDT 2023
+# IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
+# SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
+# Start of session at: Sat Jan  4 17:06:35 2025
+# Process ID: 16876
+# Current directory: C:/Users/Lenovo/Desktop/colab/CO-lab-material-CQU/vivado/func_test_v0.01/soc_axi_func_sim/run_vivado/mycpu_prj1
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent17432 C:\Users\Lenovo\Desktop\colab\CO-lab-material-CQU\vivado\func_test_v0.01\soc_axi_func_sim\run_vivado\mycpu_prj1\mycpu.xpr
+# Log file: C:/Users/Lenovo/Desktop/colab/CO-lab-material-CQU/vivado/func_test_v0.01/soc_axi_func_sim/run_vivado/mycpu_prj1/vivado.log
+# Journal file: C:/Users/Lenovo/Desktop/colab/CO-lab-material-CQU/vivado/func_test_v0.01/soc_axi_func_sim/run_vivado/mycpu_prj1\vivado.jou
+# Running On: DESKTOP-87K58HJ, OS: Windows, CPU Frequency: 2918 MHz, CPU Physical cores: 4, Host memory: 16952 MB
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/Lenovo/Desktop/colab/CO-lab-material-CQU/vivado/func_test_v0.01/soc_axi_func_sim/run_vivado/mycpu_prj1/mycpu.xpr
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'C:/Users/Lenovo/Desktop/colab/CO-lab-material-CQU/vivado/func_test_v0.01/soc_axi_func_sim/run_vivado/mycpu_prj1'
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:genesys2:part0:1.1 available at G:/vivado/Vivado/2023.1/data/boards/board_files/genesys2/H/board.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:sword:part0:1.0 available at G:/vivado/Vivado/2023.1/data/boards/board_files/sword/C.0/board.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kc705:part0:1.6 available at G:/vivado/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kc705/1.6/board.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu105:part0:1.6 available at G:/vivado/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu105/1.6/board.xml as part xcku040-ffva1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu105:part0:1.7 available at G:/vivado/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu105/1.7/board.xml as part xcku040-ffva1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu1500:part0:1.2 available at G:/vivado/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu1500/1.2/board.xml as part xcku115-flvb2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vc707:part0:1.4 available at G:/vivado/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vc707/1.4/board.xml as part xc7vx485tffg1761-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vc709:part0:1.8 available at G:/vivado/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vc709/1.8/board.xml as part xc7vx690tffg1761-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:2.2 available at G:/vivado/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190/production/2.2/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:3.0 available at G:/vivado/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190/production/3.0/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:3.1 available at G:/vivado/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190/production/3.1/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:3.2 available at G:/vivado/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190/production/3.2/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190_newl:part0:1.0 available at G:/vivado/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190_newl/production/1.0/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190_newl:part0:1.1 available at G:/vivado/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190_newl/production/1.1/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu108:part0:1.6 available at G:/vivado/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu108/1.6/board.xml as part xcvu095-ffva2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu108:part0:1.7 available at G:/vivado/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu108/1.7/board.xml as part xcvu095-ffva2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu110:part0:1.4 available at G:/vivado/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu110/1.4/board.xml as part xcvu190-flgc2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu118:part0:2.0 available at G:/vivado/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu118/2.0/board.xml as part xcvu9p-flga2104-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu118:part0:2.3 available at G:/vivado/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu118/2.3/board.xml as part xcvu9p-flga2104-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu118:part0:2.4 available at G:/vivado/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu118/2.4/board.xml as part xcvu9p-flga2104-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu129:part0:1.0 available at G:/vivado/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu129/production/1.0/board.xml as part xcvu29p-fsga2577-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu1525:part0:1.3 available at G:/vivado/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu1525/1.3/board.xml as part xcvu9p-fsgd2104-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es:part0:1.0 available at G:/vivado/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_a/1.0/board.xml as part xcve2802-vsvh1760-2lp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es:part0:1.1 available at G:/vivado/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_a/1.1/board.xml as part xcve2802-vsvh1760-2lp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es_revb:part0:1.0 available at G:/vivado/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_b/1.0/board.xml as part xcve2802-vsvh1760-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es_revb:part0:1.1 available at G:/vivado/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_b/1.1/board.xml as part xcve2802-vsvh1760-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vermeo_t1_mpsoc:part0:1.0 available at G:/vivado/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vermeo_t1_mpsoc/1.0/board.xml as part xczu19eg-ffvd1760-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vermeo_t1_rfsoc:part0:1.0 available at G:/vivado/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vermeo_t1_rfsoc/1.0/board.xml as part xczu21dr-ffvd1156-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158:part0:1.0 available at G:/vivado/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vhk158/production/1.0/board.xml as part xcvh1582-vsva3697-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158_es:part0:1.0 available at G:/vivado/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vhk158/es/1.0/board.xml as part xcvh1582-vsva3697-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158_es:part0:1.1 available at G:/vivado/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vhk158/es/1.1/board.xml as part xcvh1582-vsva3697-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180:part0:2.2 available at G:/vivado/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180/production/2.2/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180:part0:3.0 available at G:/vivado/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180/production/3.0/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180:part0:3.1 available at G:/vivado/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180/production/3.1/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180:part0:3.2 available at G:/vivado/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180/production/3.2/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180_newl:part0:1.0 available at G:/vivado/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180_newl/production/1.0/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180_newl:part0:1.1 available at G:/vivado/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180_newl/production/1.1/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120:part0:1.0 available at G:/vivado/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120/production/1.0/board.xml as part xcvp1202-vsva2785-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120:part0:1.1 available at G:/vivado/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120/production/1.1/board.xml as part xcvp1202-vsva2785-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120_es:part0:1.2 available at G:/vivado/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120/es/1.2/board.xml as part xcvp1202-vsva2785-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120_es:part0:1.3 available at G:/vivado/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120/es/1.3/board.xml as part xcvp1202-vsva2785-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120_es_revb:part0:1.0 available at G:/vivado/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120_revb/es/1.0/board.xml as part xcvp1202-vsva2785-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120_es_revb:part0:1.1 available at G:/vivado/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120_revb/es/1.1/board.xml as part xcvp1202-vsva2785-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk180:part0:1.0 available at G:/vivado/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk180/production/1.0/board.xml as part xcvp1802-lsvc4072-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk180:part0:1.1 available at G:/vivado/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk180/production/1.1/board.xml as part xcvp1802-lsvc4072-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk180_es:part0:1.0 available at G:/vivado/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk180/es/1.0/board.xml as part xcvp1802-lsvc4072-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk180_es:part0:1.1 available at G:/vivado/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk180/es/1.1/board.xml as part xcvp1802-lsvc4072-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zc706:part0:1.4 available at G:/vivado/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zc706/1.4/board.xml as part xc7z045ffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu102:part0:3.3 available at G:/vivado/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu102/3.3/board.xml as part xczu9eg-ffvb1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu102:part0:3.4 available at G:/vivado/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu102/3.4/board.xml as part xczu9eg-ffvb1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu111:part0:1.2 available at G:/vivado/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu111/1.2/board.xml as part xczu28dr-ffvg1517-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu111:part0:1.3 available at G:/vivado/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu111/1.3/board.xml as part xczu28dr-ffvg1517-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu111:part0:1.4 available at G:/vivado/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu111/1.4/board.xml as part xczu28dr-ffvg1517-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu1275:part0:1.0 available at G:/vivado/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu1275/1.0/board.xml as part xczu29dr-ffvf1760-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu1285:part0:1.0 available at G:/vivado/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu1285/1.0/board.xml as part xczu39dr-ffvf1760-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208:part0:2.0 available at G:/vivado/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208/production/2.0/board.xml as part xczu48dr-fsvg1517-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208ld:part0:2.0 available at G:/vivado/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208ld/production/2.0/board.xml as part xczu58dr-fsvg1517-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216:part0:2.0 available at G:/vivado/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216/production/2.0/board.xml as part xczu49dr-ffvf1760-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld:part0:2.0 available at G:/vivado/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216ld/production/2.0/board.xml as part xczu59dr-ffvf1760-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670:part0:2.0 available at G:/vivado/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670/2.0/board.xml as part xczu67dr-fsve1156-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670ld:part0:1.0 available at G:/vivado/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670ld/1.0/board.xml as part xczu57dr-fsve1156-2-i specified in board_part file is either invalid or not available
+INFO: [Project 1-313] Project file moved from 'd:/nscscc2020/团队赛/nscscc2019-info/func_test_v0.01/soc_axi_func/run_vivado/mycpu_prj1' since last save.
+WARNING: [filemgmt 56-3] IPUserFilesDir: Could not find the directory 'C:/Users/Lenovo/Desktop/colab/CO-lab-material-CQU/vivado/func_test_v0.01/soc_axi_func_sim/run_vivado/mycpu_prj1/mycpu.ip_user_files'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'G:/vivado/Vivado/2023.1/data/ip'.
+INFO: [Project 1-230] Project 'mycpu.xpr' upgraded for this version of Vivado.
+open_project: Time (s): cpu = 00:00:16 ; elapsed = 00:00:15 . Memory (MB): peak = 1539.336 ; gain = 370.453
+report_ip_status -name ip_status 
+update_compile_order -fileset sources_1
+add_files {C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/cpu_core/utils/flopenr.v C:/Users/Lenovo/Desktop/colab/axi/d_cache_simple.v C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/cpu_core/pc.v C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/cpu_core/hilo_reg.v C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/cpu_core/utils/floprc.v C:/Users/Lenovo/Desktop/colab/axi/i_cache.v C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/cpu_core/dec/controller.v C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/cpu_core/utils/sl2.v C:/Users/Lenovo/Desktop/colab/axi/bridge_2x1.v C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/cpu_core/utils/instdec.v C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/cpu_core/utils/mul.v C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/cpu_core/datapath.v C:/Users/Lenovo/Desktop/colab/axi/mycpu_top.v C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/cpu_core/regfile.v C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/cpu_core/exception/exceptdec.v C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/cpu_core/utils/adder.v C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/cpu_core/hazard.v C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/cpu_core/utils/eqcmp.v C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/cpu_core/utils/div.v C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/cpu_core/defines2.vh C:/Users/Lenovo/Desktop/colab/axi/bridge_1x2.v C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/mips_with_sram_like.v C:/Users/Lenovo/Desktop/colab/axi/d_cache.v C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/cpu_core/mem_ctrl.v C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/cpu_core/exception/cp0_reg.v C:/Users/Lenovo/Desktop/colab/axi/dpr.v C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/cpu_core/utils/mux3.v C:/Users/Lenovo/Desktop/colab/axi/d_cache_2waywb.v C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/cpu_core/utils/mux2.v C:/Users/Lenovo/Desktop/colab/axi/i_cache_plus.v C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/cpu_core/utils/flopenrc.v C:/Users/Lenovo/Desktop/colab/axi/cache.v C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/cpu_core/dec/aludec.v C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/cpu_core/utils/flopr.v C:/Users/Lenovo/Desktop/colab/axi/cpu_axi_interface.v C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/d_sram_to_sram_like.v C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/cpu_core/alu.v C:/Users/Lenovo/Desktop/colab/axi/i_cache_simple.v C:/Users/Lenovo/Desktop/colab/axi/mmu.v C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/i_sram_to_sram_like.v C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/cpu_core/dec/maindec.v C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/cpu_core/mips.v C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/cpu_core/utils/signext.v}
+update_compile_order -fileset sources_1
+launch_runs synth_1 -jobs 4
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'C:/Users/Lenovo/Desktop/colab/CO-lab-material-CQU/vivado/func_test_v0.01/soc_axi_func_sim/rtl/xilinx_ip/clk_pll/clk_pll.xci' is already up-to-date
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'C:/Users/Lenovo/Desktop/colab/CO-lab-material-CQU/vivado/func_test_v0.01/soc_axi_func_sim/rtl/xilinx_ip/axi_ram/axi_ram.xci' is already up-to-date
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'C:/Users/Lenovo/Desktop/colab/CO-lab-material-CQU/vivado/func_test_v0.01/soc_axi_func_sim/rtl/xilinx_ip/axi_crossbar_1x2/axi_crossbar_1x2.xci' is already up-to-date
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'C:/Users/Lenovo/Desktop/colab/CO-lab-material-CQU/vivado/func_test_v0.01/soc_axi_func_sim/rtl/xilinx_ip/axi_clock_converter/axi_clock_converter.xci' is already up-to-date
+[Sat Jan  4 17:07:45 2025] Launched synth_1...
+Run output will be captured here: C:/Users/Lenovo/Desktop/colab/CO-lab-material-CQU/vivado/func_test_v0.01/soc_axi_func_sim/run_vivado/mycpu_prj1/mycpu.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 4
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'C:/Users/Lenovo/Desktop/colab/CO-lab-material-CQU/vivado/func_test_v0.01/soc_axi_func_sim/rtl/xilinx_ip/clk_pll/clk_pll.xci' is already up-to-date
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'C:/Users/Lenovo/Desktop/colab/CO-lab-material-CQU/vivado/func_test_v0.01/soc_axi_func_sim/rtl/xilinx_ip/axi_ram/axi_ram.xci' is already up-to-date
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'C:/Users/Lenovo/Desktop/colab/CO-lab-material-CQU/vivado/func_test_v0.01/soc_axi_func_sim/rtl/xilinx_ip/axi_crossbar_1x2/axi_crossbar_1x2.xci' is already up-to-date
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'C:/Users/Lenovo/Desktop/colab/CO-lab-material-CQU/vivado/func_test_v0.01/soc_axi_func_sim/rtl/xilinx_ip/axi_clock_converter/axi_clock_converter.xci' is already up-to-date
+[Sat Jan  4 17:14:39 2025] Launched impl_1...
+Run output will be captured here: C:/Users/Lenovo/Desktop/colab/CO-lab-material-CQU/vivado/func_test_v0.01/soc_axi_func_sim/run_vivado/mycpu_prj1/mycpu.runs/impl_1/runme.log
+synth_design -rtl -rtl_skip_mlo -name rtl_1
+Command: synth_design -rtl -rtl_skip_mlo -name rtl_1
+Starting synth_design
+Using part: xc7a200tfbg676-2
+Top: soc_axi_lite_top
+INFO: [Device 21-403] Loading part xc7a200tfbg676-2
+INFO: [Synth 8-11241] undeclared symbol 'div_ready', assumed default net type 'wire' [C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/cpu_core/alu.v:118]
+INFO: [Synth 8-11241] undeclared symbol 'rssrcb2Dt', assumed default net type 'wire' [C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/cpu_core/datapath.v:245]
+INFO: [Synth 8-11241] undeclared symbol 'cp0stallD', assumed default net type 'wire' [C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/cpu_core/hazard.v:124]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:06 . Memory (MB): peak = 2413.156 ; gain = 391.887
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'soc_axi_lite_top' [C:/Users/Lenovo/Desktop/colab/CO-lab-material-CQU/vivado/func_test_v0.01/soc_axi_func_sim/rtl/soc_axi_lite_top.v:65]
+INFO: [Synth 8-6157] synthesizing module 'clk_pll' [C:/Users/Lenovo/Desktop/colab/CO-lab-material-CQU/vivado/func_test_v0.01/soc_axi_func_sim/run_vivado/mycpu_prj1/.Xil/Vivado-16876-DESKTOP-87K58HJ/realtime/clk_pll_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'clk_pll' (0#1) [C:/Users/Lenovo/Desktop/colab/CO-lab-material-CQU/vivado/func_test_v0.01/soc_axi_func_sim/run_vivado/mycpu_prj1/.Xil/Vivado-16876-DESKTOP-87K58HJ/realtime/clk_pll_stub.v:6]
+WARNING: [Synth 8-85] always block has no event control specified [C:/Users/Lenovo/Desktop/colab/CO-lab-material-CQU/vivado/func_test_v0.01/soc_axi_func_sim/rtl/soc_axi_lite_top.v:108]
+INFO: [Synth 8-6157] synthesizing module 'mycpu_top' [C:/Users/Lenovo/Desktop/colab/axi/mycpu_top.v:1]
+INFO: [Synth 8-6157] synthesizing module 'mips_with_sram_like' [C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/mips_with_sram_like.v:7]
+INFO: [Synth 8-6157] synthesizing module 'mips' [C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/cpu_core/mips.v:4]
+INFO: [Synth 8-6157] synthesizing module 'datapath' [C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/cpu_core/datapath.v:4]
+INFO: [Synth 8-6157] synthesizing module 'flopenrc' [C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/cpu_core/utils/flopenrc.v:24]
+	Parameter WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'flopenrc' (0#1) [C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/cpu_core/utils/flopenrc.v:24]
+INFO: [Synth 8-6157] synthesizing module 'flopenrc__parameterized0' [C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/cpu_core/utils/flopenrc.v:24]
+	Parameter WIDTH bound to: 20 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'flopenrc__parameterized0' (0#1) [C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/cpu_core/utils/flopenrc.v:24]
+INFO: [Synth 8-6157] synthesizing module 'flopenrc__parameterized1' [C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/cpu_core/utils/flopenrc.v:24]
+	Parameter WIDTH bound to: 12 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'flopenrc__parameterized1' (0#1) [C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/cpu_core/utils/flopenrc.v:24]
+WARNING: [Synth 8-689] width (11) of port connection 'q' does not match port width (12) of module 'flopenrc__parameterized1' [C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/cpu_core/datapath.v:166]
+INFO: [Synth 8-6157] synthesizing module 'flopenrc__parameterized2' [C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/cpu_core/utils/flopenrc.v:24]
+	Parameter WIDTH bound to: 2 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'flopenrc__parameterized2' (0#1) [C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/cpu_core/utils/flopenrc.v:24]
+INFO: [Synth 8-6157] synthesizing module 'hazard' [C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/cpu_core/hazard.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'hazard' (0#1) [C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/cpu_core/hazard.v:23]
+INFO: [Synth 8-6157] synthesizing module 'mux2' [C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/cpu_core/utils/mux2.v:23]
+	Parameter WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'mux2' (0#1) [C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/cpu_core/utils/mux2.v:23]
+INFO: [Synth 8-6157] synthesizing module 'regfile' [C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/cpu_core/regfile.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'regfile' (0#1) [C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/cpu_core/regfile.v:23]
+INFO: [Synth 8-6157] synthesizing module 'pc' [C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/cpu_core/pc.v:23]
+	Parameter WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'pc' (0#1) [C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/cpu_core/pc.v:23]
+INFO: [Synth 8-6157] synthesizing module 'adder' [C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/cpu_core/utils/adder.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'adder' (0#1) [C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/cpu_core/utils/adder.v:23]
+INFO: [Synth 8-6157] synthesizing module 'flopenrc__parameterized3' [C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/cpu_core/utils/flopenrc.v:24]
+	Parameter WIDTH bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'flopenrc__parameterized3' (0#1) [C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/cpu_core/utils/flopenrc.v:24]
+INFO: [Synth 8-6157] synthesizing module 'signext' [C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/cpu_core/utils/signext.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'signext' (0#1) [C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/cpu_core/utils/signext.v:23]
+INFO: [Synth 8-6157] synthesizing module 'sl2' [C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/cpu_core/utils/sl2.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'sl2' (0#1) [C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/cpu_core/utils/sl2.v:23]
+INFO: [Synth 8-6157] synthesizing module 'eqcmp' [C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/cpu_core/utils/eqcmp.v:24]
+INFO: [Synth 8-6155] done synthesizing module 'eqcmp' (0#1) [C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/cpu_core/utils/eqcmp.v:24]
+INFO: [Synth 8-6157] synthesizing module 'flopenrc__parameterized4' [C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/cpu_core/utils/flopenrc.v:24]
+	Parameter WIDTH bound to: 5 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'flopenrc__parameterized4' (0#1) [C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/cpu_core/utils/flopenrc.v:24]
+INFO: [Synth 8-6157] synthesizing module 'flopenrc__parameterized5' [C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/cpu_core/utils/flopenrc.v:24]
+	Parameter WIDTH bound to: 6 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'flopenrc__parameterized5' (0#1) [C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/cpu_core/utils/flopenrc.v:24]
+INFO: [Synth 8-6157] synthesizing module 'flopenrc__parameterized6' [C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/cpu_core/utils/flopenrc.v:24]
+	Parameter WIDTH bound to: 4 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'flopenrc__parameterized6' (0#1) [C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/cpu_core/utils/flopenrc.v:24]
+INFO: [Synth 8-6157] synthesizing module 'mux3' [C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/cpu_core/utils/mux3.v:23]
+	Parameter WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'mux3' (0#1) [C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/cpu_core/utils/mux3.v:23]
+INFO: [Synth 8-6157] synthesizing module 'alu' [C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/cpu_core/alu.v:23]
+INFO: [Synth 8-6157] synthesizing module 'div' [C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/cpu_core/utils/div.v:35]
+INFO: [Synth 8-6155] done synthesizing module 'div' (0#1) [C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/cpu_core/utils/div.v:35]
+INFO: [Synth 8-6157] synthesizing module 'mul' [C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/cpu_core/utils/mul.v:1]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/cpu_core/utils/mul.v:44]
+INFO: [Synth 8-6155] done synthesizing module 'mul' (0#1) [C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/cpu_core/utils/mul.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'alu' (0#1) [C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/cpu_core/alu.v:23]
+INFO: [Synth 8-6157] synthesizing module 'mux3__parameterized0' [C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/cpu_core/utils/mux3.v:23]
+	Parameter WIDTH bound to: 5 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'mux3__parameterized0' (0#1) [C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/cpu_core/utils/mux3.v:23]
+INFO: [Synth 8-6157] synthesizing module 'flopenrc__parameterized7' [C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/cpu_core/utils/flopenrc.v:24]
+	Parameter WIDTH bound to: 64 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'flopenrc__parameterized7' (0#1) [C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/cpu_core/utils/flopenrc.v:24]
+INFO: [Synth 8-6157] synthesizing module 'hilo_reg' [C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/cpu_core/hilo_reg.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'hilo_reg' (0#1) [C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/cpu_core/hilo_reg.v:1]
+INFO: [Synth 8-6157] synthesizing module 'mem_ctrl' [C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/cpu_core/mem_ctrl.v:3]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/cpu_core/mem_ctrl.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'mem_ctrl' (0#1) [C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/cpu_core/mem_ctrl.v:3]
+INFO: [Synth 8-6157] synthesizing module 'exceptdec' [C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/cpu_core/exception/exceptdec.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'exceptdec' (0#1) [C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/cpu_core/exception/exceptdec.v:4]
+INFO: [Synth 8-6157] synthesizing module 'flopr' [C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/cpu_core/utils/flopr.v:24]
+	Parameter WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'flopr' (0#1) [C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/cpu_core/utils/flopr.v:24]
+INFO: [Synth 8-6157] synthesizing module 'cp0_reg' [C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/cpu_core/exception/cp0_reg.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'cp0_reg' (0#1) [C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/cpu_core/exception/cp0_reg.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'datapath' (0#1) [C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/cpu_core/datapath.v:4]
+INFO: [Synth 8-6157] synthesizing module 'controller' [C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/cpu_core/dec/controller.v:3]
+INFO: [Synth 8-6157] synthesizing module 'maindec' [C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/cpu_core/dec/maindec.v:5]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/cpu_core/dec/maindec.v:95]
+INFO: [Synth 8-6155] done synthesizing module 'maindec' (0#1) [C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/cpu_core/dec/maindec.v:5]
+INFO: [Synth 8-6157] synthesizing module 'aludec' [C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/cpu_core/dec/aludec.v:24]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/cpu_core/dec/aludec.v:98]
+INFO: [Synth 8-6155] done synthesizing module 'aludec' (0#1) [C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/cpu_core/dec/aludec.v:24]
+INFO: [Synth 8-6155] done synthesizing module 'controller' (0#1) [C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/cpu_core/dec/controller.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'mips' (0#1) [C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/cpu_core/mips.v:4]
+INFO: [Synth 8-6157] synthesizing module 'i_sram_to_sram_like' [C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/i_sram_to_sram_like.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'i_sram_to_sram_like' (0#1) [C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/i_sram_to_sram_like.v:1]
+INFO: [Synth 8-6157] synthesizing module 'd_sram_to_sram_like' [C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/d_sram_to_sram_like.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'd_sram_to_sram_like' (0#1) [C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/d_sram_to_sram_like.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'mips_with_sram_like' (0#1) [C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/mips_with_sram_like.v:7]
+INFO: [Synth 8-6157] synthesizing module 'mmu' [C:/Users/Lenovo/Desktop/colab/axi/mmu.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'mmu' (0#1) [C:/Users/Lenovo/Desktop/colab/axi/mmu.v:1]
+INFO: [Synth 8-6157] synthesizing module 'bridge_1x2' [C:/Users/Lenovo/Desktop/colab/axi/bridge_1x2.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'bridge_1x2' (0#1) [C:/Users/Lenovo/Desktop/colab/axi/bridge_1x2.v:1]
+INFO: [Synth 8-6157] synthesizing module 'cache' [C:/Users/Lenovo/Desktop/colab/axi/cache.v:1]
+INFO: [Synth 8-6157] synthesizing module 'i_cache_simple' [C:/Users/Lenovo/Desktop/colab/axi/i_cache_simple.v:1]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Lenovo/Desktop/colab/axi/i_cache_simple.v:64]
+INFO: [Synth 8-6155] done synthesizing module 'i_cache_simple' (0#1) [C:/Users/Lenovo/Desktop/colab/axi/i_cache_simple.v:1]
+INFO: [Synth 8-6157] synthesizing module 'd_cache_simple' [C:/Users/Lenovo/Desktop/colab/axi/d_cache_simple.v:1]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Lenovo/Desktop/colab/axi/d_cache_simple.v:67]
+INFO: [Synth 8-6155] done synthesizing module 'd_cache_simple' (0#1) [C:/Users/Lenovo/Desktop/colab/axi/d_cache_simple.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'cache' (0#1) [C:/Users/Lenovo/Desktop/colab/axi/cache.v:1]
+INFO: [Synth 8-6157] synthesizing module 'bridge_2x1' [C:/Users/Lenovo/Desktop/colab/axi/bridge_2x1.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'bridge_2x1' (0#1) [C:/Users/Lenovo/Desktop/colab/axi/bridge_2x1.v:1]
+INFO: [Synth 8-6157] synthesizing module 'cpu_axi_interface' [C:/Users/Lenovo/Desktop/colab/axi/cpu_axi_interface.v:34]
+INFO: [Synth 8-6155] done synthesizing module 'cpu_axi_interface' (0#1) [C:/Users/Lenovo/Desktop/colab/axi/cpu_axi_interface.v:34]
+INFO: [Synth 8-6155] done synthesizing module 'mycpu_top' (0#1) [C:/Users/Lenovo/Desktop/colab/axi/mycpu_top.v:1]
+WARNING: [Synth 8-689] width (4) of port connection 'arlen' does not match port width (8) of module 'mycpu_top' [C:/Users/Lenovo/Desktop/colab/CO-lab-material-CQU/vivado/func_test_v0.01/soc_axi_func_sim/rtl/soc_axi_lite_top.v:327]
+WARNING: [Synth 8-689] width (4) of port connection 'awlen' does not match port width (8) of module 'mycpu_top' [C:/Users/Lenovo/Desktop/colab/CO-lab-material-CQU/vivado/func_test_v0.01/soc_axi_func_sim/rtl/soc_axi_lite_top.v:345]
+INFO: [Synth 8-6157] synthesizing module 'axi_wrap' [C:/Users/Lenovo/Desktop/colab/CO-lab-material-CQU/vivado/func_test_v0.01/soc_axi_func_sim/rtl/axi_wrap/axi_wrap.v:34]
+INFO: [Synth 8-6155] done synthesizing module 'axi_wrap' (0#1) [C:/Users/Lenovo/Desktop/colab/CO-lab-material-CQU/vivado/func_test_v0.01/soc_axi_func_sim/rtl/axi_wrap/axi_wrap.v:34]
+INFO: [Synth 8-6157] synthesizing module 'axi_clock_converter' [C:/Users/Lenovo/Desktop/colab/CO-lab-material-CQU/vivado/func_test_v0.01/soc_axi_func_sim/run_vivado/mycpu_prj1/.Xil/Vivado-16876-DESKTOP-87K58HJ/realtime/axi_clock_converter_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'axi_clock_converter' (0#1) [C:/Users/Lenovo/Desktop/colab/CO-lab-material-CQU/vivado/func_test_v0.01/soc_axi_func_sim/run_vivado/mycpu_prj1/.Xil/Vivado-16876-DESKTOP-87K58HJ/realtime/axi_clock_converter_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_1x2' [C:/Users/Lenovo/Desktop/colab/CO-lab-material-CQU/vivado/func_test_v0.01/soc_axi_func_sim/run_vivado/mycpu_prj1/.Xil/Vivado-16876-DESKTOP-87K58HJ/realtime/axi_crossbar_1x2_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_1x2' (0#1) [C:/Users/Lenovo/Desktop/colab/CO-lab-material-CQU/vivado/func_test_v0.01/soc_axi_func_sim/run_vivado/mycpu_prj1/.Xil/Vivado-16876-DESKTOP-87K58HJ/realtime/axi_crossbar_1x2_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'axi_wrap_ram' [C:/Users/Lenovo/Desktop/colab/CO-lab-material-CQU/vivado/func_test_v0.01/soc_axi_func_sim/rtl/ram_wrap/axi_wrap_ram.v:37]
+INFO: [Synth 8-6157] synthesizing module 'axi_ram' [C:/Users/Lenovo/Desktop/colab/CO-lab-material-CQU/vivado/func_test_v0.01/soc_axi_func_sim/run_vivado/mycpu_prj1/.Xil/Vivado-16876-DESKTOP-87K58HJ/realtime/axi_ram_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'axi_ram' (0#1) [C:/Users/Lenovo/Desktop/colab/CO-lab-material-CQU/vivado/func_test_v0.01/soc_axi_func_sim/run_vivado/mycpu_prj1/.Xil/Vivado-16876-DESKTOP-87K58HJ/realtime/axi_ram_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'axi_wrap_ram' (0#1) [C:/Users/Lenovo/Desktop/colab/CO-lab-material-CQU/vivado/func_test_v0.01/soc_axi_func_sim/rtl/ram_wrap/axi_wrap_ram.v:37]
+INFO: [Synth 8-6157] synthesizing module 'confreg' [C:/Users/Lenovo/Desktop/colab/CO-lab-material-CQU/vivado/func_test_v0.01/soc_axi_func_sim/rtl/CONFREG/confreg.v:73]
+	Parameter SIMULATION bound to: 1'b0 
+INFO: [Synth 8-6155] done synthesizing module 'confreg' (0#1) [C:/Users/Lenovo/Desktop/colab/CO-lab-material-CQU/vivado/func_test_v0.01/soc_axi_func_sim/rtl/CONFREG/confreg.v:73]
+INFO: [Synth 8-6155] done synthesizing module 'soc_axi_lite_top' (0#1) [C:/Users/Lenovo/Desktop/colab/CO-lab-material-CQU/vivado/func_test_v0.01/soc_axi_func_sim/rtl/soc_axi_lite_top.v:65]
+WARNING: [Synth 8-6014] Unused sequential element temp_op1_reg was removed.  [C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/cpu_core/utils/div.v:80]
+WARNING: [Synth 8-6014] Unused sequential element temp_op2_reg was removed.  [C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/cpu_core/utils/div.v:86]
+WARNING: [Synth 8-3848] Net cp0_rdataE in module/entity datapath does not have driver. [C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/cpu_core/datapath.v:96]
+WARNING: [Synth 8-3848] Net rssrcb2Dt in module/entity datapath does not have driver. [C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/cpu_core/datapath.v:245]
+WARNING: [Synth 8-6014] Unused sequential element pf_r2r_reg was removed.  [C:/Users/Lenovo/Desktop/colab/CO-lab-material-CQU/vivado/func_test_v0.01/soc_axi_func_sim/rtl/ram_wrap/axi_wrap_ram.v:107]
+WARNING: [Synth 8-6014] Unused sequential element pf_b2b_reg was removed.  [C:/Users/Lenovo/Desktop/colab/CO-lab-material-CQU/vivado/func_test_v0.01/soc_axi_func_sim/rtl/ram_wrap/axi_wrap_ram.v:108]
+WARNING: [Synth 8-6014] Unused sequential element buf_len_reg was removed.  [C:/Users/Lenovo/Desktop/colab/CO-lab-material-CQU/vivado/func_test_v0.01/soc_axi_func_sim/rtl/CONFREG/confreg.v:192]
+WARNING: [Synth 8-6014] Unused sequential element buf_size_reg was removed.  [C:/Users/Lenovo/Desktop/colab/CO-lab-material-CQU/vivado/func_test_v0.01/soc_axi_func_sim/rtl/CONFREG/confreg.v:193]
+WARNING: [Synth 8-7129] Port arlen[7] in module confreg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port arlen[6] in module confreg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port arlen[5] in module confreg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port arlen[4] in module confreg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port arlen[3] in module confreg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port arlen[2] in module confreg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port arlen[1] in module confreg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port arlen[0] in module confreg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port arsize[2] in module confreg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port arsize[1] in module confreg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port arsize[0] in module confreg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port arburst[1] in module confreg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port arburst[0] in module confreg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port arlock[1] in module confreg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port arlock[0] in module confreg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port arcache[3] in module confreg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port arcache[2] in module confreg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port arcache[1] in module confreg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port arcache[0] in module confreg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port arprot[2] in module confreg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port arprot[1] in module confreg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port arprot[0] in module confreg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port awlen[7] in module confreg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port awlen[6] in module confreg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port awlen[5] in module confreg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port awlen[4] in module confreg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port awlen[3] in module confreg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port awlen[2] in module confreg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port awlen[1] in module confreg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port awlen[0] in module confreg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port awsize[2] in module confreg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port awsize[1] in module confreg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port awsize[0] in module confreg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port awburst[1] in module confreg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port awburst[0] in module confreg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port awlock[1] in module confreg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port awlock[0] in module confreg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port awcache[3] in module confreg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port awcache[2] in module confreg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port awcache[1] in module confreg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port awcache[0] in module confreg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port awprot[2] in module confreg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port awprot[1] in module confreg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port awprot[0] in module confreg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wid[3] in module confreg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wid[2] in module confreg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wid[1] in module confreg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wid[0] in module confreg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wstrb[3] in module confreg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wstrb[2] in module confreg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wstrb[1] in module confreg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wstrb[0] in module confreg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port axi_arlock[1] in module axi_wrap_ram is either unconnected or has no load
+WARNING: [Synth 8-7129] Port axi_arlock[0] in module axi_wrap_ram is either unconnected or has no load
+WARNING: [Synth 8-7129] Port axi_arcache[3] in module axi_wrap_ram is either unconnected or has no load
+WARNING: [Synth 8-7129] Port axi_arcache[2] in module axi_wrap_ram is either unconnected or has no load
+WARNING: [Synth 8-7129] Port axi_arcache[1] in module axi_wrap_ram is either unconnected or has no load
+WARNING: [Synth 8-7129] Port axi_arcache[0] in module axi_wrap_ram is either unconnected or has no load
+WARNING: [Synth 8-7129] Port axi_arprot[2] in module axi_wrap_ram is either unconnected or has no load
+WARNING: [Synth 8-7129] Port axi_arprot[1] in module axi_wrap_ram is either unconnected or has no load
+WARNING: [Synth 8-7129] Port axi_arprot[0] in module axi_wrap_ram is either unconnected or has no load
+WARNING: [Synth 8-7129] Port axi_awlock[1] in module axi_wrap_ram is either unconnected or has no load
+WARNING: [Synth 8-7129] Port axi_awlock[0] in module axi_wrap_ram is either unconnected or has no load
+WARNING: [Synth 8-7129] Port axi_awcache[3] in module axi_wrap_ram is either unconnected or has no load
+WARNING: [Synth 8-7129] Port axi_awcache[2] in module axi_wrap_ram is either unconnected or has no load
+WARNING: [Synth 8-7129] Port axi_awcache[1] in module axi_wrap_ram is either unconnected or has no load
+WARNING: [Synth 8-7129] Port axi_awcache[0] in module axi_wrap_ram is either unconnected or has no load
+WARNING: [Synth 8-7129] Port axi_awprot[2] in module axi_wrap_ram is either unconnected or has no load
+WARNING: [Synth 8-7129] Port axi_awprot[1] in module axi_wrap_ram is either unconnected or has no load
+WARNING: [Synth 8-7129] Port axi_awprot[0] in module axi_wrap_ram is either unconnected or has no load
+WARNING: [Synth 8-7129] Port axi_wid[3] in module axi_wrap_ram is either unconnected or has no load
+WARNING: [Synth 8-7129] Port axi_wid[2] in module axi_wrap_ram is either unconnected or has no load
+WARNING: [Synth 8-7129] Port axi_wid[1] in module axi_wrap_ram is either unconnected or has no load
+WARNING: [Synth 8-7129] Port axi_wid[0] in module axi_wrap_ram is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rid[3] in module cpu_axi_interface is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rid[2] in module cpu_axi_interface is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rid[1] in module cpu_axi_interface is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rid[0] in module cpu_axi_interface is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rresp[1] in module cpu_axi_interface is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rresp[0] in module cpu_axi_interface is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rlast in module cpu_axi_interface is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bid[3] in module cpu_axi_interface is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bid[2] in module cpu_axi_interface is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bid[1] in module cpu_axi_interface is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bid[0] in module cpu_axi_interface is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bresp[1] in module cpu_axi_interface is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bresp[0] in module cpu_axi_interface is either unconnected or has no load
+WARNING: [Synth 8-7129] Port instrD[15] in module controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port instrD[14] in module controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port instrD[13] in module controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port instrD[12] in module controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port instrD[11] in module controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port instrD[10] in module controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port instrD[9] in module controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port instrD[8] in module controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port instrD[7] in module controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port instrD[6] in module controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port clk in module exceptdec is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cp0_status[31] in module exceptdec is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cp0_status[30] in module exceptdec is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:13 . Memory (MB): peak = 2675.043 ; gain = 653.773
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:14 . Memory (MB): peak = 2692.887 ; gain = 671.617
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:14 . Memory (MB): peak = 2692.887 ; gain = 671.617
+---------------------------------------------------------------------------------
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/Lenovo/Desktop/colab/CO-lab-material-CQU/vivado/func_test_v0.01/soc_axi_func_sim/rtl/xilinx_ip/clk_pll/clk_pll.dcp' for cell 'pll.clk_pll'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/Lenovo/Desktop/colab/CO-lab-material-CQU/vivado/func_test_v0.01/soc_axi_func_sim/rtl/xilinx_ip/axi_clock_converter/axi_clock_converter.dcp' for cell 'u_axi_clock_sync'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/Lenovo/Desktop/colab/CO-lab-material-CQU/vivado/func_test_v0.01/soc_axi_func_sim/rtl/xilinx_ip/axi_crossbar_1x2/axi_crossbar_1x2.dcp' for cell 'u_axi_crossbar_1x2'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/Lenovo/Desktop/colab/CO-lab-material-CQU/vivado/func_test_v0.01/soc_axi_func_sim/rtl/xilinx_ip/axi_ram/axi_ram.dcp' for cell 'u_axi_ram/ram'
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.612 . Memory (MB): peak = 2718.488 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 687 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2023.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/Lenovo/Desktop/colab/CO-lab-material-CQU/vivado/func_test_v0.01/soc_axi_func_sim/rtl/xilinx_ip/clk_pll/clk_pll_board.xdc] for cell 'pll.clk_pll/inst'
+Finished Parsing XDC File [c:/Users/Lenovo/Desktop/colab/CO-lab-material-CQU/vivado/func_test_v0.01/soc_axi_func_sim/rtl/xilinx_ip/clk_pll/clk_pll_board.xdc] for cell 'pll.clk_pll/inst'
+Parsing XDC File [c:/Users/Lenovo/Desktop/colab/CO-lab-material-CQU/vivado/func_test_v0.01/soc_axi_func_sim/rtl/xilinx_ip/clk_pll/clk_pll.xdc] for cell 'pll.clk_pll/inst'
+Finished Parsing XDC File [c:/Users/Lenovo/Desktop/colab/CO-lab-material-CQU/vivado/func_test_v0.01/soc_axi_func_sim/rtl/xilinx_ip/clk_pll/clk_pll.xdc] for cell 'pll.clk_pll/inst'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [c:/Users/Lenovo/Desktop/colab/CO-lab-material-CQU/vivado/func_test_v0.01/soc_axi_func_sim/rtl/xilinx_ip/clk_pll/clk_pll.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/soc_axi_lite_top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/soc_axi_lite_top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+INFO: [Timing 38-2] Deriving generated clocks
+Parsing XDC File [C:/Users/Lenovo/Desktop/colab/CO-lab-material-CQU/vivado/func_test_v0.01/soc_axi_func_sim/run_vivado/soc_lite.xdc]
+WARNING: [Constraints 18-619] A clock with name 'clk' already exists, overwriting the previous clock with the same name. [C:/Users/Lenovo/Desktop/colab/CO-lab-material-CQU/vivado/func_test_v0.01/soc_axi_func_sim/run_vivado/soc_lite.xdc:5]
+Finished Parsing XDC File [C:/Users/Lenovo/Desktop/colab/CO-lab-material-CQU/vivado/func_test_v0.01/soc_axi_func_sim/run_vivado/soc_lite.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [G:/vivado/Vivado/2023.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/soc_axi_lite_top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/soc_axi_lite_top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [G:/vivado/Vivado/2023.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/soc_axi_lite_top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/soc_axi_lite_top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+INFO: [Project 1-1714] 33 XPM XDC files have been applied to the design.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.014 . Memory (MB): peak = 2829.203 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 36 instances were transformed.
+  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 36 instances
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:16 ; elapsed = 00:00:32 . Memory (MB): peak = 2915.434 ; gain = 894.164
+127 Infos, 113 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:20 ; elapsed = 00:00:36 . Memory (MB): peak = 2915.434 ; gain = 1290.207
+close_design
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7a200tfbg676-2
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/Lenovo/Desktop/colab/CO-lab-material-CQU/vivado/func_test_v0.01/soc_axi_func_sim/rtl/xilinx_ip/clk_pll/clk_pll.dcp' for cell 'pll.clk_pll'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/Lenovo/Desktop/colab/CO-lab-material-CQU/vivado/func_test_v0.01/soc_axi_func_sim/rtl/xilinx_ip/axi_clock_converter/axi_clock_converter.dcp' for cell 'u_axi_clock_sync'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/Lenovo/Desktop/colab/CO-lab-material-CQU/vivado/func_test_v0.01/soc_axi_func_sim/rtl/xilinx_ip/axi_crossbar_1x2/axi_crossbar_1x2.dcp' for cell 'u_axi_crossbar_1x2'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/Lenovo/Desktop/colab/CO-lab-material-CQU/vivado/func_test_v0.01/soc_axi_func_sim/rtl/xilinx_ip/axi_ram/axi_ram.dcp' for cell 'u_axi_ram/ram'
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.324 . Memory (MB): peak = 2931.098 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 2196 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2023.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [c:/Users/Lenovo/Desktop/colab/CO-lab-material-CQU/vivado/func_test_v0.01/soc_axi_func_sim/rtl/xilinx_ip/clk_pll/clk_pll_board.xdc] for cell 'pll.clk_pll/inst'
+Finished Parsing XDC File [c:/Users/Lenovo/Desktop/colab/CO-lab-material-CQU/vivado/func_test_v0.01/soc_axi_func_sim/rtl/xilinx_ip/clk_pll/clk_pll_board.xdc] for cell 'pll.clk_pll/inst'
+Parsing XDC File [c:/Users/Lenovo/Desktop/colab/CO-lab-material-CQU/vivado/func_test_v0.01/soc_axi_func_sim/rtl/xilinx_ip/clk_pll/clk_pll.xdc] for cell 'pll.clk_pll/inst'
+INFO: [Timing 38-35] Done setting XDC timing constraints. [c:/Users/Lenovo/Desktop/colab/CO-lab-material-CQU/vivado/func_test_v0.01/soc_axi_func_sim/rtl/xilinx_ip/clk_pll/clk_pll.xdc:57]
+INFO: [Timing 38-2] Deriving generated clocks [c:/Users/Lenovo/Desktop/colab/CO-lab-material-CQU/vivado/func_test_v0.01/soc_axi_func_sim/rtl/xilinx_ip/clk_pll/clk_pll.xdc:57]
+Finished Parsing XDC File [c:/Users/Lenovo/Desktop/colab/CO-lab-material-CQU/vivado/func_test_v0.01/soc_axi_func_sim/rtl/xilinx_ip/clk_pll/clk_pll.xdc] for cell 'pll.clk_pll/inst'
+Parsing XDC File [C:/Users/Lenovo/Desktop/colab/CO-lab-material-CQU/vivado/func_test_v0.01/soc_axi_func_sim/run_vivado/soc_lite.xdc]
+WARNING: [Constraints 18-619] A clock with name 'clk' already exists, overwriting the previous clock with the same name. [C:/Users/Lenovo/Desktop/colab/CO-lab-material-CQU/vivado/func_test_v0.01/soc_axi_func_sim/run_vivado/soc_lite.xdc:5]
+Finished Parsing XDC File [C:/Users/Lenovo/Desktop/colab/CO-lab-material-CQU/vivado/func_test_v0.01/soc_axi_func_sim/run_vivado/soc_lite.xdc]
+Parsing XDC File [c:/Users/Lenovo/Desktop/colab/CO-lab-material-CQU/vivado/func_test_v0.01/soc_axi_func_sim/rtl/xilinx_ip/axi_clock_converter/axi_clock_converter_clocks.xdc] for cell 'u_axi_clock_sync/inst'
+Finished Parsing XDC File [c:/Users/Lenovo/Desktop/colab/CO-lab-material-CQU/vivado/func_test_v0.01/soc_axi_func_sim/rtl/xilinx_ip/axi_clock_converter/axi_clock_converter_clocks.xdc] for cell 'u_axi_clock_sync/inst'
+INFO: [Project 1-1714] 33 XPM XDC files have been applied to the design.
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 3235.980 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 626 instances were transformed.
+  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 46 instances
+  RAM32X1D => RAM32X1D (RAMD32(x2)): 4 instances
+  RAM64M => RAM64M (RAMD64E(x4)): 576 instances
+
+open_run: Time (s): cpu = 00:00:17 ; elapsed = 00:00:20 . Memory (MB): peak = 3235.980 ; gain = 304.883
+close_design
+open_run impl_1
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.323 . Memory (MB): peak = 3905.375 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 2192 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2023.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF Files: Time (s): cpu = 00:00:01 ; elapsed = 00:00:03 . Memory (MB): peak = 3905.375 ; gain = 0.000
+Restored from archive | CPU: 1.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:01 ; elapsed = 00:00:03 . Memory (MB): peak = 3905.375 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.010 . Memory (MB): peak = 3905.375 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 624 instances were transformed.
+  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 42 instances
+  RAM32X1D => RAM32X1D (RAMD32(x2)): 4 instances
+  RAM64M => RAM64M (RAMD64E(x4)): 576 instances
+  SRLC32E => SRL16E: 2 instances
+
+open_run: Time (s): cpu = 00:00:07 ; elapsed = 00:00:11 . Memory (MB): peak = 3905.375 ; gain = 0.000
+open_report: Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 3905.375 ; gain = 0.000
+WARNING: [Timing 38-436] There are set_bus_skew constraint(s) in this design. Please run report_bus_skew to ensure that bus skew requirements are met.
+close_design
+synth_design -rtl -rtl_skip_mlo -name rtl_1
+Command: synth_design -rtl -rtl_skip_mlo -name rtl_1
+Starting synth_design
+Using part: xc7a200tfbg676-2
+Top: soc_axi_lite_top
+INFO: [Synth 8-11241] undeclared symbol 'div_ready', assumed default net type 'wire' [C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/cpu_core/alu.v:118]
+INFO: [Synth 8-11241] undeclared symbol 'rssrcb2Dt', assumed default net type 'wire' [C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/cpu_core/datapath.v:245]
+INFO: [Synth 8-11241] undeclared symbol 'cp0stallD', assumed default net type 'wire' [C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/cpu_core/hazard.v:124]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 4324.770 ; gain = 16.105
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'soc_axi_lite_top' [C:/Users/Lenovo/Desktop/colab/CO-lab-material-CQU/vivado/func_test_v0.01/soc_axi_func_sim/rtl/soc_axi_lite_top.v:65]
+INFO: [Synth 8-6157] synthesizing module 'clk_pll' [C:/Users/Lenovo/Desktop/colab/CO-lab-material-CQU/vivado/func_test_v0.01/soc_axi_func_sim/run_vivado/mycpu_prj1/.Xil/Vivado-16876-DESKTOP-87K58HJ/realtime/clk_pll_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'clk_pll' (0#1) [C:/Users/Lenovo/Desktop/colab/CO-lab-material-CQU/vivado/func_test_v0.01/soc_axi_func_sim/run_vivado/mycpu_prj1/.Xil/Vivado-16876-DESKTOP-87K58HJ/realtime/clk_pll_stub.v:6]
+WARNING: [Synth 8-85] always block has no event control specified [C:/Users/Lenovo/Desktop/colab/CO-lab-material-CQU/vivado/func_test_v0.01/soc_axi_func_sim/rtl/soc_axi_lite_top.v:108]
+INFO: [Synth 8-6157] synthesizing module 'mycpu_top' [C:/Users/Lenovo/Desktop/colab/axi/mycpu_top.v:1]
+INFO: [Synth 8-6157] synthesizing module 'mips_with_sram_like' [C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/mips_with_sram_like.v:7]
+INFO: [Synth 8-6157] synthesizing module 'mips' [C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/cpu_core/mips.v:4]
+INFO: [Synth 8-6157] synthesizing module 'datapath' [C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/cpu_core/datapath.v:4]
+INFO: [Synth 8-6157] synthesizing module 'flopenrc' [C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/cpu_core/utils/flopenrc.v:24]
+	Parameter WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'flopenrc' (0#1) [C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/cpu_core/utils/flopenrc.v:24]
+INFO: [Synth 8-6157] synthesizing module 'flopenrc__parameterized0' [C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/cpu_core/utils/flopenrc.v:24]
+	Parameter WIDTH bound to: 20 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'flopenrc__parameterized0' (0#1) [C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/cpu_core/utils/flopenrc.v:24]
+INFO: [Synth 8-6157] synthesizing module 'flopenrc__parameterized1' [C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/cpu_core/utils/flopenrc.v:24]
+	Parameter WIDTH bound to: 12 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'flopenrc__parameterized1' (0#1) [C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/cpu_core/utils/flopenrc.v:24]
+WARNING: [Synth 8-689] width (11) of port connection 'q' does not match port width (12) of module 'flopenrc__parameterized1' [C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/cpu_core/datapath.v:166]
+INFO: [Synth 8-6157] synthesizing module 'flopenrc__parameterized2' [C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/cpu_core/utils/flopenrc.v:24]
+	Parameter WIDTH bound to: 2 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'flopenrc__parameterized2' (0#1) [C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/cpu_core/utils/flopenrc.v:24]
+INFO: [Synth 8-6157] synthesizing module 'hazard' [C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/cpu_core/hazard.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'hazard' (0#1) [C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/cpu_core/hazard.v:23]
+INFO: [Synth 8-6157] synthesizing module 'mux2' [C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/cpu_core/utils/mux2.v:23]
+	Parameter WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'mux2' (0#1) [C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/cpu_core/utils/mux2.v:23]
+INFO: [Synth 8-6157] synthesizing module 'regfile' [C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/cpu_core/regfile.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'regfile' (0#1) [C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/cpu_core/regfile.v:23]
+INFO: [Synth 8-6157] synthesizing module 'pc' [C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/cpu_core/pc.v:23]
+	Parameter WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'pc' (0#1) [C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/cpu_core/pc.v:23]
+INFO: [Synth 8-6157] synthesizing module 'adder' [C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/cpu_core/utils/adder.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'adder' (0#1) [C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/cpu_core/utils/adder.v:23]
+INFO: [Synth 8-6157] synthesizing module 'flopenrc__parameterized3' [C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/cpu_core/utils/flopenrc.v:24]
+	Parameter WIDTH bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'flopenrc__parameterized3' (0#1) [C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/cpu_core/utils/flopenrc.v:24]
+INFO: [Synth 8-6157] synthesizing module 'signext' [C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/cpu_core/utils/signext.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'signext' (0#1) [C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/cpu_core/utils/signext.v:23]
+INFO: [Synth 8-6157] synthesizing module 'sl2' [C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/cpu_core/utils/sl2.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'sl2' (0#1) [C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/cpu_core/utils/sl2.v:23]
+INFO: [Synth 8-6157] synthesizing module 'eqcmp' [C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/cpu_core/utils/eqcmp.v:24]
+INFO: [Synth 8-6155] done synthesizing module 'eqcmp' (0#1) [C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/cpu_core/utils/eqcmp.v:24]
+INFO: [Synth 8-6157] synthesizing module 'flopenrc__parameterized4' [C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/cpu_core/utils/flopenrc.v:24]
+	Parameter WIDTH bound to: 5 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'flopenrc__parameterized4' (0#1) [C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/cpu_core/utils/flopenrc.v:24]
+INFO: [Synth 8-6157] synthesizing module 'flopenrc__parameterized5' [C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/cpu_core/utils/flopenrc.v:24]
+	Parameter WIDTH bound to: 6 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'flopenrc__parameterized5' (0#1) [C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/cpu_core/utils/flopenrc.v:24]
+INFO: [Synth 8-6157] synthesizing module 'flopenrc__parameterized6' [C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/cpu_core/utils/flopenrc.v:24]
+	Parameter WIDTH bound to: 4 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'flopenrc__parameterized6' (0#1) [C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/cpu_core/utils/flopenrc.v:24]
+INFO: [Synth 8-6157] synthesizing module 'mux3' [C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/cpu_core/utils/mux3.v:23]
+	Parameter WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'mux3' (0#1) [C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/cpu_core/utils/mux3.v:23]
+INFO: [Synth 8-6157] synthesizing module 'alu' [C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/cpu_core/alu.v:23]
+INFO: [Synth 8-6157] synthesizing module 'div' [C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/cpu_core/utils/div.v:35]
+INFO: [Synth 8-6155] done synthesizing module 'div' (0#1) [C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/cpu_core/utils/div.v:35]
+INFO: [Synth 8-6157] synthesizing module 'mul' [C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/cpu_core/utils/mul.v:1]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/cpu_core/utils/mul.v:44]
+INFO: [Synth 8-6155] done synthesizing module 'mul' (0#1) [C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/cpu_core/utils/mul.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'alu' (0#1) [C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/cpu_core/alu.v:23]
+INFO: [Synth 8-6157] synthesizing module 'mux3__parameterized0' [C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/cpu_core/utils/mux3.v:23]
+	Parameter WIDTH bound to: 5 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'mux3__parameterized0' (0#1) [C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/cpu_core/utils/mux3.v:23]
+INFO: [Synth 8-6157] synthesizing module 'flopenrc__parameterized7' [C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/cpu_core/utils/flopenrc.v:24]
+	Parameter WIDTH bound to: 64 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'flopenrc__parameterized7' (0#1) [C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/cpu_core/utils/flopenrc.v:24]
+INFO: [Synth 8-6157] synthesizing module 'hilo_reg' [C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/cpu_core/hilo_reg.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'hilo_reg' (0#1) [C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/cpu_core/hilo_reg.v:1]
+INFO: [Synth 8-6157] synthesizing module 'mem_ctrl' [C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/cpu_core/mem_ctrl.v:3]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/cpu_core/mem_ctrl.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'mem_ctrl' (0#1) [C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/cpu_core/mem_ctrl.v:3]
+INFO: [Synth 8-6157] synthesizing module 'exceptdec' [C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/cpu_core/exception/exceptdec.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'exceptdec' (0#1) [C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/cpu_core/exception/exceptdec.v:4]
+INFO: [Synth 8-6157] synthesizing module 'flopr' [C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/cpu_core/utils/flopr.v:24]
+	Parameter WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'flopr' (0#1) [C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/cpu_core/utils/flopr.v:24]
+INFO: [Synth 8-6157] synthesizing module 'cp0_reg' [C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/cpu_core/exception/cp0_reg.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'cp0_reg' (0#1) [C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/cpu_core/exception/cp0_reg.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'datapath' (0#1) [C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/cpu_core/datapath.v:4]
+INFO: [Synth 8-6157] synthesizing module 'controller' [C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/cpu_core/dec/controller.v:3]
+INFO: [Synth 8-6157] synthesizing module 'maindec' [C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/cpu_core/dec/maindec.v:5]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/cpu_core/dec/maindec.v:95]
+INFO: [Synth 8-6155] done synthesizing module 'maindec' (0#1) [C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/cpu_core/dec/maindec.v:5]
+INFO: [Synth 8-6157] synthesizing module 'aludec' [C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/cpu_core/dec/aludec.v:24]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/cpu_core/dec/aludec.v:98]
+INFO: [Synth 8-6155] done synthesizing module 'aludec' (0#1) [C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/cpu_core/dec/aludec.v:24]
+INFO: [Synth 8-6155] done synthesizing module 'controller' (0#1) [C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/cpu_core/dec/controller.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'mips' (0#1) [C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/cpu_core/mips.v:4]
+INFO: [Synth 8-6157] synthesizing module 'i_sram_to_sram_like' [C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/i_sram_to_sram_like.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'i_sram_to_sram_like' (0#1) [C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/i_sram_to_sram_like.v:1]
+INFO: [Synth 8-6157] synthesizing module 'd_sram_to_sram_like' [C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/d_sram_to_sram_like.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'd_sram_to_sram_like' (0#1) [C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/d_sram_to_sram_like.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'mips_with_sram_like' (0#1) [C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/mips_with_sram_like.v:7]
+INFO: [Synth 8-6157] synthesizing module 'mmu' [C:/Users/Lenovo/Desktop/colab/axi/mmu.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'mmu' (0#1) [C:/Users/Lenovo/Desktop/colab/axi/mmu.v:1]
+INFO: [Synth 8-6157] synthesizing module 'bridge_1x2' [C:/Users/Lenovo/Desktop/colab/axi/bridge_1x2.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'bridge_1x2' (0#1) [C:/Users/Lenovo/Desktop/colab/axi/bridge_1x2.v:1]
+INFO: [Synth 8-6157] synthesizing module 'cache' [C:/Users/Lenovo/Desktop/colab/axi/cache.v:1]
+INFO: [Synth 8-6157] synthesizing module 'i_cache_simple' [C:/Users/Lenovo/Desktop/colab/axi/i_cache_simple.v:1]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Lenovo/Desktop/colab/axi/i_cache_simple.v:64]
+INFO: [Synth 8-6155] done synthesizing module 'i_cache_simple' (0#1) [C:/Users/Lenovo/Desktop/colab/axi/i_cache_simple.v:1]
+INFO: [Synth 8-6157] synthesizing module 'd_cache_simple' [C:/Users/Lenovo/Desktop/colab/axi/d_cache_simple.v:1]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Lenovo/Desktop/colab/axi/d_cache_simple.v:67]
+INFO: [Synth 8-6155] done synthesizing module 'd_cache_simple' (0#1) [C:/Users/Lenovo/Desktop/colab/axi/d_cache_simple.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'cache' (0#1) [C:/Users/Lenovo/Desktop/colab/axi/cache.v:1]
+INFO: [Synth 8-6157] synthesizing module 'bridge_2x1' [C:/Users/Lenovo/Desktop/colab/axi/bridge_2x1.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'bridge_2x1' (0#1) [C:/Users/Lenovo/Desktop/colab/axi/bridge_2x1.v:1]
+INFO: [Synth 8-6157] synthesizing module 'cpu_axi_interface' [C:/Users/Lenovo/Desktop/colab/axi/cpu_axi_interface.v:34]
+INFO: [Synth 8-6155] done synthesizing module 'cpu_axi_interface' (0#1) [C:/Users/Lenovo/Desktop/colab/axi/cpu_axi_interface.v:34]
+INFO: [Synth 8-6155] done synthesizing module 'mycpu_top' (0#1) [C:/Users/Lenovo/Desktop/colab/axi/mycpu_top.v:1]
+WARNING: [Synth 8-689] width (4) of port connection 'arlen' does not match port width (8) of module 'mycpu_top' [C:/Users/Lenovo/Desktop/colab/CO-lab-material-CQU/vivado/func_test_v0.01/soc_axi_func_sim/rtl/soc_axi_lite_top.v:327]
+WARNING: [Synth 8-689] width (4) of port connection 'awlen' does not match port width (8) of module 'mycpu_top' [C:/Users/Lenovo/Desktop/colab/CO-lab-material-CQU/vivado/func_test_v0.01/soc_axi_func_sim/rtl/soc_axi_lite_top.v:345]
+INFO: [Synth 8-6157] synthesizing module 'axi_wrap' [C:/Users/Lenovo/Desktop/colab/CO-lab-material-CQU/vivado/func_test_v0.01/soc_axi_func_sim/rtl/axi_wrap/axi_wrap.v:34]
+INFO: [Synth 8-6155] done synthesizing module 'axi_wrap' (0#1) [C:/Users/Lenovo/Desktop/colab/CO-lab-material-CQU/vivado/func_test_v0.01/soc_axi_func_sim/rtl/axi_wrap/axi_wrap.v:34]
+INFO: [Synth 8-6157] synthesizing module 'axi_clock_converter' [C:/Users/Lenovo/Desktop/colab/CO-lab-material-CQU/vivado/func_test_v0.01/soc_axi_func_sim/run_vivado/mycpu_prj1/.Xil/Vivado-16876-DESKTOP-87K58HJ/realtime/axi_clock_converter_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'axi_clock_converter' (0#1) [C:/Users/Lenovo/Desktop/colab/CO-lab-material-CQU/vivado/func_test_v0.01/soc_axi_func_sim/run_vivado/mycpu_prj1/.Xil/Vivado-16876-DESKTOP-87K58HJ/realtime/axi_clock_converter_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_1x2' [C:/Users/Lenovo/Desktop/colab/CO-lab-material-CQU/vivado/func_test_v0.01/soc_axi_func_sim/run_vivado/mycpu_prj1/.Xil/Vivado-16876-DESKTOP-87K58HJ/realtime/axi_crossbar_1x2_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_1x2' (0#1) [C:/Users/Lenovo/Desktop/colab/CO-lab-material-CQU/vivado/func_test_v0.01/soc_axi_func_sim/run_vivado/mycpu_prj1/.Xil/Vivado-16876-DESKTOP-87K58HJ/realtime/axi_crossbar_1x2_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'axi_wrap_ram' [C:/Users/Lenovo/Desktop/colab/CO-lab-material-CQU/vivado/func_test_v0.01/soc_axi_func_sim/rtl/ram_wrap/axi_wrap_ram.v:37]
+INFO: [Synth 8-6157] synthesizing module 'axi_ram' [C:/Users/Lenovo/Desktop/colab/CO-lab-material-CQU/vivado/func_test_v0.01/soc_axi_func_sim/run_vivado/mycpu_prj1/.Xil/Vivado-16876-DESKTOP-87K58HJ/realtime/axi_ram_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'axi_ram' (0#1) [C:/Users/Lenovo/Desktop/colab/CO-lab-material-CQU/vivado/func_test_v0.01/soc_axi_func_sim/run_vivado/mycpu_prj1/.Xil/Vivado-16876-DESKTOP-87K58HJ/realtime/axi_ram_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'axi_wrap_ram' (0#1) [C:/Users/Lenovo/Desktop/colab/CO-lab-material-CQU/vivado/func_test_v0.01/soc_axi_func_sim/rtl/ram_wrap/axi_wrap_ram.v:37]
+INFO: [Synth 8-6157] synthesizing module 'confreg' [C:/Users/Lenovo/Desktop/colab/CO-lab-material-CQU/vivado/func_test_v0.01/soc_axi_func_sim/rtl/CONFREG/confreg.v:73]
+	Parameter SIMULATION bound to: 1'b0 
+INFO: [Synth 8-6155] done synthesizing module 'confreg' (0#1) [C:/Users/Lenovo/Desktop/colab/CO-lab-material-CQU/vivado/func_test_v0.01/soc_axi_func_sim/rtl/CONFREG/confreg.v:73]
+INFO: [Synth 8-6155] done synthesizing module 'soc_axi_lite_top' (0#1) [C:/Users/Lenovo/Desktop/colab/CO-lab-material-CQU/vivado/func_test_v0.01/soc_axi_func_sim/rtl/soc_axi_lite_top.v:65]
+WARNING: [Synth 8-6014] Unused sequential element temp_op1_reg was removed.  [C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/cpu_core/utils/div.v:80]
+WARNING: [Synth 8-6014] Unused sequential element temp_op2_reg was removed.  [C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/cpu_core/utils/div.v:86]
+WARNING: [Synth 8-3848] Net cp0_rdataE in module/entity datapath does not have driver. [C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/cpu_core/datapath.v:96]
+WARNING: [Synth 8-3848] Net rssrcb2Dt in module/entity datapath does not have driver. [C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/cpu_core/datapath.v:245]
+WARNING: [Synth 8-6014] Unused sequential element pf_r2r_reg was removed.  [C:/Users/Lenovo/Desktop/colab/CO-lab-material-CQU/vivado/func_test_v0.01/soc_axi_func_sim/rtl/ram_wrap/axi_wrap_ram.v:107]
+WARNING: [Synth 8-6014] Unused sequential element pf_b2b_reg was removed.  [C:/Users/Lenovo/Desktop/colab/CO-lab-material-CQU/vivado/func_test_v0.01/soc_axi_func_sim/rtl/ram_wrap/axi_wrap_ram.v:108]
+WARNING: [Synth 8-6014] Unused sequential element buf_len_reg was removed.  [C:/Users/Lenovo/Desktop/colab/CO-lab-material-CQU/vivado/func_test_v0.01/soc_axi_func_sim/rtl/CONFREG/confreg.v:192]
+WARNING: [Synth 8-6014] Unused sequential element buf_size_reg was removed.  [C:/Users/Lenovo/Desktop/colab/CO-lab-material-CQU/vivado/func_test_v0.01/soc_axi_func_sim/rtl/CONFREG/confreg.v:193]
+WARNING: [Synth 8-7129] Port arlen[7] in module confreg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port arlen[6] in module confreg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port arlen[5] in module confreg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port arlen[4] in module confreg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port arlen[3] in module confreg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port arlen[2] in module confreg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port arlen[1] in module confreg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port arlen[0] in module confreg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port arsize[2] in module confreg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port arsize[1] in module confreg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port arsize[0] in module confreg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port arburst[1] in module confreg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port arburst[0] in module confreg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port arlock[1] in module confreg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port arlock[0] in module confreg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port arcache[3] in module confreg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port arcache[2] in module confreg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port arcache[1] in module confreg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port arcache[0] in module confreg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port arprot[2] in module confreg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port arprot[1] in module confreg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port arprot[0] in module confreg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port awlen[7] in module confreg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port awlen[6] in module confreg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port awlen[5] in module confreg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port awlen[4] in module confreg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port awlen[3] in module confreg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port awlen[2] in module confreg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port awlen[1] in module confreg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port awlen[0] in module confreg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port awsize[2] in module confreg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port awsize[1] in module confreg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port awsize[0] in module confreg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port awburst[1] in module confreg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port awburst[0] in module confreg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port awlock[1] in module confreg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port awlock[0] in module confreg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port awcache[3] in module confreg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port awcache[2] in module confreg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port awcache[1] in module confreg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port awcache[0] in module confreg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port awprot[2] in module confreg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port awprot[1] in module confreg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port awprot[0] in module confreg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wid[3] in module confreg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wid[2] in module confreg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wid[1] in module confreg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wid[0] in module confreg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wstrb[3] in module confreg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wstrb[2] in module confreg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wstrb[1] in module confreg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wstrb[0] in module confreg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port axi_arlock[1] in module axi_wrap_ram is either unconnected or has no load
+WARNING: [Synth 8-7129] Port axi_arlock[0] in module axi_wrap_ram is either unconnected or has no load
+WARNING: [Synth 8-7129] Port axi_arcache[3] in module axi_wrap_ram is either unconnected or has no load
+WARNING: [Synth 8-7129] Port axi_arcache[2] in module axi_wrap_ram is either unconnected or has no load
+WARNING: [Synth 8-7129] Port axi_arcache[1] in module axi_wrap_ram is either unconnected or has no load
+WARNING: [Synth 8-7129] Port axi_arcache[0] in module axi_wrap_ram is either unconnected or has no load
+WARNING: [Synth 8-7129] Port axi_arprot[2] in module axi_wrap_ram is either unconnected or has no load
+WARNING: [Synth 8-7129] Port axi_arprot[1] in module axi_wrap_ram is either unconnected or has no load
+WARNING: [Synth 8-7129] Port axi_arprot[0] in module axi_wrap_ram is either unconnected or has no load
+WARNING: [Synth 8-7129] Port axi_awlock[1] in module axi_wrap_ram is either unconnected or has no load
+WARNING: [Synth 8-7129] Port axi_awlock[0] in module axi_wrap_ram is either unconnected or has no load
+WARNING: [Synth 8-7129] Port axi_awcache[3] in module axi_wrap_ram is either unconnected or has no load
+WARNING: [Synth 8-7129] Port axi_awcache[2] in module axi_wrap_ram is either unconnected or has no load
+WARNING: [Synth 8-7129] Port axi_awcache[1] in module axi_wrap_ram is either unconnected or has no load
+WARNING: [Synth 8-7129] Port axi_awcache[0] in module axi_wrap_ram is either unconnected or has no load
+WARNING: [Synth 8-7129] Port axi_awprot[2] in module axi_wrap_ram is either unconnected or has no load
+WARNING: [Synth 8-7129] Port axi_awprot[1] in module axi_wrap_ram is either unconnected or has no load
+WARNING: [Synth 8-7129] Port axi_awprot[0] in module axi_wrap_ram is either unconnected or has no load
+WARNING: [Synth 8-7129] Port axi_wid[3] in module axi_wrap_ram is either unconnected or has no load
+WARNING: [Synth 8-7129] Port axi_wid[2] in module axi_wrap_ram is either unconnected or has no load
+WARNING: [Synth 8-7129] Port axi_wid[1] in module axi_wrap_ram is either unconnected or has no load
+WARNING: [Synth 8-7129] Port axi_wid[0] in module axi_wrap_ram is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rid[3] in module cpu_axi_interface is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rid[2] in module cpu_axi_interface is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rid[1] in module cpu_axi_interface is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rid[0] in module cpu_axi_interface is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rresp[1] in module cpu_axi_interface is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rresp[0] in module cpu_axi_interface is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rlast in module cpu_axi_interface is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bid[3] in module cpu_axi_interface is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bid[2] in module cpu_axi_interface is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bid[1] in module cpu_axi_interface is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bid[0] in module cpu_axi_interface is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bresp[1] in module cpu_axi_interface is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bresp[0] in module cpu_axi_interface is either unconnected or has no load
+WARNING: [Synth 8-7129] Port instrD[15] in module controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port instrD[14] in module controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port instrD[13] in module controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port instrD[12] in module controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port instrD[11] in module controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port instrD[10] in module controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port instrD[9] in module controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port instrD[8] in module controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port instrD[7] in module controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port instrD[6] in module controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port clk in module exceptdec is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cp0_status[31] in module exceptdec is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cp0_status[30] in module exceptdec is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:13 . Memory (MB): peak = 4340.312 ; gain = 31.648
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:09 ; elapsed = 00:00:13 . Memory (MB): peak = 4363.199 ; gain = 54.535
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:13 . Memory (MB): peak = 4363.199 ; gain = 54.535
+---------------------------------------------------------------------------------
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/Lenovo/Desktop/colab/CO-lab-material-CQU/vivado/func_test_v0.01/soc_axi_func_sim/rtl/xilinx_ip/clk_pll/clk_pll.dcp' for cell 'pll.clk_pll'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/Lenovo/Desktop/colab/CO-lab-material-CQU/vivado/func_test_v0.01/soc_axi_func_sim/rtl/xilinx_ip/axi_clock_converter/axi_clock_converter.dcp' for cell 'u_axi_clock_sync'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/Lenovo/Desktop/colab/CO-lab-material-CQU/vivado/func_test_v0.01/soc_axi_func_sim/rtl/xilinx_ip/axi_crossbar_1x2/axi_crossbar_1x2.dcp' for cell 'u_axi_crossbar_1x2'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/Lenovo/Desktop/colab/CO-lab-material-CQU/vivado/func_test_v0.01/soc_axi_func_sim/rtl/xilinx_ip/axi_ram/axi_ram.dcp' for cell 'u_axi_ram/ram'
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.402 . Memory (MB): peak = 4384.156 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 687 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2023.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/Lenovo/Desktop/colab/CO-lab-material-CQU/vivado/func_test_v0.01/soc_axi_func_sim/rtl/xilinx_ip/clk_pll/clk_pll_board.xdc] for cell 'pll.clk_pll/inst'
+Finished Parsing XDC File [c:/Users/Lenovo/Desktop/colab/CO-lab-material-CQU/vivado/func_test_v0.01/soc_axi_func_sim/rtl/xilinx_ip/clk_pll/clk_pll_board.xdc] for cell 'pll.clk_pll/inst'
+Parsing XDC File [c:/Users/Lenovo/Desktop/colab/CO-lab-material-CQU/vivado/func_test_v0.01/soc_axi_func_sim/rtl/xilinx_ip/clk_pll/clk_pll.xdc] for cell 'pll.clk_pll/inst'
+Finished Parsing XDC File [c:/Users/Lenovo/Desktop/colab/CO-lab-material-CQU/vivado/func_test_v0.01/soc_axi_func_sim/rtl/xilinx_ip/clk_pll/clk_pll.xdc] for cell 'pll.clk_pll/inst'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [c:/Users/Lenovo/Desktop/colab/CO-lab-material-CQU/vivado/func_test_v0.01/soc_axi_func_sim/rtl/xilinx_ip/clk_pll/clk_pll.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/soc_axi_lite_top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/soc_axi_lite_top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+INFO: [Timing 38-2] Deriving generated clocks
+Parsing XDC File [C:/Users/Lenovo/Desktop/colab/CO-lab-material-CQU/vivado/func_test_v0.01/soc_axi_func_sim/run_vivado/soc_lite.xdc]
+WARNING: [Constraints 18-619] A clock with name 'clk' already exists, overwriting the previous clock with the same name. [C:/Users/Lenovo/Desktop/colab/CO-lab-material-CQU/vivado/func_test_v0.01/soc_axi_func_sim/run_vivado/soc_lite.xdc:5]
+Finished Parsing XDC File [C:/Users/Lenovo/Desktop/colab/CO-lab-material-CQU/vivado/func_test_v0.01/soc_axi_func_sim/run_vivado/soc_lite.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [G:/vivado/Vivado/2023.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/soc_axi_lite_top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/soc_axi_lite_top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [G:/vivado/Vivado/2023.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/soc_axi_lite_top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/soc_axi_lite_top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+INFO: [Project 1-1714] 33 XPM XDC files have been applied to the design.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.017 . Memory (MB): peak = 4494.828 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 36 instances were transformed.
+  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 36 instances
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:16 ; elapsed = 00:00:24 . Memory (MB): peak = 4494.828 ; gain = 186.164
+126 Infos, 113 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:16 ; elapsed = 00:00:24 . Memory (MB): peak = 4494.828 ; gain = 190.227
+close_design
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+INFO: [IP_Flow 19-3484] Absolute path of file 'c:/Users/Lenovo/Desktop/colab/CO-lab-material-CQU/vivado/func_test_v0.01/soft/func_1/obj/inst_ram.coe' provided. It will be converted relative to IP Instance files '../../../../../../../soft/func_1/obj/inst_ram.coe'
+set_property CONFIG.Coe_File {C:/Users/Lenovo/Desktop/colab/CO-lab-material-CQU/vivado/func_test_v0.01/soft/func_1/obj/inst_ram.coe} [get_ips axi_ram]
+INFO: [IP_Flow 19-3484] Absolute path of file 'c:/Users/Lenovo/Desktop/colab/CO-lab-material-CQU/vivado/func_test_v0.01/soft/func_1/obj/inst_ram.coe' provided. It will be converted relative to IP Instance files '../../../../soft/func_1/obj/inst_ram.coe'
+set_property generate_synth_checkpoint false [get_files  C:/Users/Lenovo/Desktop/colab/CO-lab-material-CQU/vivado/func_test_v0.01/soc_axi_func_sim/rtl/xilinx_ip/axi_ram/axi_ram.xci]
+generate_target all [get_files  C:/Users/Lenovo/Desktop/colab/CO-lab-material-CQU/vivado/func_test_v0.01/soc_axi_func_sim/rtl/xilinx_ip/axi_ram/axi_ram.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'axi_ram'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'axi_ram'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'axi_ram'...
+INFO: [IP_Flow 19-1686] Generating 'Miscellaneous' target for IP 'axi_ram'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'axi_ram'...
+export_ip_user_files -of_objects [get_files C:/Users/Lenovo/Desktop/colab/CO-lab-material-CQU/vivado/func_test_v0.01/soc_axi_func_sim/rtl/xilinx_ip/axi_ram/axi_ram.xci] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files C:/Users/Lenovo/Desktop/colab/CO-lab-material-CQU/vivado/func_test_v0.01/soc_axi_func_sim/rtl/xilinx_ip/axi_ram/axi_ram.xci] -directory C:/Users/Lenovo/Desktop/colab/CO-lab-material-CQU/vivado/func_test_v0.01/soc_axi_func_sim/run_vivado/mycpu_prj1/mycpu.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/Lenovo/Desktop/colab/CO-lab-material-CQU/vivado/func_test_v0.01/soc_axi_func_sim/run_vivado/mycpu_prj1/mycpu.ip_user_files -ipstatic_source_dir C:/Users/Lenovo/Desktop/colab/CO-lab-material-CQU/vivado/func_test_v0.01/soc_axi_func_sim/run_vivado/mycpu_prj1/mycpu.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/Lenovo/Desktop/Modeltech_pe_edu_10.4a/xilinx_lib} {questa=C:/Users/Lenovo/Desktop/colab/CO-lab-material-CQU/vivado/func_test_v0.01/soc_axi_func_sim/run_vivado/mycpu_prj1/mycpu.cache/compile_simlib/questa} {riviera=C:/Users/Lenovo/Desktop/colab/CO-lab-material-CQU/vivado/func_test_v0.01/soc_axi_func_sim/run_vivado/mycpu_prj1/mycpu.cache/compile_simlib/riviera} {activehdl=C:/Users/Lenovo/Desktop/colab/CO-lab-material-CQU/vivado/func_test_v0.01/soc_axi_func_sim/run_vivado/mycpu_prj1/mycpu.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'tb_top'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Lenovo/Desktop/colab/CO-lab-material-CQU/vivado/func_test_v0.01/soc_axi_func_sim/run_vivado/mycpu_prj1/mycpu.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-13660] Precompiled IP simulation library mode is enabled (default). The design IP libraries will be referenced from the compiled library path. Please note that if the precompiled version of the library is not found from the path or the IP is in locked state, then the library source files for these IPs will be compiled locally as part of the compile order.
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'G:/vivado/Vivado/2023.1/tps/boost_1_72_0'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'G:/vivado/Vivado/2023.1/data/xsim/xsim.ini' copied to run dir:'C:/Users/Lenovo/Desktop/colab/CO-lab-material-CQU/vivado/func_test_v0.01/soc_axi_func_sim/run_vivado/mycpu_prj1/mycpu.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_top' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/Users/Lenovo/Desktop/colab/CO-lab-material-CQU/vivado/func_test_v0.01/soc_axi_func_sim/run_vivado/mycpu_prj1/mycpu.sim/sim_1/behav/xsim/axi_ram.mif'
+INFO: [SIM-utils-43] Exported 'C:/Users/Lenovo/Desktop/colab/CO-lab-material-CQU/vivado/func_test_v0.01/soc_axi_func_sim/run_vivado/mycpu_prj1/mycpu.sim/sim_1/behav/xsim/inst_ram.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/Lenovo/Desktop/colab/CO-lab-material-CQU/vivado/func_test_v0.01/soc_axi_func_sim/run_vivado/mycpu_prj1/mycpu.sim/sim_1/behav/xsim/inst_ram.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Lenovo/Desktop/colab/CO-lab-material-CQU/vivado/func_test_v0.01/soc_axi_func_sim/run_vivado/mycpu_prj1/mycpu.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_top_vlog.prj"
+ECHO 处于关闭状态。
+ECHO 处于关闭状态。
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Lenovo/Desktop/colab/CO-lab-material-CQU/vivado/func_test_v0.01/soc_axi_func_sim/rtl/xilinx_ip/clk_pll/clk_pll_clk_wiz.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_pll_clk_wiz
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Lenovo/Desktop/colab/CO-lab-material-CQU/vivado/func_test_v0.01/soc_axi_func_sim/rtl/xilinx_ip/clk_pll/clk_pll.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_pll
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Lenovo/Desktop/colab/CO-lab-material-CQU/vivado/func_test_v0.01/soc_axi_func_sim/rtl/xilinx_ip/axi_ram/sim/axi_ram.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module axi_ram
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Lenovo/Desktop/colab/CO-lab-material-CQU/vivado/func_test_v0.01/soc_axi_func_sim/rtl/xilinx_ip/axi_crossbar_1x2/sim/axi_crossbar_1x2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module axi_crossbar_1x2
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Lenovo/Desktop/colab/CO-lab-material-CQU/vivado/func_test_v0.01/soc_axi_func_sim/rtl/xilinx_ip/axi_clock_converter/sim/axi_clock_converter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module axi_clock_converter
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/cpu_core/utils/adder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module adder
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/cpu_core/alu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module alu
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/cpu_core/dec/aludec.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module aludec
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Lenovo/Desktop/colab/CO-lab-material-CQU/vivado/func_test_v0.01/soc_axi_func_sim/rtl/axi_wrap/axi_wrap.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module axi_wrap
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Lenovo/Desktop/colab/CO-lab-material-CQU/vivado/func_test_v0.01/soc_axi_func_sim/rtl/ram_wrap/axi_wrap_ram.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module axi_wrap_ram
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Lenovo/Desktop/colab/axi/bridge_1x2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bridge_1x2
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Lenovo/Desktop/colab/axi/bridge_2x1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bridge_2x1
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Lenovo/Desktop/colab/axi/cache.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cache
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Lenovo/Desktop/colab/CO-lab-material-CQU/vivado/func_test_v0.01/soc_axi_func_sim/rtl/CONFREG/confreg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module confreg
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/cpu_core/dec/controller.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module controller
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/cpu_core/exception/cp0_reg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cp0_reg
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Lenovo/Desktop/colab/axi/cpu_axi_interface.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cpu_axi_interface
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Lenovo/Desktop/colab/axi/d_cache_simple.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module d_cache_simple
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/d_sram_to_sram_like.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module d_sram_to_sram_like
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/cpu_core/datapath.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module datapath
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/cpu_core/utils/div.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module div
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/cpu_core/utils/eqcmp.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module eqcmp
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/cpu_core/exception/exceptdec.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module exceptdec
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/cpu_core/utils/flopenrc.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module flopenrc
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/cpu_core/utils/flopr.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module flopr
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/cpu_core/hazard.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module hazard
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/cpu_core/hilo_reg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module hilo_reg
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Lenovo/Desktop/colab/axi/i_cache_simple.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module i_cache_simple
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/i_sram_to_sram_like.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module i_sram_to_sram_like
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/cpu_core/dec/maindec.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module maindec
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/cpu_core/mem_ctrl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mem_ctrl
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/cpu_core/mips.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mips
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/mips_with_sram_like.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mips_with_sram_like
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Lenovo/Desktop/colab/axi/mmu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mmu
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/cpu_core/utils/mul.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mul
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/cpu_core/utils/mux2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux2
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/cpu_core/utils/mux3.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux3
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Lenovo/Desktop/colab/axi/mycpu_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mycpu_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/cpu_core/pc.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pc
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/cpu_core/regfile.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module regfile
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/cpu_core/utils/signext.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module signext
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/cpu_core/utils/sl2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sl2
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Lenovo/Desktop/colab/CO-lab-material-CQU/vivado/func_test_v0.01/soc_axi_func_sim/rtl/soc_axi_lite_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module soc_axi_lite_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Lenovo/Desktop/colab/CO-lab-material-CQU/vivado/func_test_v0.01/soc_axi_func_sim/testbench/mycpu_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Lenovo/Desktop/colab/CO-lab-material-CQU/vivado/func_test_v0.01/soc_axi_func_sim/run_vivado/mycpu_prj1/mycpu.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+"xvhdl --incr --relax -prj tb_top_vhdl.prj"
+ECHO 处于关闭状态。
+ECHO 处于关闭状态。
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:08 . Memory (MB): peak = 4494.828 ; gain = 0.000
+INFO: [USF-XSim-69] 'compile' step finished in '8' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Lenovo/Desktop/colab/CO-lab-material-CQU/vivado/func_test_v0.01/soc_axi_func_sim/run_vivado/mycpu_prj1/mycpu.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L blk_mem_gen_v8_4_6 -L generic_baseblocks_v2_1_0 -L axi_infrastructure_v1_1_0 -L axi_register_slice_v2_1_28 -L fifo_generator_v13_2_8 -L axi_data_fifo_v2_1_27 -L axi_crossbar_v2_1_29 -L axi_clock_converter_v2_1_27 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_top_behav xil_defaultlib.tb_top xil_defaultlib.glbl -log elaborate.log"
+ECHO 处于关闭状态。
+ECHO 处于关闭状态。
+Vivado Simulator v2023.1
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: G:/vivado/Vivado/2023.1/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L blk_mem_gen_v8_4_6 -L generic_baseblocks_v2_1_0 -L axi_infrastructure_v1_1_0 -L axi_register_slice_v2_1_28 -L fifo_generator_v13_2_8 -L axi_data_fifo_v2_1_27 -L axi_crossbar_v2_1_29 -L axi_clock_converter_v2_1_27 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_top_behav xil_defaultlib.tb_top xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 4 differs from formal bit length 8 for port 'arlen' [C:/Users/Lenovo/Desktop/colab/CO-lab-material-CQU/vivado/func_test_v0.01/soc_axi_func_sim/rtl/soc_axi_lite_top.v:327]
+WARNING: [VRFC 10-3091] actual bit length 4 differs from formal bit length 8 for port 'awlen' [C:/Users/Lenovo/Desktop/colab/CO-lab-material-CQU/vivado/func_test_v0.01/soc_axi_func_sim/rtl/soc_axi_lite_top.v:345]
+WARNING: [VRFC 10-3091] actual bit length 11 differs from formal bit length 12 for port 'd' [C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/cpu_core/datapath.v:165]
+WARNING: [VRFC 10-3091] actual bit length 11 differs from formal bit length 12 for port 'q' [C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/cpu_core/datapath.v:166]
+WARNING: [VRFC 10-3091] actual bit length 4 differs from formal bit length 8 for port 'arlen' [C:/Users/Lenovo/Desktop/colab/CO-lab-material-CQU/vivado/func_test_v0.01/soc_axi_func_sim/rtl/soc_axi_lite_top.v:692]
+WARNING: [VRFC 10-3091] actual bit length 4 differs from formal bit length 8 for port 'awlen' [C:/Users/Lenovo/Desktop/colab/CO-lab-material-CQU/vivado/func_test_v0.01/soc_axi_func_sim/rtl/soc_axi_lite_top.v:708]
+WARNING: [VRFC 10-5021] port 'aclk2x' is not connected on this instance [/wrk/ci/prod/2023.1/sw/continuous/3753/packages/customer/vivado/data/ip/xilinx/axi_crossbar_v2_1/hdl/axi_crossbar_v2_1_vl_rfs.v:3103]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.flopenrc(WIDTH=32)
+Compiling module xil_defaultlib.flopenrc(WIDTH=20)
+Compiling module xil_defaultlib.flopenrc(WIDTH=12)
+Compiling module xil_defaultlib.flopenrc(WIDTH=2)
+Compiling module xil_defaultlib.hazard
+Compiling module xil_defaultlib.mux2(WIDTH=32)
+Compiling module xil_defaultlib.regfile
+Compiling module xil_defaultlib.pc(WIDTH=32)
+Compiling module xil_defaultlib.adder
+Compiling module xil_defaultlib.flopenrc(WIDTH=1)
+Compiling module xil_defaultlib.signext
+Compiling module xil_defaultlib.sl2
+Compiling module xil_defaultlib.eqcmp
+Compiling module xil_defaultlib.flopenrc(WIDTH=5)
+Compiling module xil_defaultlib.flopenrc(WIDTH=6)
+Compiling module xil_defaultlib.flopenrc(WIDTH=4)
+Compiling module xil_defaultlib.mux3(WIDTH=32)
+Compiling module xil_defaultlib.div
+Compiling module xil_defaultlib.mul
+Compiling module xil_defaultlib.alu
+Compiling module xil_defaultlib.mux3(WIDTH=5)
+Compiling module xil_defaultlib.flopenrc(WIDTH=64)
+Compiling module xil_defaultlib.hilo_reg
+Compiling module xil_defaultlib.mem_ctrl
+Compiling module xil_defaultlib.exceptdec
+Compiling module xil_defaultlib.flopr(WIDTH=32)
+Compiling module xil_defaultlib.cp0_reg
+Compiling module xil_defaultlib.datapath
+Compiling module xil_defaultlib.maindec
+Compiling module xil_defaultlib.aludec
+Compiling module xil_defaultlib.controller
+Compiling module xil_defaultlib.mips
+Compiling module xil_defaultlib.i_sram_to_sram_like
+Compiling module xil_defaultlib.d_sram_to_sram_like
+Compiling module xil_defaultlib.mips_with_sram_like
+Compiling module xil_defaultlib.mmu
+Compiling module xil_defaultlib.bridge_1x2
+Compiling module xil_defaultlib.i_cache_simple_default
+Compiling module xil_defaultlib.d_cache_simple_default
+Compiling module xil_defaultlib.cache
+Compiling module xil_defaultlib.bridge_2x1
+Compiling module xil_defaultlib.cpu_axi_interface
+Compiling module xil_defaultlib.mycpu_top
+Compiling module xil_defaultlib.axi_wrap
+Compiling module fifo_generator_v13_2_8.fifo_generator_v13_2_8_sync_stag...
+Compiling module fifo_generator_v13_2_8.fifo_generator_v13_2_8_bhv_ver_a...
+Compiling module fifo_generator_v13_2_8.fifo_generator_v13_2_8_bhv_ver_p...
+Compiling module fifo_generator_v13_2_8.fifo_generator_v13_2_8_CONV_VER(...
+Compiling module fifo_generator_v13_2_8.fifo_generator_vlog_beh(C_DATA_C...
+Compiling module fifo_generator_v13_2_8.fifo_generator_v13_2_8_bhv_ver_a...
+Compiling module fifo_generator_v13_2_8.fifo_generator_v13_2_8_bhv_ver_p...
+Compiling module fifo_generator_v13_2_8.fifo_generator_v13_2_8_CONV_VER(...
+Compiling module fifo_generator_v13_2_8.fifo_generator_vlog_beh(C_DATA_C...
+Compiling module fifo_generator_v13_2_8.fifo_generator_v13_2_8_bhv_ver_a...
+Compiling module fifo_generator_v13_2_8.fifo_generator_v13_2_8_bhv_ver_p...
+Compiling module fifo_generator_v13_2_8.fifo_generator_v13_2_8_CONV_VER(...
+Compiling module fifo_generator_v13_2_8.fifo_generator_vlog_beh(C_DATA_C...
+Compiling module fifo_generator_v13_2_8.fifo_generator_vlog_beh(C_DATA_C...
+Compiling module fifo_generator_v13_2_8.fifo_generator_v13_2_8_bhv_ver_a...
+Compiling module fifo_generator_v13_2_8.fifo_generator_v13_2_8_bhv_ver_p...
+Compiling module fifo_generator_v13_2_8.fifo_generator_v13_2_8_CONV_VER(...
+Compiling module fifo_generator_v13_2_8.fifo_generator_vlog_beh(C_DATA_C...
+Compiling module axi_clock_converter_v2_1_27.axi_clock_converter_v2_1_27_axi_...
+Compiling module xil_defaultlib.axi_clock_converter
+Compiling module generic_baseblocks_v2_1_0.generic_baseblocks_v2_1_0_carry_...
+Compiling module generic_baseblocks_v2_1_0.generic_baseblocks_v2_1_0_compar...
+Compiling module generic_baseblocks_v2_1_0.generic_baseblocks_v2_1_0_compar...
+Compiling module generic_baseblocks_v2_1_0.generic_baseblocks_v2_1_0_compar...
+Compiling module generic_baseblocks_v2_1_0.generic_baseblocks_v2_1_0_compar...
+Compiling module generic_baseblocks_v2_1_0.generic_baseblocks_v2_1_0_compar...
+Compiling module generic_baseblocks_v2_1_0.generic_baseblocks_v2_1_0_compar...
+Compiling module axi_crossbar_v2_1_29.axi_crossbar_v2_1_29_addr_decode...
+Compiling module axi_crossbar_v2_1_29.axi_crossbar_v2_1_29_arbiter_res...
+Compiling module generic_baseblocks_v2_1_0.generic_baseblocks_v2_1_0_mux_en...
+Compiling module unisims_ver.SRLC32E_default
+Compiling module axi_data_fifo_v2_1_27.axi_data_fifo_v2_1_27_ndeep_srl(...
+Compiling module axi_data_fifo_v2_1_27.axi_data_fifo_v2_1_27_axic_srl_f...
+Compiling module axi_crossbar_v2_1_29.axi_crossbar_v2_1_29_si_transact...
+Compiling module generic_baseblocks_v2_1_0.generic_baseblocks_v2_1_0_mux_en...
+Compiling module axi_crossbar_v2_1_29.axi_crossbar_v2_1_29_si_transact...
+Compiling module axi_crossbar_v2_1_29.axi_crossbar_v2_1_29_splitter
+Compiling module axi_data_fifo_v2_1_27.axi_data_fifo_v2_1_27_ndeep_srl(...
+Compiling module axi_data_fifo_v2_1_27.axi_data_fifo_v2_1_27_axic_reg_s...
+Compiling module axi_crossbar_v2_1_29.axi_crossbar_v2_1_29_wdata_route...
+Compiling module axi_crossbar_v2_1_29.axi_crossbar_v2_1_29_wdata_mux(C...
+Compiling module axi_data_fifo_v2_1_27.axi_data_fifo_v2_1_27_axic_srl_f...
+Compiling module axi_infrastructure_v1_1_0.axi_infrastructure_v1_1_0_axi2ve...
+Compiling module axi_infrastructure_v1_1_0.axi_infrastructure_v1_1_0_vector...
+Compiling module axi_register_slice_v2_1_28.axi_register_slice_v2_1_28_axic_...
+Compiling module axi_register_slice_v2_1_28.axi_register_slice_v2_1_28_axic_...
+Compiling module axi_register_slice_v2_1_28.axi_register_slice_v2_1_28_axic_...
+Compiling module axi_register_slice_v2_1_28.axi_register_slice_v2_1_28_axic_...
+Compiling module axi_register_slice_v2_1_28.axi_register_slice_v2_1_28_axi_r...
+Compiling module axi_crossbar_v2_1_29.axi_crossbar_v2_1_29_wdata_mux(C...
+Compiling module axi_data_fifo_v2_1_27.axi_data_fifo_v2_1_27_axic_srl_f...
+Compiling module axi_crossbar_v2_1_29.axi_crossbar_v2_1_29_addr_arbite...
+Compiling module axi_crossbar_v2_1_29.axi_crossbar_v2_1_29_decerr_slav...
+Compiling module axi_crossbar_v2_1_29.axi_crossbar_v2_1_29_crossbar(C_...
+Compiling module axi_crossbar_v2_1_29.axi_crossbar_v2_1_29_axi_crossba...
+Compiling module xil_defaultlib.axi_crossbar_1x2
+Compiling module blk_mem_gen_v8_4_6.beh_vlog_ff_clr_v8_4
+Compiling module blk_mem_gen_v8_4_6.beh_vlog_ff_pre_v8_4
+Compiling module blk_mem_gen_v8_4_6.STATE_LOGIC_v8_4(INIT=64'b010101...
+Compiling module blk_mem_gen_v8_4_6.STATE_LOGIC_v8_4(INIT=64'b101111...
+Compiling module blk_mem_gen_v8_4_6.STATE_LOGIC_v8_4(INIT=64'b101010...
+Compiling module blk_mem_gen_v8_4_6.STATE_LOGIC_v8_4(INIT=64'b010101...
+Compiling module blk_mem_gen_v8_4_6.STATE_LOGIC_v8_4(INIT=64'b010001...
+Compiling module blk_mem_gen_v8_4_6.STATE_LOGIC_v8_4(INIT=64'b010001...
+Compiling module blk_mem_gen_v8_4_6.STATE_LOGIC_v8_4(INIT=64'b011010...
+Compiling module blk_mem_gen_v8_4_6.STATE_LOGIC_v8_4(INIT=64'b111111...
+Compiling module blk_mem_gen_v8_4_6.STATE_LOGIC_v8_4(INIT=64'b011000...
+Compiling module blk_mem_gen_v8_4_6.STATE_LOGIC_v8_4(INIT=64'b011111...
+Compiling module blk_mem_gen_v8_4_6.STATE_LOGIC_v8_4(INIT=64'b0111)
+Compiling module blk_mem_gen_v8_4_6.STATE_LOGIC_v8_4(INIT=64'b111110...
+Compiling module blk_mem_gen_v8_4_6.STATE_LOGIC_v8_4(INIT=64'b01000)
+Compiling module blk_mem_gen_v8_4_6.STATE_LOGIC_v8_4(INIT=64'b100010...
+Compiling module blk_mem_gen_v8_4_6.write_netlist_v8_4(C_AXI_TYPE=1)
+Compiling module blk_mem_gen_v8_4_6.blk_mem_axi_write_wrapper_beh_v8...
+Compiling module blk_mem_gen_v8_4_6.beh_vlog_ff_ce_clr_v8_4
+Compiling module blk_mem_gen_v8_4_6.STATE_LOGIC_v8_4(INIT=64'b01011)
+Compiling module blk_mem_gen_v8_4_6.STATE_LOGIC_v8_4(INIT=64'b0100)
+Compiling module blk_mem_gen_v8_4_6.STATE_LOGIC_v8_4(INIT=64'b111011...
+Compiling module blk_mem_gen_v8_4_6.STATE_LOGIC_v8_4(INIT=64'b010001...
+Compiling module blk_mem_gen_v8_4_6.STATE_LOGIC_v8_4(INIT=64'b010000...
+Compiling module blk_mem_gen_v8_4_6.STATE_LOGIC_v8_4(INIT=64'b011111...
+Compiling module blk_mem_gen_v8_4_6.STATE_LOGIC_v8_4(INIT=64'b01)
+Compiling module blk_mem_gen_v8_4_6.STATE_LOGIC_v8_4(INIT=64'b010000...
+Compiling module blk_mem_gen_v8_4_6.STATE_LOGIC_v8_4(INIT=64'b010001...
+Compiling module blk_mem_gen_v8_4_6.STATE_LOGIC_v8_4(INIT=64'b011101...
+Compiling module blk_mem_gen_v8_4_6.STATE_LOGIC_v8_4(INIT=64'b111111...
+Compiling module blk_mem_gen_v8_4_6.STATE_LOGIC_v8_4(INIT=64'b010101...
+Compiling module blk_mem_gen_v8_4_6.STATE_LOGIC_v8_4(INIT=64'b111100...
+Compiling module blk_mem_gen_v8_4_6.beh_vlog_muxf7_v8_4
+Compiling module blk_mem_gen_v8_4_6.STATE_LOGIC_v8_4(INIT=64'b010101...
+Compiling module blk_mem_gen_v8_4_6.STATE_LOGIC_v8_4(INIT=64'b011100...
+Compiling module blk_mem_gen_v8_4_6.STATE_LOGIC_v8_4(INIT=64'b011111...
+Compiling module blk_mem_gen_v8_4_6.STATE_LOGIC_v8_4(INIT=64'b010001...
+Compiling module blk_mem_gen_v8_4_6.STATE_LOGIC_v8_4(INIT=64'b010001...
+Compiling module blk_mem_gen_v8_4_6.STATE_LOGIC_v8_4(INIT=64'b011100...
+Compiling module blk_mem_gen_v8_4_6.read_netlist_v8_4(C_ADDRB_WIDTH=...
+Compiling module blk_mem_gen_v8_4_6.blk_mem_axi_read_wrapper_beh_v8_...
+Compiling module blk_mem_gen_v8_4_6.blk_mem_gen_v8_4_6_output_stage(...
+Compiling module blk_mem_gen_v8_4_6.blk_mem_gen_v8_4_6_output_stage(...
+Compiling module blk_mem_gen_v8_4_6.blk_mem_gen_v8_4_6_softecc_outpu...
+Compiling module blk_mem_gen_v8_4_6.blk_mem_gen_v8_4_6_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_6.blk_mem_gen_v8_4_6(C_FAMILY="art...
+Compiling module xil_defaultlib.axi_ram
+Compiling module xil_defaultlib.axi_wrap_ram
+Compiling module xil_defaultlib.confreg(SIMULATION=1'b1)
+Compiling module xil_defaultlib.soc_axi_lite_top(SIMULATION=1'b1...
+Compiling module xil_defaultlib.tb_top
+WARNING: [XSIM 43-3373] "C:/Users/Lenovo/Desktop/colab/CO-lab-material-CQU/vivado/func_test_v0.01/soc_axi_func_sim/testbench/mycpu_tb.v" Line 126. System function $fscanf is used as system task. This system function should have a LHS e.g. x=$fscanf().
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_top_behav
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:23 . Memory (MB): peak = 4494.828 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '23' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Lenovo/Desktop/colab/CO-lab-material-CQU/vivado/func_test_v0.01/soc_axi_func_sim/run_vivado/mycpu_prj1/mycpu.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_top_behav -key {Behavioral:sim_1:Functional:tb_top} -tclbatch {tb_top.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+source tb_top.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# log_wave -r /
+WARNING: [Simtcl 6-197] One or more HDL objects could not be logged because of object type or size limitations.  To see details please rerun the command with -verbose (-v).
+# run 1000ns
+WARNING: Behavioral models for independent clock FIFO configurations do not model synchronization delays. The behavioral models are functionally correct, and will represent the behavior of the configured FIFO. See the FIFO Generator User Guide for more information.
+WARNING: Behavioral models for independent clock FIFO configurations do not model synchronization delays. The behavioral models are functionally correct, and will represent the behavior of the configured FIFO. See the FIFO Generator User Guide for more information.
+WARNING: Behavioral models for independent clock FIFO configurations do not model synchronization delays. The behavioral models are functionally correct, and will represent the behavior of the configured FIFO. See the FIFO Generator User Guide for more information.
+WARNING: Behavioral models for independent clock FIFO configurations do not model synchronization delays. The behavioral models are functionally correct, and will represent the behavior of the configured FIFO. See the FIFO Generator User Guide for more information.
+WARNING: Behavioral models for independent clock FIFO configurations do not model synchronization delays. The behavioral models are functionally correct, and will represent the behavior of the configured FIFO. See the FIFO Generator User Guide for more information.
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module tb_top.soc_lite.u_axi_ram.ram.inst.\axi_mem_module.blk_mem_gen_v8_4_6_inst  is using a behavioral model for simulation which will not precisely model memory collision behavior.
+xsim: Time (s): cpu = 00:00:03 ; elapsed = 00:00:07 . Memory (MB): peak = 4494.828 ; gain = 0.000
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_top_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:41 . Memory (MB): peak = 4494.828 ; gain = 0.000
+run all
+==============================================================
+Test begin!
+        [  22000 ns] Test is running, debug_wb_pc = 0x00000000
+        [  32000 ns] Test is running, debug_wb_pc = 0x9fc0e928
+        [  42000 ns] Test is running, debug_wb_pc = 0x9fc0e9c8
+        [  52000 ns] Test is running, debug_wb_pc = 0x9fc0ea60
+        [  62000 ns] Test is running, debug_wb_pc = 0x9fc0eb00
+        [  72000 ns] Test is running, debug_wb_pc = 0x00000000
+        [  82000 ns] Test is running, debug_wb_pc = 0x9fc0ec38
+        [  92000 ns] Test is running, debug_wb_pc = 0x9fc0ecd4
+        [ 102000 ns] Test is running, debug_wb_pc = 0x00000000
+        [ 112000 ns] Test is running, debug_wb_pc = 0x9fc0ee0c
+        [ 122000 ns] Test is running, debug_wb_pc = 0x9fc0eeac
+        [ 132000 ns] Test is running, debug_wb_pc = 0x9fc0ef48
+        [ 142000 ns] Test is running, debug_wb_pc = 0x9fc0efe4
+        [ 152000 ns] Test is running, debug_wb_pc = 0x9fc0f080
+        [ 162000 ns] Test is running, debug_wb_pc = 0x9fc0f11c
+        [ 172000 ns] Test is running, debug_wb_pc = 0x9fc0f1b8
+        [ 182000 ns] Test is running, debug_wb_pc = 0x9fc0f254
+        [ 192000 ns] Test is running, debug_wb_pc = 0x9fc0f2f4
+        [ 202000 ns] Test is running, debug_wb_pc = 0x9fc0f390
+        [ 212000 ns] Test is running, debug_wb_pc = 0x9fc0f430
+        [ 222000 ns] Test is running, debug_wb_pc = 0x9fc0f4c8
+        [ 232000 ns] Test is running, debug_wb_pc = 0x9fc0f564
+        [ 242000 ns] Test is running, debug_wb_pc = 0x9fc0f604
+        [ 252000 ns] Test is running, debug_wb_pc = 0x9fc0f69c
+        [ 262000 ns] Test is running, debug_wb_pc = 0x9fc0f73c
+        [ 272000 ns] Test is running, debug_wb_pc = 0x00000000
+        [ 282000 ns] Test is running, debug_wb_pc = 0x9fc0f874
+        [ 292000 ns] Test is running, debug_wb_pc = 0x9fc0f910
+        [ 302000 ns] Test is running, debug_wb_pc = 0x00000000
+        [ 312000 ns] Test is running, debug_wb_pc = 0x9fc0fa48
+        [ 322000 ns] Test is running, debug_wb_pc = 0x9fc0fae4
+        [ 332000 ns] Test is running, debug_wb_pc = 0x9fc0fb84
+        [ 342000 ns] Test is running, debug_wb_pc = 0x9fc0fc20
+        [ 352000 ns] Test is running, debug_wb_pc = 0x9fc0fcbc
+        [ 362000 ns] Test is running, debug_wb_pc = 0x9fc0fd58
+        [ 372000 ns] Test is running, debug_wb_pc = 0x9fc0fdf4
+        [ 382000 ns] Test is running, debug_wb_pc = 0x9fc0fe90
+        [ 392000 ns] Test is running, debug_wb_pc = 0x9fc0ff2c
+        [ 402000 ns] Test is running, debug_wb_pc = 0x9fc0ffcc
+        [ 412000 ns] Test is running, debug_wb_pc = 0x9fc1006c
+        [ 422000 ns] Test is running, debug_wb_pc = 0x9fc10104
+        [ 432000 ns] Test is running, debug_wb_pc = 0x9fc101a0
+        [ 442000 ns] Test is running, debug_wb_pc = 0x9fc10240
+        [ 452000 ns] Test is running, debug_wb_pc = 0x9fc102d8
+        [ 462000 ns] Test is running, debug_wb_pc = 0x9fc10378
+        [ 472000 ns] Test is running, debug_wb_pc = 0x00000000
+        [ 482000 ns] Test is running, debug_wb_pc = 0x9fc104b0
+        [ 492000 ns] Test is running, debug_wb_pc = 0x9fc1054c
+        [ 502000 ns] Test is running, debug_wb_pc = 0x00000000
+----[ 506085 ns] Number 8'd01 Functional Test Point PASS!!!
+        [ 512000 ns] Test is running, debug_wb_pc = 0x9fc007e8
+        [ 522000 ns] Test is running, debug_wb_pc = 0xbfc13f00
+        [ 532000 ns] Test is running, debug_wb_pc = 0xbfc13f9c
+        [ 542000 ns] Test is running, debug_wb_pc = 0xbfc14040
+        [ 552000 ns] Test is running, debug_wb_pc = 0xbfc140d8
+        [ 562000 ns] Test is running, debug_wb_pc = 0xbfc14174
+        [ 572000 ns] Test is running, debug_wb_pc = 0xbfc14214
+        [ 582000 ns] Test is running, debug_wb_pc = 0xbfc142ac
+        [ 592000 ns] Test is running, debug_wb_pc = 0xbfc14348
+        [ 602000 ns] Test is running, debug_wb_pc = 0xbfc143e8
+        [ 612000 ns] Test is running, debug_wb_pc = 0xbfc14484
+        [ 622000 ns] Test is running, debug_wb_pc = 0xbfc14520
+        [ 632000 ns] Test is running, debug_wb_pc = 0x00000000
+        [ 642000 ns] Test is running, debug_wb_pc = 0xbfc14658
+        [ 652000 ns] Test is running, debug_wb_pc = 0xbfc146f4
+        [ 662000 ns] Test is running, debug_wb_pc = 0x00000000
+        [ 672000 ns] Test is running, debug_wb_pc = 0xbfc1482c
+        [ 682000 ns] Test is running, debug_wb_pc = 0xbfc148cc
+        [ 692000 ns] Test is running, debug_wb_pc = 0xbfc14968
+        [ 702000 ns] Test is running, debug_wb_pc = 0xbfc14a04
+        [ 712000 ns] Test is running, debug_wb_pc = 0xbfc14aa0
+        [ 722000 ns] Test is running, debug_wb_pc = 0xbfc14b3c
+        [ 732000 ns] Test is running, debug_wb_pc = 0xbfc14bd8
+        [ 742000 ns] Test is running, debug_wb_pc = 0xbfc14c78
+        [ 752000 ns] Test is running, debug_wb_pc = 0xbfc14d14
+        [ 762000 ns] Test is running, debug_wb_pc = 0xbfc14db0
+        [ 772000 ns] Test is running, debug_wb_pc = 0xbfc14e50
+        [ 782000 ns] Test is running, debug_wb_pc = 0xbfc14ee8
+        [ 792000 ns] Test is running, debug_wb_pc = 0xbfc14f84
+        [ 802000 ns] Test is running, debug_wb_pc = 0xbfc15024
+        [ 812000 ns] Test is running, debug_wb_pc = 0xbfc150c0
+        [ 822000 ns] Test is running, debug_wb_pc = 0xbfc1515c
+        [ 832000 ns] Test is running, debug_wb_pc = 0x00000000
+        [ 842000 ns] Test is running, debug_wb_pc = 0xbfc15294
+        [ 852000 ns] Test is running, debug_wb_pc = 0xbfc15330
+        [ 862000 ns] Test is running, debug_wb_pc = 0x00000000
+        [ 872000 ns] Test is running, debug_wb_pc = 0xbfc15468
+        [ 882000 ns] Test is running, debug_wb_pc = 0xbfc15508
+        [ 892000 ns] Test is running, debug_wb_pc = 0xbfc155a4
+        [ 902000 ns] Test is running, debug_wb_pc = 0xbfc15640
+        [ 912000 ns] Test is running, debug_wb_pc = 0xbfc156dc
+        [ 922000 ns] Test is running, debug_wb_pc = 0xbfc15778
+        [ 932000 ns] Test is running, debug_wb_pc = 0xbfc15814
+        [ 942000 ns] Test is running, debug_wb_pc = 0xbfc158b0
+        [ 952000 ns] Test is running, debug_wb_pc = 0xbfc15950
+        [ 962000 ns] Test is running, debug_wb_pc = 0xbfc159ec
+        [ 972000 ns] Test is running, debug_wb_pc = 0xbfc15a8c
+        [ 982000 ns] Test is running, debug_wb_pc = 0xbfc15b24
+        [ 992000 ns] Test is running, debug_wb_pc = 0xbfc15bc0
+        [1002000 ns] Test is running, debug_wb_pc = 0xbfc15c5c
+        [1012000 ns] Test is running, debug_wb_pc = 0xbfc15cf8
+        [1022000 ns] Test is running, debug_wb_pc = 0xbfc15d94
+        [1032000 ns] Test is running, debug_wb_pc = 0xbfc15e30
+        [1042000 ns] Test is running, debug_wb_pc = 0xbfc15ed0
+        [1052000 ns] Test is running, debug_wb_pc = 0x00000000
+        [1062000 ns] Test is running, debug_wb_pc = 0xbfc1600c
+        [1072000 ns] Test is running, debug_wb_pc = 0xbfc160a4
+        [1082000 ns] Test is running, debug_wb_pc = 0xbfc16140
+        [1092000 ns] Test is running, debug_wb_pc = 0xbfc161dc
+        [1102000 ns] Test is running, debug_wb_pc = 0xbfc16278
+        [1112000 ns] Test is running, debug_wb_pc = 0xbfc16314
+        [1122000 ns] Test is running, debug_wb_pc = 0xbfc163b0
+        [1132000 ns] Test is running, debug_wb_pc = 0x00000000
+        [1142000 ns] Test is running, debug_wb_pc = 0x00000000
+        [1152000 ns] Test is running, debug_wb_pc = 0xbfc1658c
+        [1162000 ns] Test is running, debug_wb_pc = 0xbfc16624
+        [1172000 ns] Test is running, debug_wb_pc = 0xbfc166c0
+----[1180235 ns] Number 8'd02 Functional Test Point PASS!!!
+        [1182000 ns] Test is running, debug_wb_pc = 0xbfc00988
+        [1192000 ns] Test is running, debug_wb_pc = 0xbfc25ba0
+        [1202000 ns] Test is running, debug_wb_pc = 0xbfc25c3c
+        [1212000 ns] Test is running, debug_wb_pc = 0xbfc25cd8
+        [1222000 ns] Test is running, debug_wb_pc = 0xbfc25d74
+        [1232000 ns] Test is running, debug_wb_pc = 0xbfc25e14
+        [1242000 ns] Test is running, debug_wb_pc = 0xbfc25eac
+        [1252000 ns] Test is running, debug_wb_pc = 0x00000000
+        [1262000 ns] Test is running, debug_wb_pc = 0xbfc25fe4
+        [1272000 ns] Test is running, debug_wb_pc = 0xbfc26080
+        [1282000 ns] Test is running, debug_wb_pc = 0xbfc2611c
+        [1292000 ns] Test is running, debug_wb_pc = 0xbfc261b8
+        [1302000 ns] Test is running, debug_wb_pc = 0xbfc26258
+        [1312000 ns] Test is running, debug_wb_pc = 0xbfc262f4
+        [1322000 ns] Test is running, debug_wb_pc = 0xbfc26390
+        [1332000 ns] Test is running, debug_wb_pc = 0xbfc2642c
+        [1342000 ns] Test is running, debug_wb_pc = 0xbfc264c8
+        [1352000 ns] Test is running, debug_wb_pc = 0xbfc26568
+        [1362000 ns] Test is running, debug_wb_pc = 0xbfc26600
+        [1372000 ns] Test is running, debug_wb_pc = 0x00000000
+        [1382000 ns] Test is running, debug_wb_pc = 0xbfc26738
+        [1392000 ns] Test is running, debug_wb_pc = 0xbfc267d4
+        [1402000 ns] Test is running, debug_wb_pc = 0xbfc26870
+----[1405915 ns] Number 8'd03 Functional Test Point PASS!!!
+        [1412000 ns] Test is running, debug_wb_pc = 0xbfc06d30
+        [1422000 ns] Test is running, debug_wb_pc = 0xbfc06e28
+        [1432000 ns] Test is running, debug_wb_pc = 0xbfc06f14
+        [1442000 ns] Test is running, debug_wb_pc = 0xbfc07000
+        [1452000 ns] Test is running, debug_wb_pc = 0xbfc07108
+        [1462000 ns] Test is running, debug_wb_pc = 0xbfc071f8
+        [1472000 ns] Test is running, debug_wb_pc = 0xbfc072f0
+        [1482000 ns] Test is running, debug_wb_pc = 0xbfc073dc
+        [1492000 ns] Test is running, debug_wb_pc = 0xbfc074c8
+        [1502000 ns] Test is running, debug_wb_pc = 0xbfc075b4
+        [1512000 ns] Test is running, debug_wb_pc = 0xbfc076c0
+        [1522000 ns] Test is running, debug_wb_pc = 0x00000000
+        [1532000 ns] Test is running, debug_wb_pc = 0xbfc078a0
+        [1542000 ns] Test is running, debug_wb_pc = 0xbfc07990
+        [1552000 ns] Test is running, debug_wb_pc = 0xbfc07a7c
+        [1562000 ns] Test is running, debug_wb_pc = 0xbfc07b58
+        [1572000 ns] Test is running, debug_wb_pc = 0xbfc07bf4
+        [1582000 ns] Test is running, debug_wb_pc = 0xbfc07cf8
+        [1592000 ns] Test is running, debug_wb_pc = 0xbfc07da8
+        [1602000 ns] Test is running, debug_wb_pc = 0xbfc07e48
+        [1612000 ns] Test is running, debug_wb_pc = 0xbfc07f2c
+        [1622000 ns] Test is running, debug_wb_pc = 0xbfc07ff8
+        [1632000 ns] Test is running, debug_wb_pc = 0xbfc08098
+        [1642000 ns] Test is running, debug_wb_pc = 0xbfc0817c
+        [1652000 ns] Test is running, debug_wb_pc = 0xbfc0824c
+        [1662000 ns] Test is running, debug_wb_pc = 0xbfc0831c
+        [1672000 ns] Test is running, debug_wb_pc = 0xbfc083cc
+        [1682000 ns] Test is running, debug_wb_pc = 0xbfc0849c
+        [1692000 ns] Test is running, debug_wb_pc = 0xbfc08570
+        [1702000 ns] Test is running, debug_wb_pc = 0xbfc0861c
+        [1712000 ns] Test is running, debug_wb_pc = 0xbfc086bc
+        [1722000 ns] Test is running, debug_wb_pc = 0xbfc087bc
+        [1732000 ns] Test is running, debug_wb_pc = 0xbfc08870
+        [1742000 ns] Test is running, debug_wb_pc = 0xbfc0890c
+        [1752000 ns] Test is running, debug_wb_pc = 0xbfc089f0
+        [1762000 ns] Test is running, debug_wb_pc = 0xbfc08ac0
+        [1772000 ns] Test is running, debug_wb_pc = 0xbfc08b90
+        [1782000 ns] Test is running, debug_wb_pc = 0xbfc08c44
+        [1792000 ns] Test is running, debug_wb_pc = 0xbfc08d10
+        [1802000 ns] Test is running, debug_wb_pc = 0x00000000
+        [1812000 ns] Test is running, debug_wb_pc = 0xbfc08e94
+        [1822000 ns] Test is running, debug_wb_pc = 0xbfc08f60
+        [1832000 ns] Test is running, debug_wb_pc = 0xbfc09030
+        [1842000 ns] Test is running, debug_wb_pc = 0xbfc090e4
+        [1852000 ns] Test is running, debug_wb_pc = 0xbfc091c0
+        [1862000 ns] Test is running, debug_wb_pc = 0xbfc092ac
+        [1872000 ns] Test is running, debug_wb_pc = 0xbfc093b8
+        [1882000 ns] Test is running, debug_wb_pc = 0xbfc094a0
+        [1892000 ns] Test is running, debug_wb_pc = 0xbfc0959c
+        [1902000 ns] Test is running, debug_wb_pc = 0xbfc096a4
+        [1912000 ns] Test is running, debug_wb_pc = 0xbfc09790
+        [1922000 ns] Test is running, debug_wb_pc = 0xbfc09888
+        [1932000 ns] Test is running, debug_wb_pc = 0xbfc09974
+        [1942000 ns] Test is running, debug_wb_pc = 0xbfc09a80
+        [1952000 ns] Test is running, debug_wb_pc = 0xbfc09b64
+----[1955475 ns] Number 8'd04 Functional Test Point PASS!!!
+        [1962000 ns] Test is running, debug_wb_pc = 0xbfc02384
+        [1972000 ns] Test is running, debug_wb_pc = 0xbfc02438
+        [1982000 ns] Test is running, debug_wb_pc = 0xbfc024d4
+        [1992000 ns] Test is running, debug_wb_pc = 0xbfc025b8
+        [2002000 ns] Test is running, debug_wb_pc = 0xbfc02688
+        [2012000 ns] Test is running, debug_wb_pc = 0xbfc02758
+        [2022000 ns] Test is running, debug_wb_pc = 0xbfc0280c
+        [2032000 ns] Test is running, debug_wb_pc = 0xbfc028d8
+        [2042000 ns] Test is running, debug_wb_pc = 0x00000000
+        [2052000 ns] Test is running, debug_wb_pc = 0xbfc02a5c
+        [2062000 ns] Test is running, debug_wb_pc = 0xbfc02b28
+        [2072000 ns] Test is running, debug_wb_pc = 0xbfc02bfc
+        [2082000 ns] Test is running, debug_wb_pc = 0xbfc02cac
+        [2092000 ns] Test is running, debug_wb_pc = 0xbfc02d48
+        [2102000 ns] Test is running, debug_wb_pc = 0xbfc02e4c
+        [2112000 ns] Test is running, debug_wb_pc = 0xbfc02efc
+        [2122000 ns] Test is running, debug_wb_pc = 0xbfc02f98
+        [2132000 ns] Test is running, debug_wb_pc = 0xbfc03080
+        [2142000 ns] Test is running, debug_wb_pc = 0xbfc0314c
+        [2152000 ns] Test is running, debug_wb_pc = 0xbfc03220
+        [2162000 ns] Test is running, debug_wb_pc = 0xbfc032d0
+        [2172000 ns] Test is running, debug_wb_pc = 0xbfc0339c
+        [2182000 ns] Test is running, debug_wb_pc = 0x00000000
+        [2192000 ns] Test is running, debug_wb_pc = 0xbfc03520
+        [2202000 ns] Test is running, debug_wb_pc = 0xbfc035bc
+        [2212000 ns] Test is running, debug_wb_pc = 0xbfc036c0
+        [2222000 ns] Test is running, debug_wb_pc = 0xbfc03770
+        [2232000 ns] Test is running, debug_wb_pc = 0xbfc03810
+        [2242000 ns] Test is running, debug_wb_pc = 0xbfc038f4
+        [2252000 ns] Test is running, debug_wb_pc = 0xbfc039c0
+        [2262000 ns] Test is running, debug_wb_pc = 0xbfc03a60
+        [2272000 ns] Test is running, debug_wb_pc = 0xbfc03b44
+        [2282000 ns] Test is running, debug_wb_pc = 0xbfc03c14
+        [2292000 ns] Test is running, debug_wb_pc = 0xbfc03ce4
+        [2302000 ns] Test is running, debug_wb_pc = 0xbfc03d94
+        [2312000 ns] Test is running, debug_wb_pc = 0xbfc03e64
+        [2322000 ns] Test is running, debug_wb_pc = 0xbfc03f38
+        [2332000 ns] Test is running, debug_wb_pc = 0xbfc03fe4
+        [2342000 ns] Test is running, debug_wb_pc = 0xbfc04084
+        [2352000 ns] Test is running, debug_wb_pc = 0xbfc04184
+        [2362000 ns] Test is running, debug_wb_pc = 0xbfc04238
+        [2372000 ns] Test is running, debug_wb_pc = 0xbfc04324
+        [2382000 ns] Test is running, debug_wb_pc = 0xbfc04410
+        [2392000 ns] Test is running, debug_wb_pc = 0xbfc04518
+        [2402000 ns] Test is running, debug_wb_pc = 0xbfc04608
+        [2412000 ns] Test is running, debug_wb_pc = 0xbfc046f0
+        [2422000 ns] Test is running, debug_wb_pc = 0xbfc047ec
+        [2432000 ns] Test is running, debug_wb_pc = 0xbfc048d8
+        [2442000 ns] Test is running, debug_wb_pc = 0xbfc049c4
+        [2452000 ns] Test is running, debug_wb_pc = 0xbfc04ad0
+        [2462000 ns] Test is running, debug_wb_pc = 0x00000000
+        [2472000 ns] Test is running, debug_wb_pc = 0xbfc04cb0
+        [2482000 ns] Test is running, debug_wb_pc = 0xbfc04d9c
+        [2492000 ns] Test is running, debug_wb_pc = 0xbfc04e8c
+        [2502000 ns] Test is running, debug_wb_pc = 0xbfc04f94
+        [2512000 ns] Test is running, debug_wb_pc = 0x00000000
+        [2522000 ns] Test is running, debug_wb_pc = 0xbfc0516c
+        [2532000 ns] Test is running, debug_wb_pc = 0xbfc05264
+        [2542000 ns] Test is running, debug_wb_pc = 0xbfc05350
+        [2552000 ns] Test is running, debug_wb_pc = 0xbfc0543c
+        [2562000 ns] Test is running, debug_wb_pc = 0xbfc05548
+        [2572000 ns] Test is running, debug_wb_pc = 0xbfc05638
+        [2582000 ns] Test is running, debug_wb_pc = 0xbfc05720
+        [2592000 ns] Test is running, debug_wb_pc = 0xbfc057cc
+        [2602000 ns] Test is running, debug_wb_pc = 0xbfc058b0
+        [2612000 ns] Test is running, debug_wb_pc = 0xbfc0597c
+        [2622000 ns] Test is running, debug_wb_pc = 0xbfc05a1c
+        [2632000 ns] Test is running, debug_wb_pc = 0x00000000
+        [2642000 ns] Test is running, debug_wb_pc = 0xbfc05bcc
+        [2652000 ns] Test is running, debug_wb_pc = 0xbfc05c98
+        [2662000 ns] Test is running, debug_wb_pc = 0xbfc05d3c
+        [2672000 ns] Test is running, debug_wb_pc = 0xbfc05e1c
+        [2682000 ns] Test is running, debug_wb_pc = 0xbfc05eec
+        [2692000 ns] Test is running, debug_wb_pc = 0xbfc05f8c
+        [2702000 ns] Test is running, debug_wb_pc = 0xbfc0608c
+        [2712000 ns] Test is running, debug_wb_pc = 0xbfc0613c
+        [2722000 ns] Test is running, debug_wb_pc = 0xbfc06208
+        [2732000 ns] Test is running, debug_wb_pc = 0xbfc062d8
+        [2742000 ns] Test is running, debug_wb_pc = 0xbfc0638c
+        [2752000 ns] Test is running, debug_wb_pc = 0xbfc06458
+        [2762000 ns] Test is running, debug_wb_pc = 0xbfc064fc
+        [2772000 ns] Test is running, debug_wb_pc = 0xbfc065fc
+        [2782000 ns] Test is running, debug_wb_pc = 0xbfc066a8
+        [2792000 ns] Test is running, debug_wb_pc = 0xbfc06778
+        [2802000 ns] Test is running, debug_wb_pc = 0xbfc06848
+----[2810905 ns] Number 8'd05 Functional Test Point PASS!!!
+        [2812000 ns] Test is running, debug_wb_pc = 0xbfc06904
+        [2822000 ns] Test is running, debug_wb_pc = 0xbfc10684
+        [2832000 ns] Test is running, debug_wb_pc = 0xbfc10700
+        [2842000 ns] Test is running, debug_wb_pc = 0xbfc1077c
+        [2852000 ns] Test is running, debug_wb_pc = 0xbfc107f8
+        [2862000 ns] Test is running, debug_wb_pc = 0xbfc10878
+        [2872000 ns] Test is running, debug_wb_pc = 0xbfc10900
+        [2882000 ns] Test is running, debug_wb_pc = 0xbfc10988
+        [2892000 ns] Test is running, debug_wb_pc = 0xbfc10a04
+        [2902000 ns] Test is running, debug_wb_pc = 0xbfc10a8c
+        [2912000 ns] Test is running, debug_wb_pc = 0xbfc10b10
+        [2922000 ns] Test is running, debug_wb_pc = 0xbfc10b98
+        [2932000 ns] Test is running, debug_wb_pc = 0xbfc10c18
+        [2942000 ns] Test is running, debug_wb_pc = 0xbfc10ca4
+        [2952000 ns] Test is running, debug_wb_pc = 0xbfc10d18
+        [2962000 ns] Test is running, debug_wb_pc = 0xbfc10d94
+        [2972000 ns] Test is running, debug_wb_pc = 0xbfc10e18
+        [2982000 ns] Test is running, debug_wb_pc = 0xbfc10e9c
+        [2992000 ns] Test is running, debug_wb_pc = 0xbfc10f20
+        [3002000 ns] Test is running, debug_wb_pc = 0xbfc10fa4
+        [3012000 ns] Test is running, debug_wb_pc = 0xbfc11024
+        [3022000 ns] Test is running, debug_wb_pc = 0xbfc110a8
+        [3032000 ns] Test is running, debug_wb_pc = 0xbfc11128
+        [3042000 ns] Test is running, debug_wb_pc = 0xbfc111a4
+        [3052000 ns] Test is running, debug_wb_pc = 0xbfc11220
+        [3062000 ns] Test is running, debug_wb_pc = 0xbfc11294
+        [3072000 ns] Test is running, debug_wb_pc = 0xbfc11310
+        [3082000 ns] Test is running, debug_wb_pc = 0xbfc1138c
+        [3092000 ns] Test is running, debug_wb_pc = 0xbfc11414
+        [3102000 ns] Test is running, debug_wb_pc = 0xbfc1149c
+        [3112000 ns] Test is running, debug_wb_pc = 0xbfc11518
+        [3122000 ns] Test is running, debug_wb_pc = 0xbfc115a0
+        [3132000 ns] Test is running, debug_wb_pc = 0xbfc1161c
+        [3142000 ns] Test is running, debug_wb_pc = 0xbfc116a4
+        [3152000 ns] Test is running, debug_wb_pc = 0xbfc11728
+        [3162000 ns] Test is running, debug_wb_pc = 0xbfc117b0
+        [3172000 ns] Test is running, debug_wb_pc = 0xbfc11834
+        [3182000 ns] Test is running, debug_wb_pc = 0xbfc118b4
+        [3192000 ns] Test is running, debug_wb_pc = 0xbfc1193c
+        [3202000 ns] Test is running, debug_wb_pc = 0xbfc119c0
+----[3210105 ns] Number 8'd06 Functional Test Point PASS!!!
+        [3212000 ns] Test is running, debug_wb_pc = 0xbfc0098c
+        [3222000 ns] Test is running, debug_wb_pc = 0xbfc1a8b8
+        [3232000 ns] Test is running, debug_wb_pc = 0xbfc1a950
+        [3242000 ns] Test is running, debug_wb_pc = 0xbfc1a9ec
+        [3252000 ns] Test is running, debug_wb_pc = 0xbfc1aa8c
+        [3262000 ns] Test is running, debug_wb_pc = 0xbfc1ab24
+        [3272000 ns] Test is running, debug_wb_pc = 0xbfc1abc0
+        [3282000 ns] Test is running, debug_wb_pc = 0xbfc1ac60
+        [3292000 ns] Test is running, debug_wb_pc = 0xbfc1acfc
+        [3302000 ns] Test is running, debug_wb_pc = 0xbfc1ad98
+        [3312000 ns] Test is running, debug_wb_pc = 0x00000000
+        [3322000 ns] Test is running, debug_wb_pc = 0xbfc1aed0
+        [3332000 ns] Test is running, debug_wb_pc = 0xbfc1af6c
+        [3342000 ns] Test is running, debug_wb_pc = 0xbfc1b008
+        [3352000 ns] Test is running, debug_wb_pc = 0xbfc1b0a4
+        [3362000 ns] Test is running, debug_wb_pc = 0xbfc1b148
+        [3372000 ns] Test is running, debug_wb_pc = 0xbfc1b1e0
+        [3382000 ns] Test is running, debug_wb_pc = 0xbfc1b27c
+        [3392000 ns] Test is running, debug_wb_pc = 0xbfc1b31c
+        [3402000 ns] Test is running, debug_wb_pc = 0xbfc1b3b4
+        [3412000 ns] Test is running, debug_wb_pc = 0xbfc1b450
+        [3422000 ns] Test is running, debug_wb_pc = 0x00000000
+        [3432000 ns] Test is running, debug_wb_pc = 0xbfc1b58c
+        [3442000 ns] Test is running, debug_wb_pc = 0xbfc1b628
+        [3452000 ns] Test is running, debug_wb_pc = 0xbfc1b6c4
+        [3462000 ns] Test is running, debug_wb_pc = 0xbfc1b760
+        [3472000 ns] Test is running, debug_wb_pc = 0xbfc1b7fc
+        [3482000 ns] Test is running, debug_wb_pc = 0xbfc1b898
+        [3492000 ns] Test is running, debug_wb_pc = 0xbfc1b938
+        [3502000 ns] Test is running, debug_wb_pc = 0xbfc1b9d8
+        [3512000 ns] Test is running, debug_wb_pc = 0xbfc1ba70
+        [3522000 ns] Test is running, debug_wb_pc = 0xbfc1bb0c
+        [3532000 ns] Test is running, debug_wb_pc = 0xbfc1bbac
+        [3542000 ns] Test is running, debug_wb_pc = 0xbfc1bc44
+        [3552000 ns] Test is running, debug_wb_pc = 0xbfc1bce0
+        [3562000 ns] Test is running, debug_wb_pc = 0x00000000
+        [3572000 ns] Test is running, debug_wb_pc = 0xbfc1be1c
+        [3582000 ns] Test is running, debug_wb_pc = 0xbfc1beb8
+        [3592000 ns] Test is running, debug_wb_pc = 0xbfc1bf54
+        [3602000 ns] Test is running, debug_wb_pc = 0xbfc1bff0
+        [3612000 ns] Test is running, debug_wb_pc = 0xbfc1c08c
+        [3622000 ns] Test is running, debug_wb_pc = 0xbfc1c128
+        [3632000 ns] Test is running, debug_wb_pc = 0xbfc1c1c8
+        [3642000 ns] Test is running, debug_wb_pc = 0xbfc1c268
+        [3652000 ns] Test is running, debug_wb_pc = 0xbfc1c300
+        [3662000 ns] Test is running, debug_wb_pc = 0xbfc1c39c
+        [3672000 ns] Test is running, debug_wb_pc = 0xbfc1c43c
+        [3682000 ns] Test is running, debug_wb_pc = 0xbfc1c4d4
+        [3692000 ns] Test is running, debug_wb_pc = 0xbfc1c570
+        [3702000 ns] Test is running, debug_wb_pc = 0xbfc1c60c
+        [3712000 ns] Test is running, debug_wb_pc = 0xbfc1c6ac
+        [3722000 ns] Test is running, debug_wb_pc = 0xbfc1c748
+        [3732000 ns] Test is running, debug_wb_pc = 0xbfc1c7e4
+        [3742000 ns] Test is running, debug_wb_pc = 0x00000000
+        [3752000 ns] Test is running, debug_wb_pc = 0xbfc1c920
+        [3762000 ns] Test is running, debug_wb_pc = 0xbfc1c9b8
+        [3772000 ns] Test is running, debug_wb_pc = 0xbfc1ca54
+        [3782000 ns] Test is running, debug_wb_pc = 0xbfc1caf0
+        [3792000 ns] Test is running, debug_wb_pc = 0xbfc1cb8c
+        [3802000 ns] Test is running, debug_wb_pc = 0xbfc1cc28
+        [3812000 ns] Test is running, debug_wb_pc = 0xbfc1ccc8
+        [3822000 ns] Test is running, debug_wb_pc = 0xbfc1cd64
+        [3832000 ns] Test is running, debug_wb_pc = 0x00000000
+        [3842000 ns] Test is running, debug_wb_pc = 0xbfc1cea0
+        [3852000 ns] Test is running, debug_wb_pc = 0xbfc1cf38
+        [3862000 ns] Test is running, debug_wb_pc = 0xbfc1cfd4
+        [3872000 ns] Test is running, debug_wb_pc = 0xbfc1d070
+        [3882000 ns] Test is running, debug_wb_pc = 0xbfc1d10c
+----[3882465 ns] Number 8'd07 Functional Test Point PASS!!!
+        [3892000 ns] Test is running, debug_wb_pc = 0x00000000
+        [3902000 ns] Test is running, debug_wb_pc = 0xbfc11b1c
+        [3912000 ns] Test is running, debug_wb_pc = 0xbfc11bb8
+        [3922000 ns] Test is running, debug_wb_pc = 0xbfc11c54
+        [3932000 ns] Test is running, debug_wb_pc = 0xbfc11cf0
+        [3942000 ns] Test is running, debug_wb_pc = 0xbfc11d8c
+        [3952000 ns] Test is running, debug_wb_pc = 0xbfc11e28
+        [3962000 ns] Test is running, debug_wb_pc = 0xbfc11ec4
+        [3972000 ns] Test is running, debug_wb_pc = 0xbfc11f60
+        [3982000 ns] Test is running, debug_wb_pc = 0x00000000
+        [3992000 ns] Test is running, debug_wb_pc = 0xbfc1209c
+        [4002000 ns] Test is running, debug_wb_pc = 0xbfc12134
+        [4012000 ns] Test is running, debug_wb_pc = 0xbfc121d4
+        [4022000 ns] Test is running, debug_wb_pc = 0xbfc12270
+        [4032000 ns] Test is running, debug_wb_pc = 0xbfc1230c
+        [4042000 ns] Test is running, debug_wb_pc = 0xbfc123a8
+        [4052000 ns] Test is running, debug_wb_pc = 0xbfc12444
+        [4062000 ns] Test is running, debug_wb_pc = 0xbfc124e0
+        [4072000 ns] Test is running, debug_wb_pc = 0x00000000
+        [4082000 ns] Test is running, debug_wb_pc = 0xbfc1261c
+        [4092000 ns] Test is running, debug_wb_pc = 0xbfc126b4
+        [4102000 ns] Test is running, debug_wb_pc = 0xbfc12750
+        [4112000 ns] Test is running, debug_wb_pc = 0xbfc127f0
+        [4122000 ns] Test is running, debug_wb_pc = 0xbfc1288c
+        [4132000 ns] Test is running, debug_wb_pc = 0xbfc12928
+        [4142000 ns] Test is running, debug_wb_pc = 0xbfc129c4
+        [4152000 ns] Test is running, debug_wb_pc = 0xbfc12a60
+        [4162000 ns] Test is running, debug_wb_pc = 0x00000000
+        [4172000 ns] Test is running, debug_wb_pc = 0xbfc12b9c
+        [4182000 ns] Test is running, debug_wb_pc = 0xbfc12c34
+        [4192000 ns] Test is running, debug_wb_pc = 0xbfc12cd0
+        [4202000 ns] Test is running, debug_wb_pc = 0xbfc12d6c
+        [4212000 ns] Test is running, debug_wb_pc = 0xbfc12e0c
+        [4222000 ns] Test is running, debug_wb_pc = 0xbfc12ea8
+        [4232000 ns] Test is running, debug_wb_pc = 0xbfc12f44
+        [4242000 ns] Test is running, debug_wb_pc = 0xbfc12fe0
+        [4252000 ns] Test is running, debug_wb_pc = 0x00000000
+        [4262000 ns] Test is running, debug_wb_pc = 0xbfc1311c
+        [4272000 ns] Test is running, debug_wb_pc = 0xbfc131b4
+        [4282000 ns] Test is running, debug_wb_pc = 0xbfc13250
+        [4292000 ns] Test is running, debug_wb_pc = 0xbfc132ec
+        [4302000 ns] Test is running, debug_wb_pc = 0xbfc13388
+        [4312000 ns] Test is running, debug_wb_pc = 0xbfc13424
+        [4322000 ns] Test is running, debug_wb_pc = 0xbfc134c4
+        [4332000 ns] Test is running, debug_wb_pc = 0xbfc13560
+        [4342000 ns] Test is running, debug_wb_pc = 0xbfc135fc
+        [4352000 ns] Test is running, debug_wb_pc = 0xbfc13698
+        [4362000 ns] Test is running, debug_wb_pc = 0xbfc13734
+        [4372000 ns] Test is running, debug_wb_pc = 0xbfc137d4
+        [4382000 ns] Test is running, debug_wb_pc = 0xbfc1386c
+        [4392000 ns] Test is running, debug_wb_pc = 0x00000000
+        [4402000 ns] Test is running, debug_wb_pc = 0xbfc139a4
+        [4412000 ns] Test is running, debug_wb_pc = 0xbfc13a40
+        [4422000 ns] Test is running, debug_wb_pc = 0xbfc13adc
+        [4432000 ns] Test is running, debug_wb_pc = 0xbfc13b78
+        [4442000 ns] Test is running, debug_wb_pc = 0xbfc13c18
+        [4452000 ns] Test is running, debug_wb_pc = 0xbfc13cb0
+        [4462000 ns] Test is running, debug_wb_pc = 0x00000000
+        [4472000 ns] Test is running, debug_wb_pc = 0xbfc13de8
+----[4479675 ns] Number 8'd08 Functional Test Point PASS!!!
+        [4482000 ns] Test is running, debug_wb_pc = 0xbfc00990
+        [4492000 ns] Test is running, debug_wb_pc = 0xbfc1d198
+        [4502000 ns] Test is running, debug_wb_pc = 0x00000000
+        [4512000 ns] Test is running, debug_wb_pc = 0xbfc1d2d0
+        [4522000 ns] Test is running, debug_wb_pc = 0x00000000
+        [4532000 ns] Test is running, debug_wb_pc = 0xbfc1d408
+        [4542000 ns] Test is running, debug_wb_pc = 0x00000000
+        [4552000 ns] Test is running, debug_wb_pc = 0xbfc1d540
+        [4562000 ns] Test is running, debug_wb_pc = 0x00000000
+        [4572000 ns] Test is running, debug_wb_pc = 0xbfc1d678
+        [4582000 ns] Test is running, debug_wb_pc = 0x00000000
+        [4592000 ns] Test is running, debug_wb_pc = 0xbfc1d7b0
+        [4602000 ns] Test is running, debug_wb_pc = 0x00000000
+        [4612000 ns] Test is running, debug_wb_pc = 0xbfc1d8e8
+        [4622000 ns] Test is running, debug_wb_pc = 0x00000000
+        [4632000 ns] Test is running, debug_wb_pc = 0xbfc1da20
+        [4642000 ns] Test is running, debug_wb_pc = 0x00000000
+        [4652000 ns] Test is running, debug_wb_pc = 0xbfc1db58
+        [4662000 ns] Test is running, debug_wb_pc = 0xbfc1dbf4
+        [4672000 ns] Test is running, debug_wb_pc = 0xbfc1dc8c
+        [4682000 ns] Test is running, debug_wb_pc = 0xbfc1dd2c
+        [4692000 ns] Test is running, debug_wb_pc = 0xbfc1ddc4
+        [4702000 ns] Test is running, debug_wb_pc = 0xbfc1de64
+        [4712000 ns] Test is running, debug_wb_pc = 0xbfc1defc
+        [4722000 ns] Test is running, debug_wb_pc = 0xbfc1df9c
+        [4732000 ns] Test is running, debug_wb_pc = 0xbfc1e034
+        [4742000 ns] Test is running, debug_wb_pc = 0xbfc1e0d4
+        [4752000 ns] Test is running, debug_wb_pc = 0xbfc1e16c
+        [4762000 ns] Test is running, debug_wb_pc = 0xbfc1e20c
+        [4772000 ns] Test is running, debug_wb_pc = 0xbfc1e2a4
+        [4782000 ns] Test is running, debug_wb_pc = 0xbfc1e344
+        [4792000 ns] Test is running, debug_wb_pc = 0xbfc1e3dc
+        [4802000 ns] Test is running, debug_wb_pc = 0xbfc1e47c
+        [4812000 ns] Test is running, debug_wb_pc = 0xbfc1e514
+        [4822000 ns] Test is running, debug_wb_pc = 0xbfc1e5b4
+        [4832000 ns] Test is running, debug_wb_pc = 0xbfc1e64c
+        [4842000 ns] Test is running, debug_wb_pc = 0xbfc1e6ec
+        [4852000 ns] Test is running, debug_wb_pc = 0xbfc1e784
+        [4862000 ns] Test is running, debug_wb_pc = 0xbfc1e824
+        [4872000 ns] Test is running, debug_wb_pc = 0xbfc1e8bc
+        [4882000 ns] Test is running, debug_wb_pc = 0xbfc1e958
+        [4892000 ns] Test is running, debug_wb_pc = 0x00000000
+        [4902000 ns] Test is running, debug_wb_pc = 0xbfc1ea90
+        [4912000 ns] Test is running, debug_wb_pc = 0xbfc1eb28
+        [4922000 ns] Test is running, debug_wb_pc = 0xbfc1ebc4
+        [4932000 ns] Test is running, debug_wb_pc = 0xbfc1ec60
+----[4937475 ns] Number 8'd09 Functional Test Point PASS!!!
+        [4942000 ns] Test is running, debug_wb_pc = 0xbfc009c4
+        [4952000 ns] Test is running, debug_wb_pc = 0x00000000
+        [4962000 ns] Test is running, debug_wb_pc = 0xbfc09cd8
+        [4972000 ns] Test is running, debug_wb_pc = 0x00000000
+        [4982000 ns] Test is running, debug_wb_pc = 0xbfc09e10
+        [4992000 ns] Test is running, debug_wb_pc = 0x00000000
+        [5002000 ns] Test is running, debug_wb_pc = 0xbfc09f48
+        [5012000 ns] Test is running, debug_wb_pc = 0xbfc09fe4
+        [5022000 ns] Test is running, debug_wb_pc = 0xbfc0a07c
+        [5032000 ns] Test is running, debug_wb_pc = 0xbfc0a11c
+        [5042000 ns] Test is running, debug_wb_pc = 0xbfc0a1b4
+        [5052000 ns] Test is running, debug_wb_pc = 0xbfc0a254
+        [5062000 ns] Test is running, debug_wb_pc = 0xbfc0a2ec
+        [5072000 ns] Test is running, debug_wb_pc = 0xbfc0a38c
+        [5082000 ns] Test is running, debug_wb_pc = 0xbfc0a424
+        [5092000 ns] Test is running, debug_wb_pc = 0xbfc0a4c4
+        [5102000 ns] Test is running, debug_wb_pc = 0xbfc0a55c
+        [5112000 ns] Test is running, debug_wb_pc = 0xbfc0a5fc
+        [5122000 ns] Test is running, debug_wb_pc = 0xbfc0a694
+        [5132000 ns] Test is running, debug_wb_pc = 0xbfc0a734
+        [5142000 ns] Test is running, debug_wb_pc = 0xbfc0a7cc
+        [5152000 ns] Test is running, debug_wb_pc = 0xbfc0a86c
+        [5162000 ns] Test is running, debug_wb_pc = 0xbfc0a904
+        [5172000 ns] Test is running, debug_wb_pc = 0xbfc0a9a4
+        [5182000 ns] Test is running, debug_wb_pc = 0xbfc0aa3c
+        [5192000 ns] Test is running, debug_wb_pc = 0xbfc0aadc
+        [5202000 ns] Test is running, debug_wb_pc = 0xbfc0ab74
+        [5212000 ns] Test is running, debug_wb_pc = 0xbfc0ac14
+        [5222000 ns] Test is running, debug_wb_pc = 0xbfc0acac
+        [5232000 ns] Test is running, debug_wb_pc = 0xbfc0ad4c
+        [5242000 ns] Test is running, debug_wb_pc = 0xbfc0ade4
+        [5252000 ns] Test is running, debug_wb_pc = 0xbfc0ae84
+        [5262000 ns] Test is running, debug_wb_pc = 0xbfc0af1c
+        [5272000 ns] Test is running, debug_wb_pc = 0xbfc0afb8
+        [5282000 ns] Test is running, debug_wb_pc = 0xbfc0b050
+        [5292000 ns] Test is running, debug_wb_pc = 0xbfc0b0ec
+        [5302000 ns] Test is running, debug_wb_pc = 0xbfc0b188
+        [5312000 ns] Test is running, debug_wb_pc = 0xbfc0b224
+        [5322000 ns] Test is running, debug_wb_pc = 0xbfc0b2c0
+        [5332000 ns] Test is running, debug_wb_pc = 0xbfc0b35c
+        [5342000 ns] Test is running, debug_wb_pc = 0x00000000
+        [5352000 ns] Test is running, debug_wb_pc = 0xbfc0b498
+        [5362000 ns] Test is running, debug_wb_pc = 0xbfc0b530
+        [5372000 ns] Test is running, debug_wb_pc = 0xbfc0b5cc
+        [5382000 ns] Test is running, debug_wb_pc = 0x00000000
+        [5392000 ns] Test is running, debug_wb_pc = 0xbfc0b704
+----[5395285 ns] Number 8'd10 Functional Test Point PASS!!!
+        [5402000 ns] Test is running, debug_wb_pc = 0xbfc1ece0
+        [5412000 ns] Test is running, debug_wb_pc = 0xbfc1ed7c
+        [5422000 ns] Test is running, debug_wb_pc = 0xbfc1ee18
+        [5432000 ns] Test is running, debug_wb_pc = 0xbfc1eeb4
+        [5442000 ns] Test is running, debug_wb_pc = 0xbfc1ef50
+        [5452000 ns] Test is running, debug_wb_pc = 0xbfc1efec
+        [5462000 ns] Test is running, debug_wb_pc = 0x00000000
+        [5472000 ns] Test is running, debug_wb_pc = 0xbfc1f124
+        [5482000 ns] Test is running, debug_wb_pc = 0xbfc1f1c4
+        [5492000 ns] Test is running, debug_wb_pc = 0x00000000
+        [5502000 ns] Test is running, debug_wb_pc = 0xbfc1f2f8
+        [5512000 ns] Test is running, debug_wb_pc = 0xbfc1f394
+        [5522000 ns] Test is running, debug_wb_pc = 0xbfc1f430
+        [5532000 ns] Test is running, debug_wb_pc = 0xbfc1f4cc
+        [5542000 ns] Test is running, debug_wb_pc = 0xbfc1f568
+        [5552000 ns] Test is running, debug_wb_pc = 0xbfc1f604
+        [5562000 ns] Test is running, debug_wb_pc = 0xbfc1f6a0
+        [5572000 ns] Test is running, debug_wb_pc = 0xbfc1f73c
+        [5582000 ns] Test is running, debug_wb_pc = 0xbfc1f7d8
+        [5592000 ns] Test is running, debug_wb_pc = 0xbfc1f874
+        [5602000 ns] Test is running, debug_wb_pc = 0xbfc1f910
+        [5612000 ns] Test is running, debug_wb_pc = 0xbfc1f9ac
+        [5622000 ns] Test is running, debug_wb_pc = 0xbfc1fa48
+        [5632000 ns] Test is running, debug_wb_pc = 0xbfc1fae4
+        [5642000 ns] Test is running, debug_wb_pc = 0xbfc1fb80
+        [5652000 ns] Test is running, debug_wb_pc = 0xbfc1fc1c
+        [5662000 ns] Test is running, debug_wb_pc = 0xbfc1fcb8
+        [5672000 ns] Test is running, debug_wb_pc = 0xbfc1fd54
+        [5682000 ns] Test is running, debug_wb_pc = 0x00000000
+        [5692000 ns] Test is running, debug_wb_pc = 0xbfc1fe90
+        [5702000 ns] Test is running, debug_wb_pc = 0xbfc1ff28
+        [5712000 ns] Test is running, debug_wb_pc = 0xbfc1ffc4
+        [5722000 ns] Test is running, debug_wb_pc = 0xbfc20064
+        [5732000 ns] Test is running, debug_wb_pc = 0xbfc20100
+        [5742000 ns] Test is running, debug_wb_pc = 0xbfc20198
+        [5752000 ns] Test is running, debug_wb_pc = 0x00000000
+        [5762000 ns] Test is running, debug_wb_pc = 0xbfc202d0
+        [5772000 ns] Test is running, debug_wb_pc = 0xbfc2036c
+        [5782000 ns] Test is running, debug_wb_pc = 0xbfc20408
+        [5792000 ns] Test is running, debug_wb_pc = 0xbfc204a4
+        [5802000 ns] Test is running, debug_wb_pc = 0x00000000
+        [5812000 ns] Test is running, debug_wb_pc = 0xbfc205e0
+        [5822000 ns] Test is running, debug_wb_pc = 0xbfc2067c
+        [5832000 ns] Test is running, debug_wb_pc = 0xbfc20714
+        [5842000 ns] Test is running, debug_wb_pc = 0x00000000
+        [5852000 ns] Test is running, debug_wb_pc = 0xbfc20850
+        [5862000 ns] Test is running, debug_wb_pc = 0xbfc208e8
+        [5872000 ns] Test is running, debug_wb_pc = 0xbfc20984
+        [5882000 ns] Test is running, debug_wb_pc = 0xbfc20a20
+----[5887495 ns] Number 8'd11 Functional Test Point PASS!!!
+        [5892000 ns] Test is running, debug_wb_pc = 0xbfc009c4
+        [5902000 ns] Test is running, debug_wb_pc = 0xbfc00a40
+        [5912000 ns] Test is running, debug_wb_pc = 0xbfc00ac0
+        [5922000 ns] Test is running, debug_wb_pc = 0xbfc00b40
+        [5932000 ns] Test is running, debug_wb_pc = 0xbfc00bbc
+        [5942000 ns] Test is running, debug_wb_pc = 0xbfc00c38
+        [5952000 ns] Test is running, debug_wb_pc = 0xbfc00cac
+        [5962000 ns] Test is running, debug_wb_pc = 0xbfc00d38
+        [5972000 ns] Test is running, debug_wb_pc = 0xbfc00db0
+        [5982000 ns] Test is running, debug_wb_pc = 0xbfc00e30
+        [5992000 ns] Test is running, debug_wb_pc = 0x00000000
+        [6002000 ns] Test is running, debug_wb_pc = 0xbfc00f34
+        [6012000 ns] Test is running, debug_wb_pc = 0xbfc00fbc
+        [6022000 ns] Test is running, debug_wb_pc = 0xbfc0103c
+        [6032000 ns] Test is running, debug_wb_pc = 0xbfc010bc
+        [6042000 ns] Test is running, debug_wb_pc = 0xbfc01144
+        [6052000 ns] Test is running, debug_wb_pc = 0xbfc011cc
+        [6062000 ns] Test is running, debug_wb_pc = 0xbfc01250
+        [6072000 ns] Test is running, debug_wb_pc = 0xbfc012cc
+        [6082000 ns] Test is running, debug_wb_pc = 0xbfc01354
+        [6092000 ns] Test is running, debug_wb_pc = 0xbfc013c8
+        [6102000 ns] Test is running, debug_wb_pc = 0xbfc01454
+        [6112000 ns] Test is running, debug_wb_pc = 0xbfc014dc
+        [6122000 ns] Test is running, debug_wb_pc = 0xbfc0155c
+        [6132000 ns] Test is running, debug_wb_pc = 0xbfc015d8
+        [6142000 ns] Test is running, debug_wb_pc = 0xbfc01654
+        [6152000 ns] Test is running, debug_wb_pc = 0xbfc016d0
+        [6162000 ns] Test is running, debug_wb_pc = 0xbfc01758
+        [6172000 ns] Test is running, debug_wb_pc = 0xbfc017dc
+        [6182000 ns] Test is running, debug_wb_pc = 0xbfc0185c
+        [6192000 ns] Test is running, debug_wb_pc = 0xbfc018e4
+        [6202000 ns] Test is running, debug_wb_pc = 0xbfc01960
+        [6212000 ns] Test is running, debug_wb_pc = 0xbfc019e4
+        [6222000 ns] Test is running, debug_wb_pc = 0xbfc01a68
+        [6232000 ns] Test is running, debug_wb_pc = 0xbfc01ae8
+        [6242000 ns] Test is running, debug_wb_pc = 0xbfc01b74
+        [6252000 ns] Test is running, debug_wb_pc = 0xbfc01bfc
+        [6262000 ns] Test is running, debug_wb_pc = 0xbfc01c78
+        [6272000 ns] Test is running, debug_wb_pc = 0xbfc01cfc
+        [6282000 ns] Test is running, debug_wb_pc = 0xbfc01d80
+        [6292000 ns] Test is running, debug_wb_pc = 0xbfc01e04
+        [6302000 ns] Test is running, debug_wb_pc = 0xbfc01e88
+        [6312000 ns] Test is running, debug_wb_pc = 0xbfc01f0c
+        [6322000 ns] Test is running, debug_wb_pc = 0xbfc01f8c
+        [6332000 ns] Test is running, debug_wb_pc = 0xbfc02014
+----[6334695 ns] Number 8'd12 Functional Test Point PASS!!!
+        [6342000 ns] Test is running, debug_wb_pc = 0xbfc0b788
+        [6352000 ns] Test is running, debug_wb_pc = 0xbfc0b854
+        [6362000 ns] Test is running, debug_wb_pc = 0xbfc0b924
+        [6372000 ns] Test is running, debug_wb_pc = 0xbfc0b9d4
+        [6382000 ns] Test is running, debug_wb_pc = 0xbfc0baa4
+        [6392000 ns] Test is running, debug_wb_pc = 0xbfc0bb70
+        [6402000 ns] Test is running, debug_wb_pc = 0xbfc0bc40
+        [6412000 ns] Test is running, debug_wb_pc = 0xbfc0bd0c
+        [6422000 ns] Test is running, debug_wb_pc = 0xbfc0bddc
+        [6432000 ns] Test is running, debug_wb_pc = 0xbfc0bea8
+        [6442000 ns] Test is running, debug_wb_pc = 0xbfc0bf78
+        [6452000 ns] Test is running, debug_wb_pc = 0xbfc0c044
+        [6462000 ns] Test is running, debug_wb_pc = 0xbfc0c114
+        [6472000 ns] Test is running, debug_wb_pc = 0xbfc0c1e0
+        [6482000 ns] Test is running, debug_wb_pc = 0xbfc0c2b0
+        [6492000 ns] Test is running, debug_wb_pc = 0xbfc0c380
+        [6502000 ns] Test is running, debug_wb_pc = 0xbfc0c44c
+        [6512000 ns] Test is running, debug_wb_pc = 0xbfc0c51c
+        [6522000 ns] Test is running, debug_wb_pc = 0xbfc0c5e8
+        [6532000 ns] Test is running, debug_wb_pc = 0xbfc0c6b8
+        [6542000 ns] Test is running, debug_wb_pc = 0xbfc0c784
+        [6552000 ns] Test is running, debug_wb_pc = 0xbfc0c854
+        [6562000 ns] Test is running, debug_wb_pc = 0xbfc0c920
+        [6572000 ns] Test is running, debug_wb_pc = 0xbfc0c9f0
+        [6582000 ns] Test is running, debug_wb_pc = 0xbfc0cabc
+        [6592000 ns] Test is running, debug_wb_pc = 0xbfc0cb8c
+        [6602000 ns] Test is running, debug_wb_pc = 0xbfc0cc58
+        [6612000 ns] Test is running, debug_wb_pc = 0xbfc0cd28
+        [6622000 ns] Test is running, debug_wb_pc = 0xbfc0cdf4
+        [6632000 ns] Test is running, debug_wb_pc = 0xbfc0cec4
+        [6642000 ns] Test is running, debug_wb_pc = 0xbfc0cf90
+        [6652000 ns] Test is running, debug_wb_pc = 0xbfc0d060
+        [6662000 ns] Test is running, debug_wb_pc = 0xbfc0d10c
+        [6672000 ns] Test is running, debug_wb_pc = 0xbfc0d1dc
+        [6682000 ns] Test is running, debug_wb_pc = 0xbfc0d2ac
+        [6692000 ns] Test is running, debug_wb_pc = 0xbfc0d378
+        [6702000 ns] Test is running, debug_wb_pc = 0xbfc0d448
+        [6712000 ns] Test is running, debug_wb_pc = 0xbfc0d514
+        [6722000 ns] Test is running, debug_wb_pc = 0xbfc0d5e4
+        [6732000 ns] Test is running, debug_wb_pc = 0xbfc0d6b0
+        [6742000 ns] Test is running, debug_wb_pc = 0xbfc0d780
+        [6752000 ns] Test is running, debug_wb_pc = 0xbfc0d870
+        [6762000 ns] Test is running, debug_wb_pc = 0xbfc0d940
+        [6772000 ns] Test is running, debug_wb_pc = 0xbfc0da0c
+        [6782000 ns] Test is running, debug_wb_pc = 0xbfc0dadc
+        [6792000 ns] Test is running, debug_wb_pc = 0xbfc0db8c
+        [6802000 ns] Test is running, debug_wb_pc = 0xbfc0dc5c
+        [6812000 ns] Test is running, debug_wb_pc = 0xbfc0dd28
+        [6822000 ns] Test is running, debug_wb_pc = 0xbfc0ddf8
+        [6832000 ns] Test is running, debug_wb_pc = 0xbfc0dec4
+        [6842000 ns] Test is running, debug_wb_pc = 0xbfc0df94
+        [6852000 ns] Test is running, debug_wb_pc = 0xbfc0e060
+        [6862000 ns] Test is running, debug_wb_pc = 0xbfc0e130
+        [6872000 ns] Test is running, debug_wb_pc = 0xbfc0e1fc
+        [6882000 ns] Test is running, debug_wb_pc = 0xbfc0e2cc
+        [6892000 ns] Test is running, debug_wb_pc = 0xbfc0e39c
+        [6902000 ns] Test is running, debug_wb_pc = 0xbfc0e468
+        [6912000 ns] Test is running, debug_wb_pc = 0xbfc0e538
+        [6922000 ns] Test is running, debug_wb_pc = 0xbfc0e604
+        [6932000 ns] Test is running, debug_wb_pc = 0xbfc0e6d4
+        [6942000 ns] Test is running, debug_wb_pc = 0xbfc0e7a0
+        [6952000 ns] Test is running, debug_wb_pc = 0xbfc0e870
+----[6954135 ns] Number 8'd13 Functional Test Point PASS!!!
+        [6962000 ns] Test is running, debug_wb_pc = 0xbfc16794
+        [6972000 ns] Test is running, debug_wb_pc = 0xbfc16840
+        [6982000 ns] Test is running, debug_wb_pc = 0xbfc168f8
+        [6992000 ns] Test is running, debug_wb_pc = 0xbfc169c4
+        [7002000 ns] Test is running, debug_wb_pc = 0xbfc16a7c
+        [7012000 ns] Test is running, debug_wb_pc = 0xbfc16b28
+        [7022000 ns] Test is running, debug_wb_pc = 0xbfc16c00
+        [7032000 ns] Test is running, debug_wb_pc = 0xbfc16cb8
+        [7042000 ns] Test is running, debug_wb_pc = 0xbfc16d84
+        [7052000 ns] Test is running, debug_wb_pc = 0xbfc16e3c
+        [7062000 ns] Test is running, debug_wb_pc = 0xbfc16ee4
+        [7072000 ns] Test is running, debug_wb_pc = 0xbfc16fc0
+        [7082000 ns] Test is running, debug_wb_pc = 0xbfc17094
+        [7092000 ns] Test is running, debug_wb_pc = 0xbfc17144
+        [7102000 ns] Test is running, debug_wb_pc = 0xbfc171f8
+        [7112000 ns] Test is running, debug_wb_pc = 0xbfc172a4
+        [7122000 ns] Test is running, debug_wb_pc = 0xbfc1737c
+        [7132000 ns] Test is running, debug_wb_pc = 0xbfc17454
+        [7142000 ns] Test is running, debug_wb_pc = 0xbfc17500
+        [7152000 ns] Test is running, debug_wb_pc = 0xbfc175b8
+        [7162000 ns] Test is running, debug_wb_pc = 0xbfc17684
+        [7172000 ns] Test is running, debug_wb_pc = 0xbfc1773c
+        [7182000 ns] Test is running, debug_wb_pc = 0xbfc177e4
+        [7192000 ns] Test is running, debug_wb_pc = 0xbfc178c0
+        [7202000 ns] Test is running, debug_wb_pc = 0xbfc17978
+        [7212000 ns] Test is running, debug_wb_pc = 0xbfc17a44
+        [7222000 ns] Test is running, debug_wb_pc = 0xbfc17afc
+        [7232000 ns] Test is running, debug_wb_pc = 0xbfc17ba4
+        [7242000 ns] Test is running, debug_wb_pc = 0xbfc17c80
+        [7252000 ns] Test is running, debug_wb_pc = 0xbfc17d54
+        [7262000 ns] Test is running, debug_wb_pc = 0xbfc17e04
+        [7272000 ns] Test is running, debug_wb_pc = 0xbfc17eb8
+        [7282000 ns] Test is running, debug_wb_pc = 0xbfc17f64
+        [7292000 ns] Test is running, debug_wb_pc = 0xbfc1803c
+        [7302000 ns] Test is running, debug_wb_pc = 0xbfc18114
+        [7312000 ns] Test is running, debug_wb_pc = 0xbfc181c0
+        [7322000 ns] Test is running, debug_wb_pc = 0xbfc18278
+        [7332000 ns] Test is running, debug_wb_pc = 0xbfc18344
+        [7342000 ns] Test is running, debug_wb_pc = 0xbfc183fc
+        [7352000 ns] Test is running, debug_wb_pc = 0xbfc184a4
+        [7362000 ns] Test is running, debug_wb_pc = 0xbfc18580
+        [7372000 ns] Test is running, debug_wb_pc = 0xbfc18634
+        [7382000 ns] Test is running, debug_wb_pc = 0xbfc18704
+        [7392000 ns] Test is running, debug_wb_pc = 0xbfc187bc
+        [7402000 ns] Test is running, debug_wb_pc = 0xbfc18864
+        [7412000 ns] Test is running, debug_wb_pc = 0xbfc18940
+        [7422000 ns] Test is running, debug_wb_pc = 0xbfc18a14
+        [7432000 ns] Test is running, debug_wb_pc = 0xbfc18ac4
+        [7442000 ns] Test is running, debug_wb_pc = 0xbfc18b78
+        [7452000 ns] Test is running, debug_wb_pc = 0xbfc18c24
+        [7462000 ns] Test is running, debug_wb_pc = 0xbfc18cfc
+        [7472000 ns] Test is running, debug_wb_pc = 0xbfc18dd4
+        [7482000 ns] Test is running, debug_wb_pc = 0xbfc18e80
+        [7492000 ns] Test is running, debug_wb_pc = 0xbfc18f38
+        [7502000 ns] Test is running, debug_wb_pc = 0xbfc19004
+        [7512000 ns] Test is running, debug_wb_pc = 0xbfc190bc
+        [7522000 ns] Test is running, debug_wb_pc = 0xbfc19164
+        [7532000 ns] Test is running, debug_wb_pc = 0xbfc19240
+        [7542000 ns] Test is running, debug_wb_pc = 0xbfc192f4
+        [7552000 ns] Test is running, debug_wb_pc = 0xbfc193c4
+        [7562000 ns] Test is running, debug_wb_pc = 0xbfc19478
+        [7572000 ns] Test is running, debug_wb_pc = 0xbfc19524
+        [7582000 ns] Test is running, debug_wb_pc = 0xbfc19600
+        [7592000 ns] Test is running, debug_wb_pc = 0xbfc196d4
+        [7602000 ns] Test is running, debug_wb_pc = 0xbfc19784
+        [7612000 ns] Test is running, debug_wb_pc = 0xbfc19838
+        [7622000 ns] Test is running, debug_wb_pc = 0xbfc198e4
+        [7632000 ns] Test is running, debug_wb_pc = 0xbfc199bc
+        [7642000 ns] Test is running, debug_wb_pc = 0xbfc19a94
+        [7652000 ns] Test is running, debug_wb_pc = 0xbfc19b40
+        [7662000 ns] Test is running, debug_wb_pc = 0xbfc19bf8
+        [7672000 ns] Test is running, debug_wb_pc = 0xbfc19cc4
+        [7682000 ns] Test is running, debug_wb_pc = 0xbfc19d7c
+        [7692000 ns] Test is running, debug_wb_pc = 0xbfc19e24
+        [7702000 ns] Test is running, debug_wb_pc = 0xbfc19f00
+        [7712000 ns] Test is running, debug_wb_pc = 0xbfc19fb4
+        [7722000 ns] Test is running, debug_wb_pc = 0xbfc1a084
+        [7732000 ns] Test is running, debug_wb_pc = 0xbfc1a138
+        [7742000 ns] Test is running, debug_wb_pc = 0xbfc1a1e4
+        [7752000 ns] Test is running, debug_wb_pc = 0xbfc1a2bc
+        [7762000 ns] Test is running, debug_wb_pc = 0xbfc1a394
+        [7772000 ns] Test is running, debug_wb_pc = 0xbfc1a440
+        [7782000 ns] Test is running, debug_wb_pc = 0xbfc1a4f8
+        [7792000 ns] Test is running, debug_wb_pc = 0xbfc1a5a4
+        [7802000 ns] Test is running, debug_wb_pc = 0xbfc1a67c
+        [7812000 ns] Test is running, debug_wb_pc = 0xbfc1a754
+        [7822000 ns] Test is running, debug_wb_pc = 0xbfc1a800
+----[7825545 ns] Number 8'd14 Functional Test Point PASS!!!
+        [7832000 ns] Test is running, debug_wb_pc = 0xbfc214bc
+        [7842000 ns] Test is running, debug_wb_pc = 0xbfc2158c
+        [7852000 ns] Test is running, debug_wb_pc = 0xbfc2165c
+        [7862000 ns] Test is running, debug_wb_pc = 0xbfc2170c
+        [7872000 ns] Test is running, debug_wb_pc = 0xbfc217dc
+        [7882000 ns] Test is running, debug_wb_pc = 0xbfc21894
+        [7892000 ns] Test is running, debug_wb_pc = 0xbfc21960
+        [7902000 ns] Test is running, debug_wb_pc = 0xbfc21a0c
+        [7912000 ns] Test is running, debug_wb_pc = 0xbfc21ae0
+        [7922000 ns] Test is running, debug_wb_pc = 0xbfc21bb0
+        [7932000 ns] Test is running, debug_wb_pc = 0xbfc21c5c
+        [7942000 ns] Test is running, debug_wb_pc = 0xbfc21d34
+        [7952000 ns] Test is running, debug_wb_pc = 0xbfc21e00
+        [7962000 ns] Test is running, debug_wb_pc = 0xbfc21ed0
+        [7972000 ns] Test is running, debug_wb_pc = 0xbfc21f84
+        [7982000 ns] Test is running, debug_wb_pc = 0xbfc22050
+        [7992000 ns] Test is running, debug_wb_pc = 0x00000000
+        [8002000 ns] Test is running, debug_wb_pc = 0xbfc221d4
+        [8012000 ns] Test is running, debug_wb_pc = 0xbfc222a0
+        [8022000 ns] Test is running, debug_wb_pc = 0xbfc2235c
+        [8032000 ns] Test is running, debug_wb_pc = 0xbfc22424
+        [8042000 ns] Test is running, debug_wb_pc = 0xbfc224d0
+        [8052000 ns] Test is running, debug_wb_pc = 0xbfc225a8
+        [8062000 ns] Test is running, debug_wb_pc = 0xbfc22674
+        [8072000 ns] Test is running, debug_wb_pc = 0xbfc22720
+        [8082000 ns] Test is running, debug_wb_pc = 0xbfc227f8
+        [8092000 ns] Test is running, debug_wb_pc = 0xbfc228c4
+        [8102000 ns] Test is running, debug_wb_pc = 0xbfc22998
+        [8112000 ns] Test is running, debug_wb_pc = 0xbfc22a48
+        [8122000 ns] Test is running, debug_wb_pc = 0xbfc22b14
+        [8132000 ns] Test is running, debug_wb_pc = 0x00000000
+        [8142000 ns] Test is running, debug_wb_pc = 0xbfc22c98
+        [8152000 ns] Test is running, debug_wb_pc = 0xbfc22d68
+        [8162000 ns] Test is running, debug_wb_pc = 0xbfc22e1c
+        [8172000 ns] Test is running, debug_wb_pc = 0xbfc22ee8
+        [8182000 ns] Test is running, debug_wb_pc = 0xbfc22f98
+        [8192000 ns] Test is running, debug_wb_pc = 0xbfc2306c
+        [8202000 ns] Test is running, debug_wb_pc = 0xbfc23138
+        [8212000 ns] Test is running, debug_wb_pc = 0xbfc231e8
+        [8222000 ns] Test is running, debug_wb_pc = 0xbfc232bc
+        [8232000 ns] Test is running, debug_wb_pc = 0xbfc2338c
+        [8242000 ns] Test is running, debug_wb_pc = 0xbfc2345c
+        [8252000 ns] Test is running, debug_wb_pc = 0xbfc2350c
+        [8262000 ns] Test is running, debug_wb_pc = 0xbfc235dc
+        [8272000 ns] Test is running, debug_wb_pc = 0xbfc23694
+        [8282000 ns] Test is running, debug_wb_pc = 0xbfc23760
+        [8292000 ns] Test is running, debug_wb_pc = 0xbfc2380c
+        [8302000 ns] Test is running, debug_wb_pc = 0xbfc238e0
+        [8312000 ns] Test is running, debug_wb_pc = 0xbfc239b0
+        [8322000 ns] Test is running, debug_wb_pc = 0xbfc23a5c
+        [8332000 ns] Test is running, debug_wb_pc = 0xbfc23b34
+        [8342000 ns] Test is running, debug_wb_pc = 0xbfc23c00
+        [8352000 ns] Test is running, debug_wb_pc = 0xbfc23cd0
+        [8362000 ns] Test is running, debug_wb_pc = 0xbfc23d84
+        [8372000 ns] Test is running, debug_wb_pc = 0xbfc23e50
+        [8382000 ns] Test is running, debug_wb_pc = 0x00000000
+        [8392000 ns] Test is running, debug_wb_pc = 0xbfc23fd4
+        [8402000 ns] Test is running, debug_wb_pc = 0xbfc240a0
+        [8412000 ns] Test is running, debug_wb_pc = 0xbfc24158
+        [8422000 ns] Test is running, debug_wb_pc = 0xbfc24224
+        [8432000 ns] Test is running, debug_wb_pc = 0xbfc242d0
+        [8442000 ns] Test is running, debug_wb_pc = 0xbfc243a8
+        [8452000 ns] Test is running, debug_wb_pc = 0xbfc24474
+        [8462000 ns] Test is running, debug_wb_pc = 0xbfc24520
+        [8472000 ns] Test is running, debug_wb_pc = 0xbfc245f8
+        [8482000 ns] Test is running, debug_wb_pc = 0xbfc246c4
+        [8492000 ns] Test is running, debug_wb_pc = 0xbfc24798
+        [8502000 ns] Test is running, debug_wb_pc = 0xbfc24848
+        [8512000 ns] Test is running, debug_wb_pc = 0xbfc24914
+        [8522000 ns] Test is running, debug_wb_pc = 0x00000000
+        [8532000 ns] Test is running, debug_wb_pc = 0xbfc24a98
+        [8542000 ns] Test is running, debug_wb_pc = 0xbfc24b44
+        [8552000 ns] Test is running, debug_wb_pc = 0xbfc24c1c
+        [8562000 ns] Test is running, debug_wb_pc = 0xbfc24ce8
+        [8572000 ns] Test is running, debug_wb_pc = 0xbfc24d98
+        [8582000 ns] Test is running, debug_wb_pc = 0xbfc24e6c
+        [8592000 ns] Test is running, debug_wb_pc = 0xbfc24f38
+        [8602000 ns] Test is running, debug_wb_pc = 0xbfc24fe8
+        [8612000 ns] Test is running, debug_wb_pc = 0xbfc250bc
+        [8622000 ns] Test is running, debug_wb_pc = 0xbfc2518c
+        [8632000 ns] Test is running, debug_wb_pc = 0xbfc2525c
+        [8642000 ns] Test is running, debug_wb_pc = 0xbfc2530c
+        [8652000 ns] Test is running, debug_wb_pc = 0xbfc253dc
+        [8662000 ns] Test is running, debug_wb_pc = 0xbfc25494
+        [8672000 ns] Test is running, debug_wb_pc = 0xbfc25560
+        [8682000 ns] Test is running, debug_wb_pc = 0xbfc2560c
+        [8692000 ns] Test is running, debug_wb_pc = 0xbfc256e0
+----[8698055 ns] Number 8'd15 Functional Test Point PASS!!!
+        [8702000 ns] Test is running, debug_wb_pc = 0x00000000
+        [8712000 ns] Test is running, debug_wb_pc = 0xbfc20b14
+        [8722000 ns] Test is running, debug_wb_pc = 0xbfc20bcc
+        [8732000 ns] Test is running, debug_wb_pc = 0x00000000
+        [8742000 ns] Test is running, debug_wb_pc = 0xbfc20d44
+        [8752000 ns] Test is running, debug_wb_pc = 0x00000000
+        [8762000 ns] Test is running, debug_wb_pc = 0xbfc20eb8
+        [8772000 ns] Test is running, debug_wb_pc = 0x00000000
+----[8773695 ns] Number 8'd16 Functional Test Point PASS!!!
+        [8782000 ns] Test is running, debug_wb_pc = 0xbfc21008
+        [8792000 ns] Test is running, debug_wb_pc = 0x00000000
+        [8802000 ns] Test is running, debug_wb_pc = 0xbfc2115c
+        [8812000 ns] Test is running, debug_wb_pc = 0x00000000
+        [8822000 ns] Test is running, debug_wb_pc = 0xbfc212d0
+        [8832000 ns] Test is running, debug_wb_pc = 0xbfc21384
+        [8842000 ns] Test is running, debug_wb_pc = 0xbfc2143c
+----[8847155 ns] Number 8'd17 Functional Test Point PASS!!!
+        [8852000 ns] Test is running, debug_wb_pc = 0xbfc0207c
+        [8862000 ns] Test is running, debug_wb_pc = 0x00000000
+        [8872000 ns] Test is running, debug_wb_pc = 0xbfc0221c
+        [8882000 ns] Test is running, debug_wb_pc = 0xbfc022f4
+----[8885775 ns] Number 8'd18 Functional Test Point PASS!!!
+        [8892000 ns] Test is running, debug_wb_pc = 0xbfc0694c
+        [8902000 ns] Test is running, debug_wb_pc = 0xbfc06a10
+        [8912000 ns] Test is running, debug_wb_pc = 0xbfc06ad4
+        [8922000 ns] Test is running, debug_wb_pc = 0xbfc06ba4
+        [8932000 ns] Test is running, debug_wb_pc = 0xbfc06c70
+----[8936995 ns] Number 8'd19 Functional Test Point PASS!!!
+        [8942000 ns] Test is running, debug_wb_pc = 0xbfc25774
+        [8952000 ns] Test is running, debug_wb_pc = 0xbfc2582c
+        [8962000 ns] Test is running, debug_wb_pc = 0x00000000
+        [8972000 ns] Test is running, debug_wb_pc = 0xbfc259bc
+        [8982000 ns] Test is running, debug_wb_pc = 0xbfc25a88
+----[8990595 ns] Number 8'd20 Functional Test Point PASS!!!
+        [8992000 ns] Test is running, debug_wb_pc = 0xbfc00988
+==============================================================
+Test end!
+----PASS!!!
+$finish called at time : 8999948500 ps : File "C:/Users/Lenovo/Desktop/colab/CO-lab-material-CQU/vivado/func_test_v0.01/soc_axi_func_sim/testbench/mycpu_tb.v" Line 269
+run: Time (s): cpu = 00:00:48 ; elapsed = 00:01:56 . Memory (MB): peak = 4494.828 ; gain = 0.000
+close_sim
+INFO: xsimkernel Simulation Memory Usage: 29200 KB (Peak: 29200 KB), Simulation CPU Usage: 24546 ms
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Sat Jan  4 18:03:01 2025...

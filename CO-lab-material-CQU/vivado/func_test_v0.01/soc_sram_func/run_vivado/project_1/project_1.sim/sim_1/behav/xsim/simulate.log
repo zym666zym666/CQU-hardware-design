@@ -1,0 +1,69 @@
+Time resolution is 1 ps
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module tb_top.soc_lite.inst_ram.inst.\native_mem_module.blk_mem_gen_v8_4_6_inst  is using a behavioral model for simulation which will not precisely model memory collision behavior.
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module tb_top.soc_lite.data_ram.inst.\native_mem_module.blk_mem_gen_v8_4_6_inst  is using a behavioral model for simulation which will not precisely model memory collision behavior.
+==============================================================
+Test begin!
+        [  22000 ns] Test is running, debug_wb_pc = 0x9fc1039c
+----[  23825 ns] Number 8'd01 Functional Test Point PASS!!!
+        [  32000 ns] Test is running, debug_wb_pc = 0x00000000
+        [  42000 ns] Test is running, debug_wb_pc = 0x00000000
+        [  52000 ns] Test is running, debug_wb_pc = 0xbfc16588
+----[  53255 ns] Number 8'd02 Functional Test Point PASS!!!
+        [  62000 ns] Test is running, debug_wb_pc = 0xbfc266e4
+----[  63325 ns] Number 8'd03 Functional Test Point PASS!!!
+        [  72000 ns] Test is running, debug_wb_pc = 0xbfc07eb0
+        [  82000 ns] Test is running, debug_wb_pc = 0xbfc09170
+----[  86635 ns] Number 8'd04 Functional Test Point PASS!!!
+        [  92000 ns] Test is running, debug_wb_pc = 0xbfc02cc8
+        [ 102000 ns] Test is running, debug_wb_pc = 0xbfc03f88
+        [ 112000 ns] Test is running, debug_wb_pc = 0xbfc0551c
+        [ 122000 ns] Test is running, debug_wb_pc = 0xbfc06828
+----[ 122345 ns] Number 8'd05 Functional Test Point PASS!!!
+        [ 132000 ns] Test is running, debug_wb_pc = 0xbfc11488
+----[ 135825 ns] Number 8'd06 Functional Test Point PASS!!!
+        [ 142000 ns] Test is running, debug_wb_pc = 0xbfc1b0ac
+        [ 152000 ns] Test is running, debug_wb_pc = 0xbfc1bebc
+        [ 162000 ns] Test is running, debug_wb_pc = 0xbfc1ccb0
+----[ 165175 ns] Number 8'd07 Functional Test Point PASS!!!
+        [ 172000 ns] Test is running, debug_wb_pc = 0xbfc12368
+        [ 182000 ns] Test is running, debug_wb_pc = 0xbfc1314c
+----[ 191555 ns] Number 8'd08 Functional Test Point PASS!!!
+        [ 192000 ns] Test is running, debug_wb_pc = 0xbfc1d178
+        [ 202000 ns] Test is running, debug_wb_pc = 0x00000000
+        [ 212000 ns] Test is running, debug_wb_pc = 0xbfc1ec28
+----[ 212425 ns] Number 8'd09 Functional Test Point PASS!!!
+        [ 222000 ns] Test is running, debug_wb_pc = 0xbfc0a834
+        [ 232000 ns] Test is running, debug_wb_pc = 0xbfc0b588
+----[ 233295 ns] Number 8'd10 Functional Test Point PASS!!!
+        [ 242000 ns] Test is running, debug_wb_pc = 0xbfc1f848
+        [ 252000 ns] Test is running, debug_wb_pc = 0xbfc205d8
+----[ 255525 ns] Number 8'd11 Functional Test Point PASS!!!
+        [ 262000 ns] Test is running, debug_wb_pc = 0xbfc01300
+----[ 271075 ns] Number 8'd12 Functional Test Point PASS!!!
+        [ 272000 ns] Test is running, debug_wb_pc = 0xbfc0b8a4
+        [ 282000 ns] Test is running, debug_wb_pc = 0xbfc0ccf4
+        [ 292000 ns] Test is running, debug_wb_pc = 0xbfc0e144
+----[ 295585 ns] Number 8'd13 Functional Test Point PASS!!!
+        [ 302000 ns] Test is running, debug_wb_pc = 0xbfc17308
+        [ 312000 ns] Test is running, debug_wb_pc = 0xbfc18608
+        [ 322000 ns] Test is running, debug_wb_pc = 0xbfc198e4
+----[ 330055 ns] Number 8'd14 Functional Test Point PASS!!!
+        [ 332000 ns] Test is running, debug_wb_pc = 0xbfc217e8
+        [ 342000 ns] Test is running, debug_wb_pc = 0xbfc22aa8
+        [ 352000 ns] Test is running, debug_wb_pc = 0xbfc23d68
+        [ 362000 ns] Test is running, debug_wb_pc = 0xbfc25028
+----[ 365865 ns] Number 8'd15 Functional Test Point PASS!!!
+----[ 369555 ns] Number 8'd16 Functional Test Point PASS!!!
+        [ 372000 ns] Test is running, debug_wb_pc = 0xbfc21290
+----[ 373505 ns] Number 8'd17 Functional Test Point PASS!!!
+----[ 375375 ns] Number 8'd18 Functional Test Point PASS!!!
+----[ 377515 ns] Number 8'd19 Functional Test Point PASS!!!
+----[ 379905 ns] Number 8'd20 Functional Test Point PASS!!!
+==============================================================
+Test end!
+----PASS!!!
+$finish called at time : 380335 ns : File "C:/Users/Lenovo/Desktop/colab/CO-lab-material-CQU/vivado/func_test_v0.01/soc_sram_func/testbench/mycpu_tb.v" Line 253

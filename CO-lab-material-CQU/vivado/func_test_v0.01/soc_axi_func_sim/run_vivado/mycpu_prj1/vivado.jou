@@ -1,0 +1,38 @@
+#-----------------------------------------------------------
+# Vivado v2023.1 (64-bit)
+# SW Build 3865809 on Sun May  7 15:05:29 MDT 2023
+# IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
+# SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
+# Start of session at: Thu Jan  9 14:19:30 2025
+# Process ID: 10564
+# Current directory: C:/Users/Lenovo/Desktop/colab/CO-lab-material-CQU/vivado/func_test_v0.01/soc_axi_func_sim/run_vivado/mycpu_prj1
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent10172 C:\Users\Lenovo\Desktop\colab\CO-lab-material-CQU\vivado\func_test_v0.01\soc_axi_func_sim\run_vivado\mycpu_prj1\mycpu.xpr
+# Log file: C:/Users/Lenovo/Desktop/colab/CO-lab-material-CQU/vivado/func_test_v0.01/soc_axi_func_sim/run_vivado/mycpu_prj1/vivado.log
+# Journal file: C:/Users/Lenovo/Desktop/colab/CO-lab-material-CQU/vivado/func_test_v0.01/soc_axi_func_sim/run_vivado/mycpu_prj1\vivado.jou
+# Running On: DESKTOP-87K58HJ, OS: Windows, CPU Frequency: 2918 MHz, CPU Physical cores: 4, Host memory: 16952 MB
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/Lenovo/Desktop/colab/CO-lab-material-CQU/vivado/func_test_v0.01/soc_axi_func_sim/run_vivado/mycpu_prj1/mycpu.xpr
+update_compile_order -fileset sources_1
+set_property CONFIG.Coe_File {C:/Users/Lenovo/Desktop/colab/CO-lab-material-CQU/vivado/func_test_v0.01/soft/func_4/obj/inst_ram.coe} [get_ips axi_ram]
+generate_target all [get_files  C:/Users/Lenovo/Desktop/colab/CO-lab-material-CQU/vivado/func_test_v0.01/soc_axi_func_sim/rtl/xilinx_ip/axi_ram/axi_ram.xci]
+export_ip_user_files -of_objects [get_files C:/Users/Lenovo/Desktop/colab/CO-lab-material-CQU/vivado/func_test_v0.01/soc_axi_func_sim/rtl/xilinx_ip/axi_ram/axi_ram.xci] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files C:/Users/Lenovo/Desktop/colab/CO-lab-material-CQU/vivado/func_test_v0.01/soc_axi_func_sim/rtl/xilinx_ip/axi_ram/axi_ram.xci] -directory C:/Users/Lenovo/Desktop/colab/CO-lab-material-CQU/vivado/func_test_v0.01/soc_axi_func_sim/run_vivado/mycpu_prj1/mycpu.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/Lenovo/Desktop/colab/CO-lab-material-CQU/vivado/func_test_v0.01/soc_axi_func_sim/run_vivado/mycpu_prj1/mycpu.ip_user_files -ipstatic_source_dir C:/Users/Lenovo/Desktop/colab/CO-lab-material-CQU/vivado/func_test_v0.01/soc_axi_func_sim/run_vivado/mycpu_prj1/mycpu.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/Lenovo/Desktop/Modeltech_pe_edu_10.4a/xilinx_lib} {questa=C:/Users/Lenovo/Desktop/colab/CO-lab-material-CQU/vivado/func_test_v0.01/soc_axi_func_sim/run_vivado/mycpu_prj1/mycpu.cache/compile_simlib/questa} {riviera=C:/Users/Lenovo/Desktop/colab/CO-lab-material-CQU/vivado/func_test_v0.01/soc_axi_func_sim/run_vivado/mycpu_prj1/mycpu.cache/compile_simlib/riviera} {activehdl=C:/Users/Lenovo/Desktop/colab/CO-lab-material-CQU/vivado/func_test_v0.01/soc_axi_func_sim/run_vivado/mycpu_prj1/mycpu.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+launch_simulation
+launch_simulation
+source tb_top.tcl
+run all
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+open_hw_manager
+connect_hw_server -allow_non_jtag
+open_hw_target
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/Lenovo/Desktop/colab/CO-lab-material-CQU/vivado/func_test_v0.01/soc_axi_func_sim/run_vivado/mycpu_prj1/mycpu.runs/impl_1/soc_axi_lite_top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+close_hw_manager
+close_sim

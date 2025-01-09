@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2023.1 (64-bit)
+# SW Build 3865809 on Sun May  7 15:05:29 MDT 2023
+# IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
+# SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
+# Start of session at: Wed Jan  1 12:39:00 2025
+# Process ID: 20412
+# Current directory: C:/Users/Lenovo/Desktop/colab/CO-lab-material-CQU/vivado/perf_test_v0.01/soc_axi_perf_demo/run_vivado/mycpu_prj1/mycpu.runs/axi_crossbar_1x2_synth_1
+# Command line: vivado.exe -log axi_crossbar_1x2.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source axi_crossbar_1x2.tcl
+# Log file: C:/Users/Lenovo/Desktop/colab/CO-lab-material-CQU/vivado/perf_test_v0.01/soc_axi_perf_demo/run_vivado/mycpu_prj1/mycpu.runs/axi_crossbar_1x2_synth_1/axi_crossbar_1x2.vds
+# Journal file: C:/Users/Lenovo/Desktop/colab/CO-lab-material-CQU/vivado/perf_test_v0.01/soc_axi_perf_demo/run_vivado/mycpu_prj1/mycpu.runs/axi_crossbar_1x2_synth_1\vivado.jou
+# Running On: DESKTOP-87K58HJ, OS: Windows, CPU Frequency: 2918 MHz, CPU Physical cores: 4, Host memory: 16952 MB
+#-----------------------------------------------------------
+source axi_crossbar_1x2.tcl -notrace

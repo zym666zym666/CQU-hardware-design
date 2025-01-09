@@ -1,0 +1,40 @@
+#-----------------------------------------------------------
+# Vivado v2023.1 (64-bit)
+# SW Build 3865809 on Sun May  7 15:05:29 MDT 2023
+# IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
+# SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
+# Start of session at: Sat Jan  4 17:06:35 2025
+# Process ID: 16876
+# Current directory: C:/Users/Lenovo/Desktop/colab/CO-lab-material-CQU/vivado/func_test_v0.01/soc_axi_func_sim/run_vivado/mycpu_prj1
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent17432 C:\Users\Lenovo\Desktop\colab\CO-lab-material-CQU\vivado\func_test_v0.01\soc_axi_func_sim\run_vivado\mycpu_prj1\mycpu.xpr
+# Log file: C:/Users/Lenovo/Desktop/colab/CO-lab-material-CQU/vivado/func_test_v0.01/soc_axi_func_sim/run_vivado/mycpu_prj1/vivado.log
+# Journal file: C:/Users/Lenovo/Desktop/colab/CO-lab-material-CQU/vivado/func_test_v0.01/soc_axi_func_sim/run_vivado/mycpu_prj1\vivado.jou
+# Running On: DESKTOP-87K58HJ, OS: Windows, CPU Frequency: 2918 MHz, CPU Physical cores: 4, Host memory: 16952 MB
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/Lenovo/Desktop/colab/CO-lab-material-CQU/vivado/func_test_v0.01/soc_axi_func_sim/run_vivado/mycpu_prj1/mycpu.xpr
+report_ip_status -name ip_status 
+update_compile_order -fileset sources_1
+add_files {C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/cpu_core/utils/flopenr.v C:/Users/Lenovo/Desktop/colab/axi/d_cache_simple.v C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/cpu_core/pc.v C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/cpu_core/hilo_reg.v C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/cpu_core/utils/floprc.v C:/Users/Lenovo/Desktop/colab/axi/i_cache.v C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/cpu_core/dec/controller.v C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/cpu_core/utils/sl2.v C:/Users/Lenovo/Desktop/colab/axi/bridge_2x1.v C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/cpu_core/utils/instdec.v C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/cpu_core/utils/mul.v C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/cpu_core/datapath.v C:/Users/Lenovo/Desktop/colab/axi/mycpu_top.v C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/cpu_core/regfile.v C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/cpu_core/exception/exceptdec.v C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/cpu_core/utils/adder.v C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/cpu_core/hazard.v C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/cpu_core/utils/eqcmp.v C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/cpu_core/utils/div.v C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/cpu_core/defines2.vh C:/Users/Lenovo/Desktop/colab/axi/bridge_1x2.v C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/mips_with_sram_like.v C:/Users/Lenovo/Desktop/colab/axi/d_cache.v C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/cpu_core/mem_ctrl.v C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/cpu_core/exception/cp0_reg.v C:/Users/Lenovo/Desktop/colab/axi/dpr.v C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/cpu_core/utils/mux3.v C:/Users/Lenovo/Desktop/colab/axi/d_cache_2waywb.v C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/cpu_core/utils/mux2.v C:/Users/Lenovo/Desktop/colab/axi/i_cache_plus.v C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/cpu_core/utils/flopenrc.v C:/Users/Lenovo/Desktop/colab/axi/cache.v C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/cpu_core/dec/aludec.v C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/cpu_core/utils/flopr.v C:/Users/Lenovo/Desktop/colab/axi/cpu_axi_interface.v C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/d_sram_to_sram_like.v C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/cpu_core/alu.v C:/Users/Lenovo/Desktop/colab/axi/i_cache_simple.v C:/Users/Lenovo/Desktop/colab/axi/mmu.v C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/i_sram_to_sram_like.v C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/cpu_core/dec/maindec.v C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/cpu_core/mips.v C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/cpu_core/utils/signext.v}
+update_compile_order -fileset sources_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+synth_design -rtl -rtl_skip_mlo -name rtl_1
+close_design
+open_run synth_1 -name synth_1
+close_design
+open_run impl_1
+close_design
+synth_design -rtl -rtl_skip_mlo -name rtl_1
+close_design
+set_property CONFIG.Coe_File {C:/Users/Lenovo/Desktop/colab/CO-lab-material-CQU/vivado/func_test_v0.01/soft/func_1/obj/inst_ram.coe} [get_ips axi_ram]
+set_property generate_synth_checkpoint false [get_files  C:/Users/Lenovo/Desktop/colab/CO-lab-material-CQU/vivado/func_test_v0.01/soc_axi_func_sim/rtl/xilinx_ip/axi_ram/axi_ram.xci]
+generate_target all [get_files  C:/Users/Lenovo/Desktop/colab/CO-lab-material-CQU/vivado/func_test_v0.01/soc_axi_func_sim/rtl/xilinx_ip/axi_ram/axi_ram.xci]
+export_ip_user_files -of_objects [get_files C:/Users/Lenovo/Desktop/colab/CO-lab-material-CQU/vivado/func_test_v0.01/soc_axi_func_sim/rtl/xilinx_ip/axi_ram/axi_ram.xci] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files C:/Users/Lenovo/Desktop/colab/CO-lab-material-CQU/vivado/func_test_v0.01/soc_axi_func_sim/rtl/xilinx_ip/axi_ram/axi_ram.xci] -directory C:/Users/Lenovo/Desktop/colab/CO-lab-material-CQU/vivado/func_test_v0.01/soc_axi_func_sim/run_vivado/mycpu_prj1/mycpu.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/Lenovo/Desktop/colab/CO-lab-material-CQU/vivado/func_test_v0.01/soc_axi_func_sim/run_vivado/mycpu_prj1/mycpu.ip_user_files -ipstatic_source_dir C:/Users/Lenovo/Desktop/colab/CO-lab-material-CQU/vivado/func_test_v0.01/soc_axi_func_sim/run_vivado/mycpu_prj1/mycpu.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/Lenovo/Desktop/Modeltech_pe_edu_10.4a/xilinx_lib} {questa=C:/Users/Lenovo/Desktop/colab/CO-lab-material-CQU/vivado/func_test_v0.01/soc_axi_func_sim/run_vivado/mycpu_prj1/mycpu.cache/compile_simlib/questa} {riviera=C:/Users/Lenovo/Desktop/colab/CO-lab-material-CQU/vivado/func_test_v0.01/soc_axi_func_sim/run_vivado/mycpu_prj1/mycpu.cache/compile_simlib/riviera} {activehdl=C:/Users/Lenovo/Desktop/colab/CO-lab-material-CQU/vivado/func_test_v0.01/soc_axi_func_sim/run_vivado/mycpu_prj1/mycpu.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+launch_simulation
+source tb_top.tcl
+run all
+close_sim

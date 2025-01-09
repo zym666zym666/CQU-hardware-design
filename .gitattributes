@@ -1,0 +1,1 @@
+CO-lab-material-CQU/vivado/func_test_v0.01/soc_axi_func_sim/run_vivado/mycpu_prj1/mycpu.sim/sim_1/behav/xsim/tb_top_behav.wdb filter=lfs diff=lfs merge=lfs -text

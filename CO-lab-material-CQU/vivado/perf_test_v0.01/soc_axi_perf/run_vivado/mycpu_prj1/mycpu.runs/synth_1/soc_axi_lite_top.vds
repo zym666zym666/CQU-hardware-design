@@ -1,0 +1,708 @@
+#-----------------------------------------------------------
+# Vivado v2023.1 (64-bit)
+# SW Build 3865809 on Sun May  7 15:05:29 MDT 2023
+# IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
+# SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
+# Start of session at: Thu Jan  9 14:49:01 2025
+# Process ID: 12616
+# Current directory: C:/Users/Lenovo/Desktop/colab/CO-lab-material-CQU/vivado/perf_test_v0.01/soc_axi_perf/run_vivado/mycpu_prj1/mycpu.runs/synth_1
+# Command line: vivado.exe -log soc_axi_lite_top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source soc_axi_lite_top.tcl
+# Log file: C:/Users/Lenovo/Desktop/colab/CO-lab-material-CQU/vivado/perf_test_v0.01/soc_axi_perf/run_vivado/mycpu_prj1/mycpu.runs/synth_1/soc_axi_lite_top.vds
+# Journal file: C:/Users/Lenovo/Desktop/colab/CO-lab-material-CQU/vivado/perf_test_v0.01/soc_axi_perf/run_vivado/mycpu_prj1/mycpu.runs/synth_1\vivado.jou
+# Running On: DESKTOP-87K58HJ, OS: Windows, CPU Frequency: 2918 MHz, CPU Physical cores: 4, Host memory: 16952 MB
+#-----------------------------------------------------------
+source soc_axi_lite_top.tcl -notrace
+create_project: Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 485.703 ; gain = 199.875
+Command: synth_design -top soc_axi_lite_top -part xc7a100tcsg324-1 -fanout_limit 400 -fsm_extraction one_hot -keep_equivalent_registers -resource_sharing off -no_lc -shreg_min_size 5
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 7628
+INFO: [Synth 8-11241] undeclared symbol 'div_ready', assumed default net type 'wire' [C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/cpu_core/alu.v:118]
+INFO: [Synth 8-11241] undeclared symbol 'cp0stallD', assumed default net type 'wire' [C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/cpu_core/hazard.v:124]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1335.824 ; gain = 409.824
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'soc_axi_lite_top' [C:/Users/Lenovo/Desktop/colab/CO-lab-material-CQU/vivado/perf_test_v0.01/soc_axi_perf/rtl/soc_axi_lite_top.v:65]
+INFO: [Synth 8-6157] synthesizing module 'clk_pll' [C:/Users/Lenovo/Desktop/colab/CO-lab-material-CQU/vivado/perf_test_v0.01/soc_axi_perf/run_vivado/mycpu_prj1/mycpu.runs/synth_1/.Xil/Vivado-12616-DESKTOP-87K58HJ/realtime/clk_pll_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'clk_pll' (0#1) [C:/Users/Lenovo/Desktop/colab/CO-lab-material-CQU/vivado/perf_test_v0.01/soc_axi_perf/run_vivado/mycpu_prj1/mycpu.runs/synth_1/.Xil/Vivado-12616-DESKTOP-87K58HJ/realtime/clk_pll_stub.v:6]
+WARNING: [Synth 8-85] always block has no event control specified [C:/Users/Lenovo/Desktop/colab/CO-lab-material-CQU/vivado/perf_test_v0.01/soc_axi_perf/rtl/soc_axi_lite_top.v:108]
+INFO: [Synth 8-6157] synthesizing module 'mycpu_top' [C:/Users/Lenovo/Desktop/colab/axi/mycpu_top.v:14]
+INFO: [Synth 8-6157] synthesizing module 'mips_with_sram_like' [C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/mips_with_sram_like.v:7]
+INFO: [Synth 8-6157] synthesizing module 'mips' [C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/cpu_core/mips.v:4]
+INFO: [Synth 8-6157] synthesizing module 'datapath' [C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/cpu_core/datapath.v:4]
+INFO: [Synth 8-6157] synthesizing module 'flopenrc' [C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/cpu_core/utils/flopenrc.v:24]
+	Parameter WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'flopenrc' (0#1) [C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/cpu_core/utils/flopenrc.v:24]
+INFO: [Synth 8-6157] synthesizing module 'flopenrc__parameterized0' [C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/cpu_core/utils/flopenrc.v:24]
+	Parameter WIDTH bound to: 20 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'flopenrc__parameterized0' (0#1) [C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/cpu_core/utils/flopenrc.v:24]
+INFO: [Synth 8-6157] synthesizing module 'flopenrc__parameterized1' [C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/cpu_core/utils/flopenrc.v:24]
+	Parameter WIDTH bound to: 12 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'flopenrc__parameterized1' (0#1) [C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/cpu_core/utils/flopenrc.v:24]
+WARNING: [Synth 8-689] width (11) of port connection 'q' does not match port width (12) of module 'flopenrc__parameterized1' [C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/cpu_core/datapath.v:178]
+INFO: [Synth 8-6157] synthesizing module 'flopenrc__parameterized2' [C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/cpu_core/utils/flopenrc.v:24]
+	Parameter WIDTH bound to: 2 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'flopenrc__parameterized2' (0#1) [C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/cpu_core/utils/flopenrc.v:24]
+INFO: [Synth 8-6157] synthesizing module 'hazard' [C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/cpu_core/hazard.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'hazard' (0#1) [C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/cpu_core/hazard.v:23]
+INFO: [Synth 8-6157] synthesizing module 'mux2' [C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/cpu_core/utils/mux2.v:23]
+	Parameter WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'mux2' (0#1) [C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/cpu_core/utils/mux2.v:23]
+INFO: [Synth 8-6157] synthesizing module 'regfile' [C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/cpu_core/regfile.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'regfile' (0#1) [C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/cpu_core/regfile.v:23]
+INFO: [Synth 8-6157] synthesizing module 'pc' [C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/cpu_core/pc.v:23]
+	Parameter WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'pc' (0#1) [C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/cpu_core/pc.v:23]
+INFO: [Synth 8-6157] synthesizing module 'adder' [C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/cpu_core/utils/adder.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'adder' (0#1) [C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/cpu_core/utils/adder.v:23]
+INFO: [Synth 8-6157] synthesizing module 'flopenrc__parameterized3' [C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/cpu_core/utils/flopenrc.v:24]
+	Parameter WIDTH bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'flopenrc__parameterized3' (0#1) [C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/cpu_core/utils/flopenrc.v:24]
+INFO: [Synth 8-6157] synthesizing module 'signext' [C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/cpu_core/utils/signext.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'signext' (0#1) [C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/cpu_core/utils/signext.v:23]
+INFO: [Synth 8-6157] synthesizing module 'sl2' [C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/cpu_core/utils/sl2.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'sl2' (0#1) [C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/cpu_core/utils/sl2.v:23]
+INFO: [Synth 8-6157] synthesizing module 'eqcmp' [C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/cpu_core/utils/eqcmp.v:24]
+INFO: [Synth 8-6155] done synthesizing module 'eqcmp' (0#1) [C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/cpu_core/utils/eqcmp.v:24]
+INFO: [Synth 8-6157] synthesizing module 'flopenrc__parameterized4' [C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/cpu_core/utils/flopenrc.v:24]
+	Parameter WIDTH bound to: 5 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'flopenrc__parameterized4' (0#1) [C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/cpu_core/utils/flopenrc.v:24]
+INFO: [Synth 8-6157] synthesizing module 'flopenrc__parameterized5' [C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/cpu_core/utils/flopenrc.v:24]
+	Parameter WIDTH bound to: 6 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'flopenrc__parameterized5' (0#1) [C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/cpu_core/utils/flopenrc.v:24]
+INFO: [Synth 8-6157] synthesizing module 'flopenrc__parameterized6' [C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/cpu_core/utils/flopenrc.v:24]
+	Parameter WIDTH bound to: 4 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'flopenrc__parameterized6' (0#1) [C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/cpu_core/utils/flopenrc.v:24]
+INFO: [Synth 8-6157] synthesizing module 'mux3' [C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/cpu_core/utils/mux3.v:23]
+	Parameter WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'mux3' (0#1) [C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/cpu_core/utils/mux3.v:23]
+INFO: [Synth 8-6157] synthesizing module 'alu' [C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/cpu_core/alu.v:23]
+INFO: [Synth 8-6157] synthesizing module 'div' [C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/cpu_core/utils/div.v:35]
+INFO: [Synth 8-6155] done synthesizing module 'div' (0#1) [C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/cpu_core/utils/div.v:35]
+INFO: [Synth 8-6157] synthesizing module 'mul' [C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/cpu_core/utils/mul.v:1]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/cpu_core/utils/mul.v:44]
+INFO: [Synth 8-6155] done synthesizing module 'mul' (0#1) [C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/cpu_core/utils/mul.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'alu' (0#1) [C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/cpu_core/alu.v:23]
+INFO: [Synth 8-6157] synthesizing module 'mux3__parameterized0' [C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/cpu_core/utils/mux3.v:23]
+	Parameter WIDTH bound to: 5 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'mux3__parameterized0' (0#1) [C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/cpu_core/utils/mux3.v:23]
+INFO: [Synth 8-6157] synthesizing module 'flopenrc__parameterized7' [C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/cpu_core/utils/flopenrc.v:24]
+	Parameter WIDTH bound to: 64 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'flopenrc__parameterized7' (0#1) [C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/cpu_core/utils/flopenrc.v:24]
+INFO: [Synth 8-6157] synthesizing module 'hilo_reg' [C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/cpu_core/hilo_reg.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'hilo_reg' (0#1) [C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/cpu_core/hilo_reg.v:1]
+INFO: [Synth 8-6157] synthesizing module 'mem_ctrl' [C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/cpu_core/mem_ctrl.v:3]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/cpu_core/mem_ctrl.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'mem_ctrl' (0#1) [C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/cpu_core/mem_ctrl.v:3]
+INFO: [Synth 8-6157] synthesizing module 'exceptdec' [C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/cpu_core/exception/exceptdec.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'exceptdec' (0#1) [C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/cpu_core/exception/exceptdec.v:4]
+INFO: [Synth 8-6157] synthesizing module 'flopr' [C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/cpu_core/utils/flopr.v:24]
+	Parameter WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'flopr' (0#1) [C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/cpu_core/utils/flopr.v:24]
+INFO: [Synth 8-6157] synthesizing module 'cp0_reg' [C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/cpu_core/exception/cp0_reg.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'cp0_reg' (0#1) [C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/cpu_core/exception/cp0_reg.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'datapath' (0#1) [C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/cpu_core/datapath.v:4]
+INFO: [Synth 8-6157] synthesizing module 'controller' [C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/cpu_core/dec/controller.v:3]
+INFO: [Synth 8-6157] synthesizing module 'maindec' [C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/cpu_core/dec/maindec.v:5]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/cpu_core/dec/maindec.v:95]
+INFO: [Synth 8-6155] done synthesizing module 'maindec' (0#1) [C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/cpu_core/dec/maindec.v:5]
+INFO: [Synth 8-6157] synthesizing module 'aludec' [C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/cpu_core/dec/aludec.v:24]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/cpu_core/dec/aludec.v:98]
+INFO: [Synth 8-6155] done synthesizing module 'aludec' (0#1) [C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/cpu_core/dec/aludec.v:24]
+INFO: [Synth 8-6155] done synthesizing module 'controller' (0#1) [C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/cpu_core/dec/controller.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'mips' (0#1) [C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/cpu_core/mips.v:4]
+INFO: [Synth 8-6157] synthesizing module 'i_sram_to_sram_like' [C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/i_sram_to_sram_like.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'i_sram_to_sram_like' (0#1) [C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/i_sram_to_sram_like.v:3]
+INFO: [Synth 8-6157] synthesizing module 'd_sram_to_sram_like' [C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/d_sram_to_sram_like.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'd_sram_to_sram_like' (0#1) [C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/d_sram_to_sram_like.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'mips_with_sram_like' (0#1) [C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/mips_with_sram_like.v:7]
+INFO: [Synth 8-6157] synthesizing module 'mmu' [C:/Users/Lenovo/Desktop/colab/axi/mmu.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'mmu' (0#1) [C:/Users/Lenovo/Desktop/colab/axi/mmu.v:4]
+INFO: [Synth 8-6157] synthesizing module 'bridge_1x2' [C:/Users/Lenovo/Desktop/colab/axi/bridge_1x2.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'bridge_1x2' (0#1) [C:/Users/Lenovo/Desktop/colab/axi/bridge_1x2.v:5]
+INFO: [Synth 8-6157] synthesizing module 'cache' [C:/Users/Lenovo/Desktop/colab/axi/cache.v:1]
+INFO: [Synth 8-6157] synthesizing module 'i_cache_simple' [C:/Users/Lenovo/Desktop/colab/axi/i_cache_simple.v:2]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Lenovo/Desktop/colab/axi/i_cache_simple.v:64]
+INFO: [Synth 8-6155] done synthesizing module 'i_cache_simple' (0#1) [C:/Users/Lenovo/Desktop/colab/axi/i_cache_simple.v:2]
+INFO: [Synth 8-6157] synthesizing module 'd_cache_simple' [C:/Users/Lenovo/Desktop/colab/axi/d_cache_simple.v:2]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Lenovo/Desktop/colab/axi/d_cache_simple.v:67]
+INFO: [Synth 8-6155] done synthesizing module 'd_cache_simple' (0#1) [C:/Users/Lenovo/Desktop/colab/axi/d_cache_simple.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'cache' (0#1) [C:/Users/Lenovo/Desktop/colab/axi/cache.v:1]
+INFO: [Synth 8-6157] synthesizing module 'bridge_2x1' [C:/Users/Lenovo/Desktop/colab/axi/bridge_2x1.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'bridge_2x1' (0#1) [C:/Users/Lenovo/Desktop/colab/axi/bridge_2x1.v:3]
+INFO: [Synth 8-6157] synthesizing module 'cpu_axi_interface' [C:/Users/Lenovo/Desktop/colab/axi/cpu_axi_interface.v:7]
+INFO: [Synth 8-6155] done synthesizing module 'cpu_axi_interface' (0#1) [C:/Users/Lenovo/Desktop/colab/axi/cpu_axi_interface.v:7]
+INFO: [Synth 8-6155] done synthesizing module 'mycpu_top' (0#1) [C:/Users/Lenovo/Desktop/colab/axi/mycpu_top.v:14]
+WARNING: [Synth 8-689] width (4) of port connection 'arlen' does not match port width (8) of module 'mycpu_top' [C:/Users/Lenovo/Desktop/colab/CO-lab-material-CQU/vivado/perf_test_v0.01/soc_axi_perf/rtl/soc_axi_lite_top.v:327]
+WARNING: [Synth 8-689] width (4) of port connection 'awlen' does not match port width (8) of module 'mycpu_top' [C:/Users/Lenovo/Desktop/colab/CO-lab-material-CQU/vivado/perf_test_v0.01/soc_axi_perf/rtl/soc_axi_lite_top.v:345]
+INFO: [Synth 8-6157] synthesizing module 'axi_wrap' [C:/Users/Lenovo/Desktop/colab/CO-lab-material-CQU/vivado/perf_test_v0.01/soc_axi_perf/rtl/axi_wrap/axi_wrap.v:34]
+INFO: [Synth 8-6155] done synthesizing module 'axi_wrap' (0#1) [C:/Users/Lenovo/Desktop/colab/CO-lab-material-CQU/vivado/perf_test_v0.01/soc_axi_perf/rtl/axi_wrap/axi_wrap.v:34]
+INFO: [Synth 8-6157] synthesizing module 'axi_clock_converter' [C:/Users/Lenovo/Desktop/colab/CO-lab-material-CQU/vivado/perf_test_v0.01/soc_axi_perf/run_vivado/mycpu_prj1/mycpu.runs/synth_1/.Xil/Vivado-12616-DESKTOP-87K58HJ/realtime/axi_clock_converter_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'axi_clock_converter' (0#1) [C:/Users/Lenovo/Desktop/colab/CO-lab-material-CQU/vivado/perf_test_v0.01/soc_axi_perf/run_vivado/mycpu_prj1/mycpu.runs/synth_1/.Xil/Vivado-12616-DESKTOP-87K58HJ/realtime/axi_clock_converter_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_1x2' [C:/Users/Lenovo/Desktop/colab/CO-lab-material-CQU/vivado/perf_test_v0.01/soc_axi_perf/run_vivado/mycpu_prj1/mycpu.runs/synth_1/.Xil/Vivado-12616-DESKTOP-87K58HJ/realtime/axi_crossbar_1x2_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_1x2' (0#1) [C:/Users/Lenovo/Desktop/colab/CO-lab-material-CQU/vivado/perf_test_v0.01/soc_axi_perf/run_vivado/mycpu_prj1/mycpu.runs/synth_1/.Xil/Vivado-12616-DESKTOP-87K58HJ/realtime/axi_crossbar_1x2_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'axi_wrap_ram' [C:/Users/Lenovo/Desktop/colab/CO-lab-material-CQU/vivado/perf_test_v0.01/soc_axi_perf/rtl/ram_wrap/axi_wrap_ram.v:37]
+INFO: [Synth 8-6157] synthesizing module 'axi_ram' [C:/Users/Lenovo/Desktop/colab/CO-lab-material-CQU/vivado/perf_test_v0.01/soc_axi_perf/run_vivado/mycpu_prj1/mycpu.runs/synth_1/.Xil/Vivado-12616-DESKTOP-87K58HJ/realtime/axi_ram_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'axi_ram' (0#1) [C:/Users/Lenovo/Desktop/colab/CO-lab-material-CQU/vivado/perf_test_v0.01/soc_axi_perf/run_vivado/mycpu_prj1/mycpu.runs/synth_1/.Xil/Vivado-12616-DESKTOP-87K58HJ/realtime/axi_ram_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'axi_wrap_ram' (0#1) [C:/Users/Lenovo/Desktop/colab/CO-lab-material-CQU/vivado/perf_test_v0.01/soc_axi_perf/rtl/ram_wrap/axi_wrap_ram.v:37]
+INFO: [Synth 8-6157] synthesizing module 'confreg' [C:/Users/Lenovo/Desktop/colab/CO-lab-material-CQU/vivado/perf_test_v0.01/soc_axi_perf/rtl/CONFREG/confreg.v:73]
+	Parameter SIMULATION bound to: 1'b0 
+INFO: [Synth 8-6155] done synthesizing module 'confreg' (0#1) [C:/Users/Lenovo/Desktop/colab/CO-lab-material-CQU/vivado/perf_test_v0.01/soc_axi_perf/rtl/CONFREG/confreg.v:73]
+WARNING: [Synth 8-7071] port 'btn_key_col' of module 'confreg' is unconnected for instance 'u_confreg' [C:/Users/Lenovo/Desktop/colab/CO-lab-material-CQU/vivado/perf_test_v0.01/soc_axi_perf/rtl/soc_axi_lite_top.v:684]
+WARNING: [Synth 8-7071] port 'btn_key_row' of module 'confreg' is unconnected for instance 'u_confreg' [C:/Users/Lenovo/Desktop/colab/CO-lab-material-CQU/vivado/perf_test_v0.01/soc_axi_perf/rtl/soc_axi_lite_top.v:684]
+WARNING: [Synth 8-7071] port 'btn_step' of module 'confreg' is unconnected for instance 'u_confreg' [C:/Users/Lenovo/Desktop/colab/CO-lab-material-CQU/vivado/perf_test_v0.01/soc_axi_perf/rtl/soc_axi_lite_top.v:684]
+WARNING: [Synth 8-7023] instance 'u_confreg' of module 'confreg' has 49 connections declared, but only 46 given [C:/Users/Lenovo/Desktop/colab/CO-lab-material-CQU/vivado/perf_test_v0.01/soc_axi_perf/rtl/soc_axi_lite_top.v:684]
+INFO: [Synth 8-6155] done synthesizing module 'soc_axi_lite_top' (0#1) [C:/Users/Lenovo/Desktop/colab/CO-lab-material-CQU/vivado/perf_test_v0.01/soc_axi_perf/rtl/soc_axi_lite_top.v:65]
+WARNING: [Synth 8-6014] Unused sequential element temp_op1_reg was removed.  [C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/cpu_core/utils/div.v:80]
+WARNING: [Synth 8-6014] Unused sequential element temp_op2_reg was removed.  [C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/cpu_core/utils/div.v:86]
+WARNING: [Synth 8-3848] Net cp0_rdataE in module/entity datapath does not have driver. [C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/cpu_core/datapath.v:107]
+WARNING: [Synth 8-6014] Unused sequential element ar_nomask_reg was removed.  [C:/Users/Lenovo/Desktop/colab/CO-lab-material-CQU/vivado/perf_test_v0.01/soc_axi_perf/rtl/ram_wrap/axi_wrap_ram.v:132]
+WARNING: [Synth 8-6014] Unused sequential element aw_nomask_reg was removed.  [C:/Users/Lenovo/Desktop/colab/CO-lab-material-CQU/vivado/perf_test_v0.01/soc_axi_perf/rtl/ram_wrap/axi_wrap_ram.v:136]
+WARNING: [Synth 8-6014] Unused sequential element w_nomask_reg was removed.  [C:/Users/Lenovo/Desktop/colab/CO-lab-material-CQU/vivado/perf_test_v0.01/soc_axi_perf/rtl/ram_wrap/axi_wrap_ram.v:140]
+WARNING: [Synth 8-6014] Unused sequential element buf_len_reg was removed.  [C:/Users/Lenovo/Desktop/colab/CO-lab-material-CQU/vivado/perf_test_v0.01/soc_axi_perf/rtl/CONFREG/confreg.v:192]
+WARNING: [Synth 8-6014] Unused sequential element buf_size_reg was removed.  [C:/Users/Lenovo/Desktop/colab/CO-lab-material-CQU/vivado/perf_test_v0.01/soc_axi_perf/rtl/CONFREG/confreg.v:193]
+WARNING: [Synth 8-7129] Port arlen[7] in module confreg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port arlen[6] in module confreg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port arlen[5] in module confreg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port arlen[4] in module confreg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port arlen[3] in module confreg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port arlen[2] in module confreg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port arlen[1] in module confreg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port arlen[0] in module confreg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port arsize[2] in module confreg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port arsize[1] in module confreg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port arsize[0] in module confreg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port arburst[1] in module confreg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port arburst[0] in module confreg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port arlock[1] in module confreg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port arlock[0] in module confreg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port arcache[3] in module confreg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port arcache[2] in module confreg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port arcache[1] in module confreg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port arcache[0] in module confreg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port arprot[2] in module confreg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port arprot[1] in module confreg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port arprot[0] in module confreg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port awlen[7] in module confreg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port awlen[6] in module confreg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port awlen[5] in module confreg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port awlen[4] in module confreg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port awlen[3] in module confreg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port awlen[2] in module confreg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port awlen[1] in module confreg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port awlen[0] in module confreg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port awsize[2] in module confreg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port awsize[1] in module confreg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port awsize[0] in module confreg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port awburst[1] in module confreg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port awburst[0] in module confreg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port awlock[1] in module confreg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port awlock[0] in module confreg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port awcache[3] in module confreg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port awcache[2] in module confreg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port awcache[1] in module confreg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port awcache[0] in module confreg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port awprot[2] in module confreg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port awprot[1] in module confreg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port awprot[0] in module confreg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wid[3] in module confreg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wid[2] in module confreg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wid[1] in module confreg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wid[0] in module confreg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wstrb[3] in module confreg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wstrb[2] in module confreg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wstrb[1] in module confreg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wstrb[0] in module confreg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port axi_arlock[1] in module axi_wrap_ram is either unconnected or has no load
+WARNING: [Synth 8-7129] Port axi_arlock[0] in module axi_wrap_ram is either unconnected or has no load
+WARNING: [Synth 8-7129] Port axi_arcache[3] in module axi_wrap_ram is either unconnected or has no load
+WARNING: [Synth 8-7129] Port axi_arcache[2] in module axi_wrap_ram is either unconnected or has no load
+WARNING: [Synth 8-7129] Port axi_arcache[1] in module axi_wrap_ram is either unconnected or has no load
+WARNING: [Synth 8-7129] Port axi_arcache[0] in module axi_wrap_ram is either unconnected or has no load
+WARNING: [Synth 8-7129] Port axi_arprot[2] in module axi_wrap_ram is either unconnected or has no load
+WARNING: [Synth 8-7129] Port axi_arprot[1] in module axi_wrap_ram is either unconnected or has no load
+WARNING: [Synth 8-7129] Port axi_arprot[0] in module axi_wrap_ram is either unconnected or has no load
+WARNING: [Synth 8-7129] Port axi_awlock[1] in module axi_wrap_ram is either unconnected or has no load
+WARNING: [Synth 8-7129] Port axi_awlock[0] in module axi_wrap_ram is either unconnected or has no load
+WARNING: [Synth 8-7129] Port axi_awcache[3] in module axi_wrap_ram is either unconnected or has no load
+WARNING: [Synth 8-7129] Port axi_awcache[2] in module axi_wrap_ram is either unconnected or has no load
+WARNING: [Synth 8-7129] Port axi_awcache[1] in module axi_wrap_ram is either unconnected or has no load
+WARNING: [Synth 8-7129] Port axi_awcache[0] in module axi_wrap_ram is either unconnected or has no load
+WARNING: [Synth 8-7129] Port axi_awprot[2] in module axi_wrap_ram is either unconnected or has no load
+WARNING: [Synth 8-7129] Port axi_awprot[1] in module axi_wrap_ram is either unconnected or has no load
+WARNING: [Synth 8-7129] Port axi_awprot[0] in module axi_wrap_ram is either unconnected or has no load
+WARNING: [Synth 8-7129] Port axi_wid[3] in module axi_wrap_ram is either unconnected or has no load
+WARNING: [Synth 8-7129] Port axi_wid[2] in module axi_wrap_ram is either unconnected or has no load
+WARNING: [Synth 8-7129] Port axi_wid[1] in module axi_wrap_ram is either unconnected or has no load
+WARNING: [Synth 8-7129] Port axi_wid[0] in module axi_wrap_ram is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ram_random_mask[4] in module axi_wrap_ram is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ram_random_mask[3] in module axi_wrap_ram is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ram_random_mask[2] in module axi_wrap_ram is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ram_random_mask[1] in module axi_wrap_ram is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ram_random_mask[0] in module axi_wrap_ram is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rid[3] in module cpu_axi_interface is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rid[2] in module cpu_axi_interface is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rid[1] in module cpu_axi_interface is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rid[0] in module cpu_axi_interface is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rresp[1] in module cpu_axi_interface is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rresp[0] in module cpu_axi_interface is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rlast in module cpu_axi_interface is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bid[3] in module cpu_axi_interface is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bid[2] in module cpu_axi_interface is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bid[1] in module cpu_axi_interface is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bid[0] in module cpu_axi_interface is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bresp[1] in module cpu_axi_interface is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bresp[0] in module cpu_axi_interface is either unconnected or has no load
+WARNING: [Synth 8-7129] Port instrD[15] in module controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port instrD[14] in module controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port instrD[13] in module controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port instrD[12] in module controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port instrD[11] in module controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port instrD[10] in module controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port instrD[9] in module controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port instrD[8] in module controller is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:10 ; elapsed = 00:00:13 . Memory (MB): peak = 1591.395 ; gain = 665.395
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:10 ; elapsed = 00:00:13 . Memory (MB): peak = 1591.395 ; gain = 665.395
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:13 . Memory (MB): peak = 1591.395 ; gain = 665.395
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.175 . Memory (MB): peak = 1591.395 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/Lenovo/Desktop/colab/CO-lab-material-CQU/vivado/perf_test_v0.01/soc_axi_perf/rtl/xilinx_ip/axi_ram/axi_ram/axi_ram_in_context.xdc] for cell 'u_axi_ram/ram'
+Finished Parsing XDC File [c:/Users/Lenovo/Desktop/colab/CO-lab-material-CQU/vivado/perf_test_v0.01/soc_axi_perf/rtl/xilinx_ip/axi_ram/axi_ram/axi_ram_in_context.xdc] for cell 'u_axi_ram/ram'
+Parsing XDC File [c:/Users/Lenovo/Desktop/colab/CO-lab-material-CQU/vivado/perf_test_v0.01/soc_axi_perf/rtl/xilinx_ip/clk_pll/clk_pll/clk_pll_in_context.xdc] for cell 'pll.clk_pll'
+Finished Parsing XDC File [c:/Users/Lenovo/Desktop/colab/CO-lab-material-CQU/vivado/perf_test_v0.01/soc_axi_perf/rtl/xilinx_ip/clk_pll/clk_pll/clk_pll_in_context.xdc] for cell 'pll.clk_pll'
+Parsing XDC File [c:/Users/Lenovo/Desktop/colab/CO-lab-material-CQU/vivado/perf_test_v0.01/soc_axi_perf/rtl/xilinx_ip/axi_clock_converter/axi_clock_converter/axi_clock_converter_in_context.xdc] for cell 'u_axi_clock_sync'
+Finished Parsing XDC File [c:/Users/Lenovo/Desktop/colab/CO-lab-material-CQU/vivado/perf_test_v0.01/soc_axi_perf/rtl/xilinx_ip/axi_clock_converter/axi_clock_converter/axi_clock_converter_in_context.xdc] for cell 'u_axi_clock_sync'
+Parsing XDC File [c:/Users/Lenovo/Desktop/colab/CO-lab-material-CQU/vivado/perf_test_v0.01/soc_axi_perf/rtl/xilinx_ip/axi_crossbar_1x2/axi_crossbar_1x2/axi_crossbar_1x2_in_context.xdc] for cell 'u_axi_crossbar_1x2'
+Finished Parsing XDC File [c:/Users/Lenovo/Desktop/colab/CO-lab-material-CQU/vivado/perf_test_v0.01/soc_axi_perf/rtl/xilinx_ip/axi_crossbar_1x2/axi_crossbar_1x2/axi_crossbar_1x2_in_context.xdc] for cell 'u_axi_crossbar_1x2'
+Parsing XDC File [C:/Users/Lenovo/Desktop/colab/CO-lab-material-CQU/vivado/perf_test_v0.01/soc_axi_perf/run_vivado/soc_lite.xdc]
+WARNING: [Constraints 18-619] A clock with name 'clk' already exists, overwriting the previous clock with the same name. [C:/Users/Lenovo/Desktop/colab/CO-lab-material-CQU/vivado/perf_test_v0.01/soc_axi_perf/run_vivado/soc_lite.xdc:5]
+Finished Parsing XDC File [C:/Users/Lenovo/Desktop/colab/CO-lab-material-CQU/vivado/perf_test_v0.01/soc_axi_perf/run_vivado/soc_lite.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/Lenovo/Desktop/colab/CO-lab-material-CQU/vivado/perf_test_v0.01/soc_axi_perf/run_vivado/soc_lite.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/soc_axi_lite_top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/soc_axi_lite_top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1696.215 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.052 . Memory (MB): peak = 1696.215 ; gain = 0.000
+WARNING: [Timing 38-316] Clock period '100.000' specified during out-of-context synthesis of instance 'u_axi_clock_sync' at clock pin 'm_axi_aclk' is different from the actual clock period '10.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '100.000' specified during out-of-context synthesis of instance 'u_axi_crossbar_1x2' at clock pin 'aclk' is different from the actual clock period '10.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'u_axi_ram/ram' at clock pin 's_aclk' is different from the actual clock period '10.000', this can lead to different synthesis results.
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:18 ; elapsed = 00:00:25 . Memory (MB): peak = 1696.398 ; gain = 770.398
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:18 ; elapsed = 00:00:25 . Memory (MB): peak = 1696.398 ; gain = 770.398
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property IO_BUFFER_TYPE = NONE for clk. (constraint file  c:/Users/Lenovo/Desktop/colab/CO-lab-material-CQU/vivado/perf_test_v0.01/soc_axi_perf/rtl/xilinx_ip/clk_pll/clk_pll/clk_pll_in_context.xdc, line 4).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for clk. (constraint file  c:/Users/Lenovo/Desktop/colab/CO-lab-material-CQU/vivado/perf_test_v0.01/soc_axi_perf/rtl/xilinx_ip/clk_pll/clk_pll/clk_pll_in_context.xdc, line 5).
+Applied set_property KEEP_HIERARCHY = SOFT for u_axi_ram/ram. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for \pll.clk_pll . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for u_axi_clock_sync. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for u_axi_crossbar_1x2. (constraint file  auto generated constraint).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:18 ; elapsed = 00:00:25 . Memory (MB): peak = 1696.398 ; gain = 770.398
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'div'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'mul'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'i_cache_simple'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'd_cache_simple'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'confreg'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 iSTATE1 |                             0001 |                               00
+                 iSTATE0 |                             0010 |                               01
+                  iSTATE |                             0100 |                               10
+                 iSTATE2 |                             1000 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'div'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                              001 |                               00
+                 iSTATE0 |                              010 |                               01
+                 iSTATE1 |                              100 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'mul'
+WARNING: [Synth 8-327] inferring latch for variable 'double_sign_reg' [C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/cpu_core/alu.v:41]
+WARNING: [Synth 8-327] inferring latch for variable 'final_read_data_reg' [C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/cpu_core/mem_ctrl.v:26]
+WARNING: [Synth 8-327] inferring latch for variable 'mem_write_data_reg' [C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/cpu_core/mem_ctrl.v:68]
+WARNING: [Synth 8-327] inferring latch for variable 'controls_reg' [C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/cpu_core/dec/maindec.v:42]
+WARNING: [Synth 8-327] inferring latch for variable 'alucontrol_reg' [C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/cpu_core/dec/aludec.v:36]
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    IDLE |                               01 |                               00
+                      RM |                               10 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'i_cache_simple'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    IDLE |                              001 |                               00
+                      RM |                              010 |                               01
+                      WM |                              100 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'd_cache_simple'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 iSTATE4 |                           000001 |                              000
+                  iSTATE |                           100000 |                              001
+                 iSTATE0 |                           010000 |                              010
+                 iSTATE1 |                           001000 |                              011
+                 iSTATE2 |                           000100 |                              100
+                 iSTATE3 |                           000010 |                              111
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'confreg'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:30 ; elapsed = 00:00:46 . Memory (MB): peak = 1696.398 ; gain = 770.398
+---------------------------------------------------------------------------------
+INFO: [Synth 8-223] decloning instance 'u_cpu/mips_with_sram_like/mips_core/datapath/r6E' (flopenrc__parameterized4) to 'u_cpu/mips_with_sram_like/mips_core/datapath/r12E'
+INFO: [Synth 8-223] decloning instance 'u_cpu/mips_with_sram_like/mips_core/datapath/r6E' (flopenrc__parameterized4) to 'u_cpu/mips_with_sram_like/mips_core/datapath/r13E'
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   4 Input   64 Bit       Adders := 1     
+	   3 Input   33 Bit       Adders := 2     
+	   2 Input   33 Bit       Adders := 1     
+	   2 Input   32 Bit       Adders := 7     
+	   3 Input   32 Bit       Adders := 1     
+	   2 Input   20 Bit       Adders := 4     
+	   2 Input    6 Bit       Adders := 1     
+	   2 Input    5 Bit       Adders := 1     
+	   2 Input    4 Bit       Adders := 1     
+	   2 Input    2 Bit       Adders := 1     
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
+	   2 Input      6 Bit         XORs := 3     
+	   2 Input      1 Bit         XORs := 12    
++---Registers : 
+	               65 Bit    Registers := 1     
+	               64 Bit    Registers := 4     
+	               32 Bit    Registers := 53    
+	               23 Bit    Registers := 1     
+	               20 Bit    Registers := 5     
+	               16 Bit    Registers := 1     
+	               12 Bit    Registers := 1     
+	                8 Bit    Registers := 2     
+	                7 Bit    Registers := 1     
+	                6 Bit    Registers := 3     
+	                5 Bit    Registers := 9     
+	                4 Bit    Registers := 4     
+	                2 Bit    Registers := 3     
+	                1 Bit    Registers := 2094  
++---RAMs : 
+	              32K Bit	(1024 X 32 bit)          RAMs := 2     
+	              20K Bit	(1024 X 20 bit)          RAMs := 2     
++---Muxes : 
+	   2 Input   65 Bit        Muxes := 5     
+	   4 Input   65 Bit        Muxes := 2     
+	   2 Input   64 Bit        Muxes := 2     
+	   4 Input   64 Bit        Muxes := 1     
+	   3 Input   64 Bit        Muxes := 1     
+	   2 Input   32 Bit        Muxes := 54    
+	   4 Input   32 Bit        Muxes := 3     
+	   3 Input   32 Bit        Muxes := 2     
+	   9 Input   32 Bit        Muxes := 1     
+	  10 Input   32 Bit        Muxes := 5     
+	   6 Input   32 Bit        Muxes := 3     
+	   7 Input   24 Bit        Muxes := 1     
+	   3 Input   23 Bit        Muxes := 1     
+	   2 Input   23 Bit        Muxes := 1     
+	   2 Input   16 Bit        Muxes := 14    
+	   5 Input   16 Bit        Muxes := 1     
+	  17 Input   16 Bit        Muxes := 1     
+	   6 Input   12 Bit        Muxes := 1     
+	   3 Input   12 Bit        Muxes := 1     
+	   4 Input   12 Bit        Muxes := 1     
+	  11 Input   12 Bit        Muxes := 1     
+	   2 Input   10 Bit        Muxes := 1     
+	   4 Input    8 Bit        Muxes := 1     
+	   8 Input    8 Bit        Muxes := 1     
+	   2 Input    6 Bit        Muxes := 7     
+	   4 Input    6 Bit        Muxes := 1     
+	   6 Input    6 Bit        Muxes := 1     
+	   4 Input    5 Bit        Muxes := 1     
+	  26 Input    5 Bit        Muxes := 1     
+	   2 Input    5 Bit        Muxes := 3     
+	  15 Input    5 Bit        Muxes := 1     
+	   4 Input    4 Bit        Muxes := 3     
+	   3 Input    4 Bit        Muxes := 2     
+	   2 Input    4 Bit        Muxes := 11    
+	   9 Input    4 Bit        Muxes := 1     
+	   6 Input    4 Bit        Muxes := 1     
+	   3 Input    3 Bit        Muxes := 2     
+	   2 Input    3 Bit        Muxes := 17    
+	   6 Input    3 Bit        Muxes := 2     
+	   2 Input    2 Bit        Muxes := 16    
+	   3 Input    2 Bit        Muxes := 1     
+	   2 Input    1 Bit        Muxes := 106   
+	   3 Input    1 Bit        Muxes := 8     
+	   4 Input    1 Bit        Muxes := 9     
+	  19 Input    1 Bit        Muxes := 1     
+	   9 Input    1 Bit        Muxes := 4     
+	   8 Input    1 Bit        Muxes := 1     
+	   6 Input    1 Bit        Muxes := 5     
+	  10 Input    1 Bit        Muxes := 4     
+	  11 Input    1 Bit        Muxes := 3     
+	  15 Input    1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+DSP Report: Generating DSP t12_reg, operation Mode is: (A*B)'.
+DSP Report: register t12_reg is absorbed into DSP t12_reg.
+DSP Report: operator t120 is absorbed into DSP t12_reg.
+DSP Report: Generating DSP t21_reg, operation Mode is: (A*B)'.
+DSP Report: register t21_reg is absorbed into DSP t21_reg.
+DSP Report: operator t210 is absorbed into DSP t21_reg.
+DSP Report: Generating DSP t22_reg, operation Mode is: (A*B)'.
+DSP Report: register t22_reg is absorbed into DSP t22_reg.
+DSP Report: operator t220 is absorbed into DSP t22_reg.
+DSP Report: Generating DSP t11_reg, operation Mode is: (A*B)'.
+DSP Report: register t11_reg is absorbed into DSP t11_reg.
+DSP Report: operator t110 is absorbed into DSP t11_reg.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:12 ; elapsed = 00:01:46 . Memory (MB): peak = 1696.398 ; gain = 770.398
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Preliminary Mapping Report (see note below)
++-----------------------------------------------------+-----------------+-----------+----------------------+---------------+
+|Module Name                                          | RTL Object      | Inference | Size (Depth x Width) | Primitives    | 
++-----------------------------------------------------+-----------------+-----------+----------------------+---------------+
+|\u_cpu/cache/i_cache_simple                          | cache_tag_reg   | Implied   | 1 K x 20             | RAM64M x 112  | 
+|\u_cpu/cache/i_cache_simple                          | cache_block_reg | Implied   | 1 K x 32             | RAM64M x 176  | 
+|\u_cpu/cache/d_cache_simple                          | cache_tag_reg   | Implied   | 1 K x 20             | RAM64M x 112  | 
+|\u_cpu/cache/d_cache_simple                          | cache_block_reg | Implied   | 1 K x 32             | RAM64M x 176  | 
+|u_cpui_1/\mips_with_sram_like/mips_core/datapath /rf | rf_reg          | Implied   | 32 x 32              | RAM32M x 12   | 
++-----------------------------------------------------+-----------------+-----------+----------------------+---------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+
+DSP: Preliminary Mapping Report (see note below. The ' indicates corresponding REG is set)
++------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name | DSP Mapping | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|mul         | (A*B)'      | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 1    | 0    | 
+|mul         | (A*B)'      | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 1    | 0    | 
+|mul         | (A*B)'      | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 1    | 0    | 
+|mul         | (A*B)'      | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 1    | 0    | 
++------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-565] redefining clock 'clk'
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:20 ; elapsed = 00:01:55 . Memory (MB): peak = 1696.398 ; gain = 770.398
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:21 ; elapsed = 00:01:57 . Memory (MB): peak = 1696.398 ; gain = 770.398
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Final Mapping Report
++-----------------------------------------------------+-----------------+-----------+----------------------+---------------+
+|Module Name                                          | RTL Object      | Inference | Size (Depth x Width) | Primitives    | 
++-----------------------------------------------------+-----------------+-----------+----------------------+---------------+
+|\u_cpu/cache/i_cache_simple                          | cache_tag_reg   | Implied   | 1 K x 20             | RAM64M x 112  | 
+|\u_cpu/cache/i_cache_simple                          | cache_block_reg | Implied   | 1 K x 32             | RAM64M x 176  | 
+|\u_cpu/cache/d_cache_simple                          | cache_tag_reg   | Implied   | 1 K x 20             | RAM64M x 112  | 
+|\u_cpu/cache/d_cache_simple                          | cache_block_reg | Implied   | 1 K x 32             | RAM64M x 176  | 
+|u_cpui_1/\mips_with_sram_like/mips_core/datapath /rf | rf_reg          | Implied   | 32 x 32              | RAM32M x 12   | 
++-----------------------------------------------------+-----------------+-----------+----------------------+---------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:25 ; elapsed = 00:02:03 . Memory (MB): peak = 1696.398 ; gain = 770.398
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+WARNING: synth_design option "-fanout_limit" is deprecated.
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:30 ; elapsed = 00:02:08 . Memory (MB): peak = 1702.176 ; gain = 776.176
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:30 ; elapsed = 00:02:08 . Memory (MB): peak = 1702.176 ; gain = 776.176
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:30 ; elapsed = 00:02:09 . Memory (MB): peak = 1702.176 ; gain = 776.176
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:31 ; elapsed = 00:02:09 . Memory (MB): peak = 1702.176 ; gain = 776.176
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:31 ; elapsed = 00:02:09 . Memory (MB): peak = 1702.176 ; gain = 776.176
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:31 ; elapsed = 00:02:09 . Memory (MB): peak = 1702.176 ; gain = 776.176
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+DSP Final Report (the ' indicates corresponding REG is set)
++------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name | DSP Mapping | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|mul         | (A*B)'      | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|mul         | (A*B)'      | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|mul         | (A*B)'      | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|mul         | (A*B)'      | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 1    | 
++------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+
+Report BlackBoxes: 
++------+--------------------+----------+
+|      |BlackBox name       |Instances |
++------+--------------------+----------+
+|1     |clk_pll             |         1|
+|2     |axi_clock_converter |         1|
+|3     |axi_crossbar_1x2    |         1|
+|4     |axi_ram             |         1|
++------+--------------------+----------+
+
+Report Cell Usage: 
++------+--------------------+------+
+|      |Cell                |Count |
++------+--------------------+------+
+|1     |axi_clock_converter |     1|
+|2     |axi_crossbar_1x2    |     1|
+|3     |axi_ram             |     1|
+|4     |clk_pll             |     1|
+|5     |BUFG                |     2|
+|6     |CARRY4              |   195|
+|7     |DSP48E1             |     4|
+|8     |LUT1                |   204|
+|9     |LUT2                |   507|
+|10    |LUT3                |   523|
+|11    |LUT4                |   747|
+|12    |LUT5                |   753|
+|13    |LUT6                |  4293|
+|14    |MUXF7               |   487|
+|15    |MUXF8               |   204|
+|16    |RAM32M              |    10|
+|17    |RAM32X1D            |     4|
+|18    |RAM64M              |   576|
+|19    |FDCE                |   107|
+|20    |FDPE                |     9|
+|21    |FDRE                |  4094|
+|22    |FDSE                |    17|
+|23    |LD                  |    82|
+|24    |IBUF                |     9|
+|25    |OBUF                |    35|
++------+--------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:31 ; elapsed = 00:02:09 . Memory (MB): peak = 1702.176 ; gain = 776.176
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 7 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:18 ; elapsed = 00:02:05 . Memory (MB): peak = 1702.176 ; gain = 671.172
+Synthesis Optimization Complete : Time (s): cpu = 00:01:31 ; elapsed = 00:02:10 . Memory (MB): peak = 1702.176 ; gain = 776.176
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.228 . Memory (MB): peak = 1715.453 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 1562 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1721.551 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 672 instances were transformed.
+  LD => LDCE: 82 instances
+  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 10 instances
+  RAM32X1D => RAM32X1D (RAMD32(x2)): 4 instances
+  RAM64M => RAM64M (RAMD64E(x4)): 576 instances
+
+Synth Design complete | Checksum: deaea418
+INFO: [Common 17-83] Releasing license: Synthesis
+138 Infos, 127 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:36 ; elapsed = 00:02:18 . Memory (MB): peak = 1721.551 ; gain = 1201.824
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Lenovo/Desktop/colab/CO-lab-material-CQU/vivado/perf_test_v0.01/soc_axi_perf/run_vivado/mycpu_prj1/mycpu.runs/synth_1/soc_axi_lite_top.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file soc_axi_lite_top_utilization_synth.rpt -pb soc_axi_lite_top_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Thu Jan  9 14:51:33 2025...

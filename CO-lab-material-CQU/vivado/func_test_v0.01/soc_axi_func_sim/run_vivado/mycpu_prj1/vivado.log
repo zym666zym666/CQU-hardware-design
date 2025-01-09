@@ -1,0 +1,1703 @@
+#-----------------------------------------------------------
+# Vivado v2023.1 (64-bit)
+# SW Build 3865809 on Sun May  7 15:05:29 MDT 2023
+# IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
+# SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
+# Start of session at: Thu Jan  9 14:19:30 2025
+# Process ID: 10564
+# Current directory: C:/Users/Lenovo/Desktop/colab/CO-lab-material-CQU/vivado/func_test_v0.01/soc_axi_func_sim/run_vivado/mycpu_prj1
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent10172 C:\Users\Lenovo\Desktop\colab\CO-lab-material-CQU\vivado\func_test_v0.01\soc_axi_func_sim\run_vivado\mycpu_prj1\mycpu.xpr
+# Log file: C:/Users/Lenovo/Desktop/colab/CO-lab-material-CQU/vivado/func_test_v0.01/soc_axi_func_sim/run_vivado/mycpu_prj1/vivado.log
+# Journal file: C:/Users/Lenovo/Desktop/colab/CO-lab-material-CQU/vivado/func_test_v0.01/soc_axi_func_sim/run_vivado/mycpu_prj1\vivado.jou
+# Running On: DESKTOP-87K58HJ, OS: Windows, CPU Frequency: 2918 MHz, CPU Physical cores: 4, Host memory: 16952 MB
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/Lenovo/Desktop/colab/CO-lab-material-CQU/vivado/func_test_v0.01/soc_axi_func_sim/run_vivado/mycpu_prj1/mycpu.xpr
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'C:/Users/Lenovo/Desktop/colab/CO-lab-material-CQU/vivado/func_test_v0.01/soc_axi_func_sim/run_vivado/mycpu_prj1'
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:genesys2:part0:1.1 available at G:/vivado/Vivado/2023.1/data/boards/board_files/genesys2/H/board.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:sword:part0:1.0 available at G:/vivado/Vivado/2023.1/data/boards/board_files/sword/C.0/board.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kc705:part0:1.6 available at G:/vivado/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kc705/1.6/board.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu105:part0:1.6 available at G:/vivado/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu105/1.6/board.xml as part xcku040-ffva1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu105:part0:1.7 available at G:/vivado/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu105/1.7/board.xml as part xcku040-ffva1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu1500:part0:1.2 available at G:/vivado/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu1500/1.2/board.xml as part xcku115-flvb2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vc707:part0:1.4 available at G:/vivado/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vc707/1.4/board.xml as part xc7vx485tffg1761-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vc709:part0:1.8 available at G:/vivado/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vc709/1.8/board.xml as part xc7vx690tffg1761-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:2.2 available at G:/vivado/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190/production/2.2/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:3.0 available at G:/vivado/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190/production/3.0/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:3.1 available at G:/vivado/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190/production/3.1/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:3.2 available at G:/vivado/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190/production/3.2/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190_newl:part0:1.0 available at G:/vivado/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190_newl/production/1.0/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190_newl:part0:1.1 available at G:/vivado/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190_newl/production/1.1/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu108:part0:1.6 available at G:/vivado/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu108/1.6/board.xml as part xcvu095-ffva2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu108:part0:1.7 available at G:/vivado/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu108/1.7/board.xml as part xcvu095-ffva2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu110:part0:1.4 available at G:/vivado/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu110/1.4/board.xml as part xcvu190-flgc2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu118:part0:2.0 available at G:/vivado/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu118/2.0/board.xml as part xcvu9p-flga2104-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu118:part0:2.3 available at G:/vivado/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu118/2.3/board.xml as part xcvu9p-flga2104-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu118:part0:2.4 available at G:/vivado/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu118/2.4/board.xml as part xcvu9p-flga2104-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu129:part0:1.0 available at G:/vivado/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu129/production/1.0/board.xml as part xcvu29p-fsga2577-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu1525:part0:1.3 available at G:/vivado/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu1525/1.3/board.xml as part xcvu9p-fsgd2104-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es:part0:1.0 available at G:/vivado/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_a/1.0/board.xml as part xcve2802-vsvh1760-2lp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es:part0:1.1 available at G:/vivado/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_a/1.1/board.xml as part xcve2802-vsvh1760-2lp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es_revb:part0:1.0 available at G:/vivado/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_b/1.0/board.xml as part xcve2802-vsvh1760-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es_revb:part0:1.1 available at G:/vivado/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_b/1.1/board.xml as part xcve2802-vsvh1760-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vermeo_t1_mpsoc:part0:1.0 available at G:/vivado/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vermeo_t1_mpsoc/1.0/board.xml as part xczu19eg-ffvd1760-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vermeo_t1_rfsoc:part0:1.0 available at G:/vivado/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vermeo_t1_rfsoc/1.0/board.xml as part xczu21dr-ffvd1156-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158:part0:1.0 available at G:/vivado/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vhk158/production/1.0/board.xml as part xcvh1582-vsva3697-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158_es:part0:1.0 available at G:/vivado/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vhk158/es/1.0/board.xml as part xcvh1582-vsva3697-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158_es:part0:1.1 available at G:/vivado/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vhk158/es/1.1/board.xml as part xcvh1582-vsva3697-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180:part0:2.2 available at G:/vivado/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180/production/2.2/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180:part0:3.0 available at G:/vivado/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180/production/3.0/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180:part0:3.1 available at G:/vivado/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180/production/3.1/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180:part0:3.2 available at G:/vivado/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180/production/3.2/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180_newl:part0:1.0 available at G:/vivado/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180_newl/production/1.0/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180_newl:part0:1.1 available at G:/vivado/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180_newl/production/1.1/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120:part0:1.0 available at G:/vivado/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120/production/1.0/board.xml as part xcvp1202-vsva2785-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120:part0:1.1 available at G:/vivado/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120/production/1.1/board.xml as part xcvp1202-vsva2785-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120_es:part0:1.2 available at G:/vivado/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120/es/1.2/board.xml as part xcvp1202-vsva2785-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120_es:part0:1.3 available at G:/vivado/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120/es/1.3/board.xml as part xcvp1202-vsva2785-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120_es_revb:part0:1.0 available at G:/vivado/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120_revb/es/1.0/board.xml as part xcvp1202-vsva2785-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120_es_revb:part0:1.1 available at G:/vivado/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120_revb/es/1.1/board.xml as part xcvp1202-vsva2785-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk180:part0:1.0 available at G:/vivado/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk180/production/1.0/board.xml as part xcvp1802-lsvc4072-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk180:part0:1.1 available at G:/vivado/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk180/production/1.1/board.xml as part xcvp1802-lsvc4072-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk180_es:part0:1.0 available at G:/vivado/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk180/es/1.0/board.xml as part xcvp1802-lsvc4072-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk180_es:part0:1.1 available at G:/vivado/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk180/es/1.1/board.xml as part xcvp1802-lsvc4072-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zc706:part0:1.4 available at G:/vivado/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zc706/1.4/board.xml as part xc7z045ffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu102:part0:3.3 available at G:/vivado/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu102/3.3/board.xml as part xczu9eg-ffvb1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu102:part0:3.4 available at G:/vivado/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu102/3.4/board.xml as part xczu9eg-ffvb1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu111:part0:1.2 available at G:/vivado/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu111/1.2/board.xml as part xczu28dr-ffvg1517-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu111:part0:1.3 available at G:/vivado/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu111/1.3/board.xml as part xczu28dr-ffvg1517-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu111:part0:1.4 available at G:/vivado/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu111/1.4/board.xml as part xczu28dr-ffvg1517-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu1275:part0:1.0 available at G:/vivado/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu1275/1.0/board.xml as part xczu29dr-ffvf1760-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu1285:part0:1.0 available at G:/vivado/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu1285/1.0/board.xml as part xczu39dr-ffvf1760-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208:part0:2.0 available at G:/vivado/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208/production/2.0/board.xml as part xczu48dr-fsvg1517-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208ld:part0:2.0 available at G:/vivado/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208ld/production/2.0/board.xml as part xczu58dr-fsvg1517-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216:part0:2.0 available at G:/vivado/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216/production/2.0/board.xml as part xczu49dr-ffvf1760-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld:part0:2.0 available at G:/vivado/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216ld/production/2.0/board.xml as part xczu59dr-ffvf1760-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670:part0:2.0 available at G:/vivado/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670/2.0/board.xml as part xczu67dr-fsve1156-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670ld:part0:1.0 available at G:/vivado/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670ld/1.0/board.xml as part xczu57dr-fsve1156-2-i specified in board_part file is either invalid or not available
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'G:/vivado/Vivado/2023.1/data/ip'.
+open_project: Time (s): cpu = 00:00:34 ; elapsed = 00:00:26 . Memory (MB): peak = 1599.898 ; gain = 536.086
+update_compile_order -fileset sources_1
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+INFO: [IP_Flow 19-3484] Absolute path of file 'c:/Users/Lenovo/Desktop/colab/CO-lab-material-CQU/vivado/func_test_v0.01/soft/func_4/obj/inst_ram.coe' provided. It will be converted relative to IP Instance files '../../../../../../../soft/func_4/obj/inst_ram.coe'
+set_property CONFIG.Coe_File {C:/Users/Lenovo/Desktop/colab/CO-lab-material-CQU/vivado/func_test_v0.01/soft/func_4/obj/inst_ram.coe} [get_ips axi_ram]
+INFO: [IP_Flow 19-3484] Absolute path of file 'c:/Users/Lenovo/Desktop/colab/CO-lab-material-CQU/vivado/func_test_v0.01/soft/func_4/obj/inst_ram.coe' provided. It will be converted relative to IP Instance files '../../../../soft/func_4/obj/inst_ram.coe'
+generate_target all [get_files  C:/Users/Lenovo/Desktop/colab/CO-lab-material-CQU/vivado/func_test_v0.01/soc_axi_func_sim/rtl/xilinx_ip/axi_ram/axi_ram.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'axi_ram'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'axi_ram'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'axi_ram'...
+INFO: [IP_Flow 19-1686] Generating 'Miscellaneous' target for IP 'axi_ram'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'axi_ram'...
+export_ip_user_files -of_objects [get_files C:/Users/Lenovo/Desktop/colab/CO-lab-material-CQU/vivado/func_test_v0.01/soc_axi_func_sim/rtl/xilinx_ip/axi_ram/axi_ram.xci] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files C:/Users/Lenovo/Desktop/colab/CO-lab-material-CQU/vivado/func_test_v0.01/soc_axi_func_sim/rtl/xilinx_ip/axi_ram/axi_ram.xci] -directory C:/Users/Lenovo/Desktop/colab/CO-lab-material-CQU/vivado/func_test_v0.01/soc_axi_func_sim/run_vivado/mycpu_prj1/mycpu.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/Lenovo/Desktop/colab/CO-lab-material-CQU/vivado/func_test_v0.01/soc_axi_func_sim/run_vivado/mycpu_prj1/mycpu.ip_user_files -ipstatic_source_dir C:/Users/Lenovo/Desktop/colab/CO-lab-material-CQU/vivado/func_test_v0.01/soc_axi_func_sim/run_vivado/mycpu_prj1/mycpu.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/Lenovo/Desktop/Modeltech_pe_edu_10.4a/xilinx_lib} {questa=C:/Users/Lenovo/Desktop/colab/CO-lab-material-CQU/vivado/func_test_v0.01/soc_axi_func_sim/run_vivado/mycpu_prj1/mycpu.cache/compile_simlib/questa} {riviera=C:/Users/Lenovo/Desktop/colab/CO-lab-material-CQU/vivado/func_test_v0.01/soc_axi_func_sim/run_vivado/mycpu_prj1/mycpu.cache/compile_simlib/riviera} {activehdl=C:/Users/Lenovo/Desktop/colab/CO-lab-material-CQU/vivado/func_test_v0.01/soc_axi_func_sim/run_vivado/mycpu_prj1/mycpu.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'tb_top'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Lenovo/Desktop/colab/CO-lab-material-CQU/vivado/func_test_v0.01/soc_axi_func_sim/run_vivado/mycpu_prj1/mycpu.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-13660] Precompiled IP simulation library mode is enabled (default). The design IP libraries will be referenced from the compiled library path. Please note that if the precompiled version of the library is not found from the path or the IP is in locked state, then the library source files for these IPs will be compiled locally as part of the compile order.
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'G:/vivado/Vivado/2023.1/tps/boost_1_72_0'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'G:/vivado/Vivado/2023.1/data/xsim/xsim.ini' copied to run dir:'C:/Users/Lenovo/Desktop/colab/CO-lab-material-CQU/vivado/func_test_v0.01/soc_axi_func_sim/run_vivado/mycpu_prj1/mycpu.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_top' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/Users/Lenovo/Desktop/colab/CO-lab-material-CQU/vivado/func_test_v0.01/soc_axi_func_sim/run_vivado/mycpu_prj1/mycpu.sim/sim_1/behav/xsim/axi_ram.mif'
+INFO: [SIM-utils-43] Exported 'C:/Users/Lenovo/Desktop/colab/CO-lab-material-CQU/vivado/func_test_v0.01/soc_axi_func_sim/run_vivado/mycpu_prj1/mycpu.sim/sim_1/behav/xsim/inst_ram.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/Lenovo/Desktop/colab/CO-lab-material-CQU/vivado/func_test_v0.01/soc_axi_func_sim/run_vivado/mycpu_prj1/mycpu.sim/sim_1/behav/xsim/inst_ram.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/Lenovo/Desktop/colab/CO-lab-material-CQU/vivado/func_test_v0.01/soc_axi_func_sim/run_vivado/mycpu_prj1/mycpu.sim/sim_1/behav/xsim/inst_ram.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Lenovo/Desktop/colab/CO-lab-material-CQU/vivado/func_test_v0.01/soc_axi_func_sim/run_vivado/mycpu_prj1/mycpu.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_top_vlog.prj"
+ECHO 处于关闭状态。
+ECHO 处于关闭状态。
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Lenovo/Desktop/colab/CO-lab-material-CQU/vivado/func_test_v0.01/soc_axi_func_sim/rtl/xilinx_ip/clk_pll/clk_pll_clk_wiz.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_pll_clk_wiz
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Lenovo/Desktop/colab/CO-lab-material-CQU/vivado/func_test_v0.01/soc_axi_func_sim/rtl/xilinx_ip/clk_pll/clk_pll.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_pll
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Lenovo/Desktop/colab/CO-lab-material-CQU/vivado/func_test_v0.01/soc_axi_func_sim/rtl/xilinx_ip/axi_ram/sim/axi_ram.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module axi_ram
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Lenovo/Desktop/colab/CO-lab-material-CQU/vivado/func_test_v0.01/soc_axi_func_sim/rtl/xilinx_ip/axi_crossbar_1x2/sim/axi_crossbar_1x2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module axi_crossbar_1x2
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Lenovo/Desktop/colab/CO-lab-material-CQU/vivado/func_test_v0.01/soc_axi_func_sim/rtl/xilinx_ip/axi_clock_converter/sim/axi_clock_converter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module axi_clock_converter
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/cpu_core/utils/adder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module adder
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/cpu_core/alu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module alu
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/cpu_core/dec/aludec.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module aludec
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Lenovo/Desktop/colab/CO-lab-material-CQU/vivado/func_test_v0.01/soc_axi_func_sim/rtl/axi_wrap/axi_wrap.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module axi_wrap
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Lenovo/Desktop/colab/CO-lab-material-CQU/vivado/func_test_v0.01/soc_axi_func_sim/rtl/ram_wrap/axi_wrap_ram.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module axi_wrap_ram
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Lenovo/Desktop/colab/axi/bridge_1x2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bridge_1x2
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Lenovo/Desktop/colab/axi/bridge_2x1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bridge_2x1
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Lenovo/Desktop/colab/axi/cache.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cache
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Lenovo/Desktop/colab/CO-lab-material-CQU/vivado/func_test_v0.01/soc_axi_func_sim/rtl/CONFREG/confreg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module confreg
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/cpu_core/dec/controller.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module controller
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/cpu_core/exception/cp0_reg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cp0_reg
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Lenovo/Desktop/colab/axi/cpu_axi_interface.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cpu_axi_interface
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Lenovo/Desktop/colab/axi/d_cache_simple.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module d_cache_simple
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/d_sram_to_sram_like.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module d_sram_to_sram_like
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/cpu_core/datapath.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module datapath
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/cpu_core/utils/div.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module div
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/cpu_core/utils/eqcmp.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module eqcmp
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/cpu_core/exception/exceptdec.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module exceptdec
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/cpu_core/utils/flopenrc.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module flopenrc
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/cpu_core/utils/flopr.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module flopr
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/cpu_core/hazard.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module hazard
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/cpu_core/hilo_reg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module hilo_reg
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Lenovo/Desktop/colab/axi/i_cache_simple.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module i_cache_simple
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/i_sram_to_sram_like.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module i_sram_to_sram_like
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/cpu_core/dec/maindec.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module maindec
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/cpu_core/mem_ctrl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mem_ctrl
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/cpu_core/mips.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mips
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/mips_with_sram_like.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mips_with_sram_like
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Lenovo/Desktop/colab/axi/mmu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mmu
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/cpu_core/utils/mul.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mul
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/cpu_core/utils/mux2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux2
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/cpu_core/utils/mux3.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux3
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Lenovo/Desktop/colab/axi/mycpu_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mycpu_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/cpu_core/pc.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pc
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/cpu_core/regfile.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module regfile
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/cpu_core/utils/signext.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module signext
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/cpu_core/utils/sl2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sl2
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Lenovo/Desktop/colab/CO-lab-material-CQU/vivado/func_test_v0.01/soc_axi_func_sim/rtl/soc_axi_lite_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module soc_axi_lite_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Lenovo/Desktop/colab/CO-lab-material-CQU/vivado/func_test_v0.01/soc_axi_func_sim/testbench/mycpu_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_top
+"xvhdl --incr --relax -prj tb_top_vhdl.prj"
+ECHO 处于关闭状态。
+ECHO 处于关闭状态。
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:08 . Memory (MB): peak = 1659.336 ; gain = 0.000
+INFO: [USF-XSim-69] 'compile' step finished in '8' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Lenovo/Desktop/colab/CO-lab-material-CQU/vivado/func_test_v0.01/soc_axi_func_sim/run_vivado/mycpu_prj1/mycpu.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L blk_mem_gen_v8_4_6 -L generic_baseblocks_v2_1_0 -L axi_infrastructure_v1_1_0 -L axi_register_slice_v2_1_28 -L fifo_generator_v13_2_8 -L axi_data_fifo_v2_1_27 -L axi_crossbar_v2_1_29 -L axi_clock_converter_v2_1_27 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_top_behav xil_defaultlib.tb_top xil_defaultlib.glbl -log elaborate.log"
+ECHO 处于关闭状态。
+ECHO 处于关闭状态。
+Vivado Simulator v2023.1
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: G:/vivado/Vivado/2023.1/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L blk_mem_gen_v8_4_6 -L generic_baseblocks_v2_1_0 -L axi_infrastructure_v1_1_0 -L axi_register_slice_v2_1_28 -L fifo_generator_v13_2_8 -L axi_data_fifo_v2_1_27 -L axi_crossbar_v2_1_29 -L axi_clock_converter_v2_1_27 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_top_behav xil_defaultlib.tb_top xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 4 differs from formal bit length 8 for port 'arlen' [C:/Users/Lenovo/Desktop/colab/CO-lab-material-CQU/vivado/func_test_v0.01/soc_axi_func_sim/rtl/soc_axi_lite_top.v:327]
+WARNING: [VRFC 10-3091] actual bit length 4 differs from formal bit length 8 for port 'awlen' [C:/Users/Lenovo/Desktop/colab/CO-lab-material-CQU/vivado/func_test_v0.01/soc_axi_func_sim/rtl/soc_axi_lite_top.v:345]
+WARNING: [VRFC 10-3091] actual bit length 11 differs from formal bit length 12 for port 'd' [C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/cpu_core/datapath.v:177]
+WARNING: [VRFC 10-3091] actual bit length 11 differs from formal bit length 12 for port 'q' [C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/cpu_core/datapath.v:178]
+WARNING: [VRFC 10-3091] actual bit length 4 differs from formal bit length 8 for port 'arlen' [C:/Users/Lenovo/Desktop/colab/CO-lab-material-CQU/vivado/func_test_v0.01/soc_axi_func_sim/rtl/soc_axi_lite_top.v:692]
+WARNING: [VRFC 10-3091] actual bit length 4 differs from formal bit length 8 for port 'awlen' [C:/Users/Lenovo/Desktop/colab/CO-lab-material-CQU/vivado/func_test_v0.01/soc_axi_func_sim/rtl/soc_axi_lite_top.v:708]
+WARNING: [VRFC 10-5021] port 'aclk2x' is not connected on this instance [/wrk/ci/prod/2023.1/sw/continuous/3753/packages/customer/vivado/data/ip/xilinx/axi_crossbar_v2_1/hdl/axi_crossbar_v2_1_vl_rfs.v:3103]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.flopenrc(WIDTH=32)
+Compiling module xil_defaultlib.flopenrc(WIDTH=20)
+Compiling module xil_defaultlib.flopenrc(WIDTH=12)
+Compiling module xil_defaultlib.flopenrc(WIDTH=2)
+Compiling module xil_defaultlib.hazard
+Compiling module xil_defaultlib.mux2(WIDTH=32)
+Compiling module xil_defaultlib.regfile
+Compiling module xil_defaultlib.pc(WIDTH=32)
+Compiling module xil_defaultlib.adder
+Compiling module xil_defaultlib.flopenrc(WIDTH=1)
+Compiling module xil_defaultlib.signext
+Compiling module xil_defaultlib.sl2
+Compiling module xil_defaultlib.eqcmp
+Compiling module xil_defaultlib.flopenrc(WIDTH=5)
+Compiling module xil_defaultlib.flopenrc(WIDTH=6)
+Compiling module xil_defaultlib.flopenrc(WIDTH=4)
+Compiling module xil_defaultlib.mux3(WIDTH=32)
+Compiling module xil_defaultlib.div
+Compiling module xil_defaultlib.mul
+Compiling module xil_defaultlib.alu
+Compiling module xil_defaultlib.mux3(WIDTH=5)
+Compiling module xil_defaultlib.flopenrc(WIDTH=64)
+Compiling module xil_defaultlib.hilo_reg
+Compiling module xil_defaultlib.mem_ctrl
+Compiling module xil_defaultlib.exceptdec
+Compiling module xil_defaultlib.flopr(WIDTH=32)
+Compiling module xil_defaultlib.cp0_reg
+Compiling module xil_defaultlib.datapath
+Compiling module xil_defaultlib.maindec
+Compiling module xil_defaultlib.aludec
+Compiling module xil_defaultlib.controller
+Compiling module xil_defaultlib.mips
+Compiling module xil_defaultlib.i_sram_to_sram_like
+Compiling module xil_defaultlib.d_sram_to_sram_like
+Compiling module xil_defaultlib.mips_with_sram_like
+Compiling module xil_defaultlib.mmu
+Compiling module xil_defaultlib.bridge_1x2
+Compiling module xil_defaultlib.i_cache_simple_default
+Compiling module xil_defaultlib.d_cache_simple_default
+Compiling module xil_defaultlib.cache
+Compiling module xil_defaultlib.bridge_2x1
+Compiling module xil_defaultlib.cpu_axi_interface
+Compiling module xil_defaultlib.mycpu_top
+Compiling module xil_defaultlib.axi_wrap
+Compiling module fifo_generator_v13_2_8.fifo_generator_v13_2_8_sync_stag...
+Compiling module fifo_generator_v13_2_8.fifo_generator_v13_2_8_bhv_ver_a...
+Compiling module fifo_generator_v13_2_8.fifo_generator_v13_2_8_bhv_ver_p...
+Compiling module fifo_generator_v13_2_8.fifo_generator_v13_2_8_CONV_VER(...
+Compiling module fifo_generator_v13_2_8.fifo_generator_vlog_beh(C_DATA_C...
+Compiling module fifo_generator_v13_2_8.fifo_generator_v13_2_8_bhv_ver_a...
+Compiling module fifo_generator_v13_2_8.fifo_generator_v13_2_8_bhv_ver_p...
+Compiling module fifo_generator_v13_2_8.fifo_generator_v13_2_8_CONV_VER(...
+Compiling module fifo_generator_v13_2_8.fifo_generator_vlog_beh(C_DATA_C...
+Compiling module fifo_generator_v13_2_8.fifo_generator_v13_2_8_bhv_ver_a...
+Compiling module fifo_generator_v13_2_8.fifo_generator_v13_2_8_bhv_ver_p...
+Compiling module fifo_generator_v13_2_8.fifo_generator_v13_2_8_CONV_VER(...
+Compiling module fifo_generator_v13_2_8.fifo_generator_vlog_beh(C_DATA_C...
+Compiling module fifo_generator_v13_2_8.fifo_generator_vlog_beh(C_DATA_C...
+Compiling module fifo_generator_v13_2_8.fifo_generator_v13_2_8_bhv_ver_a...
+Compiling module fifo_generator_v13_2_8.fifo_generator_v13_2_8_bhv_ver_p...
+Compiling module fifo_generator_v13_2_8.fifo_generator_v13_2_8_CONV_VER(...
+Compiling module fifo_generator_v13_2_8.fifo_generator_vlog_beh(C_DATA_C...
+Compiling module axi_clock_converter_v2_1_27.axi_clock_converter_v2_1_27_axi_...
+Compiling module xil_defaultlib.axi_clock_converter
+Compiling module generic_baseblocks_v2_1_0.generic_baseblocks_v2_1_0_carry_...
+Compiling module generic_baseblocks_v2_1_0.generic_baseblocks_v2_1_0_compar...
+Compiling module generic_baseblocks_v2_1_0.generic_baseblocks_v2_1_0_compar...
+Compiling module generic_baseblocks_v2_1_0.generic_baseblocks_v2_1_0_compar...
+Compiling module generic_baseblocks_v2_1_0.generic_baseblocks_v2_1_0_compar...
+Compiling module generic_baseblocks_v2_1_0.generic_baseblocks_v2_1_0_compar...
+Compiling module generic_baseblocks_v2_1_0.generic_baseblocks_v2_1_0_compar...
+Compiling module axi_crossbar_v2_1_29.axi_crossbar_v2_1_29_addr_decode...
+Compiling module axi_crossbar_v2_1_29.axi_crossbar_v2_1_29_arbiter_res...
+Compiling module generic_baseblocks_v2_1_0.generic_baseblocks_v2_1_0_mux_en...
+Compiling module unisims_ver.SRLC32E_default
+Compiling module axi_data_fifo_v2_1_27.axi_data_fifo_v2_1_27_ndeep_srl(...
+Compiling module axi_data_fifo_v2_1_27.axi_data_fifo_v2_1_27_axic_srl_f...
+Compiling module axi_crossbar_v2_1_29.axi_crossbar_v2_1_29_si_transact...
+Compiling module generic_baseblocks_v2_1_0.generic_baseblocks_v2_1_0_mux_en...
+Compiling module axi_crossbar_v2_1_29.axi_crossbar_v2_1_29_si_transact...
+Compiling module axi_crossbar_v2_1_29.axi_crossbar_v2_1_29_splitter
+Compiling module axi_data_fifo_v2_1_27.axi_data_fifo_v2_1_27_ndeep_srl(...
+Compiling module axi_data_fifo_v2_1_27.axi_data_fifo_v2_1_27_axic_reg_s...
+Compiling module axi_crossbar_v2_1_29.axi_crossbar_v2_1_29_wdata_route...
+Compiling module axi_crossbar_v2_1_29.axi_crossbar_v2_1_29_wdata_mux(C...
+Compiling module axi_data_fifo_v2_1_27.axi_data_fifo_v2_1_27_axic_srl_f...
+Compiling module axi_infrastructure_v1_1_0.axi_infrastructure_v1_1_0_axi2ve...
+Compiling module axi_infrastructure_v1_1_0.axi_infrastructure_v1_1_0_vector...
+Compiling module axi_register_slice_v2_1_28.axi_register_slice_v2_1_28_axic_...
+Compiling module axi_register_slice_v2_1_28.axi_register_slice_v2_1_28_axic_...
+Compiling module axi_register_slice_v2_1_28.axi_register_slice_v2_1_28_axic_...
+Compiling module axi_register_slice_v2_1_28.axi_register_slice_v2_1_28_axic_...
+Compiling module axi_register_slice_v2_1_28.axi_register_slice_v2_1_28_axi_r...
+Compiling module axi_crossbar_v2_1_29.axi_crossbar_v2_1_29_wdata_mux(C...
+Compiling module axi_data_fifo_v2_1_27.axi_data_fifo_v2_1_27_axic_srl_f...
+Compiling module axi_crossbar_v2_1_29.axi_crossbar_v2_1_29_addr_arbite...
+Compiling module axi_crossbar_v2_1_29.axi_crossbar_v2_1_29_decerr_slav...
+Compiling module axi_crossbar_v2_1_29.axi_crossbar_v2_1_29_crossbar(C_...
+Compiling module axi_crossbar_v2_1_29.axi_crossbar_v2_1_29_axi_crossba...
+Compiling module xil_defaultlib.axi_crossbar_1x2
+Compiling module blk_mem_gen_v8_4_6.beh_vlog_ff_clr_v8_4
+Compiling module blk_mem_gen_v8_4_6.beh_vlog_ff_pre_v8_4
+Compiling module blk_mem_gen_v8_4_6.STATE_LOGIC_v8_4(INIT=64'b010101...
+Compiling module blk_mem_gen_v8_4_6.STATE_LOGIC_v8_4(INIT=64'b101111...
+Compiling module blk_mem_gen_v8_4_6.STATE_LOGIC_v8_4(INIT=64'b101010...
+Compiling module blk_mem_gen_v8_4_6.STATE_LOGIC_v8_4(INIT=64'b010101...
+Compiling module blk_mem_gen_v8_4_6.STATE_LOGIC_v8_4(INIT=64'b010001...
+Compiling module blk_mem_gen_v8_4_6.STATE_LOGIC_v8_4(INIT=64'b010001...
+Compiling module blk_mem_gen_v8_4_6.STATE_LOGIC_v8_4(INIT=64'b011010...
+Compiling module blk_mem_gen_v8_4_6.STATE_LOGIC_v8_4(INIT=64'b111111...
+Compiling module blk_mem_gen_v8_4_6.STATE_LOGIC_v8_4(INIT=64'b011000...
+Compiling module blk_mem_gen_v8_4_6.STATE_LOGIC_v8_4(INIT=64'b011111...
+Compiling module blk_mem_gen_v8_4_6.STATE_LOGIC_v8_4(INIT=64'b0111)
+Compiling module blk_mem_gen_v8_4_6.STATE_LOGIC_v8_4(INIT=64'b111110...
+Compiling module blk_mem_gen_v8_4_6.STATE_LOGIC_v8_4(INIT=64'b01000)
+Compiling module blk_mem_gen_v8_4_6.STATE_LOGIC_v8_4(INIT=64'b100010...
+Compiling module blk_mem_gen_v8_4_6.write_netlist_v8_4(C_AXI_TYPE=1)
+Compiling module blk_mem_gen_v8_4_6.blk_mem_axi_write_wrapper_beh_v8...
+Compiling module blk_mem_gen_v8_4_6.beh_vlog_ff_ce_clr_v8_4
+Compiling module blk_mem_gen_v8_4_6.STATE_LOGIC_v8_4(INIT=64'b01011)
+Compiling module blk_mem_gen_v8_4_6.STATE_LOGIC_v8_4(INIT=64'b0100)
+Compiling module blk_mem_gen_v8_4_6.STATE_LOGIC_v8_4(INIT=64'b111011...
+Compiling module blk_mem_gen_v8_4_6.STATE_LOGIC_v8_4(INIT=64'b010001...
+Compiling module blk_mem_gen_v8_4_6.STATE_LOGIC_v8_4(INIT=64'b010000...
+Compiling module blk_mem_gen_v8_4_6.STATE_LOGIC_v8_4(INIT=64'b011111...
+Compiling module blk_mem_gen_v8_4_6.STATE_LOGIC_v8_4(INIT=64'b01)
+Compiling module blk_mem_gen_v8_4_6.STATE_LOGIC_v8_4(INIT=64'b010000...
+Compiling module blk_mem_gen_v8_4_6.STATE_LOGIC_v8_4(INIT=64'b010001...
+Compiling module blk_mem_gen_v8_4_6.STATE_LOGIC_v8_4(INIT=64'b011101...
+Compiling module blk_mem_gen_v8_4_6.STATE_LOGIC_v8_4(INIT=64'b111111...
+Compiling module blk_mem_gen_v8_4_6.STATE_LOGIC_v8_4(INIT=64'b010101...
+Compiling module blk_mem_gen_v8_4_6.STATE_LOGIC_v8_4(INIT=64'b111100...
+Compiling module blk_mem_gen_v8_4_6.beh_vlog_muxf7_v8_4
+Compiling module blk_mem_gen_v8_4_6.STATE_LOGIC_v8_4(INIT=64'b010101...
+Compiling module blk_mem_gen_v8_4_6.STATE_LOGIC_v8_4(INIT=64'b011100...
+Compiling module blk_mem_gen_v8_4_6.STATE_LOGIC_v8_4(INIT=64'b011111...
+Compiling module blk_mem_gen_v8_4_6.STATE_LOGIC_v8_4(INIT=64'b010001...
+Compiling module blk_mem_gen_v8_4_6.STATE_LOGIC_v8_4(INIT=64'b010001...
+Compiling module blk_mem_gen_v8_4_6.STATE_LOGIC_v8_4(INIT=64'b011100...
+Compiling module blk_mem_gen_v8_4_6.read_netlist_v8_4(C_ADDRB_WIDTH=...
+Compiling module blk_mem_gen_v8_4_6.blk_mem_axi_read_wrapper_beh_v8_...
+Compiling module blk_mem_gen_v8_4_6.blk_mem_gen_v8_4_6_output_stage(...
+Compiling module blk_mem_gen_v8_4_6.blk_mem_gen_v8_4_6_output_stage(...
+Compiling module blk_mem_gen_v8_4_6.blk_mem_gen_v8_4_6_softecc_outpu...
+Compiling module blk_mem_gen_v8_4_6.blk_mem_gen_v8_4_6_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_6.blk_mem_gen_v8_4_6(C_FAMILY="art...
+Compiling module xil_defaultlib.axi_ram
+Compiling module xil_defaultlib.axi_wrap_ram
+Compiling module xil_defaultlib.confreg(SIMULATION=1'b1)
+Compiling module xil_defaultlib.soc_axi_lite_top(SIMULATION=1'b1...
+Compiling module xil_defaultlib.tb_top
+WARNING: [XSIM 43-3373] "C:/Users/Lenovo/Desktop/colab/CO-lab-material-CQU/vivado/func_test_v0.01/soc_axi_func_sim/testbench/mycpu_tb.v" Line 126. System function $fscanf is used as system task. This system function should have a LHS e.g. x=$fscanf().
+Compiling module xil_defaultlib.glbl
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:20 . Memory (MB): peak = 1659.336 ; gain = 0.000
+INFO: [Common 17-344] 'run_program' was cancelled
+INFO: [Vivado 12-5357] 'elaborate' step aborted
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:29 . Memory (MB): peak = 1659.336 ; gain = 0.000
+INFO: [Common 17-344] 'launch_simulation' was cancelled
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'tb_top'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Lenovo/Desktop/colab/CO-lab-material-CQU/vivado/func_test_v0.01/soc_axi_func_sim/run_vivado/mycpu_prj1/mycpu.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-13660] Precompiled IP simulation library mode is enabled (default). The design IP libraries will be referenced from the compiled library path. Please note that if the precompiled version of the library is not found from the path or the IP is in locked state, then the library source files for these IPs will be compiled locally as part of the compile order.
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'G:/vivado/Vivado/2023.1/tps/boost_1_72_0'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'G:/vivado/Vivado/2023.1/data/xsim/xsim.ini' copied to run dir:'C:/Users/Lenovo/Desktop/colab/CO-lab-material-CQU/vivado/func_test_v0.01/soc_axi_func_sim/run_vivado/mycpu_prj1/mycpu.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_top' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/Users/Lenovo/Desktop/colab/CO-lab-material-CQU/vivado/func_test_v0.01/soc_axi_func_sim/run_vivado/mycpu_prj1/mycpu.sim/sim_1/behav/xsim/axi_ram.mif'
+INFO: [SIM-utils-43] Exported 'C:/Users/Lenovo/Desktop/colab/CO-lab-material-CQU/vivado/func_test_v0.01/soc_axi_func_sim/run_vivado/mycpu_prj1/mycpu.sim/sim_1/behav/xsim/inst_ram.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/Lenovo/Desktop/colab/CO-lab-material-CQU/vivado/func_test_v0.01/soc_axi_func_sim/run_vivado/mycpu_prj1/mycpu.sim/sim_1/behav/xsim/inst_ram.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/Lenovo/Desktop/colab/CO-lab-material-CQU/vivado/func_test_v0.01/soc_axi_func_sim/run_vivado/mycpu_prj1/mycpu.sim/sim_1/behav/xsim/inst_ram.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Lenovo/Desktop/colab/CO-lab-material-CQU/vivado/func_test_v0.01/soc_axi_func_sim/run_vivado/mycpu_prj1/mycpu.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_top_vlog.prj"
+ECHO 处于关闭状态。
+ECHO 处于关闭状态。
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Lenovo/Desktop/colab/CO-lab-material-CQU/vivado/func_test_v0.01/soc_axi_func_sim/rtl/xilinx_ip/clk_pll/clk_pll_clk_wiz.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_pll_clk_wiz
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Lenovo/Desktop/colab/CO-lab-material-CQU/vivado/func_test_v0.01/soc_axi_func_sim/rtl/xilinx_ip/clk_pll/clk_pll.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_pll
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Lenovo/Desktop/colab/CO-lab-material-CQU/vivado/func_test_v0.01/soc_axi_func_sim/rtl/xilinx_ip/axi_ram/sim/axi_ram.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module axi_ram
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Lenovo/Desktop/colab/CO-lab-material-CQU/vivado/func_test_v0.01/soc_axi_func_sim/rtl/xilinx_ip/axi_crossbar_1x2/sim/axi_crossbar_1x2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module axi_crossbar_1x2
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Lenovo/Desktop/colab/CO-lab-material-CQU/vivado/func_test_v0.01/soc_axi_func_sim/rtl/xilinx_ip/axi_clock_converter/sim/axi_clock_converter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module axi_clock_converter
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/cpu_core/utils/adder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module adder
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/cpu_core/alu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module alu
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/cpu_core/dec/aludec.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module aludec
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Lenovo/Desktop/colab/CO-lab-material-CQU/vivado/func_test_v0.01/soc_axi_func_sim/rtl/axi_wrap/axi_wrap.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module axi_wrap
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Lenovo/Desktop/colab/CO-lab-material-CQU/vivado/func_test_v0.01/soc_axi_func_sim/rtl/ram_wrap/axi_wrap_ram.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module axi_wrap_ram
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Lenovo/Desktop/colab/axi/bridge_1x2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bridge_1x2
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Lenovo/Desktop/colab/axi/bridge_2x1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bridge_2x1
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Lenovo/Desktop/colab/axi/cache.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cache
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Lenovo/Desktop/colab/CO-lab-material-CQU/vivado/func_test_v0.01/soc_axi_func_sim/rtl/CONFREG/confreg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module confreg
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/cpu_core/dec/controller.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module controller
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/cpu_core/exception/cp0_reg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cp0_reg
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Lenovo/Desktop/colab/axi/cpu_axi_interface.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cpu_axi_interface
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Lenovo/Desktop/colab/axi/d_cache_simple.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module d_cache_simple
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/d_sram_to_sram_like.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module d_sram_to_sram_like
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/cpu_core/datapath.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module datapath
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/cpu_core/utils/div.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module div
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/cpu_core/utils/eqcmp.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module eqcmp
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/cpu_core/exception/exceptdec.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module exceptdec
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/cpu_core/utils/flopenrc.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module flopenrc
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/cpu_core/utils/flopr.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module flopr
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/cpu_core/hazard.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module hazard
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/cpu_core/hilo_reg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module hilo_reg
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Lenovo/Desktop/colab/axi/i_cache_simple.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module i_cache_simple
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/i_sram_to_sram_like.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module i_sram_to_sram_like
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/cpu_core/dec/maindec.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module maindec
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/cpu_core/mem_ctrl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mem_ctrl
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/cpu_core/mips.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mips
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/mips_with_sram_like.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mips_with_sram_like
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Lenovo/Desktop/colab/axi/mmu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mmu
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/cpu_core/utils/mul.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mul
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/cpu_core/utils/mux2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux2
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/cpu_core/utils/mux3.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux3
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Lenovo/Desktop/colab/axi/mycpu_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mycpu_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/cpu_core/pc.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pc
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/cpu_core/regfile.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module regfile
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/cpu_core/utils/signext.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module signext
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/cpu_core/utils/sl2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sl2
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Lenovo/Desktop/colab/CO-lab-material-CQU/vivado/func_test_v0.01/soc_axi_func_sim/rtl/soc_axi_lite_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module soc_axi_lite_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Lenovo/Desktop/colab/CO-lab-material-CQU/vivado/func_test_v0.01/soc_axi_func_sim/testbench/mycpu_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_top
+"xvhdl --incr --relax -prj tb_top_vhdl.prj"
+ECHO 处于关闭状态。
+ECHO 处于关闭状态。
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 1659.336 ; gain = 0.000
+INFO: [USF-XSim-69] 'compile' step finished in '7' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Lenovo/Desktop/colab/CO-lab-material-CQU/vivado/func_test_v0.01/soc_axi_func_sim/run_vivado/mycpu_prj1/mycpu.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L blk_mem_gen_v8_4_6 -L generic_baseblocks_v2_1_0 -L axi_infrastructure_v1_1_0 -L axi_register_slice_v2_1_28 -L fifo_generator_v13_2_8 -L axi_data_fifo_v2_1_27 -L axi_crossbar_v2_1_29 -L axi_clock_converter_v2_1_27 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_top_behav xil_defaultlib.tb_top xil_defaultlib.glbl -log elaborate.log"
+ECHO 处于关闭状态。
+ECHO 处于关闭状态。
+Vivado Simulator v2023.1
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: G:/vivado/Vivado/2023.1/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L blk_mem_gen_v8_4_6 -L generic_baseblocks_v2_1_0 -L axi_infrastructure_v1_1_0 -L axi_register_slice_v2_1_28 -L fifo_generator_v13_2_8 -L axi_data_fifo_v2_1_27 -L axi_crossbar_v2_1_29 -L axi_clock_converter_v2_1_27 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_top_behav xil_defaultlib.tb_top xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 4 differs from formal bit length 8 for port 'arlen' [C:/Users/Lenovo/Desktop/colab/CO-lab-material-CQU/vivado/func_test_v0.01/soc_axi_func_sim/rtl/soc_axi_lite_top.v:327]
+WARNING: [VRFC 10-3091] actual bit length 4 differs from formal bit length 8 for port 'awlen' [C:/Users/Lenovo/Desktop/colab/CO-lab-material-CQU/vivado/func_test_v0.01/soc_axi_func_sim/rtl/soc_axi_lite_top.v:345]
+WARNING: [VRFC 10-3091] actual bit length 11 differs from formal bit length 12 for port 'd' [C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/cpu_core/datapath.v:177]
+WARNING: [VRFC 10-3091] actual bit length 11 differs from formal bit length 12 for port 'q' [C:/Users/Lenovo/Desktop/colab/axi/mips_core_with_sram_like/cpu_core/datapath.v:178]
+WARNING: [VRFC 10-3091] actual bit length 4 differs from formal bit length 8 for port 'arlen' [C:/Users/Lenovo/Desktop/colab/CO-lab-material-CQU/vivado/func_test_v0.01/soc_axi_func_sim/rtl/soc_axi_lite_top.v:692]
+WARNING: [VRFC 10-3091] actual bit length 4 differs from formal bit length 8 for port 'awlen' [C:/Users/Lenovo/Desktop/colab/CO-lab-material-CQU/vivado/func_test_v0.01/soc_axi_func_sim/rtl/soc_axi_lite_top.v:708]
+WARNING: [VRFC 10-5021] port 'aclk2x' is not connected on this instance [/wrk/ci/prod/2023.1/sw/continuous/3753/packages/customer/vivado/data/ip/xilinx/axi_crossbar_v2_1/hdl/axi_crossbar_v2_1_vl_rfs.v:3103]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.flopenrc(WIDTH=32)
+Compiling module xil_defaultlib.flopenrc(WIDTH=20)
+Compiling module xil_defaultlib.flopenrc(WIDTH=12)
+Compiling module xil_defaultlib.flopenrc(WIDTH=2)
+Compiling module xil_defaultlib.hazard
+Compiling module xil_defaultlib.mux2(WIDTH=32)
+Compiling module xil_defaultlib.regfile
+Compiling module xil_defaultlib.pc(WIDTH=32)
+Compiling module xil_defaultlib.adder
+Compiling module xil_defaultlib.flopenrc(WIDTH=1)
+Compiling module xil_defaultlib.signext
+Compiling module xil_defaultlib.sl2
+Compiling module xil_defaultlib.eqcmp
+Compiling module xil_defaultlib.flopenrc(WIDTH=5)
+Compiling module xil_defaultlib.flopenrc(WIDTH=6)
+Compiling module xil_defaultlib.flopenrc(WIDTH=4)
+Compiling module xil_defaultlib.mux3(WIDTH=32)
+Compiling module xil_defaultlib.div
+Compiling module xil_defaultlib.mul
+Compiling module xil_defaultlib.alu
+Compiling module xil_defaultlib.mux3(WIDTH=5)
+Compiling module xil_defaultlib.flopenrc(WIDTH=64)
+Compiling module xil_defaultlib.hilo_reg
+Compiling module xil_defaultlib.mem_ctrl
+Compiling module xil_defaultlib.exceptdec
+Compiling module xil_defaultlib.flopr(WIDTH=32)
+Compiling module xil_defaultlib.cp0_reg
+Compiling module xil_defaultlib.datapath
+Compiling module xil_defaultlib.maindec
+Compiling module xil_defaultlib.aludec
+Compiling module xil_defaultlib.controller
+Compiling module xil_defaultlib.mips
+Compiling module xil_defaultlib.i_sram_to_sram_like
+Compiling module xil_defaultlib.d_sram_to_sram_like
+Compiling module xil_defaultlib.mips_with_sram_like
+Compiling module xil_defaultlib.mmu
+Compiling module xil_defaultlib.bridge_1x2
+Compiling module xil_defaultlib.i_cache_simple_default
+Compiling module xil_defaultlib.d_cache_simple_default
+Compiling module xil_defaultlib.cache
+Compiling module xil_defaultlib.bridge_2x1
+Compiling module xil_defaultlib.cpu_axi_interface
+Compiling module xil_defaultlib.mycpu_top
+Compiling module xil_defaultlib.axi_wrap
+Compiling module fifo_generator_v13_2_8.fifo_generator_v13_2_8_sync_stag...
+Compiling module fifo_generator_v13_2_8.fifo_generator_v13_2_8_bhv_ver_a...
+Compiling module fifo_generator_v13_2_8.fifo_generator_v13_2_8_bhv_ver_p...
+Compiling module fifo_generator_v13_2_8.fifo_generator_v13_2_8_CONV_VER(...
+Compiling module fifo_generator_v13_2_8.fifo_generator_vlog_beh(C_DATA_C...
+Compiling module fifo_generator_v13_2_8.fifo_generator_v13_2_8_bhv_ver_a...
+Compiling module fifo_generator_v13_2_8.fifo_generator_v13_2_8_bhv_ver_p...
+Compiling module fifo_generator_v13_2_8.fifo_generator_v13_2_8_CONV_VER(...
+Compiling module fifo_generator_v13_2_8.fifo_generator_vlog_beh(C_DATA_C...
+Compiling module fifo_generator_v13_2_8.fifo_generator_v13_2_8_bhv_ver_a...
+Compiling module fifo_generator_v13_2_8.fifo_generator_v13_2_8_bhv_ver_p...
+Compiling module fifo_generator_v13_2_8.fifo_generator_v13_2_8_CONV_VER(...
+Compiling module fifo_generator_v13_2_8.fifo_generator_vlog_beh(C_DATA_C...
+Compiling module fifo_generator_v13_2_8.fifo_generator_vlog_beh(C_DATA_C...
+Compiling module fifo_generator_v13_2_8.fifo_generator_v13_2_8_bhv_ver_a...
+Compiling module fifo_generator_v13_2_8.fifo_generator_v13_2_8_bhv_ver_p...
+Compiling module fifo_generator_v13_2_8.fifo_generator_v13_2_8_CONV_VER(...
+Compiling module fifo_generator_v13_2_8.fifo_generator_vlog_beh(C_DATA_C...
+Compiling module axi_clock_converter_v2_1_27.axi_clock_converter_v2_1_27_axi_...
+Compiling module xil_defaultlib.axi_clock_converter
+Compiling module generic_baseblocks_v2_1_0.generic_baseblocks_v2_1_0_carry_...
+Compiling module generic_baseblocks_v2_1_0.generic_baseblocks_v2_1_0_compar...
+Compiling module generic_baseblocks_v2_1_0.generic_baseblocks_v2_1_0_compar...
+Compiling module generic_baseblocks_v2_1_0.generic_baseblocks_v2_1_0_compar...
+Compiling module generic_baseblocks_v2_1_0.generic_baseblocks_v2_1_0_compar...
+Compiling module generic_baseblocks_v2_1_0.generic_baseblocks_v2_1_0_compar...
+Compiling module generic_baseblocks_v2_1_0.generic_baseblocks_v2_1_0_compar...
+Compiling module axi_crossbar_v2_1_29.axi_crossbar_v2_1_29_addr_decode...
+Compiling module axi_crossbar_v2_1_29.axi_crossbar_v2_1_29_arbiter_res...
+Compiling module generic_baseblocks_v2_1_0.generic_baseblocks_v2_1_0_mux_en...
+Compiling module unisims_ver.SRLC32E_default
+Compiling module axi_data_fifo_v2_1_27.axi_data_fifo_v2_1_27_ndeep_srl(...
+Compiling module axi_data_fifo_v2_1_27.axi_data_fifo_v2_1_27_axic_srl_f...
+Compiling module axi_crossbar_v2_1_29.axi_crossbar_v2_1_29_si_transact...
+Compiling module generic_baseblocks_v2_1_0.generic_baseblocks_v2_1_0_mux_en...
+Compiling module axi_crossbar_v2_1_29.axi_crossbar_v2_1_29_si_transact...
+Compiling module axi_crossbar_v2_1_29.axi_crossbar_v2_1_29_splitter
+Compiling module axi_data_fifo_v2_1_27.axi_data_fifo_v2_1_27_ndeep_srl(...
+Compiling module axi_data_fifo_v2_1_27.axi_data_fifo_v2_1_27_axic_reg_s...
+Compiling module axi_crossbar_v2_1_29.axi_crossbar_v2_1_29_wdata_route...
+Compiling module axi_crossbar_v2_1_29.axi_crossbar_v2_1_29_wdata_mux(C...
+Compiling module axi_data_fifo_v2_1_27.axi_data_fifo_v2_1_27_axic_srl_f...
+Compiling module axi_infrastructure_v1_1_0.axi_infrastructure_v1_1_0_axi2ve...
+Compiling module axi_infrastructure_v1_1_0.axi_infrastructure_v1_1_0_vector...
+Compiling module axi_register_slice_v2_1_28.axi_register_slice_v2_1_28_axic_...
+Compiling module axi_register_slice_v2_1_28.axi_register_slice_v2_1_28_axic_...
+Compiling module axi_register_slice_v2_1_28.axi_register_slice_v2_1_28_axic_...
+Compiling module axi_register_slice_v2_1_28.axi_register_slice_v2_1_28_axic_...
+Compiling module axi_register_slice_v2_1_28.axi_register_slice_v2_1_28_axi_r...
+Compiling module axi_crossbar_v2_1_29.axi_crossbar_v2_1_29_wdata_mux(C...
+Compiling module axi_data_fifo_v2_1_27.axi_data_fifo_v2_1_27_axic_srl_f...
+Compiling module axi_crossbar_v2_1_29.axi_crossbar_v2_1_29_addr_arbite...
+Compiling module axi_crossbar_v2_1_29.axi_crossbar_v2_1_29_decerr_slav...
+Compiling module axi_crossbar_v2_1_29.axi_crossbar_v2_1_29_crossbar(C_...
+Compiling module axi_crossbar_v2_1_29.axi_crossbar_v2_1_29_axi_crossba...
+Compiling module xil_defaultlib.axi_crossbar_1x2
+Compiling module blk_mem_gen_v8_4_6.beh_vlog_ff_clr_v8_4
+Compiling module blk_mem_gen_v8_4_6.beh_vlog_ff_pre_v8_4
+Compiling module blk_mem_gen_v8_4_6.STATE_LOGIC_v8_4(INIT=64'b010101...
+Compiling module blk_mem_gen_v8_4_6.STATE_LOGIC_v8_4(INIT=64'b101111...
+Compiling module blk_mem_gen_v8_4_6.STATE_LOGIC_v8_4(INIT=64'b101010...
+Compiling module blk_mem_gen_v8_4_6.STATE_LOGIC_v8_4(INIT=64'b010101...
+Compiling module blk_mem_gen_v8_4_6.STATE_LOGIC_v8_4(INIT=64'b010001...
+Compiling module blk_mem_gen_v8_4_6.STATE_LOGIC_v8_4(INIT=64'b010001...
+Compiling module blk_mem_gen_v8_4_6.STATE_LOGIC_v8_4(INIT=64'b011010...
+Compiling module blk_mem_gen_v8_4_6.STATE_LOGIC_v8_4(INIT=64'b111111...
+Compiling module blk_mem_gen_v8_4_6.STATE_LOGIC_v8_4(INIT=64'b011000...
+Compiling module blk_mem_gen_v8_4_6.STATE_LOGIC_v8_4(INIT=64'b011111...
+Compiling module blk_mem_gen_v8_4_6.STATE_LOGIC_v8_4(INIT=64'b0111)
+Compiling module blk_mem_gen_v8_4_6.STATE_LOGIC_v8_4(INIT=64'b111110...
+Compiling module blk_mem_gen_v8_4_6.STATE_LOGIC_v8_4(INIT=64'b01000)
+Compiling module blk_mem_gen_v8_4_6.STATE_LOGIC_v8_4(INIT=64'b100010...
+Compiling module blk_mem_gen_v8_4_6.write_netlist_v8_4(C_AXI_TYPE=1)
+Compiling module blk_mem_gen_v8_4_6.blk_mem_axi_write_wrapper_beh_v8...
+Compiling module blk_mem_gen_v8_4_6.beh_vlog_ff_ce_clr_v8_4
+Compiling module blk_mem_gen_v8_4_6.STATE_LOGIC_v8_4(INIT=64'b01011)
+Compiling module blk_mem_gen_v8_4_6.STATE_LOGIC_v8_4(INIT=64'b0100)
+Compiling module blk_mem_gen_v8_4_6.STATE_LOGIC_v8_4(INIT=64'b111011...
+Compiling module blk_mem_gen_v8_4_6.STATE_LOGIC_v8_4(INIT=64'b010001...
+Compiling module blk_mem_gen_v8_4_6.STATE_LOGIC_v8_4(INIT=64'b010000...
+Compiling module blk_mem_gen_v8_4_6.STATE_LOGIC_v8_4(INIT=64'b011111...
+Compiling module blk_mem_gen_v8_4_6.STATE_LOGIC_v8_4(INIT=64'b01)
+Compiling module blk_mem_gen_v8_4_6.STATE_LOGIC_v8_4(INIT=64'b010000...
+Compiling module blk_mem_gen_v8_4_6.STATE_LOGIC_v8_4(INIT=64'b010001...
+Compiling module blk_mem_gen_v8_4_6.STATE_LOGIC_v8_4(INIT=64'b011101...
+Compiling module blk_mem_gen_v8_4_6.STATE_LOGIC_v8_4(INIT=64'b111111...
+Compiling module blk_mem_gen_v8_4_6.STATE_LOGIC_v8_4(INIT=64'b010101...
+Compiling module blk_mem_gen_v8_4_6.STATE_LOGIC_v8_4(INIT=64'b111100...
+Compiling module blk_mem_gen_v8_4_6.beh_vlog_muxf7_v8_4
+Compiling module blk_mem_gen_v8_4_6.STATE_LOGIC_v8_4(INIT=64'b010101...
+Compiling module blk_mem_gen_v8_4_6.STATE_LOGIC_v8_4(INIT=64'b011100...
+Compiling module blk_mem_gen_v8_4_6.STATE_LOGIC_v8_4(INIT=64'b011111...
+Compiling module blk_mem_gen_v8_4_6.STATE_LOGIC_v8_4(INIT=64'b010001...
+Compiling module blk_mem_gen_v8_4_6.STATE_LOGIC_v8_4(INIT=64'b010001...
+Compiling module blk_mem_gen_v8_4_6.STATE_LOGIC_v8_4(INIT=64'b011100...
+Compiling module blk_mem_gen_v8_4_6.read_netlist_v8_4(C_ADDRB_WIDTH=...
+Compiling module blk_mem_gen_v8_4_6.blk_mem_axi_read_wrapper_beh_v8_...
+Compiling module blk_mem_gen_v8_4_6.blk_mem_gen_v8_4_6_output_stage(...
+Compiling module blk_mem_gen_v8_4_6.blk_mem_gen_v8_4_6_output_stage(...
+Compiling module blk_mem_gen_v8_4_6.blk_mem_gen_v8_4_6_softecc_outpu...
+Compiling module blk_mem_gen_v8_4_6.blk_mem_gen_v8_4_6_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_6.blk_mem_gen_v8_4_6(C_FAMILY="art...
+Compiling module xil_defaultlib.axi_ram
+Compiling module xil_defaultlib.axi_wrap_ram
+Compiling module xil_defaultlib.confreg(SIMULATION=1'b1)
+Compiling module xil_defaultlib.soc_axi_lite_top(SIMULATION=1'b1...
+Compiling module xil_defaultlib.tb_top
+WARNING: [XSIM 43-3373] "C:/Users/Lenovo/Desktop/colab/CO-lab-material-CQU/vivado/func_test_v0.01/soc_axi_func_sim/testbench/mycpu_tb.v" Line 126. System function $fscanf is used as system task. This system function should have a LHS e.g. x=$fscanf().
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_top_behav
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:23 . Memory (MB): peak = 1666.785 ; gain = 7.449
+INFO: [USF-XSim-69] 'elaborate' step finished in '24' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Lenovo/Desktop/colab/CO-lab-material-CQU/vivado/func_test_v0.01/soc_axi_func_sim/run_vivado/mycpu_prj1/mycpu.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_top_behav -key {Behavioral:sim_1:Functional:tb_top} -tclbatch {tb_top.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+source tb_top.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# log_wave -r /
+WARNING: [Simtcl 6-197] One or more HDL objects could not be logged because of object type or size limitations.  To see details please rerun the command with -verbose (-v).
+# run 1000ns
+WARNING: Behavioral models for independent clock FIFO configurations do not model synchronization delays. The behavioral models are functionally correct, and will represent the behavior of the configured FIFO. See the FIFO Generator User Guide for more information.
+WARNING: Behavioral models for independent clock FIFO configurations do not model synchronization delays. The behavioral models are functionally correct, and will represent the behavior of the configured FIFO. See the FIFO Generator User Guide for more information.
+WARNING: Behavioral models for independent clock FIFO configurations do not model synchronization delays. The behavioral models are functionally correct, and will represent the behavior of the configured FIFO. See the FIFO Generator User Guide for more information.
+WARNING: Behavioral models for independent clock FIFO configurations do not model synchronization delays. The behavioral models are functionally correct, and will represent the behavior of the configured FIFO. See the FIFO Generator User Guide for more information.
+WARNING: Behavioral models for independent clock FIFO configurations do not model synchronization delays. The behavioral models are functionally correct, and will represent the behavior of the configured FIFO. See the FIFO Generator User Guide for more information.
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module tb_top.soc_lite.u_axi_ram.ram.inst.\axi_mem_module.blk_mem_gen_v8_4_6_inst  is using a behavioral model for simulation which will not precisely model memory collision behavior.
+xsim: Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 1737.340 ; gain = 70.555
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_top_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:07 ; elapsed = 00:00:39 . Memory (MB): peak = 1737.340 ; gain = 78.004
+run all
+==============================================================
+Test begin!
+        [  22000 ns] Test is running, debug_wb_pc = 0x00000000
+        [  32000 ns] Test is running, debug_wb_pc = 0x9fc020d8
+        [  42000 ns] Test is running, debug_wb_pc = 0x9fc02174
+        [  52000 ns] Test is running, debug_wb_pc = 0x00000000
+        [  62000 ns] Test is running, debug_wb_pc = 0x00000000
+        [  72000 ns] Test is running, debug_wb_pc = 0x9fc02350
+        [  82000 ns] Test is running, debug_wb_pc = 0x9fc023e8
+        [  92000 ns] Test is running, debug_wb_pc = 0x9fc02484
+        [ 102000 ns] Test is running, debug_wb_pc = 0x9fc02520
+        [ 112000 ns] Test is running, debug_wb_pc = 0x9fc025bc
+        [ 122000 ns] Test is running, debug_wb_pc = 0x9fc02658
+        [ 132000 ns] Test is running, debug_wb_pc = 0x9fc026f4
+        [ 142000 ns] Test is running, debug_wb_pc = 0x00000000
+        [ 152000 ns] Test is running, debug_wb_pc = 0x9fc02830
+        [ 162000 ns] Test is running, debug_wb_pc = 0x9fc028d0
+        [ 172000 ns] Test is running, debug_wb_pc = 0x9fc02968
+        [ 182000 ns] Test is running, debug_wb_pc = 0x9fc02a04
+        [ 192000 ns] Test is running, debug_wb_pc = 0x9fc02aa0
+        [ 202000 ns] Test is running, debug_wb_pc = 0x9fc02b3c
+        [ 212000 ns] Test is running, debug_wb_pc = 0x9fc02bd8
+        [ 222000 ns] Test is running, debug_wb_pc = 0x9fc02c74
+        [ 232000 ns] Test is running, debug_wb_pc = 0x00000000
+        [ 242000 ns] Test is running, debug_wb_pc = 0x9fc02db0
+        [ 252000 ns] Test is running, debug_wb_pc = 0x9fc02e4c
+        [ 262000 ns] Test is running, debug_wb_pc = 0x9fc02ee8
+        [ 272000 ns] Test is running, debug_wb_pc = 0x9fc02f84
+        [ 282000 ns] Test is running, debug_wb_pc = 0x9fc03020
+        [ 292000 ns] Test is running, debug_wb_pc = 0x9fc030bc
+        [ 302000 ns] Test is running, debug_wb_pc = 0x9fc03158
+        [ 312000 ns] Test is running, debug_wb_pc = 0x9fc031f4
+        [ 322000 ns] Test is running, debug_wb_pc = 0x00000000
+        [ 332000 ns] Test is running, debug_wb_pc = 0x9fc03330
+        [ 342000 ns] Test is running, debug_wb_pc = 0x9fc033c8
+        [ 352000 ns] Test is running, debug_wb_pc = 0x9fc03468
+        [ 362000 ns] Test is running, debug_wb_pc = 0x9fc03504
+        [ 372000 ns] Test is running, debug_wb_pc = 0x9fc035a0
+        [ 382000 ns] Test is running, debug_wb_pc = 0x9fc0363c
+        [ 392000 ns] Test is running, debug_wb_pc = 0x9fc036d8
+        [ 402000 ns] Test is running, debug_wb_pc = 0x9fc03774
+        [ 412000 ns] Test is running, debug_wb_pc = 0x00000000
+        [ 422000 ns] Test is running, debug_wb_pc = 0x9fc038b0
+        [ 432000 ns] Test is running, debug_wb_pc = 0x9fc03948
+----[ 434245 ns] Number 8'd01 Functional Test Point PASS!!!
+        [ 442000 ns] Test is running, debug_wb_pc = 0xbfc13a10
+        [ 452000 ns] Test is running, debug_wb_pc = 0xbfc13ab0
+        [ 462000 ns] Test is running, debug_wb_pc = 0xbfc13b4c
+        [ 472000 ns] Test is running, debug_wb_pc = 0xbfc13be8
+        [ 482000 ns] Test is running, debug_wb_pc = 0x00000000
+        [ 492000 ns] Test is running, debug_wb_pc = 0xbfc13d20
+        [ 502000 ns] Test is running, debug_wb_pc = 0xbfc13dbc
+        [ 512000 ns] Test is running, debug_wb_pc = 0x00000000
+        [ 522000 ns] Test is running, debug_wb_pc = 0xbfc13ef8
+        [ 532000 ns] Test is running, debug_wb_pc = 0xbfc13f94
+        [ 542000 ns] Test is running, debug_wb_pc = 0xbfc14030
+        [ 552000 ns] Test is running, debug_wb_pc = 0xbfc140cc
+        [ 562000 ns] Test is running, debug_wb_pc = 0xbfc14168
+        [ 572000 ns] Test is running, debug_wb_pc = 0xbfc14204
+        [ 582000 ns] Test is running, debug_wb_pc = 0xbfc142a0
+        [ 592000 ns] Test is running, debug_wb_pc = 0xbfc14344
+        [ 602000 ns] Test is running, debug_wb_pc = 0xbfc143dc
+        [ 612000 ns] Test is running, debug_wb_pc = 0xbfc14478
+        [ 622000 ns] Test is running, debug_wb_pc = 0xbfc14518
+        [ 632000 ns] Test is running, debug_wb_pc = 0xbfc145b0
+        [ 642000 ns] Test is running, debug_wb_pc = 0xbfc1464c
+        [ 652000 ns] Test is running, debug_wb_pc = 0xbfc146ec
+        [ 662000 ns] Test is running, debug_wb_pc = 0xbfc14788
+        [ 672000 ns] Test is running, debug_wb_pc = 0xbfc14824
+        [ 682000 ns] Test is running, debug_wb_pc = 0x00000000
+        [ 692000 ns] Test is running, debug_wb_pc = 0xbfc1495c
+        [ 702000 ns] Test is running, debug_wb_pc = 0xbfc149f8
+        [ 712000 ns] Test is running, debug_wb_pc = 0x00000000
+        [ 722000 ns] Test is running, debug_wb_pc = 0xbfc14b30
+        [ 732000 ns] Test is running, debug_wb_pc = 0xbfc14bd0
+        [ 742000 ns] Test is running, debug_wb_pc = 0xbfc14c6c
+        [ 752000 ns] Test is running, debug_wb_pc = 0xbfc14d08
+        [ 762000 ns] Test is running, debug_wb_pc = 0xbfc14da4
+        [ 772000 ns] Test is running, debug_wb_pc = 0xbfc14e40
+        [ 782000 ns] Test is running, debug_wb_pc = 0xbfc14edc
+        [ 792000 ns] Test is running, debug_wb_pc = 0xbfc14f7c
+        [ 802000 ns] Test is running, debug_wb_pc = 0xbfc15018
+        [ 812000 ns] Test is running, debug_wb_pc = 0xbfc150b4
+        [ 822000 ns] Test is running, debug_wb_pc = 0xbfc15154
+        [ 832000 ns] Test is running, debug_wb_pc = 0xbfc151ec
+        [ 842000 ns] Test is running, debug_wb_pc = 0xbfc15288
+        [ 852000 ns] Test is running, debug_wb_pc = 0xbfc15328
+        [ 862000 ns] Test is running, debug_wb_pc = 0xbfc153c4
+        [ 872000 ns] Test is running, debug_wb_pc = 0xbfc15460
+        [ 882000 ns] Test is running, debug_wb_pc = 0x00000000
+        [ 892000 ns] Test is running, debug_wb_pc = 0xbfc15598
+        [ 902000 ns] Test is running, debug_wb_pc = 0xbfc15634
+        [ 912000 ns] Test is running, debug_wb_pc = 0xbfc156d0
+        [ 922000 ns] Test is running, debug_wb_pc = 0xbfc1576c
+        [ 932000 ns] Test is running, debug_wb_pc = 0xbfc15808
+        [ 942000 ns] Test is running, debug_wb_pc = 0xbfc158a8
+        [ 952000 ns] Test is running, debug_wb_pc = 0xbfc15944
+        [ 962000 ns] Test is running, debug_wb_pc = 0xbfc159e0
+        [ 972000 ns] Test is running, debug_wb_pc = 0x00000000
+        [ 982000 ns] Test is running, debug_wb_pc = 0xbfc15b1c
+        [ 992000 ns] Test is running, debug_wb_pc = 0xbfc15bb4
+        [1002000 ns] Test is running, debug_wb_pc = 0xbfc15c50
+        [1012000 ns] Test is running, debug_wb_pc = 0xbfc15cec
+        [1022000 ns] Test is running, debug_wb_pc = 0xbfc15d88
+        [1032000 ns] Test is running, debug_wb_pc = 0xbfc15e24
+        [1042000 ns] Test is running, debug_wb_pc = 0xbfc15ec4
+        [1052000 ns] Test is running, debug_wb_pc = 0xbfc15f60
+        [1062000 ns] Test is running, debug_wb_pc = 0x00000000
+        [1072000 ns] Test is running, debug_wb_pc = 0xbfc1609c
+        [1082000 ns] Test is running, debug_wb_pc = 0xbfc16134
+        [1092000 ns] Test is running, debug_wb_pc = 0xbfc161d0
+        [1102000 ns] Test is running, debug_wb_pc = 0xbfc1626c
+----[1108385 ns] Number 8'd02 Functional Test Point PASS!!!
+        [1112000 ns] Test is running, debug_wb_pc = 0xbfc009b8
+        [1122000 ns] Test is running, debug_wb_pc = 0xbfc2574c
+        [1132000 ns] Test is running, debug_wb_pc = 0xbfc257e8
+        [1142000 ns] Test is running, debug_wb_pc = 0xbfc25884
+        [1152000 ns] Test is running, debug_wb_pc = 0xbfc25920
+        [1162000 ns] Test is running, debug_wb_pc = 0xbfc259c0
+        [1172000 ns] Test is running, debug_wb_pc = 0xbfc25a58
+        [1182000 ns] Test is running, debug_wb_pc = 0x00000000
+        [1192000 ns] Test is running, debug_wb_pc = 0xbfc25b94
+        [1202000 ns] Test is running, debug_wb_pc = 0xbfc25c30
+        [1212000 ns] Test is running, debug_wb_pc = 0xbfc25cd0
+        [1222000 ns] Test is running, debug_wb_pc = 0xbfc25d68
+        [1232000 ns] Test is running, debug_wb_pc = 0x00000000
+        [1242000 ns] Test is running, debug_wb_pc = 0xbfc25ea0
+        [1252000 ns] Test is running, debug_wb_pc = 0xbfc25f3c
+        [1262000 ns] Test is running, debug_wb_pc = 0xbfc25fd8
+        [1272000 ns] Test is running, debug_wb_pc = 0xbfc26074
+        [1282000 ns] Test is running, debug_wb_pc = 0xbfc26114
+        [1292000 ns] Test is running, debug_wb_pc = 0xbfc261ac
+        [1302000 ns] Test is running, debug_wb_pc = 0x00000000
+        [1312000 ns] Test is running, debug_wb_pc = 0xbfc262e4
+        [1322000 ns] Test is running, debug_wb_pc = 0xbfc26380
+        [1332000 ns] Test is running, debug_wb_pc = 0xbfc26420
+----[1334065 ns] Number 8'd03 Functional Test Point PASS!!!
+        [1342000 ns] Test is running, debug_wb_pc = 0x00000000
+        [1352000 ns] Test is running, debug_wb_pc = 0xbfc0873c
+        [1362000 ns] Test is running, debug_wb_pc = 0xbfc08834
+        [1372000 ns] Test is running, debug_wb_pc = 0xbfc08924
+        [1382000 ns] Test is running, debug_wb_pc = 0xbfc08a10
+        [1392000 ns] Test is running, debug_wb_pc = 0xbfc08b18
+        [1402000 ns] Test is running, debug_wb_pc = 0xbfc08c08
+        [1412000 ns] Test is running, debug_wb_pc = 0xbfc08cf0
+        [1422000 ns] Test is running, debug_wb_pc = 0xbfc08de8
+        [1432000 ns] Test is running, debug_wb_pc = 0xbfc08ed4
+        [1442000 ns] Test is running, debug_wb_pc = 0xbfc08fc4
+        [1452000 ns] Test is running, debug_wb_pc = 0xbfc090d0
+        [1462000 ns] Test is running, debug_wb_pc = 0x00000000
+        [1472000 ns] Test is running, debug_wb_pc = 0xbfc092b0
+        [1482000 ns] Test is running, debug_wb_pc = 0xbfc0939c
+        [1492000 ns] Test is running, debug_wb_pc = 0xbfc09478
+        [1502000 ns] Test is running, debug_wb_pc = 0xbfc09518
+        [1512000 ns] Test is running, debug_wb_pc = 0xbfc095fc
+        [1522000 ns] Test is running, debug_wb_pc = 0xbfc096cc
+        [1532000 ns] Test is running, debug_wb_pc = 0xbfc0979c
+        [1542000 ns] Test is running, debug_wb_pc = 0xbfc0984c
+        [1552000 ns] Test is running, debug_wb_pc = 0xbfc0991c
+        [1562000 ns] Test is running, debug_wb_pc = 0xbfc099f0
+        [1572000 ns] Test is running, debug_wb_pc = 0xbfc09a9c
+        [1582000 ns] Test is running, debug_wb_pc = 0xbfc09b3c
+        [1592000 ns] Test is running, debug_wb_pc = 0xbfc09c3c
+        [1602000 ns] Test is running, debug_wb_pc = 0xbfc09cf0
+        [1612000 ns] Test is running, debug_wb_pc = 0xbfc09d8c
+        [1622000 ns] Test is running, debug_wb_pc = 0xbfc09e70
+        [1632000 ns] Test is running, debug_wb_pc = 0xbfc09f40
+        [1642000 ns] Test is running, debug_wb_pc = 0xbfc0a010
+        [1652000 ns] Test is running, debug_wb_pc = 0xbfc0a0c4
+        [1662000 ns] Test is running, debug_wb_pc = 0xbfc0a190
+        [1672000 ns] Test is running, debug_wb_pc = 0x00000000
+        [1682000 ns] Test is running, debug_wb_pc = 0xbfc0a314
+        [1692000 ns] Test is running, debug_wb_pc = 0xbfc0a3e0
+        [1702000 ns] Test is running, debug_wb_pc = 0xbfc0a4b0
+        [1712000 ns] Test is running, debug_wb_pc = 0xbfc0a564
+        [1722000 ns] Test is running, debug_wb_pc = 0xbfc0a600
+        [1732000 ns] Test is running, debug_wb_pc = 0xbfc0a704
+        [1742000 ns] Test is running, debug_wb_pc = 0xbfc0a7b4
+        [1752000 ns] Test is running, debug_wb_pc = 0xbfc0a850
+        [1762000 ns] Test is running, debug_wb_pc = 0xbfc0a938
+        [1772000 ns] Test is running, debug_wb_pc = 0xbfc0aa04
+        [1782000 ns] Test is running, debug_wb_pc = 0x00000000
+        [1792000 ns] Test is running, debug_wb_pc = 0xbfc0abd0
+        [1802000 ns] Test is running, debug_wb_pc = 0xbfc0acbc
+        [1812000 ns] Test is running, debug_wb_pc = 0xbfc0adc8
+        [1822000 ns] Test is running, debug_wb_pc = 0xbfc0aebc
+        [1832000 ns] Test is running, debug_wb_pc = 0xbfc0afa8
+        [1842000 ns] Test is running, debug_wb_pc = 0xbfc0b0b4
+        [1852000 ns] Test is running, debug_wb_pc = 0xbfc0b19c
+        [1862000 ns] Test is running, debug_wb_pc = 0xbfc0b294
+        [1872000 ns] Test is running, debug_wb_pc = 0xbfc0b3a0
+        [1882000 ns] Test is running, debug_wb_pc = 0xbfc0b460
+----[1886405 ns] Number 8'd04 Functional Test Point PASS!!!
+        [1892000 ns] Test is running, debug_wb_pc = 0xbfc03c80
+        [1902000 ns] Test is running, debug_wb_pc = 0xbfc03d1c
+        [1912000 ns] Test is running, debug_wb_pc = 0xbfc03e20
+        [1922000 ns] Test is running, debug_wb_pc = 0xbfc03ed0
+        [1932000 ns] Test is running, debug_wb_pc = 0xbfc03f6c
+        [1942000 ns] Test is running, debug_wb_pc = 0xbfc04054
+        [1952000 ns] Test is running, debug_wb_pc = 0xbfc04120
+        [1962000 ns] Test is running, debug_wb_pc = 0xbfc041c0
+        [1972000 ns] Test is running, debug_wb_pc = 0xbfc042a4
+        [1982000 ns] Test is running, debug_wb_pc = 0xbfc04370
+        [1992000 ns] Test is running, debug_wb_pc = 0xbfc04444
+        [2002000 ns] Test is running, debug_wb_pc = 0xbfc044f4
+        [2012000 ns] Test is running, debug_wb_pc = 0xbfc045c0
+        [2022000 ns] Test is running, debug_wb_pc = 0xbfc04698
+        [2032000 ns] Test is running, debug_wb_pc = 0xbfc04744
+        [2042000 ns] Test is running, debug_wb_pc = 0xbfc047e4
+        [2052000 ns] Test is running, debug_wb_pc = 0xbfc048e4
+        [2062000 ns] Test is running, debug_wb_pc = 0xbfc04994
+        [2072000 ns] Test is running, debug_wb_pc = 0xbfc04a34
+        [2082000 ns] Test is running, debug_wb_pc = 0xbfc04b18
+        [2092000 ns] Test is running, debug_wb_pc = 0xbfc04be8
+        [2102000 ns] Test is running, debug_wb_pc = 0xbfc04cb8
+        [2112000 ns] Test is running, debug_wb_pc = 0xbfc04d68
+        [2122000 ns] Test is running, debug_wb_pc = 0xbfc04e38
+        [2132000 ns] Test is running, debug_wb_pc = 0x00000000
+        [2142000 ns] Test is running, debug_wb_pc = 0xbfc04fb8
+        [2152000 ns] Test is running, debug_wb_pc = 0xbfc05088
+        [2162000 ns] Test is running, debug_wb_pc = 0xbfc05158
+        [2172000 ns] Test is running, debug_wb_pc = 0xbfc0520c
+        [2182000 ns] Test is running, debug_wb_pc = 0xbfc052a8
+        [2192000 ns] Test is running, debug_wb_pc = 0xbfc0538c
+        [2202000 ns] Test is running, debug_wb_pc = 0xbfc0545c
+        [2212000 ns] Test is running, debug_wb_pc = 0xbfc054f8
+        [2222000 ns] Test is running, debug_wb_pc = 0xbfc055e0
+        [2232000 ns] Test is running, debug_wb_pc = 0xbfc056ac
+        [2242000 ns] Test is running, debug_wb_pc = 0xbfc0577c
+        [2252000 ns] Test is running, debug_wb_pc = 0xbfc05830
+        [2262000 ns] Test is running, debug_wb_pc = 0xbfc058fc
+        [2272000 ns] Test is running, debug_wb_pc = 0xbfc059d0
+        [2282000 ns] Test is running, debug_wb_pc = 0xbfc05a80
+        [2292000 ns] Test is running, debug_wb_pc = 0xbfc05b1c
+        [2302000 ns] Test is running, debug_wb_pc = 0xbfc05c2c
+        [2312000 ns] Test is running, debug_wb_pc = 0xbfc05d28
+        [2322000 ns] Test is running, debug_wb_pc = 0xbfc05e14
+        [2332000 ns] Test is running, debug_wb_pc = 0xbfc05f00
+        [2342000 ns] Test is running, debug_wb_pc = 0xbfc06008
+        [2352000 ns] Test is running, debug_wb_pc = 0xbfc060f8
+        [2362000 ns] Test is running, debug_wb_pc = 0xbfc061e0
+        [2372000 ns] Test is running, debug_wb_pc = 0xbfc062d8
+        [2382000 ns] Test is running, debug_wb_pc = 0xbfc063c8
+        [2392000 ns] Test is running, debug_wb_pc = 0xbfc064b4
+        [2402000 ns] Test is running, debug_wb_pc = 0xbfc065c0
+        [2412000 ns] Test is running, debug_wb_pc = 0x00000000
+        [2422000 ns] Test is running, debug_wb_pc = 0xbfc067a0
+        [2432000 ns] Test is running, debug_wb_pc = 0xbfc0688c
+        [2442000 ns] Test is running, debug_wb_pc = 0xbfc0697c
+        [2452000 ns] Test is running, debug_wb_pc = 0xbfc06a84
+        [2462000 ns] Test is running, debug_wb_pc = 0x00000000
+        [2472000 ns] Test is running, debug_wb_pc = 0xbfc06c5c
+        [2482000 ns] Test is running, debug_wb_pc = 0xbfc06d54
+        [2492000 ns] Test is running, debug_wb_pc = 0xbfc06e40
+        [2502000 ns] Test is running, debug_wb_pc = 0xbfc06f2c
+        [2512000 ns] Test is running, debug_wb_pc = 0xbfc07038
+        [2522000 ns] Test is running, debug_wb_pc = 0xbfc070f8
+        [2532000 ns] Test is running, debug_wb_pc = 0xbfc071c4
+        [2542000 ns] Test is running, debug_wb_pc = 0xbfc07294
+        [2552000 ns] Test is running, debug_wb_pc = 0x00000000
+        [2562000 ns] Test is running, debug_wb_pc = 0xbfc07414
+        [2572000 ns] Test is running, debug_wb_pc = 0xbfc074e4
+        [2582000 ns] Test is running, debug_wb_pc = 0xbfc07584
+        [2592000 ns] Test is running, debug_wb_pc = 0xbfc07664
+        [2602000 ns] Test is running, debug_wb_pc = 0xbfc07734
+        [2612000 ns] Test is running, debug_wb_pc = 0xbfc077d4
+        [2622000 ns] Test is running, debug_wb_pc = 0x00000000
+        [2632000 ns] Test is running, debug_wb_pc = 0xbfc07984
+        [2642000 ns] Test is running, debug_wb_pc = 0xbfc07a50
+        [2652000 ns] Test is running, debug_wb_pc = 0xbfc07af4
+        [2662000 ns] Test is running, debug_wb_pc = 0xbfc07bd4
+        [2672000 ns] Test is running, debug_wb_pc = 0xbfc07ca0
+        [2682000 ns] Test is running, debug_wb_pc = 0xbfc07d44
+        [2692000 ns] Test is running, debug_wb_pc = 0xbfc07e44
+        [2702000 ns] Test is running, debug_wb_pc = 0xbfc07ef4
+        [2712000 ns] Test is running, debug_wb_pc = 0xbfc07fc0
+        [2722000 ns] Test is running, debug_wb_pc = 0xbfc08090
+        [2732000 ns] Test is running, debug_wb_pc = 0xbfc08144
+        [2742000 ns] Test is running, debug_wb_pc = 0xbfc08220
+----[2742535 ns] Number 8'd05 Functional Test Point PASS!!!
+        [2752000 ns] Test is running, debug_wb_pc = 0xbfc10200
+        [2762000 ns] Test is running, debug_wb_pc = 0xbfc10280
+        [2772000 ns] Test is running, debug_wb_pc = 0xbfc102fc
+        [2782000 ns] Test is running, debug_wb_pc = 0xbfc10370
+        [2792000 ns] Test is running, debug_wb_pc = 0xbfc103f0
+        [2802000 ns] Test is running, debug_wb_pc = 0xbfc10478
+        [2812000 ns] Test is running, debug_wb_pc = 0xbfc10500
+        [2822000 ns] Test is running, debug_wb_pc = 0xbfc10584
+        [2832000 ns] Test is running, debug_wb_pc = 0xbfc10604
+        [2842000 ns] Test is running, debug_wb_pc = 0xbfc1068c
+        [2852000 ns] Test is running, debug_wb_pc = 0xbfc10714
+        [2862000 ns] Test is running, debug_wb_pc = 0xbfc10794
+        [2872000 ns] Test is running, debug_wb_pc = 0xbfc10818
+        [2882000 ns] Test is running, debug_wb_pc = 0xbfc10894
+        [2892000 ns] Test is running, debug_wb_pc = 0xbfc10914
+        [2902000 ns] Test is running, debug_wb_pc = 0xbfc10990
+        [2912000 ns] Test is running, debug_wb_pc = 0xbfc10a18
+        [2922000 ns] Test is running, debug_wb_pc = 0xbfc10aa0
+        [2932000 ns] Test is running, debug_wb_pc = 0xbfc10b20
+        [2942000 ns] Test is running, debug_wb_pc = 0xbfc10b9c
+        [2952000 ns] Test is running, debug_wb_pc = 0xbfc10c24
+        [2962000 ns] Test is running, debug_wb_pc = 0xbfc10ca8
+        [2972000 ns] Test is running, debug_wb_pc = 0xbfc10d24
+        [2982000 ns] Test is running, debug_wb_pc = 0xbfc10d98
+        [2992000 ns] Test is running, debug_wb_pc = 0xbfc10e10
+        [3002000 ns] Test is running, debug_wb_pc = 0xbfc10e88
+        [3012000 ns] Test is running, debug_wb_pc = 0xbfc10f08
+        [3022000 ns] Test is running, debug_wb_pc = 0xbfc10f90
+        [3032000 ns] Test is running, debug_wb_pc = 0xbfc11014
+        [3042000 ns] Test is running, debug_wb_pc = 0xbfc11098
+        [3052000 ns] Test is running, debug_wb_pc = 0xbfc11118
+        [3062000 ns] Test is running, debug_wb_pc = 0xbfc11194
+        [3072000 ns] Test is running, debug_wb_pc = 0xbfc11220
+        [3082000 ns] Test is running, debug_wb_pc = 0x00000000
+        [3092000 ns] Test is running, debug_wb_pc = 0xbfc11324
+        [3102000 ns] Test is running, debug_wb_pc = 0xbfc113ac
+        [3112000 ns] Test is running, debug_wb_pc = 0xbfc11430
+        [3122000 ns] Test is running, debug_wb_pc = 0xbfc114b4
+        [3132000 ns] Test is running, debug_wb_pc = 0xbfc1153c
+----[3141685 ns] Number 8'd06 Functional Test Point PASS!!!
+        [3142000 ns] Test is running, debug_wb_pc = 0xbfc115bc
+        [3152000 ns] Test is running, debug_wb_pc = 0xbfc1a428
+        [3162000 ns] Test is running, debug_wb_pc = 0xbfc1a4c8
+        [3172000 ns] Test is running, debug_wb_pc = 0xbfc1a568
+        [3182000 ns] Test is running, debug_wb_pc = 0xbfc1a600
+        [3192000 ns] Test is running, debug_wb_pc = 0xbfc1a69c
+        [3202000 ns] Test is running, debug_wb_pc = 0xbfc1a73c
+        [3212000 ns] Test is running, debug_wb_pc = 0xbfc1a7d4
+        [3222000 ns] Test is running, debug_wb_pc = 0xbfc1a870
+        [3232000 ns] Test is running, debug_wb_pc = 0x00000000
+        [3242000 ns] Test is running, debug_wb_pc = 0xbfc1a9ac
+        [3252000 ns] Test is running, debug_wb_pc = 0xbfc1aa48
+        [3262000 ns] Test is running, debug_wb_pc = 0xbfc1aae4
+        [3272000 ns] Test is running, debug_wb_pc = 0xbfc1ab80
+        [3282000 ns] Test is running, debug_wb_pc = 0xbfc1ac1c
+        [3292000 ns] Test is running, debug_wb_pc = 0xbfc1acb8
+        [3302000 ns] Test is running, debug_wb_pc = 0xbfc1ad58
+        [3312000 ns] Test is running, debug_wb_pc = 0xbfc1adf8
+        [3322000 ns] Test is running, debug_wb_pc = 0xbfc1ae90
+        [3332000 ns] Test is running, debug_wb_pc = 0xbfc1af2c
+        [3342000 ns] Test is running, debug_wb_pc = 0x00000000
+        [3352000 ns] Test is running, debug_wb_pc = 0xbfc1b064
+        [3362000 ns] Test is running, debug_wb_pc = 0xbfc1b100
+        [3372000 ns] Test is running, debug_wb_pc = 0xbfc1b1a0
+        [3382000 ns] Test is running, debug_wb_pc = 0xbfc1b23c
+        [3392000 ns] Test is running, debug_wb_pc = 0xbfc1b2d8
+        [3402000 ns] Test is running, debug_wb_pc = 0xbfc1b374
+        [3412000 ns] Test is running, debug_wb_pc = 0xbfc1b410
+        [3422000 ns] Test is running, debug_wb_pc = 0xbfc1b4ac
+        [3432000 ns] Test is running, debug_wb_pc = 0xbfc1b548
+        [3442000 ns] Test is running, debug_wb_pc = 0xbfc1b5e8
+        [3452000 ns] Test is running, debug_wb_pc = 0xbfc1b688
+        [3462000 ns] Test is running, debug_wb_pc = 0xbfc1b720
+        [3472000 ns] Test is running, debug_wb_pc = 0xbfc1b7bc
+        [3482000 ns] Test is running, debug_wb_pc = 0xbfc1b85c
+        [3492000 ns] Test is running, debug_wb_pc = 0xbfc1b8f4
+        [3502000 ns] Test is running, debug_wb_pc = 0xbfc1b994
+        [3512000 ns] Test is running, debug_wb_pc = 0xbfc1ba30
+        [3522000 ns] Test is running, debug_wb_pc = 0xbfc1bacc
+        [3532000 ns] Test is running, debug_wb_pc = 0xbfc1bb68
+        [3542000 ns] Test is running, debug_wb_pc = 0xbfc1bc04
+        [3552000 ns] Test is running, debug_wb_pc = 0xbfc1bca0
+        [3562000 ns] Test is running, debug_wb_pc = 0xbfc1bd3c
+        [3572000 ns] Test is running, debug_wb_pc = 0xbfc1bddc
+        [3582000 ns] Test is running, debug_wb_pc = 0xbfc1be78
+        [3592000 ns] Test is running, debug_wb_pc = 0xbfc1bf18
+        [3602000 ns] Test is running, debug_wb_pc = 0xbfc1bfb0
+        [3612000 ns] Test is running, debug_wb_pc = 0xbfc1c050
+        [3622000 ns] Test is running, debug_wb_pc = 0xbfc1c0e8
+        [3632000 ns] Test is running, debug_wb_pc = 0xbfc1c184
+        [3642000 ns] Test is running, debug_wb_pc = 0xbfc1c220
+        [3652000 ns] Test is running, debug_wb_pc = 0xbfc1c2c0
+        [3662000 ns] Test is running, debug_wb_pc = 0xbfc1c35c
+        [3672000 ns] Test is running, debug_wb_pc = 0xbfc1c3f8
+        [3682000 ns] Test is running, debug_wb_pc = 0xbfc1c494
+        [3692000 ns] Test is running, debug_wb_pc = 0x00000000
+        [3702000 ns] Test is running, debug_wb_pc = 0xbfc1c5d0
+        [3712000 ns] Test is running, debug_wb_pc = 0xbfc1c668
+        [3722000 ns] Test is running, debug_wb_pc = 0xbfc1c704
+        [3732000 ns] Test is running, debug_wb_pc = 0xbfc1c7a0
+        [3742000 ns] Test is running, debug_wb_pc = 0xbfc1c83c
+        [3752000 ns] Test is running, debug_wb_pc = 0xbfc1c8dc
+        [3762000 ns] Test is running, debug_wb_pc = 0xbfc1c978
+        [3772000 ns] Test is running, debug_wb_pc = 0xbfc1ca14
+        [3782000 ns] Test is running, debug_wb_pc = 0x00000000
+        [3792000 ns] Test is running, debug_wb_pc = 0xbfc1cb50
+        [3802000 ns] Test is running, debug_wb_pc = 0xbfc1cbe8
+        [3812000 ns] Test is running, debug_wb_pc = 0xbfc1cc88
+----[3814045 ns] Number 8'd07 Functional Test Point PASS!!!
+        [3822000 ns] Test is running, debug_wb_pc = 0xbfc115f4
+        [3832000 ns] Test is running, debug_wb_pc = 0xbfc11690
+        [3842000 ns] Test is running, debug_wb_pc = 0x00000000
+        [3852000 ns] Test is running, debug_wb_pc = 0xbfc117cc
+        [3862000 ns] Test is running, debug_wb_pc = 0xbfc1186c
+        [3872000 ns] Test is running, debug_wb_pc = 0xbfc11904
+        [3882000 ns] Test is running, debug_wb_pc = 0xbfc119a0
+        [3892000 ns] Test is running, debug_wb_pc = 0xbfc11a3c
+        [3902000 ns] Test is running, debug_wb_pc = 0xbfc11ad8
+        [3912000 ns] Test is running, debug_wb_pc = 0xbfc11b74
+        [3922000 ns] Test is running, debug_wb_pc = 0xbfc11c10
+        [3932000 ns] Test is running, debug_wb_pc = 0x00000000
+        [3942000 ns] Test is running, debug_wb_pc = 0xbfc11d4c
+        [3952000 ns] Test is running, debug_wb_pc = 0xbfc11de8
+        [3962000 ns] Test is running, debug_wb_pc = 0xbfc11e84
+        [3972000 ns] Test is running, debug_wb_pc = 0xbfc11f20
+        [3982000 ns] Test is running, debug_wb_pc = 0xbfc11fbc
+        [3992000 ns] Test is running, debug_wb_pc = 0xbfc12058
+        [4002000 ns] Test is running, debug_wb_pc = 0xbfc120f4
+        [4012000 ns] Test is running, debug_wb_pc = 0xbfc12190
+        [4022000 ns] Test is running, debug_wb_pc = 0x00000000
+        [4032000 ns] Test is running, debug_wb_pc = 0xbfc122cc
+        [4042000 ns] Test is running, debug_wb_pc = 0xbfc12364
+        [4052000 ns] Test is running, debug_wb_pc = 0xbfc12404
+        [4062000 ns] Test is running, debug_wb_pc = 0xbfc124a0
+        [4072000 ns] Test is running, debug_wb_pc = 0xbfc1253c
+        [4082000 ns] Test is running, debug_wb_pc = 0xbfc125d8
+        [4092000 ns] Test is running, debug_wb_pc = 0xbfc12674
+        [4102000 ns] Test is running, debug_wb_pc = 0xbfc12710
+        [4112000 ns] Test is running, debug_wb_pc = 0x00000000
+        [4122000 ns] Test is running, debug_wb_pc = 0xbfc1284c
+        [4132000 ns] Test is running, debug_wb_pc = 0xbfc128e4
+        [4142000 ns] Test is running, debug_wb_pc = 0xbfc12980
+        [4152000 ns] Test is running, debug_wb_pc = 0xbfc12a20
+        [4162000 ns] Test is running, debug_wb_pc = 0xbfc12abc
+        [4172000 ns] Test is running, debug_wb_pc = 0xbfc12b58
+        [4182000 ns] Test is running, debug_wb_pc = 0xbfc12bf4
+        [4192000 ns] Test is running, debug_wb_pc = 0xbfc12c90
+        [4202000 ns] Test is running, debug_wb_pc = 0x00000000
+        [4212000 ns] Test is running, debug_wb_pc = 0xbfc12dcc
+        [4222000 ns] Test is running, debug_wb_pc = 0xbfc12e64
+        [4232000 ns] Test is running, debug_wb_pc = 0xbfc12f04
+        [4242000 ns] Test is running, debug_wb_pc = 0xbfc12f9c
+        [4252000 ns] Test is running, debug_wb_pc = 0x00000000
+        [4262000 ns] Test is running, debug_wb_pc = 0xbfc130d4
+        [4272000 ns] Test is running, debug_wb_pc = 0xbfc13170
+        [4282000 ns] Test is running, debug_wb_pc = 0xbfc13210
+        [4292000 ns] Test is running, debug_wb_pc = 0xbfc132ac
+        [4302000 ns] Test is running, debug_wb_pc = 0x00000000
+        [4312000 ns] Test is running, debug_wb_pc = 0xbfc133e4
+        [4322000 ns] Test is running, debug_wb_pc = 0xbfc13480
+        [4332000 ns] Test is running, debug_wb_pc = 0xbfc1351c
+        [4342000 ns] Test is running, debug_wb_pc = 0xbfc135b8
+        [4352000 ns] Test is running, debug_wb_pc = 0xbfc13658
+        [4362000 ns] Test is running, debug_wb_pc = 0xbfc136f0
+        [4372000 ns] Test is running, debug_wb_pc = 0x00000000
+        [4382000 ns] Test is running, debug_wb_pc = 0xbfc13828
+        [4392000 ns] Test is running, debug_wb_pc = 0xbfc138c4
+        [4402000 ns] Test is running, debug_wb_pc = 0xbfc13960
+----[4411255 ns] Number 8'd08 Functional Test Point PASS!!!
+        [4412000 ns] Test is running, debug_wb_pc = 0xbfc139f8
+        [4422000 ns] Test is running, debug_wb_pc = 0xbfc1cd10
+        [4432000 ns] Test is running, debug_wb_pc = 0x00000000
+        [4442000 ns] Test is running, debug_wb_pc = 0xbfc1ce48
+        [4452000 ns] Test is running, debug_wb_pc = 0x00000000
+        [4462000 ns] Test is running, debug_wb_pc = 0xbfc1cf80
+        [4472000 ns] Test is running, debug_wb_pc = 0x00000000
+        [4482000 ns] Test is running, debug_wb_pc = 0xbfc1d0b8
+        [4492000 ns] Test is running, debug_wb_pc = 0x00000000
+        [4502000 ns] Test is running, debug_wb_pc = 0xbfc1d1f0
+        [4512000 ns] Test is running, debug_wb_pc = 0x00000000
+        [4522000 ns] Test is running, debug_wb_pc = 0xbfc1d328
+        [4532000 ns] Test is running, debug_wb_pc = 0x00000000
+        [4542000 ns] Test is running, debug_wb_pc = 0xbfc1d460
+        [4552000 ns] Test is running, debug_wb_pc = 0xbfc1d4fc
+        [4562000 ns] Test is running, debug_wb_pc = 0xbfc1d594
+        [4572000 ns] Test is running, debug_wb_pc = 0xbfc1d634
+        [4582000 ns] Test is running, debug_wb_pc = 0xbfc1d6cc
+        [4592000 ns] Test is running, debug_wb_pc = 0xbfc1d76c
+        [4602000 ns] Test is running, debug_wb_pc = 0xbfc1d804
+        [4612000 ns] Test is running, debug_wb_pc = 0xbfc1d8a4
+        [4622000 ns] Test is running, debug_wb_pc = 0xbfc1d93c
+        [4632000 ns] Test is running, debug_wb_pc = 0xbfc1d9dc
+        [4642000 ns] Test is running, debug_wb_pc = 0xbfc1da74
+        [4652000 ns] Test is running, debug_wb_pc = 0xbfc1db14
+        [4662000 ns] Test is running, debug_wb_pc = 0xbfc1dbac
+        [4672000 ns] Test is running, debug_wb_pc = 0xbfc1dc4c
+        [4682000 ns] Test is running, debug_wb_pc = 0xbfc1dce4
+        [4692000 ns] Test is running, debug_wb_pc = 0xbfc1dd84
+        [4702000 ns] Test is running, debug_wb_pc = 0xbfc1de1c
+        [4712000 ns] Test is running, debug_wb_pc = 0xbfc1debc
+        [4722000 ns] Test is running, debug_wb_pc = 0xbfc1df54
+        [4732000 ns] Test is running, debug_wb_pc = 0xbfc1dff4
+        [4742000 ns] Test is running, debug_wb_pc = 0xbfc1e08c
+        [4752000 ns] Test is running, debug_wb_pc = 0xbfc1e12c
+        [4762000 ns] Test is running, debug_wb_pc = 0xbfc1e1c4
+        [4772000 ns] Test is running, debug_wb_pc = 0xbfc1e264
+        [4782000 ns] Test is running, debug_wb_pc = 0xbfc1e2fc
+        [4792000 ns] Test is running, debug_wb_pc = 0xbfc1e39c
+        [4802000 ns] Test is running, debug_wb_pc = 0xbfc1e434
+        [4812000 ns] Test is running, debug_wb_pc = 0x00000000
+        [4822000 ns] Test is running, debug_wb_pc = 0xbfc1e56c
+        [4832000 ns] Test is running, debug_wb_pc = 0xbfc1e604
+        [4842000 ns] Test is running, debug_wb_pc = 0xbfc1e6a0
+        [4852000 ns] Test is running, debug_wb_pc = 0xbfc1e73c
+        [4862000 ns] Test is running, debug_wb_pc = 0x00000000
+----[4869055 ns] Number 8'd09 Functional Test Point PASS!!!
+        [4872000 ns] Test is running, debug_wb_pc = 0xbfc00998
+        [4882000 ns] Test is running, debug_wb_pc = 0x00000000
+        [4892000 ns] Test is running, debug_wb_pc = 0xbfc0b5f0
+        [4902000 ns] Test is running, debug_wb_pc = 0xbfc0b68c
+        [4912000 ns] Test is running, debug_wb_pc = 0xbfc0b724
+        [4922000 ns] Test is running, debug_wb_pc = 0xbfc0b7c4
+        [4932000 ns] Test is running, debug_wb_pc = 0xbfc0b85c
+        [4942000 ns] Test is running, debug_wb_pc = 0xbfc0b8fc
+        [4952000 ns] Test is running, debug_wb_pc = 0xbfc0b994
+        [4962000 ns] Test is running, debug_wb_pc = 0xbfc0ba34
+        [4972000 ns] Test is running, debug_wb_pc = 0xbfc0bacc
+        [4982000 ns] Test is running, debug_wb_pc = 0xbfc0bb6c
+        [4992000 ns] Test is running, debug_wb_pc = 0xbfc0bc04
+        [5002000 ns] Test is running, debug_wb_pc = 0xbfc0bca4
+        [5012000 ns] Test is running, debug_wb_pc = 0xbfc0bd3c
+        [5022000 ns] Test is running, debug_wb_pc = 0xbfc0bddc
+        [5032000 ns] Test is running, debug_wb_pc = 0xbfc0be74
+        [5042000 ns] Test is running, debug_wb_pc = 0xbfc0bf14
+        [5052000 ns] Test is running, debug_wb_pc = 0xbfc0bfac
+        [5062000 ns] Test is running, debug_wb_pc = 0xbfc0c04c
+        [5072000 ns] Test is running, debug_wb_pc = 0xbfc0c0e4
+        [5082000 ns] Test is running, debug_wb_pc = 0xbfc0c184
+        [5092000 ns] Test is running, debug_wb_pc = 0xbfc0c21c
+        [5102000 ns] Test is running, debug_wb_pc = 0xbfc0c2bc
+        [5112000 ns] Test is running, debug_wb_pc = 0xbfc0c354
+        [5122000 ns] Test is running, debug_wb_pc = 0xbfc0c3f4
+        [5132000 ns] Test is running, debug_wb_pc = 0xbfc0c48c
+        [5142000 ns] Test is running, debug_wb_pc = 0xbfc0c52c
+        [5152000 ns] Test is running, debug_wb_pc = 0xbfc0c5c4
+        [5162000 ns] Test is running, debug_wb_pc = 0xbfc0c660
+        [5172000 ns] Test is running, debug_wb_pc = 0xbfc0c6f8
+        [5182000 ns] Test is running, debug_wb_pc = 0xbfc0c794
+        [5192000 ns] Test is running, debug_wb_pc = 0xbfc0c830
+        [5202000 ns] Test is running, debug_wb_pc = 0xbfc0c8cc
+        [5212000 ns] Test is running, debug_wb_pc = 0xbfc0c968
+        [5222000 ns] Test is running, debug_wb_pc = 0xbfc0ca04
+        [5232000 ns] Test is running, debug_wb_pc = 0xbfc0caa0
+        [5242000 ns] Test is running, debug_wb_pc = 0xbfc0cb3c
+        [5252000 ns] Test is running, debug_wb_pc = 0xbfc0cbd8
+        [5262000 ns] Test is running, debug_wb_pc = 0x00000000
+        [5272000 ns] Test is running, debug_wb_pc = 0xbfc0cd14
+        [5282000 ns] Test is running, debug_wb_pc = 0xbfc0cdac
+        [5292000 ns] Test is running, debug_wb_pc = 0xbfc0ce48
+        [5302000 ns] Test is running, debug_wb_pc = 0x00000000
+        [5312000 ns] Test is running, debug_wb_pc = 0xbfc0cf80
+        [5322000 ns] Test is running, debug_wb_pc = 0xbfc0d018
+----[5326865 ns] Number 8'd10 Functional Test Point PASS!!!
+        [5332000 ns] Test is running, debug_wb_pc = 0xbfc0087c
+        [5342000 ns] Test is running, debug_wb_pc = 0xbfc1e8f4
+        [5352000 ns] Test is running, debug_wb_pc = 0xbfc1e990
+        [5362000 ns] Test is running, debug_wb_pc = 0xbfc1ea2c
+        [5372000 ns] Test is running, debug_wb_pc = 0xbfc1eac8
+        [5382000 ns] Test is running, debug_wb_pc = 0xbfc1eb64
+        [5392000 ns] Test is running, debug_wb_pc = 0x00000000
+        [5402000 ns] Test is running, debug_wb_pc = 0xbfc1ec9c
+        [5412000 ns] Test is running, debug_wb_pc = 0x00000000
+        [5422000 ns] Test is running, debug_wb_pc = 0x00000000
+        [5432000 ns] Test is running, debug_wb_pc = 0xbfc1ee70
+        [5442000 ns] Test is running, debug_wb_pc = 0xbfc1ef0c
+        [5452000 ns] Test is running, debug_wb_pc = 0xbfc1efa8
+        [5462000 ns] Test is running, debug_wb_pc = 0xbfc1f044
+        [5472000 ns] Test is running, debug_wb_pc = 0xbfc1f0e0
+        [5482000 ns] Test is running, debug_wb_pc = 0xbfc1f17c
+        [5492000 ns] Test is running, debug_wb_pc = 0xbfc1f218
+        [5502000 ns] Test is running, debug_wb_pc = 0xbfc1f2b4
+        [5512000 ns] Test is running, debug_wb_pc = 0xbfc1f350
+        [5522000 ns] Test is running, debug_wb_pc = 0xbfc1f3ec
+        [5532000 ns] Test is running, debug_wb_pc = 0xbfc1f48c
+        [5542000 ns] Test is running, debug_wb_pc = 0xbfc1f524
+        [5552000 ns] Test is running, debug_wb_pc = 0xbfc1f5c0
+        [5562000 ns] Test is running, debug_wb_pc = 0xbfc1f65c
+        [5572000 ns] Test is running, debug_wb_pc = 0xbfc1f6f8
+        [5582000 ns] Test is running, debug_wb_pc = 0xbfc1f794
+        [5592000 ns] Test is running, debug_wb_pc = 0xbfc1f830
+        [5602000 ns] Test is running, debug_wb_pc = 0xbfc1f8cc
+        [5612000 ns] Test is running, debug_wb_pc = 0x00000000
+        [5622000 ns] Test is running, debug_wb_pc = 0xbfc1fa08
+        [5632000 ns] Test is running, debug_wb_pc = 0xbfc1faa0
+        [5642000 ns] Test is running, debug_wb_pc = 0xbfc1fb3c
+        [5652000 ns] Test is running, debug_wb_pc = 0x00000000
+        [5662000 ns] Test is running, debug_wb_pc = 0x00000000
+        [5672000 ns] Test is running, debug_wb_pc = 0xbfc1fd10
+        [5682000 ns] Test is running, debug_wb_pc = 0xbfc1fdac
+        [5692000 ns] Test is running, debug_wb_pc = 0xbfc1fe48
+        [5702000 ns] Test is running, debug_wb_pc = 0xbfc1fee4
+        [5712000 ns] Test is running, debug_wb_pc = 0xbfc1ff84
+        [5722000 ns] Test is running, debug_wb_pc = 0xbfc2001c
+        [5732000 ns] Test is running, debug_wb_pc = 0x00000000
+        [5742000 ns] Test is running, debug_wb_pc = 0xbfc20154
+        [5752000 ns] Test is running, debug_wb_pc = 0xbfc201f0
+        [5762000 ns] Test is running, debug_wb_pc = 0x00000000
+        [5772000 ns] Test is running, debug_wb_pc = 0xbfc2032c
+        [5782000 ns] Test is running, debug_wb_pc = 0xbfc203c4
+        [5792000 ns] Test is running, debug_wb_pc = 0xbfc20460
+        [5802000 ns] Test is running, debug_wb_pc = 0xbfc204fc
+        [5812000 ns] Test is running, debug_wb_pc = 0x00000000
+----[5819075 ns] Number 8'd11 Functional Test Point PASS!!!
+        [5822000 ns] Test is running, debug_wb_pc = 0xbfc00998
+        [5832000 ns] Test is running, debug_wb_pc = 0xbfc00a30
+        [5842000 ns] Test is running, debug_wb_pc = 0xbfc00aa8
+        [5852000 ns] Test is running, debug_wb_pc = 0xbfc00b30
+        [5862000 ns] Test is running, debug_wb_pc = 0xbfc00ba8
+        [5872000 ns] Test is running, debug_wb_pc = 0xbfc00c20
+        [5882000 ns] Test is running, debug_wb_pc = 0xbfc00c9c
+        [5892000 ns] Test is running, debug_wb_pc = 0xbfc00d20
+        [5902000 ns] Test is running, debug_wb_pc = 0xbfc00d9c
+        [5912000 ns] Test is running, debug_wb_pc = 0xbfc00e1c
+        [5922000 ns] Test is running, debug_wb_pc = 0xbfc00ea0
+        [5932000 ns] Test is running, debug_wb_pc = 0xbfc00f20
+        [5942000 ns] Test is running, debug_wb_pc = 0xbfc00fa8
+        [5952000 ns] Test is running, debug_wb_pc = 0xbfc01028
+        [5962000 ns] Test is running, debug_wb_pc = 0xbfc010a8
+        [5972000 ns] Test is running, debug_wb_pc = 0xbfc01130
+        [5982000 ns] Test is running, debug_wb_pc = 0xbfc011b8
+        [5992000 ns] Test is running, debug_wb_pc = 0xbfc01238
+        [6002000 ns] Test is running, debug_wb_pc = 0xbfc012bc
+        [6012000 ns] Test is running, debug_wb_pc = 0xbfc0133c
+        [6022000 ns] Test is running, debug_wb_pc = 0xbfc013b4
+        [6032000 ns] Test is running, debug_wb_pc = 0xbfc0143c
+        [6042000 ns] Test is running, debug_wb_pc = 0xbfc014c8
+        [6052000 ns] Test is running, debug_wb_pc = 0xbfc0154c
+        [6062000 ns] Test is running, debug_wb_pc = 0xbfc015c8
+        [6072000 ns] Test is running, debug_wb_pc = 0xbfc0163c
+        [6082000 ns] Test is running, debug_wb_pc = 0xbfc016bc
+        [6092000 ns] Test is running, debug_wb_pc = 0xbfc01740
+        [6102000 ns] Test is running, debug_wb_pc = 0xbfc017c8
+        [6112000 ns] Test is running, debug_wb_pc = 0xbfc01844
+        [6122000 ns] Test is running, debug_wb_pc = 0xbfc018cc
+        [6132000 ns] Test is running, debug_wb_pc = 0xbfc01950
+        [6142000 ns] Test is running, debug_wb_pc = 0xbfc019cc
+        [6152000 ns] Test is running, debug_wb_pc = 0xbfc01a58
+        [6162000 ns] Test is running, debug_wb_pc = 0xbfc01ad4
+        [6172000 ns] Test is running, debug_wb_pc = 0xbfc01b58
+        [6182000 ns] Test is running, debug_wb_pc = 0xbfc01be4
+        [6192000 ns] Test is running, debug_wb_pc = 0x00000000
+        [6202000 ns] Test is running, debug_wb_pc = 0xbfc01ce4
+        [6212000 ns] Test is running, debug_wb_pc = 0xbfc01d68
+        [6222000 ns] Test is running, debug_wb_pc = 0xbfc01dec
+        [6232000 ns] Test is running, debug_wb_pc = 0xbfc01e74
+        [6242000 ns] Test is running, debug_wb_pc = 0xbfc01ef8
+        [6252000 ns] Test is running, debug_wb_pc = 0xbfc01f7c
+        [6262000 ns] Test is running, debug_wb_pc = 0xbfc01ffc
+----[6266275 ns] Number 8'd12 Functional Test Point PASS!!!
+        [6272000 ns] Test is running, debug_wb_pc = 0xbfc0d080
+        [6282000 ns] Test is running, debug_wb_pc = 0xbfc0d150
+        [6292000 ns] Test is running, debug_wb_pc = 0xbfc0d21c
+        [6302000 ns] Test is running, debug_wb_pc = 0xbfc0d2ec
+        [6312000 ns] Test is running, debug_wb_pc = 0xbfc0d3b8
+        [6322000 ns] Test is running, debug_wb_pc = 0xbfc0d488
+        [6332000 ns] Test is running, debug_wb_pc = 0xbfc0d558
+        [6342000 ns] Test is running, debug_wb_pc = 0xbfc0d624
+        [6352000 ns] Test is running, debug_wb_pc = 0xbfc0d6f4
+        [6362000 ns] Test is running, debug_wb_pc = 0xbfc0d7c0
+        [6372000 ns] Test is running, debug_wb_pc = 0xbfc0d890
+        [6382000 ns] Test is running, debug_wb_pc = 0xbfc0d95c
+        [6392000 ns] Test is running, debug_wb_pc = 0xbfc0da2c
+        [6402000 ns] Test is running, debug_wb_pc = 0xbfc0daf8
+        [6412000 ns] Test is running, debug_wb_pc = 0xbfc0dbc8
+        [6422000 ns] Test is running, debug_wb_pc = 0xbfc0dc94
+        [6432000 ns] Test is running, debug_wb_pc = 0xbfc0dd64
+        [6442000 ns] Test is running, debug_wb_pc = 0xbfc0de30
+        [6452000 ns] Test is running, debug_wb_pc = 0xbfc0df00
+        [6462000 ns] Test is running, debug_wb_pc = 0xbfc0dfac
+        [6472000 ns] Test is running, debug_wb_pc = 0xbfc0e07c
+        [6482000 ns] Test is running, debug_wb_pc = 0xbfc0e148
+        [6492000 ns] Test is running, debug_wb_pc = 0xbfc0e218
+        [6502000 ns] Test is running, debug_wb_pc = 0xbfc0e2e4
+        [6512000 ns] Test is running, debug_wb_pc = 0xbfc0e3b4
+        [6522000 ns] Test is running, debug_wb_pc = 0xbfc0e484
+        [6532000 ns] Test is running, debug_wb_pc = 0xbfc0e550
+        [6542000 ns] Test is running, debug_wb_pc = 0xbfc0e620
+        [6552000 ns] Test is running, debug_wb_pc = 0xbfc0e710
+        [6562000 ns] Test is running, debug_wb_pc = 0xbfc0e7e0
+        [6572000 ns] Test is running, debug_wb_pc = 0xbfc0e8ac
+        [6582000 ns] Test is running, debug_wb_pc = 0xbfc0e97c
+        [6592000 ns] Test is running, debug_wb_pc = 0xbfc0ea2c
+        [6602000 ns] Test is running, debug_wb_pc = 0xbfc0eafc
+        [6612000 ns] Test is running, debug_wb_pc = 0xbfc0ebc8
+        [6622000 ns] Test is running, debug_wb_pc = 0xbfc0ec98
+        [6632000 ns] Test is running, debug_wb_pc = 0xbfc0ed64
+        [6642000 ns] Test is running, debug_wb_pc = 0xbfc0ee34
+        [6652000 ns] Test is running, debug_wb_pc = 0xbfc0ef00
+        [6662000 ns] Test is running, debug_wb_pc = 0xbfc0efd0
+        [6672000 ns] Test is running, debug_wb_pc = 0xbfc0f09c
+        [6682000 ns] Test is running, debug_wb_pc = 0xbfc0f16c
+        [6692000 ns] Test is running, debug_wb_pc = 0xbfc0f238
+        [6702000 ns] Test is running, debug_wb_pc = 0xbfc0f308
+        [6712000 ns] Test is running, debug_wb_pc = 0xbfc0f3d8
+        [6722000 ns] Test is running, debug_wb_pc = 0xbfc0f4a4
+        [6732000 ns] Test is running, debug_wb_pc = 0xbfc0f574
+        [6742000 ns] Test is running, debug_wb_pc = 0xbfc0f640
+        [6752000 ns] Test is running, debug_wb_pc = 0xbfc0f710
+        [6762000 ns] Test is running, debug_wb_pc = 0xbfc0f7dc
+        [6772000 ns] Test is running, debug_wb_pc = 0xbfc0f8ac
+        [6782000 ns] Test is running, debug_wb_pc = 0xbfc0f978
+        [6792000 ns] Test is running, debug_wb_pc = 0xbfc0fa48
+        [6802000 ns] Test is running, debug_wb_pc = 0xbfc0fb14
+        [6812000 ns] Test is running, debug_wb_pc = 0xbfc0fbe4
+        [6822000 ns] Test is running, debug_wb_pc = 0xbfc0fcb0
+        [6832000 ns] Test is running, debug_wb_pc = 0xbfc0fd80
+        [6842000 ns] Test is running, debug_wb_pc = 0xbfc0fe4c
+        [6852000 ns] Test is running, debug_wb_pc = 0xbfc0ff1c
+        [6862000 ns] Test is running, debug_wb_pc = 0xbfc0ffe8
+        [6872000 ns] Test is running, debug_wb_pc = 0xbfc100b8
+        [6882000 ns] Test is running, debug_wb_pc = 0xbfc10164
+----[6885715 ns] Number 8'd13 Functional Test Point PASS!!!
+        [6892000 ns] Test is running, debug_wb_pc = 0xbfc162ec
+        [6902000 ns] Test is running, debug_wb_pc = 0xbfc16394
+        [6912000 ns] Test is running, debug_wb_pc = 0xbfc16470
+        [6922000 ns] Test is running, debug_wb_pc = 0xbfc16544
+        [6932000 ns] Test is running, debug_wb_pc = 0xbfc165f4
+        [6942000 ns] Test is running, debug_wb_pc = 0xbfc166a8
+        [6952000 ns] Test is running, debug_wb_pc = 0xbfc16778
+        [6962000 ns] Test is running, debug_wb_pc = 0xbfc1682c
+        [6972000 ns] Test is running, debug_wb_pc = 0xbfc168d8
+        [6982000 ns] Test is running, debug_wb_pc = 0xbfc169b0
+        [6992000 ns] Test is running, debug_wb_pc = 0xbfc16a68
+        [7002000 ns] Test is running, debug_wb_pc = 0xbfc16b34
+        [7012000 ns] Test is running, debug_wb_pc = 0xbfc16bec
+        [7022000 ns] Test is running, debug_wb_pc = 0xbfc16c98
+        [7032000 ns] Test is running, debug_wb_pc = 0xbfc16d70
+        [7042000 ns] Test is running, debug_wb_pc = 0xbfc16e48
+        [7052000 ns] Test is running, debug_wb_pc = 0xbfc16ef4
+        [7062000 ns] Test is running, debug_wb_pc = 0xbfc16fac
+        [7072000 ns] Test is running, debug_wb_pc = 0xbfc17054
+        [7082000 ns] Test is running, debug_wb_pc = 0xbfc17130
+        [7092000 ns] Test is running, debug_wb_pc = 0xbfc17204
+        [7102000 ns] Test is running, debug_wb_pc = 0xbfc172b4
+        [7112000 ns] Test is running, debug_wb_pc = 0xbfc17368
+        [7122000 ns] Test is running, debug_wb_pc = 0xbfc17438
+        [7132000 ns] Test is running, debug_wb_pc = 0xbfc174ec
+        [7142000 ns] Test is running, debug_wb_pc = 0xbfc17598
+        [7152000 ns] Test is running, debug_wb_pc = 0xbfc17670
+        [7162000 ns] Test is running, debug_wb_pc = 0xbfc17728
+        [7172000 ns] Test is running, debug_wb_pc = 0xbfc177f4
+        [7182000 ns] Test is running, debug_wb_pc = 0xbfc178ac
+        [7192000 ns] Test is running, debug_wb_pc = 0xbfc17954
+        [7202000 ns] Test is running, debug_wb_pc = 0xbfc17a30
+        [7212000 ns] Test is running, debug_wb_pc = 0xbfc17b04
+        [7222000 ns] Test is running, debug_wb_pc = 0xbfc17bb4
+        [7232000 ns] Test is running, debug_wb_pc = 0xbfc17c6c
+        [7242000 ns] Test is running, debug_wb_pc = 0xbfc17d14
+        [7252000 ns] Test is running, debug_wb_pc = 0xbfc17df0
+        [7262000 ns] Test is running, debug_wb_pc = 0xbfc17ec4
+        [7272000 ns] Test is running, debug_wb_pc = 0xbfc17f74
+        [7282000 ns] Test is running, debug_wb_pc = 0xbfc18028
+        [7292000 ns] Test is running, debug_wb_pc = 0xbfc180f8
+        [7302000 ns] Test is running, debug_wb_pc = 0xbfc181ac
+        [7312000 ns] Test is running, debug_wb_pc = 0xbfc18258
+        [7322000 ns] Test is running, debug_wb_pc = 0xbfc18330
+        [7332000 ns] Test is running, debug_wb_pc = 0xbfc183e8
+        [7342000 ns] Test is running, debug_wb_pc = 0xbfc184b4
+        [7352000 ns] Test is running, debug_wb_pc = 0xbfc1856c
+        [7362000 ns] Test is running, debug_wb_pc = 0xbfc18614
+        [7372000 ns] Test is running, debug_wb_pc = 0xbfc186f0
+        [7382000 ns] Test is running, debug_wb_pc = 0xbfc187c4
+        [7392000 ns] Test is running, debug_wb_pc = 0xbfc18874
+        [7402000 ns] Test is running, debug_wb_pc = 0xbfc18928
+        [7412000 ns] Test is running, debug_wb_pc = 0xbfc189d4
+        [7422000 ns] Test is running, debug_wb_pc = 0xbfc18ab0
+        [7432000 ns] Test is running, debug_wb_pc = 0xbfc18b84
+        [7442000 ns] Test is running, debug_wb_pc = 0xbfc18c34
+        [7452000 ns] Test is running, debug_wb_pc = 0xbfc18ce8
+        [7462000 ns] Test is running, debug_wb_pc = 0xbfc18db8
+        [7472000 ns] Test is running, debug_wb_pc = 0xbfc18e6c
+        [7482000 ns] Test is running, debug_wb_pc = 0xbfc18f18
+        [7492000 ns] Test is running, debug_wb_pc = 0xbfc18ff0
+        [7502000 ns] Test is running, debug_wb_pc = 0xbfc190a8
+        [7512000 ns] Test is running, debug_wb_pc = 0xbfc19174
+        [7522000 ns] Test is running, debug_wb_pc = 0xbfc1922c
+        [7532000 ns] Test is running, debug_wb_pc = 0xbfc192d4
+        [7542000 ns] Test is running, debug_wb_pc = 0xbfc193b0
+        [7552000 ns] Test is running, debug_wb_pc = 0xbfc19484
+        [7562000 ns] Test is running, debug_wb_pc = 0xbfc19534
+        [7572000 ns] Test is running, debug_wb_pc = 0xbfc195e8
+        [7582000 ns] Test is running, debug_wb_pc = 0xbfc19694
+        [7592000 ns] Test is running, debug_wb_pc = 0xbfc1976c
+        [7602000 ns] Test is running, debug_wb_pc = 0xbfc19844
+        [7612000 ns] Test is running, debug_wb_pc = 0xbfc198f4
+        [7622000 ns] Test is running, debug_wb_pc = 0xbfc199a8
+        [7632000 ns] Test is running, debug_wb_pc = 0xbfc19a78
+        [7642000 ns] Test is running, debug_wb_pc = 0xbfc19b2c
+        [7652000 ns] Test is running, debug_wb_pc = 0xbfc19bd8
+        [7662000 ns] Test is running, debug_wb_pc = 0xbfc19cb0
+        [7672000 ns] Test is running, debug_wb_pc = 0xbfc19d68
+        [7682000 ns] Test is running, debug_wb_pc = 0xbfc19e34
+        [7692000 ns] Test is running, debug_wb_pc = 0xbfc19eec
+        [7702000 ns] Test is running, debug_wb_pc = 0xbfc19f94
+        [7712000 ns] Test is running, debug_wb_pc = 0xbfc1a070
+        [7722000 ns] Test is running, debug_wb_pc = 0xbfc1a144
+        [7732000 ns] Test is running, debug_wb_pc = 0xbfc1a1f4
+        [7742000 ns] Test is running, debug_wb_pc = 0xbfc1a2a8
+        [7752000 ns] Test is running, debug_wb_pc = 0xbfc1a354
+----[7757125 ns] Number 8'd14 Functional Test Point PASS!!!
+        [7762000 ns] Test is running, debug_wb_pc = 0xbfc009c8
+        [7772000 ns] Test is running, debug_wb_pc = 0xbfc210e0
+        [7782000 ns] Test is running, debug_wb_pc = 0xbfc211b8
+        [7792000 ns] Test is running, debug_wb_pc = 0xbfc21284
+        [7802000 ns] Test is running, debug_wb_pc = 0xbfc21358
+        [7812000 ns] Test is running, debug_wb_pc = 0xbfc21408
+        [7822000 ns] Test is running, debug_wb_pc = 0xbfc214d4
+        [7832000 ns] Test is running, debug_wb_pc = 0x00000000
+        [7842000 ns] Test is running, debug_wb_pc = 0xbfc21658
+        [7852000 ns] Test is running, debug_wb_pc = 0xbfc21728
+        [7862000 ns] Test is running, debug_wb_pc = 0xbfc217dc
+        [7872000 ns] Test is running, debug_wb_pc = 0xbfc218a8
+        [7882000 ns] Test is running, debug_wb_pc = 0xbfc21958
+        [7892000 ns] Test is running, debug_wb_pc = 0xbfc21a2c
+        [7902000 ns] Test is running, debug_wb_pc = 0xbfc21af8
+        [7912000 ns] Test is running, debug_wb_pc = 0xbfc21ba8
+        [7922000 ns] Test is running, debug_wb_pc = 0xbfc21c7c
+        [7932000 ns] Test is running, debug_wb_pc = 0xbfc21d4c
+        [7942000 ns] Test is running, debug_wb_pc = 0xbfc21e1c
+        [7952000 ns] Test is running, debug_wb_pc = 0xbfc21ecc
+        [7962000 ns] Test is running, debug_wb_pc = 0xbfc21f9c
+        [7972000 ns] Test is running, debug_wb_pc = 0xbfc22054
+        [7982000 ns] Test is running, debug_wb_pc = 0xbfc22120
+        [7992000 ns] Test is running, debug_wb_pc = 0xbfc221cc
+        [8002000 ns] Test is running, debug_wb_pc = 0xbfc222a0
+        [8012000 ns] Test is running, debug_wb_pc = 0xbfc22370
+        [8022000 ns] Test is running, debug_wb_pc = 0xbfc2241c
+        [8032000 ns] Test is running, debug_wb_pc = 0xbfc224f0
+        [8042000 ns] Test is running, debug_wb_pc = 0xbfc225c0
+        [8052000 ns] Test is running, debug_wb_pc = 0xbfc22690
+        [8062000 ns] Test is running, debug_wb_pc = 0xbfc22744
+        [8072000 ns] Test is running, debug_wb_pc = 0xbfc22810
+        [8082000 ns] Test is running, debug_wb_pc = 0x00000000
+        [8092000 ns] Test is running, debug_wb_pc = 0xbfc22994
+        [8102000 ns] Test is running, debug_wb_pc = 0xbfc22a60
+        [8112000 ns] Test is running, debug_wb_pc = 0xbfc22b18
+        [8122000 ns] Test is running, debug_wb_pc = 0xbfc22be4
+        [8132000 ns] Test is running, debug_wb_pc = 0xbfc22c90
+        [8142000 ns] Test is running, debug_wb_pc = 0xbfc22d68
+        [8152000 ns] Test is running, debug_wb_pc = 0xbfc22e34
+        [8162000 ns] Test is running, debug_wb_pc = 0xbfc22ee0
+        [8172000 ns] Test is running, debug_wb_pc = 0xbfc22fb8
+        [8182000 ns] Test is running, debug_wb_pc = 0xbfc23084
+        [8192000 ns] Test is running, debug_wb_pc = 0xbfc23158
+        [8202000 ns] Test is running, debug_wb_pc = 0xbfc23208
+        [8212000 ns] Test is running, debug_wb_pc = 0xbfc232d4
+        [8222000 ns] Test is running, debug_wb_pc = 0x00000000
+        [8232000 ns] Test is running, debug_wb_pc = 0xbfc23458
+        [8242000 ns] Test is running, debug_wb_pc = 0xbfc23504
+        [8252000 ns] Test is running, debug_wb_pc = 0xbfc235dc
+        [8262000 ns] Test is running, debug_wb_pc = 0xbfc236a8
+        [8272000 ns] Test is running, debug_wb_pc = 0xbfc23758
+        [8282000 ns] Test is running, debug_wb_pc = 0xbfc2382c
+        [8292000 ns] Test is running, debug_wb_pc = 0xbfc238f8
+        [8302000 ns] Test is running, debug_wb_pc = 0xbfc239a8
+        [8312000 ns] Test is running, debug_wb_pc = 0xbfc23a7c
+        [8322000 ns] Test is running, debug_wb_pc = 0xbfc23b4c
+        [8332000 ns] Test is running, debug_wb_pc = 0xbfc23c1c
+        [8342000 ns] Test is running, debug_wb_pc = 0xbfc23ccc
+        [8352000 ns] Test is running, debug_wb_pc = 0xbfc23d9c
+        [8362000 ns] Test is running, debug_wb_pc = 0xbfc23e54
+        [8372000 ns] Test is running, debug_wb_pc = 0xbfc23f1c
+        [8382000 ns] Test is running, debug_wb_pc = 0xbfc23fcc
+        [8392000 ns] Test is running, debug_wb_pc = 0xbfc240a0
+        [8402000 ns] Test is running, debug_wb_pc = 0xbfc24170
+        [8412000 ns] Test is running, debug_wb_pc = 0xbfc2421c
+        [8422000 ns] Test is running, debug_wb_pc = 0xbfc242f0
+        [8432000 ns] Test is running, debug_wb_pc = 0xbfc243c0
+        [8442000 ns] Test is running, debug_wb_pc = 0xbfc24490
+        [8452000 ns] Test is running, debug_wb_pc = 0xbfc24544
+        [8462000 ns] Test is running, debug_wb_pc = 0xbfc24610
+        [8472000 ns] Test is running, debug_wb_pc = 0x00000000
+        [8482000 ns] Test is running, debug_wb_pc = 0xbfc24794
+        [8492000 ns] Test is running, debug_wb_pc = 0xbfc24860
+        [8502000 ns] Test is running, debug_wb_pc = 0xbfc24914
+        [8512000 ns] Test is running, debug_wb_pc = 0xbfc249e4
+        [8522000 ns] Test is running, debug_wb_pc = 0xbfc24a90
+        [8532000 ns] Test is running, debug_wb_pc = 0xbfc24b68
+        [8542000 ns] Test is running, debug_wb_pc = 0xbfc24c34
+        [8552000 ns] Test is running, debug_wb_pc = 0xbfc24ce0
+        [8562000 ns] Test is running, debug_wb_pc = 0xbfc24db8
+        [8572000 ns] Test is running, debug_wb_pc = 0xbfc24e84
+        [8582000 ns] Test is running, debug_wb_pc = 0xbfc24f54
+        [8592000 ns] Test is running, debug_wb_pc = 0xbfc25008
+        [8602000 ns] Test is running, debug_wb_pc = 0xbfc250d4
+        [8612000 ns] Test is running, debug_wb_pc = 0x00000000
+        [8622000 ns] Test is running, debug_wb_pc = 0xbfc25258
+----[8629635 ns] Number 8'd15 Functional Test Point PASS!!!
+        [8632000 ns] Test is running, debug_wb_pc = 0xbfc00990
+        [8642000 ns] Test is running, debug_wb_pc = 0xbfc20690
+        [8652000 ns] Test is running, debug_wb_pc = 0xbfc20748
+        [8662000 ns] Test is running, debug_wb_pc = 0x00000000
+        [8672000 ns] Test is running, debug_wb_pc = 0xbfc208b4
+        [8682000 ns] Test is running, debug_wb_pc = 0xbfc20968
+        [8692000 ns] Test is running, debug_wb_pc = 0x00000000
+        [8702000 ns] Test is running, debug_wb_pc = 0xbfc20adc
+----[8705275 ns] Number 8'd16 Functional Test Point PASS!!!
+        [8712000 ns] Test is running, debug_wb_pc = 0xbfc20b44
+        [8722000 ns] Test is running, debug_wb_pc = 0x00000000
+        [8732000 ns] Test is running, debug_wb_pc = 0x00000000
+        [8742000 ns] Test is running, debug_wb_pc = 0x00000000
+        [8752000 ns] Test is running, debug_wb_pc = 0xbfc20e0c
+        [8762000 ns] Test is running, debug_wb_pc = 0xbfc20ec8
+        [8772000 ns] Test is running, debug_wb_pc = 0xbfc20f80
+----[8781505 ns] Number 8'd17 Functional Test Point PASS!!!
+        [8782000 ns] Test is running, debug_wb_pc = 0xbfc2102c
+        [8792000 ns] Test is running, debug_wb_pc = 0xbfc03a14
+        [8802000 ns] Test is running, debug_wb_pc = 0xbfc03af0
+        [8812000 ns] Test is running, debug_wb_pc = 0xbfc03bcc
+----[8820105 ns] Number 8'd18 Functional Test Point PASS!!!
+        [8822000 ns] Test is running, debug_wb_pc = 0xbfc00990
+        [8832000 ns] Test is running, debug_wb_pc = 0xbfc082b8
+        [8842000 ns] Test is running, debug_wb_pc = 0xbfc08388
+        [8852000 ns] Test is running, debug_wb_pc = 0xbfc0844c
+        [8862000 ns] Test is running, debug_wb_pc = 0xbfc0851c
+        [8872000 ns] Test is running, debug_wb_pc = 0xbfc085e8
+----[8873405 ns] Number 8'd19 Functional Test Point PASS!!!
+        [8882000 ns] Test is running, debug_wb_pc = 0xbfc25360
+        [8892000 ns] Test is running, debug_wb_pc = 0xbfc2542c
+        [8902000 ns] Test is running, debug_wb_pc = 0xbfc254f8
+        [8912000 ns] Test is running, debug_wb_pc = 0xbfc255bc
+        [8922000 ns] Test is running, debug_wb_pc = 0xbfc25688
+----[8925185 ns] Number 8'd20 Functional Test Point PASS!!!
+==============================================================
+Test end!
+        [8932000 ns] Test is running, debug_wb_pc = 0xbfc00100
+----PASS!!!
+$finish called at time : 8932012500 ps : File "C:/Users/Lenovo/Desktop/colab/CO-lab-material-CQU/vivado/func_test_v0.01/soc_axi_func_sim/testbench/mycpu_tb.v" Line 269
+run: Time (s): cpu = 00:01:15 ; elapsed = 00:01:38 . Memory (MB): peak = 1750.746 ; gain = 13.406
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/Lenovo/Desktop/colab/CO-lab-material-CQU/vivado/func_test_v0.01/soc_axi_func_sim/run_vivado/mycpu_prj1/mycpu.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'C:/Users/Lenovo/Desktop/colab/CO-lab-material-CQU/vivado/func_test_v0.01/soc_axi_func_sim/rtl/xilinx_ip/clk_pll/clk_pll.xci' is already up-to-date
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'C:/Users/Lenovo/Desktop/colab/CO-lab-material-CQU/vivado/func_test_v0.01/soc_axi_func_sim/rtl/xilinx_ip/axi_crossbar_1x2/axi_crossbar_1x2.xci' is already up-to-date
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'C:/Users/Lenovo/Desktop/colab/CO-lab-material-CQU/vivado/func_test_v0.01/soc_axi_func_sim/rtl/xilinx_ip/axi_clock_converter/axi_clock_converter.xci' is already up-to-date
+[Thu Jan  9 14:28:30 2025] Launched synth_1...
+Run output will be captured here: C:/Users/Lenovo/Desktop/colab/CO-lab-material-CQU/vivado/func_test_v0.01/soc_axi_func_sim/run_vivado/mycpu_prj1/mycpu.runs/synth_1/runme.log
+[Thu Jan  9 14:28:30 2025] Launched impl_1...
+Run output will be captured here: C:/Users/Lenovo/Desktop/colab/CO-lab-material-CQU/vivado/func_test_v0.01/soc_axi_func_sim/run_vivado/mycpu_prj1/mycpu.runs/impl_1/runme.log
+open_hw_manager
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+ECHO 处于关闭状态。
+ECHO 处于关闭状态。
+
+****** Xilinx hw_server v2023.1
+  **** Build date : May  7 2023 at 15:26:57
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+
+
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:0
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+ECHO 处于关闭状态。
+ECHO 处于关闭状态。
+
+
+******** Xilinx cs_server v2023.1.0
+  ****** Build date   : Apr 10 2023-23:59:24
+    **** Build number : 2023.1.1681142364
+      ** Copyright 2017-2022 Xilinx, Inc. All Rights Reserved.
+      ** Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+
+
+
+connect_hw_server: Time (s): cpu = 00:00:01 ; elapsed = 00:00:13 . Memory (MB): peak = 2434.438 ; gain = 0.000
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292709190A
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/Lenovo/Desktop/colab/CO-lab-material-CQU/vivado/func_test_v0.01/soc_axi_func_sim/run_vivado/mycpu_prj1/mycpu.runs/impl_1/soc_axi_lite_top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+ERROR: [Labtools 27-3303] Incorrect bitstream assigned to device. Bitfile is incompatible for this device. Bitstream was generated for device xc7a200t and target device is xc7a100t.
+INFO: [Labtools 27-3164] End of startup status: HIGH
+ERROR: [Common 17-39] 'program_hw_devices' failed due to earlier errors.
+close_hw_manager
+close_sim
+INFO: xsimkernel Simulation Memory Usage: 29192 KB (Peak: 29192 KB), Simulation CPU Usage: 61999 ms
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Thu Jan  9 14:46:51 2025...

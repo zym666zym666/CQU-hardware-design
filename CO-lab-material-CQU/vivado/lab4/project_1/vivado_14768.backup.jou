@@ -1,0 +1,33 @@
+#-----------------------------------------------------------
+# Vivado v2023.1 (64-bit)
+# SW Build 3865809 on Sun May  7 15:05:29 MDT 2023
+# IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
+# SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
+# Start of session at: Thu Dec 26 10:07:59 2024
+# Process ID: 14768
+# Current directory: C:/Users/Lenovo/Desktop/colab/CO-lab-material-CQU/vivado/lab4/project_1
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent7440 C:\Users\Lenovo\Desktop\colab\CO-lab-material-CQU\vivado\lab4\project_1\project_1.xpr
+# Log file: C:/Users/Lenovo/Desktop/colab/CO-lab-material-CQU/vivado/lab4/project_1/vivado.log
+# Journal file: C:/Users/Lenovo/Desktop/colab/CO-lab-material-CQU/vivado/lab4/project_1\vivado.jou
+# Running On: DESKTOP-87K58HJ, OS: Windows, CPU Frequency: 2918 MHz, CPU Physical cores: 4, Host memory: 16952 MB
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/Lenovo/Desktop/colab/CO-lab-material-CQU/vivado/lab4/project_1/project_1.xpr
+report_ip_status -name ip_status 
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files C:/Users/Lenovo/Desktop/colab/CO-lab-material-CQU/vivado/lab4/funcTest_independent/ArithmeticTest/obj/inst_ram.coe] -no_script -reset -force -quiet
+remove_files  C:/Users/Lenovo/Desktop/colab/CO-lab-material-CQU/vivado/lab4/funcTest_independent/ArithmeticTest/obj/inst_ram.coe
+launch_simulation
+add_files {C:/Users/Lenovo/Desktop/colab/sram/utils/sl2.v C:/Users/Lenovo/Desktop/colab/sram/alu.v C:/Users/Lenovo/Desktop/colab/sram/mmu.v C:/Users/Lenovo/Desktop/colab/sram/utils/flopenr.v C:/Users/Lenovo/Desktop/colab/sram/utils/eqcmp.v C:/Users/Lenovo/Desktop/colab/sram/mem_ctrl.v C:/Users/Lenovo/Desktop/colab/sram/utils/floprc.v C:/Users/Lenovo/Desktop/colab/sram/utils/adder.v C:/Users/Lenovo/Desktop/colab/sram/hazard.v C:/Users/Lenovo/Desktop/colab/sram/utils/div.v C:/Users/Lenovo/Desktop/colab/sram/mycpu_top.v C:/Users/Lenovo/Desktop/colab/sram/utils/flopenrc.v C:/Users/Lenovo/Desktop/colab/sram/utils/signext.v C:/Users/Lenovo/Desktop/colab/sram/dec/controller.v C:/Users/Lenovo/Desktop/colab/sram/utils/mux3.v C:/Users/Lenovo/Desktop/colab/sram/defines2.vh C:/Users/Lenovo/Desktop/colab/sram/utils/mux2.v C:/Users/Lenovo/Desktop/colab/sram/dec/maindec.v C:/Users/Lenovo/Desktop/colab/sram/dec/aludec.v C:/Users/Lenovo/Desktop/colab/sram/regfile.v C:/Users/Lenovo/Desktop/colab/sram/utils/instdec.v C:/Users/Lenovo/Desktop/colab/sram/mips.v C:/Users/Lenovo/Desktop/colab/sram/exception/exceptdec.v C:/Users/Lenovo/Desktop/colab/sram/pc.v C:/Users/Lenovo/Desktop/colab/sram/hilo_reg.v C:/Users/Lenovo/Desktop/colab/sram/utils/flopr.v C:/Users/Lenovo/Desktop/colab/sram/datapath.v C:/Users/Lenovo/Desktop/colab/sram/exception/cp0_reg.v}
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files C:/Users/Lenovo/Desktop/colab/CO-lab-material-CQU/vivado/lab4/rtl/myCPU/mycpu_top.v] -no_script -reset -force -quiet
+remove_files  C:/Users/Lenovo/Desktop/colab/CO-lab-material-CQU/vivado/lab4/rtl/myCPU/mycpu_top.v
+export_ip_user_files -of_objects  [get_files C:/Users/Lenovo/Desktop/colab/CO-lab-material-CQU/vivado/lab4/rtl/myCPU/utils/instdec.v] -no_script -reset -force -quiet
+remove_files  C:/Users/Lenovo/Desktop/colab/CO-lab-material-CQU/vivado/lab4/rtl/myCPU/utils/instdec.v
+export_ip_user_files -of_objects  [get_files C:/Users/Lenovo/Desktop/colab/sram/utils/flopenr.v] -no_script -reset -force -quiet
+remove_files  C:/Users/Lenovo/Desktop/colab/sram/utils/flopenr.v
+launch_simulation
+open_wave_config C:/Users/Lenovo/Desktop/colab/CO-lab-material-CQU/vivado/lab4/tb_top_behav.wcfg
+source tb_top.tcl
+close_sim
+close_project

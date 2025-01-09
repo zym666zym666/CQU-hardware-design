@@ -1,0 +1,20 @@
++====================+===================+===============================================+
+| Launch Setup Clock | Launch Hold Clock | Pin                                           |
++====================+===================+===============================================+
+| cpu_clk_clk_pll    | cpu_clk_clk_pll   | cpu/mips/datapath/hilo_reg/hilo_reg_reg[32]/D |
+| cpu_clk_clk_pll    | cpu_clk_clk_pll   | cpu/mips/datapath/hilo_reg/hilo_reg_reg[30]/D |
+| cpu_clk_clk_pll    | cpu_clk_clk_pll   | cpu/mips/datapath/hilo_reg/hilo_reg_reg[22]/D |
+| cpu_clk_clk_pll    | cpu_clk_clk_pll   | cpu/mips/datapath/hilo_reg/hilo_reg_reg[38]/D |
+| cpu_clk_clk_pll    | cpu_clk_clk_pll   | cpu/mips/datapath/hilo_reg/hilo_reg_reg[19]/D |
+| cpu_clk_clk_pll    | cpu_clk_clk_pll   | cpu/mips/datapath/hilo_reg/hilo_reg_reg[23]/D |
+| cpu_clk_clk_pll    | cpu_clk_clk_pll   | cpu/mips/datapath/hilo_reg/hilo_reg_reg[20]/D |
+| cpu_clk_clk_pll    | cpu_clk_clk_pll   | cpu/mips/datapath/hilo_reg/hilo_reg_reg[24]/D |
+| cpu_clk_clk_pll    | cpu_clk_clk_pll   | cpu/mips/datapath/hilo_reg/hilo_reg_reg[26]/D |
+| cpu_clk_clk_pll    | cpu_clk_clk_pll   | cpu/mips/datapath/hilo_reg/hilo_reg_reg[21]/D |
+| cpu_clk_clk_pll    | cpu_clk_clk_pll   | cpu/mips/datapath/hilo_reg/hilo_reg_reg[27]/D |
+| cpu_clk_clk_pll    | cpu_clk_clk_pll   | cpu/mips/datapath/hilo_reg/hilo_reg_reg[29]/D |
+| cpu_clk_clk_pll    | cpu_clk_clk_pll   | cpu/mips/datapath/hilo_reg/hilo_reg_reg[28]/D |
+| cpu_clk_clk_pll    | cpu_clk_clk_pll   | cpu/mips/datapath/hilo_reg/hilo_reg_reg[53]/D |
+| cpu_clk_clk_pll    | cpu_clk_clk_pll   | cpu/mips/datapath/hilo_reg/hilo_reg_reg[52]/D |
+| cpu_clk_clk_pll    | cpu_clk_clk_pll   | cpu/mips/datapath/hilo_reg/hilo_reg_reg[59]/D |
++--------------------+-------------------+-----------------------------------------------+

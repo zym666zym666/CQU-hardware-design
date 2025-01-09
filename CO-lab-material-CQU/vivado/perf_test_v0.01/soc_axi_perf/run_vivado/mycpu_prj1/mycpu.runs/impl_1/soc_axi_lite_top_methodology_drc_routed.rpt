@@ -1,0 +1,688 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2023.1 (win64) Build 3865809 Sun May  7 15:05:29 MDT 2023
+| Date         : Thu Jan  9 14:55:16 2025
+| Host         : DESKTOP-87K58HJ running 64-bit major release  (build 9200)
+| Command      : report_methodology -file soc_axi_lite_top_methodology_drc_routed.rpt -pb soc_axi_lite_top_methodology_drc_routed.pb -rpx soc_axi_lite_top_methodology_drc_routed.rpx
+| Design       : soc_axi_lite_top
+| Device       : xc7a100tcsg324-1
+| Speed File   : -1
+| Design State : Fully Routed
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Report Methodology
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+             Max violations: <unlimited>
+             Violations found: 129
++-----------+----------+--------------------------------------------------------+------------+
+| Rule      | Severity | Description                                            | Violations |
++-----------+----------+--------------------------------------------------------+------------+
+| TIMING-18 | Warning  | Missing input or output delay                          | 44         |
+| TIMING-20 | Warning  | Non-clocked latch                                      | 82         |
+| XDCC-1    | Warning  | Scoped Clock constraint overwritten with the same name | 1          |
+| XDCC-7    | Warning  | Scoped Clock constraint overwritten on the same source | 1          |
+| LATCH-1   | Advisory | Existing latches in the design                         | 1          |
++-----------+----------+--------------------------------------------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+TIMING-18#1 Warning
+Missing input or output delay  
+An input delay is missing on resetn relative to the rising and/or falling clock edge(s) of clk.
+Related violations: <none>
+
+TIMING-18#2 Warning
+Missing input or output delay  
+An input delay is missing on switch[0] relative to the rising and/or falling clock edge(s) of clk.
+Related violations: <none>
+
+TIMING-18#3 Warning
+Missing input or output delay  
+An input delay is missing on switch[1] relative to the rising and/or falling clock edge(s) of clk.
+Related violations: <none>
+
+TIMING-18#4 Warning
+Missing input or output delay  
+An input delay is missing on switch[2] relative to the rising and/or falling clock edge(s) of clk.
+Related violations: <none>
+
+TIMING-18#5 Warning
+Missing input or output delay  
+An input delay is missing on switch[3] relative to the rising and/or falling clock edge(s) of clk.
+Related violations: <none>
+
+TIMING-18#6 Warning
+Missing input or output delay  
+An input delay is missing on switch[4] relative to the rising and/or falling clock edge(s) of clk.
+Related violations: <none>
+
+TIMING-18#7 Warning
+Missing input or output delay  
+An input delay is missing on switch[5] relative to the rising and/or falling clock edge(s) of clk.
+Related violations: <none>
+
+TIMING-18#8 Warning
+Missing input or output delay  
+An input delay is missing on switch[6] relative to the rising and/or falling clock edge(s) of clk.
+Related violations: <none>
+
+TIMING-18#9 Warning
+Missing input or output delay  
+An input delay is missing on switch[7] relative to the rising and/or falling clock edge(s) of clk.
+Related violations: <none>
+
+TIMING-18#10 Warning
+Missing input or output delay  
+An output delay is missing on led[0] relative to the rising and/or falling clock edge(s) of clk.
+Related violations: <none>
+
+TIMING-18#11 Warning
+Missing input or output delay  
+An output delay is missing on led[10] relative to the rising and/or falling clock edge(s) of clk.
+Related violations: <none>
+
+TIMING-18#12 Warning
+Missing input or output delay  
+An output delay is missing on led[11] relative to the rising and/or falling clock edge(s) of clk.
+Related violations: <none>
+
+TIMING-18#13 Warning
+Missing input or output delay  
+An output delay is missing on led[12] relative to the rising and/or falling clock edge(s) of clk.
+Related violations: <none>
+
+TIMING-18#14 Warning
+Missing input or output delay  
+An output delay is missing on led[13] relative to the rising and/or falling clock edge(s) of clk.
+Related violations: <none>
+
+TIMING-18#15 Warning
+Missing input or output delay  
+An output delay is missing on led[14] relative to the rising and/or falling clock edge(s) of clk.
+Related violations: <none>
+
+TIMING-18#16 Warning
+Missing input or output delay  
+An output delay is missing on led[15] relative to the rising and/or falling clock edge(s) of clk.
+Related violations: <none>
+
+TIMING-18#17 Warning
+Missing input or output delay  
+An output delay is missing on led[1] relative to the rising and/or falling clock edge(s) of clk.
+Related violations: <none>
+
+TIMING-18#18 Warning
+Missing input or output delay  
+An output delay is missing on led[2] relative to the rising and/or falling clock edge(s) of clk.
+Related violations: <none>
+
+TIMING-18#19 Warning
+Missing input or output delay  
+An output delay is missing on led[3] relative to the rising and/or falling clock edge(s) of clk.
+Related violations: <none>
+
+TIMING-18#20 Warning
+Missing input or output delay  
+An output delay is missing on led[4] relative to the rising and/or falling clock edge(s) of clk.
+Related violations: <none>
+
+TIMING-18#21 Warning
+Missing input or output delay  
+An output delay is missing on led[5] relative to the rising and/or falling clock edge(s) of clk.
+Related violations: <none>
+
+TIMING-18#22 Warning
+Missing input or output delay  
+An output delay is missing on led[6] relative to the rising and/or falling clock edge(s) of clk.
+Related violations: <none>
+
+TIMING-18#23 Warning
+Missing input or output delay  
+An output delay is missing on led[7] relative to the rising and/or falling clock edge(s) of clk.
+Related violations: <none>
+
+TIMING-18#24 Warning
+Missing input or output delay  
+An output delay is missing on led[8] relative to the rising and/or falling clock edge(s) of clk.
+Related violations: <none>
+
+TIMING-18#25 Warning
+Missing input or output delay  
+An output delay is missing on led[9] relative to the rising and/or falling clock edge(s) of clk.
+Related violations: <none>
+
+TIMING-18#26 Warning
+Missing input or output delay  
+An output delay is missing on led_rg0[0] relative to the rising and/or falling clock edge(s) of clk.
+Related violations: <none>
+
+TIMING-18#27 Warning
+Missing input or output delay  
+An output delay is missing on led_rg0[1] relative to the rising and/or falling clock edge(s) of clk.
+Related violations: <none>
+
+TIMING-18#28 Warning
+Missing input or output delay  
+An output delay is missing on led_rg1[0] relative to the rising and/or falling clock edge(s) of clk.
+Related violations: <none>
+
+TIMING-18#29 Warning
+Missing input or output delay  
+An output delay is missing on led_rg1[1] relative to the rising and/or falling clock edge(s) of clk.
+Related violations: <none>
+
+TIMING-18#30 Warning
+Missing input or output delay  
+An output delay is missing on num_a_g[0] relative to the rising and/or falling clock edge(s) of clk.
+Related violations: <none>
+
+TIMING-18#31 Warning
+Missing input or output delay  
+An output delay is missing on num_a_g[1] relative to the rising and/or falling clock edge(s) of clk.
+Related violations: <none>
+
+TIMING-18#32 Warning
+Missing input or output delay  
+An output delay is missing on num_a_g[2] relative to the rising and/or falling clock edge(s) of clk.
+Related violations: <none>
+
+TIMING-18#33 Warning
+Missing input or output delay  
+An output delay is missing on num_a_g[3] relative to the rising and/or falling clock edge(s) of clk.
+Related violations: <none>
+
+TIMING-18#34 Warning
+Missing input or output delay  
+An output delay is missing on num_a_g[4] relative to the rising and/or falling clock edge(s) of clk.
+Related violations: <none>
+
+TIMING-18#35 Warning
+Missing input or output delay  
+An output delay is missing on num_a_g[5] relative to the rising and/or falling clock edge(s) of clk.
+Related violations: <none>
+
+TIMING-18#36 Warning
+Missing input or output delay  
+An output delay is missing on num_a_g[6] relative to the rising and/or falling clock edge(s) of clk.
+Related violations: <none>
+
+TIMING-18#37 Warning
+Missing input or output delay  
+An output delay is missing on num_csn[0] relative to the rising and/or falling clock edge(s) of clk.
+Related violations: <none>
+
+TIMING-18#38 Warning
+Missing input or output delay  
+An output delay is missing on num_csn[1] relative to the rising and/or falling clock edge(s) of clk.
+Related violations: <none>
+
+TIMING-18#39 Warning
+Missing input or output delay  
+An output delay is missing on num_csn[2] relative to the rising and/or falling clock edge(s) of clk.
+Related violations: <none>
+
+TIMING-18#40 Warning
+Missing input or output delay  
+An output delay is missing on num_csn[3] relative to the rising and/or falling clock edge(s) of clk.
+Related violations: <none>
+
+TIMING-18#41 Warning
+Missing input or output delay  
+An output delay is missing on num_csn[4] relative to the rising and/or falling clock edge(s) of clk.
+Related violations: <none>
+
+TIMING-18#42 Warning
+Missing input or output delay  
+An output delay is missing on num_csn[5] relative to the rising and/or falling clock edge(s) of clk.
+Related violations: <none>
+
+TIMING-18#43 Warning
+Missing input or output delay  
+An output delay is missing on num_csn[6] relative to the rising and/or falling clock edge(s) of clk.
+Related violations: <none>
+
+TIMING-18#44 Warning
+Missing input or output delay  
+An output delay is missing on num_csn[7] relative to the rising and/or falling clock edge(s) of clk.
+Related violations: <none>
+
+TIMING-20#1 Warning
+Non-clocked latch  
+The latch u_cpu/mips_with_sram_like/mips_core/controller/ad/alucontrol_reg[0] cannot be properly analyzed as its control pin u_cpu/mips_with_sram_like/mips_core/controller/ad/alucontrol_reg[0]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#2 Warning
+Non-clocked latch  
+The latch u_cpu/mips_with_sram_like/mips_core/controller/ad/alucontrol_reg[1] cannot be properly analyzed as its control pin u_cpu/mips_with_sram_like/mips_core/controller/ad/alucontrol_reg[1]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#3 Warning
+Non-clocked latch  
+The latch u_cpu/mips_with_sram_like/mips_core/controller/ad/alucontrol_reg[2] cannot be properly analyzed as its control pin u_cpu/mips_with_sram_like/mips_core/controller/ad/alucontrol_reg[2]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#4 Warning
+Non-clocked latch  
+The latch u_cpu/mips_with_sram_like/mips_core/controller/ad/alucontrol_reg[3] cannot be properly analyzed as its control pin u_cpu/mips_with_sram_like/mips_core/controller/ad/alucontrol_reg[3]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#5 Warning
+Non-clocked latch  
+The latch u_cpu/mips_with_sram_like/mips_core/controller/ad/alucontrol_reg[4] cannot be properly analyzed as its control pin u_cpu/mips_with_sram_like/mips_core/controller/ad/alucontrol_reg[4]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#6 Warning
+Non-clocked latch  
+The latch u_cpu/mips_with_sram_like/mips_core/controller/md/controls_reg[0] cannot be properly analyzed as its control pin u_cpu/mips_with_sram_like/mips_core/controller/md/controls_reg[0]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#7 Warning
+Non-clocked latch  
+The latch u_cpu/mips_with_sram_like/mips_core/controller/md/controls_reg[10] cannot be properly analyzed as its control pin u_cpu/mips_with_sram_like/mips_core/controller/md/controls_reg[10]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#8 Warning
+Non-clocked latch  
+The latch u_cpu/mips_with_sram_like/mips_core/controller/md/controls_reg[11] cannot be properly analyzed as its control pin u_cpu/mips_with_sram_like/mips_core/controller/md/controls_reg[11]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#9 Warning
+Non-clocked latch  
+The latch u_cpu/mips_with_sram_like/mips_core/controller/md/controls_reg[1] cannot be properly analyzed as its control pin u_cpu/mips_with_sram_like/mips_core/controller/md/controls_reg[1]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#10 Warning
+Non-clocked latch  
+The latch u_cpu/mips_with_sram_like/mips_core/controller/md/controls_reg[2] cannot be properly analyzed as its control pin u_cpu/mips_with_sram_like/mips_core/controller/md/controls_reg[2]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#11 Warning
+Non-clocked latch  
+The latch u_cpu/mips_with_sram_like/mips_core/controller/md/controls_reg[3] cannot be properly analyzed as its control pin u_cpu/mips_with_sram_like/mips_core/controller/md/controls_reg[3]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#12 Warning
+Non-clocked latch  
+The latch u_cpu/mips_with_sram_like/mips_core/controller/md/controls_reg[4] cannot be properly analyzed as its control pin u_cpu/mips_with_sram_like/mips_core/controller/md/controls_reg[4]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#13 Warning
+Non-clocked latch  
+The latch u_cpu/mips_with_sram_like/mips_core/controller/md/controls_reg[5] cannot be properly analyzed as its control pin u_cpu/mips_with_sram_like/mips_core/controller/md/controls_reg[5]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#14 Warning
+Non-clocked latch  
+The latch u_cpu/mips_with_sram_like/mips_core/controller/md/controls_reg[6] cannot be properly analyzed as its control pin u_cpu/mips_with_sram_like/mips_core/controller/md/controls_reg[6]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#15 Warning
+Non-clocked latch  
+The latch u_cpu/mips_with_sram_like/mips_core/controller/md/controls_reg[7] cannot be properly analyzed as its control pin u_cpu/mips_with_sram_like/mips_core/controller/md/controls_reg[7]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#16 Warning
+Non-clocked latch  
+The latch u_cpu/mips_with_sram_like/mips_core/controller/md/controls_reg[8] cannot be properly analyzed as its control pin u_cpu/mips_with_sram_like/mips_core/controller/md/controls_reg[8]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#17 Warning
+Non-clocked latch  
+The latch u_cpu/mips_with_sram_like/mips_core/controller/md/controls_reg[9] cannot be properly analyzed as its control pin u_cpu/mips_with_sram_like/mips_core/controller/md/controls_reg[9]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#18 Warning
+Non-clocked latch  
+The latch u_cpu/mips_with_sram_like/mips_core/datapath/alu/double_sign_reg cannot be properly analyzed as its control pin u_cpu/mips_with_sram_like/mips_core/datapath/alu/double_sign_reg/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#19 Warning
+Non-clocked latch  
+The latch u_cpu/mips_with_sram_like/mips_core/datapath/mem_ctrl/final_read_data_reg[0] cannot be properly analyzed as its control pin u_cpu/mips_with_sram_like/mips_core/datapath/mem_ctrl/final_read_data_reg[0]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#20 Warning
+Non-clocked latch  
+The latch u_cpu/mips_with_sram_like/mips_core/datapath/mem_ctrl/final_read_data_reg[10] cannot be properly analyzed as its control pin u_cpu/mips_with_sram_like/mips_core/datapath/mem_ctrl/final_read_data_reg[10]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#21 Warning
+Non-clocked latch  
+The latch u_cpu/mips_with_sram_like/mips_core/datapath/mem_ctrl/final_read_data_reg[11] cannot be properly analyzed as its control pin u_cpu/mips_with_sram_like/mips_core/datapath/mem_ctrl/final_read_data_reg[11]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#22 Warning
+Non-clocked latch  
+The latch u_cpu/mips_with_sram_like/mips_core/datapath/mem_ctrl/final_read_data_reg[12] cannot be properly analyzed as its control pin u_cpu/mips_with_sram_like/mips_core/datapath/mem_ctrl/final_read_data_reg[12]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#23 Warning
+Non-clocked latch  
+The latch u_cpu/mips_with_sram_like/mips_core/datapath/mem_ctrl/final_read_data_reg[13] cannot be properly analyzed as its control pin u_cpu/mips_with_sram_like/mips_core/datapath/mem_ctrl/final_read_data_reg[13]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#24 Warning
+Non-clocked latch  
+The latch u_cpu/mips_with_sram_like/mips_core/datapath/mem_ctrl/final_read_data_reg[14] cannot be properly analyzed as its control pin u_cpu/mips_with_sram_like/mips_core/datapath/mem_ctrl/final_read_data_reg[14]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#25 Warning
+Non-clocked latch  
+The latch u_cpu/mips_with_sram_like/mips_core/datapath/mem_ctrl/final_read_data_reg[15] cannot be properly analyzed as its control pin u_cpu/mips_with_sram_like/mips_core/datapath/mem_ctrl/final_read_data_reg[15]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#26 Warning
+Non-clocked latch  
+The latch u_cpu/mips_with_sram_like/mips_core/datapath/mem_ctrl/final_read_data_reg[16] cannot be properly analyzed as its control pin u_cpu/mips_with_sram_like/mips_core/datapath/mem_ctrl/final_read_data_reg[16]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#27 Warning
+Non-clocked latch  
+The latch u_cpu/mips_with_sram_like/mips_core/datapath/mem_ctrl/final_read_data_reg[17] cannot be properly analyzed as its control pin u_cpu/mips_with_sram_like/mips_core/datapath/mem_ctrl/final_read_data_reg[17]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#28 Warning
+Non-clocked latch  
+The latch u_cpu/mips_with_sram_like/mips_core/datapath/mem_ctrl/final_read_data_reg[18] cannot be properly analyzed as its control pin u_cpu/mips_with_sram_like/mips_core/datapath/mem_ctrl/final_read_data_reg[18]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#29 Warning
+Non-clocked latch  
+The latch u_cpu/mips_with_sram_like/mips_core/datapath/mem_ctrl/final_read_data_reg[19] cannot be properly analyzed as its control pin u_cpu/mips_with_sram_like/mips_core/datapath/mem_ctrl/final_read_data_reg[19]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#30 Warning
+Non-clocked latch  
+The latch u_cpu/mips_with_sram_like/mips_core/datapath/mem_ctrl/final_read_data_reg[1] cannot be properly analyzed as its control pin u_cpu/mips_with_sram_like/mips_core/datapath/mem_ctrl/final_read_data_reg[1]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#31 Warning
+Non-clocked latch  
+The latch u_cpu/mips_with_sram_like/mips_core/datapath/mem_ctrl/final_read_data_reg[20] cannot be properly analyzed as its control pin u_cpu/mips_with_sram_like/mips_core/datapath/mem_ctrl/final_read_data_reg[20]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#32 Warning
+Non-clocked latch  
+The latch u_cpu/mips_with_sram_like/mips_core/datapath/mem_ctrl/final_read_data_reg[21] cannot be properly analyzed as its control pin u_cpu/mips_with_sram_like/mips_core/datapath/mem_ctrl/final_read_data_reg[21]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#33 Warning
+Non-clocked latch  
+The latch u_cpu/mips_with_sram_like/mips_core/datapath/mem_ctrl/final_read_data_reg[22] cannot be properly analyzed as its control pin u_cpu/mips_with_sram_like/mips_core/datapath/mem_ctrl/final_read_data_reg[22]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#34 Warning
+Non-clocked latch  
+The latch u_cpu/mips_with_sram_like/mips_core/datapath/mem_ctrl/final_read_data_reg[23] cannot be properly analyzed as its control pin u_cpu/mips_with_sram_like/mips_core/datapath/mem_ctrl/final_read_data_reg[23]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#35 Warning
+Non-clocked latch  
+The latch u_cpu/mips_with_sram_like/mips_core/datapath/mem_ctrl/final_read_data_reg[24] cannot be properly analyzed as its control pin u_cpu/mips_with_sram_like/mips_core/datapath/mem_ctrl/final_read_data_reg[24]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#36 Warning
+Non-clocked latch  
+The latch u_cpu/mips_with_sram_like/mips_core/datapath/mem_ctrl/final_read_data_reg[25] cannot be properly analyzed as its control pin u_cpu/mips_with_sram_like/mips_core/datapath/mem_ctrl/final_read_data_reg[25]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#37 Warning
+Non-clocked latch  
+The latch u_cpu/mips_with_sram_like/mips_core/datapath/mem_ctrl/final_read_data_reg[26] cannot be properly analyzed as its control pin u_cpu/mips_with_sram_like/mips_core/datapath/mem_ctrl/final_read_data_reg[26]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#38 Warning
+Non-clocked latch  
+The latch u_cpu/mips_with_sram_like/mips_core/datapath/mem_ctrl/final_read_data_reg[27] cannot be properly analyzed as its control pin u_cpu/mips_with_sram_like/mips_core/datapath/mem_ctrl/final_read_data_reg[27]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#39 Warning
+Non-clocked latch  
+The latch u_cpu/mips_with_sram_like/mips_core/datapath/mem_ctrl/final_read_data_reg[28] cannot be properly analyzed as its control pin u_cpu/mips_with_sram_like/mips_core/datapath/mem_ctrl/final_read_data_reg[28]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#40 Warning
+Non-clocked latch  
+The latch u_cpu/mips_with_sram_like/mips_core/datapath/mem_ctrl/final_read_data_reg[29] cannot be properly analyzed as its control pin u_cpu/mips_with_sram_like/mips_core/datapath/mem_ctrl/final_read_data_reg[29]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#41 Warning
+Non-clocked latch  
+The latch u_cpu/mips_with_sram_like/mips_core/datapath/mem_ctrl/final_read_data_reg[2] cannot be properly analyzed as its control pin u_cpu/mips_with_sram_like/mips_core/datapath/mem_ctrl/final_read_data_reg[2]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#42 Warning
+Non-clocked latch  
+The latch u_cpu/mips_with_sram_like/mips_core/datapath/mem_ctrl/final_read_data_reg[30] cannot be properly analyzed as its control pin u_cpu/mips_with_sram_like/mips_core/datapath/mem_ctrl/final_read_data_reg[30]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#43 Warning
+Non-clocked latch  
+The latch u_cpu/mips_with_sram_like/mips_core/datapath/mem_ctrl/final_read_data_reg[31] cannot be properly analyzed as its control pin u_cpu/mips_with_sram_like/mips_core/datapath/mem_ctrl/final_read_data_reg[31]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#44 Warning
+Non-clocked latch  
+The latch u_cpu/mips_with_sram_like/mips_core/datapath/mem_ctrl/final_read_data_reg[3] cannot be properly analyzed as its control pin u_cpu/mips_with_sram_like/mips_core/datapath/mem_ctrl/final_read_data_reg[3]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#45 Warning
+Non-clocked latch  
+The latch u_cpu/mips_with_sram_like/mips_core/datapath/mem_ctrl/final_read_data_reg[4] cannot be properly analyzed as its control pin u_cpu/mips_with_sram_like/mips_core/datapath/mem_ctrl/final_read_data_reg[4]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#46 Warning
+Non-clocked latch  
+The latch u_cpu/mips_with_sram_like/mips_core/datapath/mem_ctrl/final_read_data_reg[5] cannot be properly analyzed as its control pin u_cpu/mips_with_sram_like/mips_core/datapath/mem_ctrl/final_read_data_reg[5]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#47 Warning
+Non-clocked latch  
+The latch u_cpu/mips_with_sram_like/mips_core/datapath/mem_ctrl/final_read_data_reg[6] cannot be properly analyzed as its control pin u_cpu/mips_with_sram_like/mips_core/datapath/mem_ctrl/final_read_data_reg[6]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#48 Warning
+Non-clocked latch  
+The latch u_cpu/mips_with_sram_like/mips_core/datapath/mem_ctrl/final_read_data_reg[7] cannot be properly analyzed as its control pin u_cpu/mips_with_sram_like/mips_core/datapath/mem_ctrl/final_read_data_reg[7]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#49 Warning
+Non-clocked latch  
+The latch u_cpu/mips_with_sram_like/mips_core/datapath/mem_ctrl/final_read_data_reg[8] cannot be properly analyzed as its control pin u_cpu/mips_with_sram_like/mips_core/datapath/mem_ctrl/final_read_data_reg[8]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#50 Warning
+Non-clocked latch  
+The latch u_cpu/mips_with_sram_like/mips_core/datapath/mem_ctrl/final_read_data_reg[9] cannot be properly analyzed as its control pin u_cpu/mips_with_sram_like/mips_core/datapath/mem_ctrl/final_read_data_reg[9]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#51 Warning
+Non-clocked latch  
+The latch u_cpu/mips_with_sram_like/mips_core/datapath/mem_ctrl/mem_write_data_reg[0] cannot be properly analyzed as its control pin u_cpu/mips_with_sram_like/mips_core/datapath/mem_ctrl/mem_write_data_reg[0]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#52 Warning
+Non-clocked latch  
+The latch u_cpu/mips_with_sram_like/mips_core/datapath/mem_ctrl/mem_write_data_reg[10] cannot be properly analyzed as its control pin u_cpu/mips_with_sram_like/mips_core/datapath/mem_ctrl/mem_write_data_reg[10]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#53 Warning
+Non-clocked latch  
+The latch u_cpu/mips_with_sram_like/mips_core/datapath/mem_ctrl/mem_write_data_reg[11] cannot be properly analyzed as its control pin u_cpu/mips_with_sram_like/mips_core/datapath/mem_ctrl/mem_write_data_reg[11]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#54 Warning
+Non-clocked latch  
+The latch u_cpu/mips_with_sram_like/mips_core/datapath/mem_ctrl/mem_write_data_reg[12] cannot be properly analyzed as its control pin u_cpu/mips_with_sram_like/mips_core/datapath/mem_ctrl/mem_write_data_reg[12]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#55 Warning
+Non-clocked latch  
+The latch u_cpu/mips_with_sram_like/mips_core/datapath/mem_ctrl/mem_write_data_reg[13] cannot be properly analyzed as its control pin u_cpu/mips_with_sram_like/mips_core/datapath/mem_ctrl/mem_write_data_reg[13]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#56 Warning
+Non-clocked latch  
+The latch u_cpu/mips_with_sram_like/mips_core/datapath/mem_ctrl/mem_write_data_reg[14] cannot be properly analyzed as its control pin u_cpu/mips_with_sram_like/mips_core/datapath/mem_ctrl/mem_write_data_reg[14]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#57 Warning
+Non-clocked latch  
+The latch u_cpu/mips_with_sram_like/mips_core/datapath/mem_ctrl/mem_write_data_reg[15] cannot be properly analyzed as its control pin u_cpu/mips_with_sram_like/mips_core/datapath/mem_ctrl/mem_write_data_reg[15]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#58 Warning
+Non-clocked latch  
+The latch u_cpu/mips_with_sram_like/mips_core/datapath/mem_ctrl/mem_write_data_reg[16] cannot be properly analyzed as its control pin u_cpu/mips_with_sram_like/mips_core/datapath/mem_ctrl/mem_write_data_reg[16]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#59 Warning
+Non-clocked latch  
+The latch u_cpu/mips_with_sram_like/mips_core/datapath/mem_ctrl/mem_write_data_reg[17] cannot be properly analyzed as its control pin u_cpu/mips_with_sram_like/mips_core/datapath/mem_ctrl/mem_write_data_reg[17]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#60 Warning
+Non-clocked latch  
+The latch u_cpu/mips_with_sram_like/mips_core/datapath/mem_ctrl/mem_write_data_reg[18] cannot be properly analyzed as its control pin u_cpu/mips_with_sram_like/mips_core/datapath/mem_ctrl/mem_write_data_reg[18]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#61 Warning
+Non-clocked latch  
+The latch u_cpu/mips_with_sram_like/mips_core/datapath/mem_ctrl/mem_write_data_reg[19] cannot be properly analyzed as its control pin u_cpu/mips_with_sram_like/mips_core/datapath/mem_ctrl/mem_write_data_reg[19]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#62 Warning
+Non-clocked latch  
+The latch u_cpu/mips_with_sram_like/mips_core/datapath/mem_ctrl/mem_write_data_reg[1] cannot be properly analyzed as its control pin u_cpu/mips_with_sram_like/mips_core/datapath/mem_ctrl/mem_write_data_reg[1]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#63 Warning
+Non-clocked latch  
+The latch u_cpu/mips_with_sram_like/mips_core/datapath/mem_ctrl/mem_write_data_reg[20] cannot be properly analyzed as its control pin u_cpu/mips_with_sram_like/mips_core/datapath/mem_ctrl/mem_write_data_reg[20]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#64 Warning
+Non-clocked latch  
+The latch u_cpu/mips_with_sram_like/mips_core/datapath/mem_ctrl/mem_write_data_reg[21] cannot be properly analyzed as its control pin u_cpu/mips_with_sram_like/mips_core/datapath/mem_ctrl/mem_write_data_reg[21]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#65 Warning
+Non-clocked latch  
+The latch u_cpu/mips_with_sram_like/mips_core/datapath/mem_ctrl/mem_write_data_reg[22] cannot be properly analyzed as its control pin u_cpu/mips_with_sram_like/mips_core/datapath/mem_ctrl/mem_write_data_reg[22]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#66 Warning
+Non-clocked latch  
+The latch u_cpu/mips_with_sram_like/mips_core/datapath/mem_ctrl/mem_write_data_reg[23] cannot be properly analyzed as its control pin u_cpu/mips_with_sram_like/mips_core/datapath/mem_ctrl/mem_write_data_reg[23]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#67 Warning
+Non-clocked latch  
+The latch u_cpu/mips_with_sram_like/mips_core/datapath/mem_ctrl/mem_write_data_reg[24] cannot be properly analyzed as its control pin u_cpu/mips_with_sram_like/mips_core/datapath/mem_ctrl/mem_write_data_reg[24]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#68 Warning
+Non-clocked latch  
+The latch u_cpu/mips_with_sram_like/mips_core/datapath/mem_ctrl/mem_write_data_reg[25] cannot be properly analyzed as its control pin u_cpu/mips_with_sram_like/mips_core/datapath/mem_ctrl/mem_write_data_reg[25]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#69 Warning
+Non-clocked latch  
+The latch u_cpu/mips_with_sram_like/mips_core/datapath/mem_ctrl/mem_write_data_reg[26] cannot be properly analyzed as its control pin u_cpu/mips_with_sram_like/mips_core/datapath/mem_ctrl/mem_write_data_reg[26]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#70 Warning
+Non-clocked latch  
+The latch u_cpu/mips_with_sram_like/mips_core/datapath/mem_ctrl/mem_write_data_reg[27] cannot be properly analyzed as its control pin u_cpu/mips_with_sram_like/mips_core/datapath/mem_ctrl/mem_write_data_reg[27]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#71 Warning
+Non-clocked latch  
+The latch u_cpu/mips_with_sram_like/mips_core/datapath/mem_ctrl/mem_write_data_reg[28] cannot be properly analyzed as its control pin u_cpu/mips_with_sram_like/mips_core/datapath/mem_ctrl/mem_write_data_reg[28]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#72 Warning
+Non-clocked latch  
+The latch u_cpu/mips_with_sram_like/mips_core/datapath/mem_ctrl/mem_write_data_reg[29] cannot be properly analyzed as its control pin u_cpu/mips_with_sram_like/mips_core/datapath/mem_ctrl/mem_write_data_reg[29]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#73 Warning
+Non-clocked latch  
+The latch u_cpu/mips_with_sram_like/mips_core/datapath/mem_ctrl/mem_write_data_reg[2] cannot be properly analyzed as its control pin u_cpu/mips_with_sram_like/mips_core/datapath/mem_ctrl/mem_write_data_reg[2]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#74 Warning
+Non-clocked latch  
+The latch u_cpu/mips_with_sram_like/mips_core/datapath/mem_ctrl/mem_write_data_reg[30] cannot be properly analyzed as its control pin u_cpu/mips_with_sram_like/mips_core/datapath/mem_ctrl/mem_write_data_reg[30]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#75 Warning
+Non-clocked latch  
+The latch u_cpu/mips_with_sram_like/mips_core/datapath/mem_ctrl/mem_write_data_reg[31] cannot be properly analyzed as its control pin u_cpu/mips_with_sram_like/mips_core/datapath/mem_ctrl/mem_write_data_reg[31]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#76 Warning
+Non-clocked latch  
+The latch u_cpu/mips_with_sram_like/mips_core/datapath/mem_ctrl/mem_write_data_reg[3] cannot be properly analyzed as its control pin u_cpu/mips_with_sram_like/mips_core/datapath/mem_ctrl/mem_write_data_reg[3]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#77 Warning
+Non-clocked latch  
+The latch u_cpu/mips_with_sram_like/mips_core/datapath/mem_ctrl/mem_write_data_reg[4] cannot be properly analyzed as its control pin u_cpu/mips_with_sram_like/mips_core/datapath/mem_ctrl/mem_write_data_reg[4]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#78 Warning
+Non-clocked latch  
+The latch u_cpu/mips_with_sram_like/mips_core/datapath/mem_ctrl/mem_write_data_reg[5] cannot be properly analyzed as its control pin u_cpu/mips_with_sram_like/mips_core/datapath/mem_ctrl/mem_write_data_reg[5]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#79 Warning
+Non-clocked latch  
+The latch u_cpu/mips_with_sram_like/mips_core/datapath/mem_ctrl/mem_write_data_reg[6] cannot be properly analyzed as its control pin u_cpu/mips_with_sram_like/mips_core/datapath/mem_ctrl/mem_write_data_reg[6]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#80 Warning
+Non-clocked latch  
+The latch u_cpu/mips_with_sram_like/mips_core/datapath/mem_ctrl/mem_write_data_reg[7] cannot be properly analyzed as its control pin u_cpu/mips_with_sram_like/mips_core/datapath/mem_ctrl/mem_write_data_reg[7]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#81 Warning
+Non-clocked latch  
+The latch u_cpu/mips_with_sram_like/mips_core/datapath/mem_ctrl/mem_write_data_reg[8] cannot be properly analyzed as its control pin u_cpu/mips_with_sram_like/mips_core/datapath/mem_ctrl/mem_write_data_reg[8]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#82 Warning
+Non-clocked latch  
+The latch u_cpu/mips_with_sram_like/mips_core/datapath/mem_ctrl/mem_write_data_reg[9] cannot be properly analyzed as its control pin u_cpu/mips_with_sram_like/mips_core/datapath/mem_ctrl/mem_write_data_reg[9]/G is not reached by a timing clock
+Related violations: <none>
+
+XDCC-1#1 Warning
+Scoped Clock constraint overwritten with the same name  
+A new clock constraint create_clock overrides a previous scoped clock constraint with the same name. It is not recommended to override a scoped (typically an IP) clock constraint and could result in unexpected behaviors.
+New: create_clock -period 10.000 -name clk -waveform {0.000 5.000} [get_ports clk] (Source: C:/Users/Lenovo/Desktop/colab/CO-lab-material-CQU/vivado/perf_test_v0.01/soc_axi_perf/run_vivado/soc_lite.xdc (Line: 5))
+Previous: create_clock -period 10.000 [get_ports clk] (Source: c:/Users/Lenovo/Desktop/colab/CO-lab-material-CQU/vivado/perf_test_v0.01/soc_axi_perf/rtl/xilinx_ip/clk_pll/clk_pll.xdc (Line: 56))
+Related violations: <none>
+
+XDCC-7#1 Warning
+Scoped Clock constraint overwritten on the same source  
+A new clock constraint create_clock overrides a previous scoped clock constraint defined on the same source. It is not recommended to override a scoped (typically an IP) clock constraint and could result in unexpected behaviors.
+New: create_clock -period 10.000 -name clk -waveform {0.000 5.000} [get_ports clk] (Source: C:/Users/Lenovo/Desktop/colab/CO-lab-material-CQU/vivado/perf_test_v0.01/soc_axi_perf/run_vivado/soc_lite.xdc (Line: 5))
+Previous: create_clock -period 10.000 [get_ports clk] (Source: c:/Users/Lenovo/Desktop/colab/CO-lab-material-CQU/vivado/perf_test_v0.01/soc_axi_perf/rtl/xilinx_ip/clk_pll/clk_pll.xdc (Line: 56))
+Related violations: <none>
+
+LATCH-1#1 Advisory
+Existing latches in the design  
+There are 82 latches found in the design. Inferred latches are often the result of HDL coding mistakes, such as incomplete if or case statements.
+Related violations: <none>
+
+

@@ -1,0 +1,125 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2023.1 (win64) Build 3865809 Sun May  7 15:05:29 MDT 2023
+| Date         : Mon Jan  6 15:31:26 2025
+| Host         : DESKTOP-87K58HJ running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file soc_lite_top_control_sets_placed.rpt
+| Design       : soc_lite_top
+| Device       : xc7a100t
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |    47 |
+|    Minimum number of control sets                        |    47 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |    76 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |    47 |
+| >= 0 to < 4        |     2 |
+| >= 4 to < 6        |     3 |
+| >= 6 to < 8        |     1 |
+| >= 8 to < 10       |     1 |
+| >= 10 to < 12      |     1 |
+| >= 12 to < 14      |     0 |
+| >= 14 to < 16      |     0 |
+| >= 16              |    39 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |             323 |          115 |
+| No           | No                    | Yes                    |             193 |           61 |
+| No           | Yes                   | No                     |             153 |           44 |
+| Yes          | No                    | No                     |             165 |           52 |
+| Yes          | No                    | Yes                    |              32 |           19 |
+| Yes          | Yes                   | No                     |             954 |          407 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++---------------------------------------+-------------------------------------------------------+--------------------------------------+------------------+----------------+--------------+
+|              Clock Signal             |                     Enable Signal                     |           Set/Reset Signal           | Slice Load Count | Bel Load Count | Bels / Slice |
++---------------------------------------+-------------------------------------------------------+--------------------------------------+------------------+----------------+--------------+
+|  cpu/mips/datapath/regE/ready_o_reg_0 |                                                       |                                      |                1 |              1 |         1.00 |
+|  cpu/mips/datapath/regE/ready_o_reg   |                                                       |                                      |                1 |              1 |         1.00 |
+|  n_0_2942_BUFG                        | cpu/mips/datapath/r8M/q_reg[0]_0[0]                   | confreg/SR[0]                        |                2 |              4 |         2.00 |
+|  n_0_2942_BUFG                        |                                                       |                                      |                4 |              5 |         1.25 |
+|  n_0_2942_BUFG                        | cpu/mips/datapath/r5M/cpu_resetn_reg_17[0]            | confreg/SR[0]                        |                3 |              5 |         1.67 |
+|  n_0_2942_BUFG                        | cpu/mips/datapath/regE/FSM_sequential_state_reg[1][0] |                                      |                2 |              6 |         3.00 |
+|  pll.clk_pll/inst/cpu_clk             | cpu/mips/datapath/r2M/q_reg[0]_3[0]                   | confreg/SR[0]                        |                2 |              8 |         4.00 |
+|  cpu/mips/datapath/r2D/q_reg[31]_1[0] |                                                       |                                      |                5 |             11 |         2.20 |
+|  pll.clk_pll/inst/cpu_clk             |                                                       | confreg/step0_count0                 |                5 |             20 |         4.00 |
+|  pll.clk_pll/inst/cpu_clk             |                                                       | confreg/step1_count0                 |                5 |             20 |         4.00 |
+|  n_0_2942_BUFG                        | cpu/mips/datapath/alu/div/dividend[31]_i_1_n_5        |                                      |               13 |             31 |         2.38 |
+|  n_0_2942_BUFG                        | cpu/mips/datapath/r8M/q_reg[0]_1                      | confreg/SR[0]                        |               13 |             31 |         2.38 |
+|  pll.clk_pll/inst/cpu_clk             | cpu/mips/datapath/r2M/q_reg[0]_1[0]                   | confreg/SR[0]                        |                8 |             32 |         4.00 |
+|  pll.clk_pll/inst/cpu_clk             | cpu/mips/datapath/r2M/q_reg[15]_1[0]                  |                                      |                9 |             32 |         3.56 |
+|  pll.clk_pll/inst/cpu_clk             | cpu/mips/datapath/r2M/q_reg[6]_0[0]                   | confreg/SR[0]                        |               15 |             32 |         2.13 |
+|  pll.clk_pll/inst/cpu_clk             | cpu/mips/datapath/r2M/q_reg[3]_1[0]                   | confreg/SR[0]                        |               12 |             32 |         2.67 |
+|  pll.clk_pll/inst/cpu_clk             | cpu/mips/datapath/r2M/q_reg[3]_2[0]                   | confreg/SR[0]                        |               11 |             32 |         2.91 |
+|  pll.clk_pll/inst/cpu_clk             | cpu/mips/datapath/r2M/q_reg[6]_2[0]                   | confreg/SR[0]                        |               12 |             32 |         2.67 |
+|  pll.clk_pll/inst/cpu_clk             | cpu/mips/datapath/r2M/q_reg[8]_0[0]                   | confreg/SR[0]                        |                9 |             32 |         3.56 |
+|  pll.clk_pll/inst/cpu_clk             | cpu/mips/datapath/r2M/q_reg[6]_1[0]                   | confreg/SR[0]                        |                9 |             32 |         3.56 |
+|  pll.clk_pll/inst/cpu_clk             | cpu/mips/datapath/r2M/q_reg[3]_0[0]                   | confreg/SR[0]                        |               13 |             32 |         2.46 |
+|  pll.clk_pll/inst/cpu_clk             | cpu/mips/datapath/r4M/q_reg[1]_0[0]                   | confreg/SR[0]                        |               14 |             32 |         2.29 |
+|  pll.clk_pll/inst/timer_clk           |                                                       | confreg/SR[0]                        |                8 |             32 |         4.00 |
+|  n_0_2942_BUFG                        | cpu/mips/datapath/regE/q_reg[14]_0[0]                 | confreg/SR[0]                        |               19 |             32 |         1.68 |
+|  n_2_2103_BUFG                        |                                                       |                                      |               11 |             32 |         2.91 |
+|  n_0_2942_BUFG                        | cpu/mips/datapath/alu/div/divisor[31]_i_1_n_5         |                                      |                8 |             32 |         4.00 |
+|  n_0_2942_BUFG                        | cpu/mips/datapath/alu/div/dividend[64]_i_1_n_5        |                                      |                8 |             32 |         4.00 |
+|  n_0_2942_BUFG                        | cpu/mips/datapath/r5M/cpu_resetn_reg_15[0]            |                                      |               12 |             32 |         2.67 |
+|  n_0_2942_BUFG                        | cpu/mips/datapath/r8M/q_reg[2]_0[0]                   | confreg/SR[0]                        |                9 |             32 |         3.56 |
+|  pll.clk_pll/inst/cpu_clk             | cpu/mips/datapath/r2M/q_reg[2]_0[0]                   | confreg/SR[0]                        |               11 |             32 |         2.91 |
+|  n_0_2942_BUFG                        | cpu/mips/datapath/r8M/E[0]                            | confreg/SR[0]                        |               24 |             32 |         1.33 |
+|  pll.clk_pll/inst/cpu_clk             | cpu/mips/datapath/r2M/q_reg[4]_0[0]                   | confreg/SR[0]                        |                7 |             32 |         4.57 |
+|  n_3_2106_BUFG                        |                                                       |                                      |               15 |             32 |         2.13 |
+|  n_4_1567_BUFG                        |                                                       |                                      |               28 |             32 |         1.14 |
+|  pll.clk_pll/inst/cpu_clk             | cpu/mips/datapath/r2M/q_reg[0]_0[0]                   | confreg/SR[0]                        |               14 |             34 |         2.43 |
+|  pll.clk_pll/inst/cpu_clk             | cpu/mips/datapath/r2M/q_reg[0]_2[0]                   | confreg/SR[0]                        |               15 |             34 |         2.27 |
+|  pll.clk_pll/inst/cpu_clk             |                                                       | confreg/SR[0]                        |               16 |             46 |         2.88 |
+|  pll.clk_pll/inst/cpu_clk             | cpu/mips/datapath/r2M/E[0]                            | confreg/SR[0]                        |               16 |             48 |         3.00 |
+| ~n_0_2942_BUFG                        | cpu/mips/datapath/regE/ready_o_reg_1[0]               | confreg/SR[0]                        |               57 |             64 |         1.12 |
+|  n_1_1471_BUFG                        |                                                       |                                      |               21 |             64 |         3.05 |
+|  n_0_2942_BUFG                        | cpu/mips/datapath/alu/div/result_o[63]_i_1_n_5        | confreg/SR[0]                        |               18 |             65 |         3.61 |
+|  pll.clk_pll/inst/timer_clk           |                                                       |                                      |               10 |             67 |         6.70 |
+|  pll.clk_pll/inst/cpu_clk             |                                                       |                                      |               19 |             78 |         4.11 |
+|  pll.clk_pll/inst/cpu_clk             | cpu/mips/datapath/regW/Q[0]                           |                                      |               11 |             88 |         8.00 |
+|  n_0_2942_BUFG                        | cpu/mips/datapath/regE/E[0]                           | cpu/mips/datapath/r5M/SR[0]          |               41 |             94 |         2.29 |
+|  n_0_2942_BUFG                        | cpu/mips/en0                                          | cpu/mips/datapath/r5M/cpu_resetn_reg |               72 |            151 |         2.10 |
+|  n_0_2942_BUFG                        |                                                       | confreg/SR[0]                        |               71 |            228 |         3.21 |
++---------------------------------------+-------------------------------------------------------+--------------------------------------+------------------+----------------+--------------+
+
+

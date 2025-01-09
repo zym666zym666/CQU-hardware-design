@@ -1,0 +1,52 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  --include "../../../../mycpu.ip_user_files/ipstatic" --include "../../../../mycpu.ip_user_files/ipstatic/hdl" --include "../../../../../../../../../../axi/mips_core_with_sram_like/cpu_core" \
+"../../../../../../rtl/xilinx_ip/clk_pll/clk_pll_clk_wiz.v" \
+"../../../../../../rtl/xilinx_ip/clk_pll/clk_pll.v" \
+"../../../../../../rtl/xilinx_ip/axi_ram/sim/axi_ram.v" \
+"../../../../../../rtl/xilinx_ip/axi_crossbar_1x2/sim/axi_crossbar_1x2.v" \
+"../../../../../../rtl/xilinx_ip/axi_clock_converter/sim/axi_clock_converter.v" \
+"../../../../../../../../../../axi/mips_core_with_sram_like/cpu_core/utils/adder.v" \
+"../../../../../../../../../../axi/mips_core_with_sram_like/cpu_core/alu.v" \
+"../../../../../../../../../../axi/mips_core_with_sram_like/cpu_core/dec/aludec.v" \
+"../../../../../../rtl/axi_wrap/axi_wrap.v" \
+"../../../../../../rtl/ram_wrap/axi_wrap_ram.v" \
+"../../../../../../../../../../axi/bridge_1x2.v" \
+"../../../../../../../../../../axi/bridge_2x1.v" \
+"../../../../../../../../../../axi/cache.v" \
+"../../../../../../rtl/CONFREG/confreg.v" \
+"../../../../../../../../../../axi/mips_core_with_sram_like/cpu_core/dec/controller.v" \
+"../../../../../../../../../../axi/mips_core_with_sram_like/cpu_core/exception/cp0_reg.v" \
+"../../../../../../../../../../axi/cpu_axi_interface.v" \
+"../../../../../../../../../../axi/d_cache_simple.v" \
+"../../../../../../../../../../axi/mips_core_with_sram_like/d_sram_to_sram_like.v" \
+"../../../../../../../../../../axi/mips_core_with_sram_like/cpu_core/datapath.v" \
+"../../../../../../../../../../axi/mips_core_with_sram_like/cpu_core/utils/div.v" \
+"../../../../../../../../../../axi/mips_core_with_sram_like/cpu_core/utils/eqcmp.v" \
+"../../../../../../../../../../axi/mips_core_with_sram_like/cpu_core/exception/exceptdec.v" \
+"../../../../../../../../../../axi/mips_core_with_sram_like/cpu_core/utils/flopenrc.v" \
+"../../../../../../../../../../axi/mips_core_with_sram_like/cpu_core/utils/flopr.v" \
+"../../../../../../../../../../axi/mips_core_with_sram_like/cpu_core/hazard.v" \
+"../../../../../../../../../../axi/mips_core_with_sram_like/cpu_core/hilo_reg.v" \
+"../../../../../../../../../../axi/i_cache_simple.v" \
+"../../../../../../../../../../axi/mips_core_with_sram_like/i_sram_to_sram_like.v" \
+"../../../../../../../../../../axi/mips_core_with_sram_like/cpu_core/dec/maindec.v" \
+"../../../../../../../../../../axi/mips_core_with_sram_like/cpu_core/mem_ctrl.v" \
+"../../../../../../../../../../axi/mips_core_with_sram_like/cpu_core/mips.v" \
+"../../../../../../../../../../axi/mips_core_with_sram_like/mips_with_sram_like.v" \
+"../../../../../../../../../../axi/mmu.v" \
+"../../../../../../../../../../axi/mips_core_with_sram_like/cpu_core/utils/mul.v" \
+"../../../../../../../../../../axi/mips_core_with_sram_like/cpu_core/utils/mux2.v" \
+"../../../../../../../../../../axi/mips_core_with_sram_like/cpu_core/utils/mux3.v" \
+"../../../../../../../../../../axi/mycpu_top.v" \
+"../../../../../../../../../../axi/mips_core_with_sram_like/cpu_core/pc.v" \
+"../../../../../../../../../../axi/mips_core_with_sram_like/cpu_core/regfile.v" \
+"../../../../../../../../../../axi/mips_core_with_sram_like/cpu_core/utils/signext.v" \
+"../../../../../../../../../../axi/mips_core_with_sram_like/cpu_core/utils/sl2.v" \
+"../../../../../../rtl/soc_axi_lite_top.v" \
+"../../../../../../testbench/mycpu_tb.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort
